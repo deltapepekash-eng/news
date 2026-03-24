@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News Tracker Optimized</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9}
+.container{max-width:900px;margin:auto;padding:10px}
+.card{background:#fff;margin:8px 0;padding:12px;border-radius:10px;cursor:pointer;border:1px solid #ddd}
+.card:hover{background:#f0f4f8}
+.title{font-weight:bold;font-size:15px;margin-bottom:5px}
+.meta{font-size:12px;color:#666;display:flex;justify-content:space-between}
+@media (max-width:600px){
+  .title{font-size:14px}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>News Tracker (Optimized)</h2>
+<div id="news"></div>
+</div>
+
+<script>
+async function loadNews(){
+  const url = "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en";
+  const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
+
+  const res = await fetch(proxy);
+  const text = await res.text();
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(text,"text/xml");
+
+  const items = [...xml.querySelectorAll("item")].slice(0,20);
+
+  const container = document.getElementById("news");
+
+  container.innerHTML = items.map(it=>{
+    const title = it.querySelector("title").textContent;
+    const link = it.querySelector("link").textContent;
+    const date = it.querySelector("pubDate")?.textContent || "";
+
+    return `
+      <div class="card" onclick="window.open('${link}','_blank')">
+        <div class="title">${title}</div>
+        <div class="meta">
+          <span>Google News</span>
+          <span>${new Date(date).toLocaleTimeString()}</span>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+loadNews();
+</script>
+</body>
+</html>
