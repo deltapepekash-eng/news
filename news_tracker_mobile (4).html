@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#0f1923">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="News Tracker">
+<link rel="manifest" href="manifest_mobile.json">
+<title>News Tracker</title>
+<style>
+:root {
+  --bg:#f4f6f9; --surface:#fff; --border:#e2e8f0; --border2:#edf2f7;
+  --text:#1a2332; --dim:#57606a; --hint:#8c959f;
+  --accent:#0969da; --danger:#cf222e; --success:#1a7f37;
+  --nav-h:60px; --topbar-h:52px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+
+/* ── TOPBAR ── */
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 14px;gap:10px;flex-shrink:0;position:sticky;top:0;z-index:100}
+.app-title{font-size:16px;font-weight:700;display:flex;align-items:center;gap:7px}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--danger);animation:blink 2s infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.breaking-badge{font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px;background:#fff5f5;color:var(--danger);border:1px solid #ffb3b3;display:none}
+.updated{font-size:11px;color:var(--hint)}
+.refresh-btn{padding:6px 12px;border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:500;color:var(--dim);background:var(--surface);cursor:pointer}
+.refresh-btn:active{background:var(--bg)}
+
+/* ── LAYOUT ── */
+.app{display:flex;flex-direction:column;height:100vh;height:100dvh}
+.tab-panel{flex:1;overflow:hidden;flex-direction:column;display:none}
+.tab-panel.active{display:flex}
+
+/* ── NEWS TAB ── */
+.filter-scroll{overflow-x:auto;white-space:nowrap;padding:8px 12px;border-bottom:1px solid var(--border);background:var(--surface);flex-shrink:0;-webkit-overflow-scrolling:touch}
+.filter-scroll::-webkit-scrollbar{display:none}
+.ftab-btn{display:inline-block;padding:5px 12px;border-radius:16px;font-size:12px;font-weight:500;margin-right:6px;cursor:pointer;border:none;transition:all .12s}
+.feed-scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.feed-scroll::-webkit-scrollbar{width:3px}
+.feed-scroll::-webkit-scrollbar-thumb{background:var(--border2)}
+
+/* News card */
+.news-card{padding:12px 14px;border-bottom:1px solid var(--border2);background:var(--surface);cursor:pointer;transition:background .1s;display:flex;gap:9px}
+.news-card:active{background:#f8fafc}
+.card-accent{width:3px;border-radius:2px;flex-shrink:0;align-self:stretch;min-height:36px}
+.sent-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.card-body{flex:1;min-width:0}
+.card-meta{display:flex;align-items:center;gap:5px;margin-bottom:4px;flex-wrap:wrap}
+.breaking-tag{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;background:#fff5f5;color:var(--danger);border:1px solid #ffb3b3}
+.src-badge{font-size:11px;font-weight:500}
+.term-tag{font-size:10px;padding:1px 5px;border-radius:3px;border:1px solid}
+.card-time{font-size:10px;color:var(--hint);margin-left:auto}
+.card-hl{font-size:13px;font-weight:500;line-height:1.4;color:var(--text);margin-bottom:3px}
+.card-hl mark{background:#fff3b0;padding:0 1px;border-radius:2px}
+.card-sum{font-size:12px;color:var(--dim);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ann-feed-badge{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;border:1px solid}
+.ann-feed-badge.results{background:#e6f4ea;color:#1e6f32;border-color:#a8d5b0}
+.ann-feed-badge.dividend{background:#fce8e6;color:#c5221f;border-color:#f5a8a4}
+.ann-feed-badge.board{background:#e8f0fe;color:#1a73e8;border-color:#b6cff5}
+.ann-feed-badge.filing{background:#fff8e1;color:#f57f17;border-color:#ffe082}
+.ann-feed-badge.other{background:#f1f3f4;color:#5f6368;border-color:#dadce0}
+
+/* Loading / empty */
+.feed-empty{padding:40px 20px;text-align:center;color:var(--dim)}
+.feed-empty h3{font-size:16px;font-weight:500;margin-bottom:8px}
+.feed-empty p{font-size:13px;color:var(--hint);line-height:1.6}
+.start-btn{margin-top:14px;padding:10px 22px;background:var(--accent);color:#fff;border:none;border-radius:20px;font-size:14px;font-weight:500;cursor:pointer}
+.load-bar{height:2px;background:var(--border2);overflow:hidden;flex-shrink:0}
+.load-fill{height:100%;background:var(--accent);transition:width .3s;width:0}
+.load-msg{padding:8px 14px;font-size:12px;color:var(--dim);display:flex;align-items:center;gap:7px;flex-shrink:0}
+.spinner-sm{width:11px;height:11px;border:1.5px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── TERMS TAB (manage search terms) ── */
+.terms-tab-inner{flex:1;overflow-y:auto;padding:14px}
+.terms-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.terms-label{font-size:12px;font-weight:600;color:var(--hint);text-transform:uppercase;letter-spacing:.5px}
+.terms-count{font-size:12px;color:var(--hint)}
+.term-input-row{display:flex;gap:8px;margin-bottom:14px}
+.term-input{flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:10px;font-size:14px;color:var(--text);background:var(--bg);outline:none}
+.term-input:focus{border-color:var(--accent);background:var(--surface)}
+.add-btn{padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer}
+.mpill{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1.5px solid;background:var(--surface);margin-bottom:6px;cursor:pointer}
+.mpill-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.mpill-label{flex:1;font-size:13px;font-weight:500}
+.mpill-cnt{font-size:12px;color:var(--hint)}
+.mpill-del{background:none;border:none;font-size:18px;color:var(--hint);cursor:pointer;padding:0 2px;line-height:1}
+.sug-section{margin-top:16px}
+.sug-title{font-size:11px;font-weight:600;color:var(--hint);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.sug-grid{display:flex;flex-wrap:wrap;gap:6px}
+.sug-btn{padding:6px 12px;border-radius:16px;border:1px solid var(--border);background:var(--surface);font-size:12px;color:var(--dim);cursor:pointer}
+.sug-btn:active{background:var(--bg)}
+
+/* ── EXCHANGE / TRENDING / INTEL TABS ── */
+.panel-inner{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.panel-inner::-webkit-scrollbar{width:3px}
+.panel-header{padding:10px 14px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.panel-title{font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
+.panel-badge{font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500}
+.panel-badge.exchange{background:#e6f4ea;color:#1e6f32;border:1px solid #a8d5b0}
+.panel-badge.global{background:#e8f4fd;color:#0969da;border:1px solid #b6d4f8}
+.panel-badge.india{background:#fff3cd;color:#664d03;border:1px solid #ffc107}
+.panel-badge.intel{background:#ede7f6;color:#4527a0;border:1px solid #b39ddb}
+.panel-refresh{padding:5px 10px;border:1px solid var(--border);border-radius:12px;font-size:11px;background:var(--surface);color:var(--dim);cursor:pointer}
+.trend-loading{padding:24px;text-align:center;font-size:13px;color:var(--hint)}
+.trend-err{padding:16px;font-size:12px;color:var(--hint);line-height:1.6}
+
+/* Trend items */
+.trend-item{display:flex;align-items:flex-start;gap:9px;padding:11px 14px;border-bottom:1px solid var(--border2);background:var(--surface);cursor:pointer}
+.trend-item:active{background:var(--bg)}
+.trend-rank{font-size:12px;font-weight:700;color:var(--hint);min-width:18px;text-align:right;flex-shrink:0;margin-top:1px}
+.trend-rank.top3{color:var(--danger)}
+.trend-body{flex:1;min-width:0}
+.trend-title{font-size:13px;font-weight:500;color:var(--text);line-height:1.35;margin-bottom:3px}
+.trend-meta{display:flex;align-items:center;gap:5px}
+.trend-src{font-size:10px;padding:1px 6px;border-radius:3px;font-weight:500}
+.trend-src.gtrends{background:#fce8e6;color:#c5221f}
+.trend-src.reddit{background:#fff0e6;color:#cc4500}
+.trend-src.gnews{background:#e8f0fe;color:#1a73e8}
+.trend-traffic{font-size:10px;color:var(--hint)}
+.trend-hot{font-size:10px;color:var(--danger)}
+
+/* Ann items */
+.ann-item{display:flex;align-items:flex-start;gap:8px;padding:11px 14px;border-bottom:1px solid var(--border2);background:var(--surface);cursor:pointer}
+.ann-item:active{background:var(--bg)}
+.ann-tag{font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:2px;letter-spacing:.3px}
+.ann-tag.results{background:#e6f4ea;color:#1e6f32}
+.ann-tag.dividend{background:#fce8e6;color:#c5221f}
+.ann-tag.board{background:#e8f0fe;color:#1a73e8}
+.ann-tag.filing{background:#fff8e1;color:#f57f17}
+.ann-tag.other{background:#f1f3f4;color:#5f6368}
+.ann-body{flex:1;min-width:0}
+.ann-title{font-size:13px;font-weight:500;line-height:1.35;margin-bottom:3px;color:var(--text)}
+.ann-meta{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.ann-exch{font-size:9px;font-weight:700;padding:1px 5px;border-radius:2px}
+.ann-exch.bse{background:#c8e6c9;color:#1b5e20}
+.ann-exch.nse{background:#bbdefb;color:#0d47a1}
+
+/* Intel items */
+.intel-item{padding:11px 14px;border-bottom:1px solid var(--border2);background:var(--surface);cursor:pointer}
+.intel-item:active{background:var(--bg)}
+.intel-top{display:flex;align-items:center;gap:5px;margin-bottom:4px;flex-wrap:wrap}
+.intel-tag{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:.5px;white-space:nowrap}
+.intel-tag.upgrade{background:#e6f4ea;color:#1e6f32;border:1px solid #a8d5b0}
+.intel-tag.downgrade{background:#fce8e6;color:#c5221f;border:1px solid #f5a8a4}
+.intel-tag.target{background:#e8f0fe;color:#1a73e8;border:1px solid #b6cff5}
+.intel-tag.research{background:#f3e8fd;color:#7b1fa2;border:1px solid #ce93d8}
+.intel-tag.macro{background:#fff8e1;color:#f57f17;border:1px solid #ffe082}
+.intel-tag.fo{background:#fce4ec;color:#c62828;border:1px solid #f48fb1}
+.intel-tag.flow{background:#e0f7fa;color:#00695c;border:1px solid #80cbc4}
+.intel-tag.insider{background:#ede7f6;color:#4527a0;border:1px solid #b39ddb}
+.intel-tag.risk{background:#fff3e0;color:#e65100;border:1px solid #ffcc02}
+.intel-tag.chatter{background:#f1f3f4;color:#5f6368;border:1px solid #dadce0}
+.intel-horizon{font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;letter-spacing:.3px}
+.intel-horizon.today{background:#fff9c4;color:#827717}
+.intel-horizon.week{background:#e8f5e9;color:#2e7d32}
+.intel-horizon.quarter{background:#e3f2fd;color:#1565c0}
+.intel-horizon.longterm{background:#f3e5f5;color:#6a1b9a}
+.intel-title{font-size:13px;font-weight:500;line-height:1.35;margin-bottom:5px;color:var(--text)}
+.intel-footer{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.intel-source{font-size:11px;color:var(--hint)}
+.intel-signal{display:flex;gap:2px}
+.intel-dot{width:6px;height:6px;border-radius:50%}
+.intel-dot.on{background:var(--accent)}
+.intel-dot.off{background:var(--border2)}
+
+/* ── BOTTOM NAV ── */
+.bottom-nav{height:calc(var(--nav-h) + var(--safe-bottom));padding-bottom:var(--safe-bottom);background:var(--surface);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-around;flex-shrink:0;position:sticky;bottom:0;z-index:100}
+.tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;background:none;border:none;cursor:pointer;color:var(--hint);transition:color .12s;position:relative}
+.tab-btn.active{color:var(--accent)}
+.tab-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tab-label{font-size:10px;font-weight:500}
+.tab-badge{position:absolute;top:6px;right:calc(50% - 18px);background:var(--danger);color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:8px;min-width:16px;text-align:center;display:none}
+
+/* ── MODAL ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:flex-end;justify-content:center;z-index:200;pointer-events:none}
+.modal-overlay.open{display:flex;pointer-events:all}
+.modal{background:var(--surface);border-radius:20px 20px 0 0;max-height:85vh;width:100%;overflow:hidden;display:flex;flex-direction:column}
+.modal-drag{width:40px;height:4px;background:var(--border);border-radius:2px;margin:10px auto 0}
+.modal-hdr{padding:14px 18px 10px;border-bottom:1px solid var(--border2);flex-shrink:0}
+.modal-meta{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap}
+.modal-title{font-size:16px;font-weight:600;line-height:1.4;color:var(--text)}
+.modal-body{padding:14px 18px;overflow-y:auto;flex:1}
+.modal-sum{font-size:14px;line-height:1.7;color:var(--dim);margin-bottom:16px}
+.modal-ftr{padding:12px 18px;border-top:1px solid var(--border2);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;padding-bottom:calc(12px + var(--safe-bottom))}
+.read-link{font-size:14px;color:var(--accent);text-decoration:none;font-weight:600}
+.close-btn{padding:8px 16px;border:1px solid var(--border);border-radius:20px;font-size:13px;background:var(--bg);color:var(--dim);cursor:pointer}
+
+/* ── AI BAR ── */
+.ai-bar{background:var(--surface);border-top:1px solid var(--border);padding:8px 12px;flex-shrink:0;display:none}
+.ai-bar.show{display:block}
+.ai-answer{background:#f0f7ff;border:1px solid #b6d4f8;border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:13px;line-height:1.7;color:var(--text);position:relative;display:none}
+.ai-close{position:absolute;top:7px;right:10px;background:none;border:none;font-size:16px;color:var(--hint);cursor:pointer}
+.ai-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#0969da;margin-bottom:4px}
+.ai-row{display:flex;gap:7px}
+.ai-input{flex:1;padding:9px 14px;border:1px solid var(--border);border-radius:20px;font-size:14px;color:var(--text);background:var(--bg);outline:none}
+.ai-input:focus{border-color:var(--accent);background:var(--surface)}
+.ai-btn{padding:9px 16px;background:var(--accent);color:#fff;border:none;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+
+/* Sentiment meter */
+.sent-meter-wrap{background:var(--bg);border:1px solid var(--border2);border-radius:10px;padding:12px;margin:10px 14px}
+.sent-meter-scope{font-size:11px;color:var(--hint);margin-bottom:8px;text-align:center;font-style:italic}
+.sent-bar-row{display:flex;height:22px;border-radius:6px;overflow:hidden;cursor:pointer;gap:1px;margin-bottom:10px}
+.sent-seg{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;transition:all .3s;min-width:0}
+.sent-seg.bull{background:#d4edda;color:#155724}
+.sent-seg.bear{background:#f8d7da;color:#721c24}
+.sent-seg.neut{background:#e9ecef;color:#495057}
+.sent-seg.bull.active{background:#1a7f37;color:#fff}
+.sent-seg.bear.active{background:#cf222e;color:#fff}
+.sent-seg.neut.active{background:#6c757d;color:#fff}
+.sent-legend{display:flex;gap:6px}
+.sent-lbl{flex:1;display:flex;flex-direction:column;align-items:center;cursor:pointer;padding:6px;border-radius:8px;border:1px solid transparent}
+.sent-lbl.active.bull{background:#d4edda;border-color:#a3cfad}
+.sent-lbl.active.bear{background:#f8d7da;border-color:#f1aeb5}
+.sent-lbl.active.neut{background:#e9ecef;border-color:#ced4da}
+.sent-lbl-icon{font-size:13px;margin-bottom:2px}
+.sent-lbl-num{font-size:15px;font-weight:600}
+.sent-lbl-pct{font-size:10px;color:var(--hint)}
+.sent-all-btn{width:100%;margin-top:8px;padding:6px;font-size:12px;background:none;border:1px solid var(--border2);border-radius:8px;cursor:pointer;color:var(--dim)}
+.sent-all-btn.active{background:#ddf4ff;color:#0969da;border-color:#b6d4f8}
+
+/* Groq key row */
+.ai-key-row{display:flex;align-items:center;gap:6px;margin-top:6px}
+.ai-key-lbl{font-size:11px;color:var(--hint);white-space:nowrap}
+.ai-key-input{flex:1;padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:11px;font-family:monospace;outline:none}
+.ai-key-link{font-size:11px;color:var(--accent);text-decoration:none;white-space:nowrap}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+</style>
+</head>
+<body>
+<div class="app">
+
+<header class="topbar">
+  <div class="live-dot"></div>
+  <div class="app-title">News Tracker</div>
+  <div class="topbar-right">
+    <span id="breakBadge" class="breaking-badge" style="display:none"></span>
+    <span id="updatedEl" class="updated"></span>
+    <button id="rfBtn" onclick="doRefresh()" style="padding:8px 16px;font-size:14px;font-weight:600;background:var(--accent);color:#fff;border:none;border-radius:20px;cursor:pointer">↻ Refresh</button>
+  </div>
+</header>
+
+<div id="tab-news" class="tab-panel" style="display:flex">
+  <div class="filter-scroll" id="filterTabs"><button class="ftab-btn" style="background:#1a2332;color:#fff" onclick="setMFilter('ALL')">All</button></div>
+  <div id="loadWrap" style="display:none;flex-shrink:0"><div class="load-bar"><div class="load-fill" id="loadFill"></div></div><div class="load-msg"><div class="spinner-sm"></div><span id="loadMsg">Loading…</span></div></div>
+  <div class="feed-scroll" id="feedItems"><div class="feed-empty"><h3>No news yet</h3><p>Tap Refresh to load</p><button class="start-btn" onclick="doRefresh()">↻ Load News Now</button></div></div>
+</div>
+
+<div id="tab-search" class="tab-panel">
+  <div class="terms-tab-inner">
+    <div class="terms-header"><span class="terms-label">Search terms</span><span class="terms-count" id="termCount">0/30</span></div>
+    <div class="term-input-row"><input class="term-input" id="ti" placeholder="Add term…" maxlength="40" onkeydown="if(event.key==='Enter')addTerm()"><button class="add-btn" id="addBtn" onclick="addTerm()">+</button></div>
+    <div id="termPills"></div>
+    <div id="suggestSec" class="sug-section"><div class="sug-title">Suggestions</div><div class="sug-grid" id="suggestList"></div></div>
+  </div>
+</div>
+
+<div id="tab-exchange" class="tab-panel">
+  <div class="panel-header"><div class="panel-title">📢 BSE &amp; NSE <span class="panel-badge exchange" id="annBadge">—</span></div><button class="panel-refresh" onclick="loadAnnouncements()">↻ Refresh</button></div>
+  <div class="panel-inner" id="annList"><div class="trend-loading">Loading…</div></div>
+</div>
+
+<div id="tab-trending" class="tab-panel" style="flex-direction:column">
+  <div class="panel-header"><div class="panel-title">🌐 Global <span class="panel-badge global" id="gBadge">—</span></div><button class="panel-refresh" onclick="loadTrending()">↻ Refresh</button></div>
+  <div class="panel-inner" id="globalList" style="max-height:45vh"><div class="trend-loading">Loading…</div></div>
+  <div class="panel-header" style="border-top:1px solid var(--border)"><div class="panel-title">🇮🇳 India Business <span class="panel-badge india" id="iBadge">—</span></div></div>
+  <div class="panel-inner" id="indiaList"><div class="trend-loading">Loading…</div></div>
+</div>
+
+<div id="tab-intel" class="tab-panel">
+  <div class="panel-header"><div class="panel-title">🔭 Intel Feed <span class="panel-badge intel" id="intelBadge">—</span></div><button class="panel-refresh" onclick="loadIntel()">↻ Refresh</button></div>
+  <div class="panel-inner" id="intelList"><div class="trend-loading">Loading…</div></div>
+</div>
+
+
+<nav class="bottom-nav">
+  <button class="tab-btn active" id="btn-news" onclick="showTab('news')"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h10"/></svg><span class="tab-label">News</span></button>
+  <button class="tab-btn" id="btn-search" onclick="showTab('search')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg><span class="tab-label">Search</span></button>
+  <button class="tab-btn" id="btn-exchange" onclick="showTab('exchange')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="17" width="18" height="4" rx="1"/></svg><span class="tab-label">Exchange</span></button>
+  <button class="tab-btn" id="btn-trending" onclick="showTab('trending')"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg><span class="tab-label">Trending</span></button>
+  <button class="tab-btn" id="btn-intel" onclick="showTab('intel')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg><span class="tab-label">Intel</span></button>
+</nav>
+
+</div>
+
+<div id="modal" onclick="if(event.target===this)closeModal()" style="position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:flex-end;justify-content:center;z-index:200;pointer-events:none;visibility:hidden">
+  <div style="background:var(--surface);border-radius:20px 20px 0 0;max-height:85vh;width:100%;overflow:hidden;display:flex;flex-direction:column">
+    <div style="width:40px;height:4px;background:var(--border);border-radius:2px;margin:10px auto 0"></div>
+    <div style="padding:14px 18px 10px;border-bottom:1px solid var(--border2);flex-shrink:0">
+      <div id="mMeta" style="display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap"></div>
+      <div id="mTitle" style="font-size:16px;font-weight:600;line-height:1.4"></div>
+    </div>
+    <div style="padding:14px 18px;overflow-y:auto;flex:1"><div id="mSum" style="font-size:14px;line-height:1.7;color:var(--dim);margin-bottom:16px"></div></div>
+    <div style="padding:12px 18px;border-top:1px solid var(--border2);display:flex;justify-content:space-between;align-items:center;flex-shrink:0">
+      <button onclick="closeModal()" style="padding:8px 16px;border:1px solid var(--border);border-radius:20px;font-size:13px;background:var(--bg);color:var(--dim);cursor:pointer">Close</button>
+      <a id="mLink" href="#" target="_blank" rel="noopener" style="font-size:14px;color:var(--accent);text-decoration:none;font-weight:600">Read full article →</a>
+    </div>
+  </div>
+</div>
+
+<span id="termsList" style="display:none"></span>
+<span id="filterBar" style="display:none"></span>
+<span id="errList" style="display:none"></span>
+<span id="mTerm" style="display:none"></span>
+<span id="errPanel" style="display:none"></span>
+<span id="rfIcon" style="display:none"></span>
+<span id="keySaved" style="display:none"></span>
+<span id="tcnt" style="display:none"></span>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+// ══════════════════════════════════════════════
+// CONFIG
+// ══════════════════════════════════════════════
+const SUGGESTIONS = ['Nifty 50','Sensex','RBI','SEBI','HDFC Bank','Reliance','Fed rate','crude oil','rupee','FII buying','inflation India','IT stocks India','Budget 2025','gold price'];
+const COLORS = ['#0969da','#1a7f37','#9a6700','#cf222e','#6e40c9','#0550ae','#953800','#24292f','#0a3069','#116329'];
+const SRC_COLORS = {'ET Markets':'#c0392b','Moneycontrol':'#2980b9','LiveMint':'#e74c3c','Reuters':'#ff6600','Yahoo Finance':'#6001d2','Bloomberg':'#1c1c1c','Reddit':'#ff4500','NDTV Business':'#c0392b','Google News':'#4285f4','Business Standard':'#c0392b','Financial Express':'#2c3e50','The Hindu':'#8B0000'};
+
+// Fixed RSS feeds — only feeds confirmed working via proxy
+const FEEDS = [
+  {n:'ET Markets',        u:'https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms'},
+  {n:'LiveMint',          u:'https://www.livemint.com/rss/markets'},
+  {n:'Yahoo Finance',     u:'https://finance.yahoo.com/news/rssindex'},
+  {n:'Business Standard', u:'https://www.business-standard.com/rss/markets-106.rss'},
+  {n:'Financial Express', u:'https://www.financialexpress.com/market/feed/'},
+  {n:'Investing.com',     u:'https://in.investing.com/rss/news.rss'},
+  {n:'CNBC Finance',      u:'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114'},
+];
+
+// ══════════════════════════════════════════════
+// SYNONYM EXPANSION — makes fixed feeds match more
+// ══════════════════════════════════════════════
+const BASE_SYNS = {
+  "nifty":        ["nifty","sensex","nse","bse","indian market","indian stock","india stock","indian equit","dalal street","stock market india"],
+  "sensex":       ["sensex","bse","bombay stock","nifty","dalal"],
+  "rbi":          ["rbi","reserve bank of india","repo rate","india rate","rbi governor","monetary policy india"],
+  "sebi":         ["sebi","securities and exchange board","market regulator india"],
+  "india":        ["india","indian","mumbai","delhi","modi","rupee","hindustan","bharat"],
+  "hdfc":         ["hdfc","hdfcbank","hdfc bank"],
+  "reliance":     ["reliance","jio","mukesh ambani","ril"],
+  "fed":          ["federal reserve","fed rate","fomc","jerome powell","us fed","interest rate"],
+  "crude":        ["crude","oil price","brent","wti","opec","petroleum","barrel"],
+  "rupee":        ["rupee","inr","usd/inr","dollar india","indian currency"],
+  "fii":          ["fii","fpi","foreign investor","foreign institutional","foreign portfolio"],
+  "gold":         ["gold price","gold","mcx gold","bullion","precious metal"],
+  "it stocks":    ["infosys","tcs","wipro","hcl tech","tech mahindra","it sector","indian it"],
+  "inflation":    ["inflation","cpi","wpi","price rise","consumer price"],
+  "budget":       ["budget","fiscal","finance minister","nirmala","government spending india"],
+  "bank":         ["bank","banking","lender","nbfc","credit","loan"],
+  "auto":         ["tata motors","maruti","mahindra","hero motocorp","bajaj auto","automobile india"],
+  "pharma":       ["sun pharma","dr reddy","cipla","divis","pharma india","drug"],
+  "ipo":          ["ipo","initial public","listing","primary market","mainboard"],
+  "rate":         ["interest rate","rate hike","rate cut","basis point","bps","repo"],
+};
+
+function getSynonyms(term) {
+  const tl = term.toLowerCase().trim();
+  const syns = new Set([tl]);
+  // Check if any base key appears in the term or vice versa
+  for (const [key, vals] of Object.entries(BASE_SYNS)) {
+    if (tl.includes(key) || key.includes(tl) || vals.some(v => tl.includes(v))) {
+      vals.forEach(v => syns.add(v));
+    }
+  }
+  return [...syns];
+}
+
+function matchesToTerm(text, term, synonyms) {
+  const t = text.toLowerCase();
+  return synonyms.some(s => t.includes(s));
+}
+
+// Find the best matching term for an article
+// Returns the term with most synonym hits, or null
+function findBestTerm(titlePlusDesc, termsList, synMap) {
+  const t = titlePlusDesc.toLowerCase();
+  let best = null, bestScore = 0;
+  for (const term of termsList) {
+    const syns = synMap[term] || [term.toLowerCase()];
+    const score = syns.filter(s => t.includes(s)).length;
+    if (score > bestScore) { bestScore = score; best = term; }
+  }
+  return bestScore > 0 ? best : null;
+}
+
+// ══════════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════════
+let terms    = JSON.parse(localStorage.getItem('nt2_terms') || '["Nifty 50","RBI","India"]');
+let allNews  = [];
+let actTerm  = 'ALL';
+let actSent  = 'ALL';
+let loading  = false;
+let autoTmr  = null;
+let feedLog  = [];  // tracks which feeds succeeded/failed
+let touchY   = 0;
+
+// ══════════════════════════════════════════════
+// FETCH RSS — tries 3 proxies, parses XML directly
+// Uses direct XML parsing — no third-party JSON converter
+// ══════════════════════════════════════════════
+async function fetchRSS(url, timeout=10000) {
+  // Cache-bust every call so browser never serves stale RSS
+  const bust = '_t=' + Date.now();
+  const freshUrl = url + (url.includes('?') ? '&' : '?') + bust;
+
+  const proxies = [
+    u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+    u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+    u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+  ];
+
+  for (const proxy of proxies) {
+    try {
+      const r = await fetch(proxy(freshUrl), {
+        cache: 'no-store',
+        signal: AbortSignal.timeout(timeout),
+      });
+      if (!r.ok) continue;
+      const text = await r.text();
+      if (!text || text.trim().length < 50) continue;
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, 'text/xml');
+      if (xml.querySelector('parsererror')) continue;
+      const items = [...xml.querySelectorAll('item')];
+      if (items.length === 0) continue;
+      return items;
+    } catch(e) { continue; }
+  }
+  return null;
+}
+
+function getText(el, tag) {
+  const node = el.querySelector(tag);
+  if (!node) return '';
+  // For <link> which is sometimes CDATA or has no text
+  return node.textContent?.trim() || node.getAttribute('href') || '';
+}
+
+function stripHtml(s) {
+  return (s||'')
+    .replace(/<[^>]+>/g,'')
+    .replace(/&nbsp;/g,' ')
+    .replace(/&amp;/g,'&')
+    .replace(/&lt;/g,'<')
+    .replace(/&gt;/g,'>')
+    .replace(/&quot;/g,'"')
+    .replace(/&#39;/g,"'")
+    .replace(/&mdash;/g,'—')
+    .replace(/&ndash;/g,'–')
+    .replace(/&hellip;/g,'…')
+    .replace(/&#\d+;/g,'')
+    .replace(/\s{2,}/g,' ')
+    .trim();
+}
+
+function ageS(dateStr) {
+  try { return (Date.now() - new Date(dateStr).getTime()) / 1000; } catch { return 99999; }
+}
+
+function fmtAge(dateStr) {
+  try {
+    const s = ageS(dateStr);
+    if (s < 60)    return `${Math.floor(s)}s ago`;
+    if (s < 3600)  return `${Math.floor(s/60)}m ago`;
+    if (s < 86400) return `${Math.floor(s/3600)}h ago`;
+    return `${Math.floor(s/86400)}d ago`;
+  } catch { return 'Recently'; }
+}
+
+function sentiment(text) {
+  const t = (text||'').toLowerCase();
+  const b = ['rise','gain','surge','rally','bull','jump','soar','high','record','profit','beat','strong','boost','advance','up ','grew','growth','positive','recover'].filter(w=>t.includes(w)).length;
+  const s = ['fall','drop','crash','loss','decline','bear','plunge','slump','warn','weak','miss','cut','down ','risk','concern','deficit','recession','correction','slide','tumble'].filter(w=>t.includes(w)).length;
+  return b > s ? 'bull' : s > b ? 'bear' : 'neut';
+}
+
+function srcFromUrl(url, feedName) {
+  if (feedName) return feedName;
+  const m = {'economictimes':'ET Markets','moneycontrol':'Moneycontrol','livemint':'LiveMint','reuters':'Reuters','bloomberg':'Bloomberg','reddit.com':'Reddit','yahoo':'Yahoo Finance','ndtv':'NDTV Business','cnbc':'CNBC','business-standard':'Business Standard','financialexpress':'Financial Express','thehindu':'The Hindu'};
+  const u = (url||'').toLowerCase();
+  for (const [k,v] of Object.entries(m)) if (u.includes(k)) return v;
+  try { return new URL(url).hostname.replace('www.',''); } catch { return 'News'; }
+}
+
+function dedup(arr) {
+  const seen = new Set();
+  return arr.filter(x => {
+    const k = x.title.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,45);
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+}
+
+function norm(s) { return (s||'').replace(/\s+/g,' ').trim(); }
+function esc(s)  { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ══════════════════════════════════════════════
+// MAIN REFRESH
+// ══════════════════════════════════════════════
+async function doRefresh() {
+  if (loading || !terms.length) return;
+  loading = true;
+  allNews = [];
+  feedLog = [];
+  setLoading(true, 'Starting…', 0);
+  document.getElementById('errPanel').style.display = 'none';
+
+  const total = terms.length + FEEDS.length;
+  let done = 0;
+
+  function prog(msg, ok) {
+    done++;
+    setLoading(true, msg, Math.round(done/total*100));
+    feedLog.push({msg, ok});
+  }
+
+  // 1. Per-term: Google News RSS (dynamic search per term)
+  await Promise.all(terms.map(async term => {
+    const q   = encodeURIComponent(term + ' India');
+    const url = `https://news.google.com/rss/search?q=${q}&hl=en-IN&gl=IN&ceid=IN:en`;
+    const items = await fetchRSS(url);
+    if (items && items.length) {
+      for (const it of items) {
+        const title = stripHtml(getText(it,'title'));
+        const link  = getText(it,'link') || getText(it,'guid') || '#';
+        const date  = getText(it,'pubDate') || getText(it,'updated') || '';
+        const desc  = stripHtml(getText(it,'description') || getText(it,'summary') || '');
+        const srcEl = it.querySelector('source');
+        const src   = srcEl ? srcEl.textContent.trim() : 'Google News';
+        if (!title) continue;
+        allNews.push({
+          id: link + title.slice(0,20),
+          title: norm(title), summary: norm(desc).slice(0,240),
+          link, pubDate: date, source: src,
+          term, sent: sentiment(title+' '+desc),
+          isBreaking: ageS(date) < 1800,
+          age: fmtAge(date), ageS: ageS(date),
+        });
+      }
+      prog(`"${term}" — ${items.length} stories`, true);
+    } else {
+      prog(`"${term}" — no results`, false);
+    }
+  }));
+
+  // 2. Fixed feeds — match using synonym expansion
+  const synMap = {};
+  for (const t of terms) synMap[t] = getSynonyms(t);
+
+  for (const feed of FEEDS) {
+    const items = await fetchRSS(feed.u);
+    if (items && items.length) {
+      let matched = 0;
+      for (const it of items) {
+        const title = stripHtml(getText(it,'title'));
+        const desc  = stripHtml(getText(it,'description') || getText(it,'summary') || '');
+        const link  = getText(it,'link') || getText(it,'guid') || '#';
+        const date  = getText(it,'pubDate') || '';
+        if (!title) continue;
+        const combo = title + ' ' + desc;
+        // Use synonym-expanded matching — finds best term, not just exact
+        const matchedTerm = findBestTerm(combo, terms, synMap);
+        if (!matchedTerm) continue;
+        allNews.push({
+          id: link + title.slice(0,20),
+          title: norm(title), summary: norm(desc).slice(0,240),
+          link, pubDate: date, source: srcFromUrl(link, feed.n),
+          term: matchedTerm, sent: sentiment(title+' '+desc),
+          isBreaking: ageS(date) < 1800,
+          age: fmtAge(date), ageS: ageS(date),
+        });
+        matched++;
+      }
+      prog(`${feed.n} — ${matched} matched`, matched > 0);
+    } else {
+      prog(`${feed.n} — failed`, false);
+    }
+  }
+
+  // 3. BSE/NSE announcements — fetch and match to search terms
+  const annUrls = [
+    `https://news.google.com/rss/search?q=BSE+NSE+results+quarterly+earnings+dividend+India&hl=en-IN&gl=IN&ceid=IN:en`,
+    `https://news.google.com/rss/search?q=NSE+BSE+board+meeting+filing+announcement+India&hl=en-IN&gl=IN&ceid=IN:en`,
+  ];
+  const annResults = await Promise.all(annUrls.map(u => fetchRSS(u).catch(()=>null)));
+  const annItems   = [...(annResults[0]||[]), ...(annResults[1]||[])];
+  let annMatched   = 0;
+  for (const it of annItems) {
+    const title = stripHtml(getText(it,'title'));
+    const desc  = stripHtml(getText(it,'description') || getText(it,'summary') || '');
+    const link  = getText(it,'link') || getText(it,'guid') || '#';
+    const date  = getText(it,'pubDate') || '';
+    const srcEl = it.querySelector('source');
+    const src   = srcEl ? srcEl.textContent.trim() : 'Exchange Filing';
+    if (!title) continue;
+    const combo       = title + ' ' + desc;
+    const matchedTerm = findBestTerm(combo, terms, synMap);
+    if (!matchedTerm) continue;
+    allNews.push({
+      id: 'ann_' + link + title.slice(0,20),
+      title: norm(title), summary: norm(desc).slice(0,240),
+      link, pubDate: date, source: src,
+      term: matchedTerm, sent: sentiment(combo),
+      isBreaking: ageS(date) < 1800,
+      age: fmtAge(date), ageS: ageS(date),
+      isAnnouncement: true,
+      annType: annType(title),
+    });
+    annMatched++;
+  }
+  if (annMatched > 0) prog(`BSE/NSE — ${annMatched} announcements matched`, true);
+
+  // 4. Dedupe + sort; recalculate ages freshly so "2m ago" doesn't stay stale
+  allNews = dedup(allNews)
+    .map(n => ({ ...n, ageS: ageS(n.pubDate), age: fmtAge(n.pubDate), isBreaking: ageS(n.pubDate) < 1800 }))
+    .sort((a,b) => a.ageS - b.ageS);
+
+  setLoading(false);
+  loading = false;
+  renderFeed();
+  renderSidebar();
+
+  // Flash the feed to signal fresh data
+  const feedEl = document.getElementById('feedItems');
+  feedEl.style.opacity = '0.5';
+  setTimeout(() => { feedEl.style.transition = 'opacity .4s'; feedEl.style.opacity = '1'; }, 50);
+
+  const now = new Date();
+  document.getElementById('updatedEl').textContent = `Updated ${now.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}`;
+
+  const breaking = allNews.filter(n=>n.isBreaking).length;
+  const bb = document.getElementById('breakBadge');
+  bb.textContent = `${breaking} breaking`;
+  bb.style.display = breaking > 0 ? 'inline' : 'none';
+
+  // Show error panel only when total news is 0 (complete failure)
+  const failed = feedLog.filter(x=>!x.ok);
+  if (allNews.length === 0) {
+    document.getElementById('errList').innerHTML =
+      feedLog.map(x=>`<div class="err-item ${x.ok?'err-ok':'err-fail'}">${x.ok?'✓':'✗'} ${esc(x.msg)}</div>`).join('');
+    document.getElementById('errPanel').style.display = 'block';
+  } else {
+    document.getElementById('errPanel').style.display = 'none';
+  }
+}
+
+function setLoading(on, msg, pct) {
+  const wrap = document.getElementById('loadWrap');
+  const btn  = document.getElementById('rfBtn');
+  const icon = document.getElementById('rfIcon');
+  wrap.style.display = on ? 'block' : 'none';
+  btn.disabled = on;
+  icon.className = on ? 'spin' : '';
+  icon.textContent = on ? '⟳' : '↻';
+  if (on) {
+    document.getElementById('loadMsg').textContent = msg || 'Loading…';
+    document.getElementById('loadFill').style.width = (pct||0) + '%';
+  }
+}
+
+// ══════════════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════════════
+function renderFeed() {
+  const show = allNews.filter(n => {
+    if (actTerm !== 'ALL' && n.term !== actTerm) return false;
+    if (actSent !== 'ALL' && n.sent !== actSent) return false;
+    return true;
+  });
+
+  const hi = actTerm !== 'ALL' ? actTerm : null;
+  const el = document.getElementById('feedItems');
+
+  if (!show.length) {
+    el.innerHTML = `<div class="feed-empty">
+      <div class="feed-empty-icon">◎</div>
+      <h3>${allNews.length ? 'No stories match this filter' : 'No news loaded'}</h3>
+      <p>${allNews.length ? 'Try a different term or sentiment.' : 'Click Refresh above to load news.'}</p>
+      ${!allNews.length && terms.length ? '<button class="start-btn" onclick="doRefresh()">↻ Load News Now</button>' : ''}
+    </div>`;
+    return;
+  }
+
+  el.innerHTML = show.map(n => {
+    const col    = COLORS[terms.indexOf(n.term) % COLORS.length] || '#0969da';
+    const sc     = SRC_COLORS[n.source] || '#57606a';
+    const sdot   = n.sent==='bull'?'#1a7f37':n.sent==='bear'?'#cf222e':'#8c959f';
+    const hlText = hi ? esc(n.title).replace(new RegExp(`(${hi.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'), '<mark>$1</mark>') : esc(n.title);
+    const data   = encodeURIComponent(JSON.stringify({title:n.title,summary:n.summary,link:n.link,source:n.source,term:n.term,age:n.age,isBreaking:n.isBreaking,sent:n.sent}));
+    const annTypeLabels = {results:'Results',dividend:'Dividend',board:'Board Mtg',filing:'Filing',other:'Exchange'};
+    const accentBorder = n.isAnnouncement ? `border-left:3px solid ${col};border-right:3px solid #1a73e8;` : '';
+    return `<div class="news-card" onclick="openCard('${data}')" style="${accentBorder}">
+      <div class="card-accent" style="background:${col}"></div>
+      <div class="sent-dot" style="background:${sdot}"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          ${n.isBreaking ? '<span class="breaking-tag">BREAKING</span>' : ''}
+          ${n.isAnnouncement ? `<span class="ann-feed-badge ${n.annType||'other'}">📢 ${annTypeLabels[n.annType||'other']}</span>` : ''}
+          <span class="src-badge" style="color:${sc}">${esc(n.source)}</span>
+          <span class="term-tag" style="color:${col};border-color:${col}30;background:${col}12">${esc(n.term)}</span>
+          <span class="card-time">${esc(n.age)}</span>
+        </div>
+        <div class="card-hl">${hlText}</div>
+        ${n.summary ? `<div class="card-sum">${esc(n.summary)}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // filter bar stats
+  const fs = document.querySelector('.feed-stats');
+  if (fs) fs.textContent = `${show.length} stories`;
+}
+
+function renderSidebar() {
+  const list = document.getElementById('termsList');
+  list.innerHTML = terms.map((t,i) => {
+    const col   = COLORS[i % COLORS.length];
+    const count = allNews.filter(n=>n.term===t).length;
+    return `
+    <div class="term-pill ${actTerm===t?'active':''}"
+         draggable="true"
+         data-idx="${i}"
+         onclick="setTerm('${esc(t)}')"
+         ondragstart="onDragStart(event,${i})"
+         ondragover="onDragOver(event)"
+         ondragleave="onDragLeave(event)"
+         ondrop="onDrop(event,${i})"
+         ondragend="onDragEnd(event)"
+         style="border-left:3px solid ${col}">
+      <span class="drag-handle" title="Drag to reorder" onclick="event.stopPropagation()">⠿</span>
+      <div class="tc" style="background:${col}"></div>
+      <span class="tl" title="${esc(t)}">${esc(t)}</span>
+      <span class="tn">${count}</span>
+      <button class="tr-btn" onclick="event.stopPropagation();rmTerm('${esc(t)}')" title="Remove">×</button>
+    </div>
+    <div class="insert-row" id="ins-${i}">
+      <input class="insert-input" placeholder="Insert term here…" maxlength="40"
+        onkeydown="if(event.key==='Enter'){insertTermAt(${i+1},this.value);this.value='';}"
+        onclick="event.stopPropagation()">
+      <button class="insert-btn" title="Insert after"
+        onclick="event.stopPropagation();const inp=this.previousElementSibling;insertTermAt(${i+1},inp.value);inp.value=''">+</button>
+    </div>`;
+  }).join('');
+  document.getElementById('tcnt').textContent = `(${terms.length}/30)`;
+  document.getElementById('addBtn').disabled = terms.length >= 30;
+  document.getElementById('suggestSec').style.display = terms.length === 0 ? 'block' : 'none';
+  document.getElementById('sentSec').style.display = allNews.length ? 'block' : 'none';
+  if (allNews.length) updateSentMeter();
+
+  const fb = document.getElementById('filterBar');
+  if (!terms.length) {
+    fb.innerHTML = '<span style="font-size:12px;color:var(--hint)">Add search terms to start</span>';
+  } else {
+    const tags = ['ALL',...terms].map(t => {
+      const col  = t==='ALL' ? null : COLORS[terms.indexOf(t) % COLORS.length];
+      const on   = actTerm === t;
+      const stl  = t==='ALL'
+        ? `background:${on?'var(--text)':'var(--surface)'};color:${on?'#fff':'var(--dim)'};border:1px solid ${on?'var(--text)':'var(--border)'}`
+        : `background:${on?col+'20':'transparent'};color:${on?col:'var(--dim)'};border:1px solid ${on?col:col+'40'}`;
+      return `<button class="ftag" style="${stl}" onclick="setTerm('${esc(t)}')">${esc(t==='ALL'?'All topics':t)}</button>`;
+    });
+    fb.innerHTML = tags.join('') + '<span class="feed-stats" style="margin-left:auto;font-size:11px;color:var(--hint)">'+allNews.length+' stories</span>';
+  }
+}
+
+// ══════════════════════════════════════════════
+// TERM MANAGEMENT
+// ══════════════════════════════════════════════
+function addTerm() {
+  const v = document.getElementById('ti').value.trim();
+  if (!v || terms.includes(v) || terms.length >= 30) return;
+  terms.push(v);
+  save();
+  document.getElementById('ti').value = '';
+  renderSidebar();
+}
+function insertTermAt(idx, val) {
+  const v = (val||'').trim();
+  if (!v || terms.includes(v) || terms.length >= 30) return;
+  terms.splice(idx, 0, v);
+  save();
+  renderSidebar();
+}
+function rmTerm(t) {
+  terms = terms.filter(x=>x!==t);
+  allNews = allNews.filter(n=>n.term!==t);
+  if (actTerm===t) actTerm='ALL';
+  save();
+  renderFeed(); renderSidebar();
+}
+function addSug(t) { if (!terms.includes(t)&&terms.length<30){terms.push(t);save();renderSidebar();} }
+function save()  { localStorage.setItem('nt2_terms', JSON.stringify(terms)); }
+function setTerm(t) { actTerm=t; renderFeed(); renderSidebar(); }
+
+// ── DRAG AND DROP REORDER ──
+let dragIdx = null;
+function onDragStart(e, idx) {
+  dragIdx = idx;
+  e.target.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', idx);
+}
+function onDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  const pill = e.currentTarget;
+  pill.classList.add('drag-over');
+}
+function onDragLeave(e) {
+  e.currentTarget.classList.remove('drag-over');
+}
+function onDrop(e, dropIdx) {
+  e.preventDefault();
+  e.currentTarget.classList.remove('drag-over');
+  if (dragIdx === null || dragIdx === dropIdx) return;
+  const moved = terms.splice(dragIdx, 1)[0];
+  terms.splice(dropIdx, 0, moved);
+  dragIdx = null;
+  save();
+  renderSidebar();
+}
+function onDragEnd(e) {
+  e.target.classList.remove('dragging');
+  document.querySelectorAll('.term-pill').forEach(p => p.classList.remove('drag-over'));
+  dragIdx = null;
+}
+function setSent(s) {
+  actSent = s;
+  renderFeed();
+  updateSentMeter();
+}
+
+function updateSentMeter() {
+  // Get the relevant subset of news based on active term
+  const subset = actTerm === 'ALL' ? allNews : allNews.filter(n => n.term === actTerm);
+  const bull = subset.filter(n => n.sent === 'bull').length;
+  const bear = subset.filter(n => n.sent === 'bear').length;
+  const neut = subset.filter(n => n.sent === 'neut').length;
+  const total = bull + bear + neut || 1;
+
+  const bullP = Math.round(bull / total * 100);
+  const bearP = Math.round(bear / total * 100);
+  const neutP = 100 - bullP - bearP;
+
+  // Update scope label
+  document.getElementById('sentScope').textContent =
+    actTerm === 'ALL' ? `All topics · ${subset.length} stories` : `"${actTerm}" · ${subset.length} stories`;
+
+  // Update bar segments
+  document.getElementById('sb-bull').style.width = bullP + '%';
+  document.getElementById('sb-bear').style.width = bearP + '%';
+  document.getElementById('sb-neut').style.width = neutP + '%';
+
+  // Add text to segments if wide enough
+  document.getElementById('sb-bull').textContent = bullP >= 15 ? bullP + '%' : '';
+  document.getElementById('sb-bear').textContent = bearP >= 15 ? bearP + '%' : '';
+  document.getElementById('sb-neut').textContent = neutP >= 15 ? neutP + '%' : '';
+
+  // Update active state on bar segments
+  ['bull','bear','neut'].forEach(s => {
+    document.getElementById('sb-' + s).classList.toggle('active', actSent === s);
+    document.getElementById('sl-' + s).classList.toggle('active', actSent === s);
+  });
+
+  // Update legend numbers
+  document.getElementById('sn-bull').textContent = bull;
+  document.getElementById('sn-bear').textContent = bear;
+  document.getElementById('sn-neut').textContent = neut;
+  document.getElementById('sp-bull').textContent = bullP + '%';
+  document.getElementById('sp-bear').textContent = bearP + '%';
+  document.getElementById('sp-neut').textContent = neutP + '%';
+
+  // Show/hide "Show all" button
+  document.getElementById('sentAllBtn').classList.toggle('active', actSent === 'ALL');
+  document.getElementById('sentAllBtn').textContent = actSent === 'ALL' ? '● All showing' : 'Show all';
+}
+
+// ══════════════════════════════════════════════
+// MODAL
+// ══════════════════════════════════════════════
+function openCard(encoded) {
+  const n   = JSON.parse(decodeURIComponent(encoded));
+  const col = n.term ? (COLORS[terms.indexOf(n.term) % COLORS.length] || '#0969da') : '#0969da';
+  const sc  = SRC_COLORS[n.source] || '#57606a';
+  document.getElementById('mMeta').innerHTML =
+    `${n.isBreaking?'<span class="breaking-tag">BREAKING</span>':''}
+     ${n.annType ? `<span class="ann-feed-badge ${n.annType}" style="font-size:10px">${{results:'Results',dividend:'Dividend',board:'Board Mtg',filing:'Filing',other:'Corp'}[n.annType]||'Corp'}</span>` : ''}
+     <span class="src-badge" style="color:${sc}">${esc(n.source)}</span>
+     <span style="font-size:11px;color:var(--hint)">${esc(n.age||'')}</span>`;
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mSum').textContent   = n.summary || 'Click "Read full article" to see the complete story.';
+  document.getElementById('mTerm').innerHTML    = n.term
+    ? `<span style="padding:2px 8px;border-radius:3px;border:1px solid ${col}35;color:${col};font-size:12px">${esc(n.term)}</span>`
+    : '';
+  document.getElementById('mLink').href         = n.link || '#';
+  document.getElementById('modal').querySelector('.modal').style.borderTop = `3px solid ${col}`;
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal() { document.getElementById('modal').style.display='none'; }
+
+
+// ══════════════════════════════════════════════
+// AI — Groq API (100% free, direct browser CORS, no proxy needed)
+// Get free key at console.groq.com/keys
+// ══════════════════════════════════════════════
+function saveKey() {
+  const k = document.getElementById('aiKey').value.trim();
+  if (k) {
+    localStorage.setItem('nt_groqkey', k);
+    const saved = document.getElementById('keySaved');
+    saved.style.display = 'inline';
+    setTimeout(() => saved.style.display = 'none', 2000);
+  }
+}
+
+async function askAI() {
+  const q = document.getElementById('aiIn').value.trim();
+  if (!q) return;
+
+  const apiKey = document.getElementById('aiKey').value.trim()
+               || localStorage.getItem('nt_groqkey') || '';
+
+  if (!apiKey) {
+    document.getElementById('aiText').innerHTML =
+      'Paste your free Groq API key below. Get one in 30 seconds at <a href="https://console.groq.com/keys" target="_blank" style="color:#0969da">console.groq.com/keys</a> — no credit card needed.';
+    document.getElementById('aiBox').style.display = 'block';
+    document.getElementById('aiKey').focus();
+    return;
+  }
+
+  const btn = document.getElementById('aiBtn');
+  btn.disabled = true; btn.textContent = '…';
+
+  // Scope headlines to active term filter
+  const subset = actTerm === 'ALL' ? allNews : allNews.filter(n => n.term === actTerm);
+  const ctx = subset.slice(0, 15).map(n => `• ${n.title} (${n.source}, ${n.age})`).join('\n')
+            || 'No news loaded yet.';
+
+  try {
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type':  'application/json',
+        'Authorization': 'Bearer ' + apiKey,
+      },
+      body: JSON.stringify({
+        model:      'llama-3.1-8b-instant',
+        max_tokens: 400,
+        messages: [
+          {
+            role:    'system',
+            content: `You are a sharp financial news analyst. The user tracks: ${terms.join(', ')}. Be direct, specific, under 5 sentences. Reference the news headlines when relevant.`
+          },
+          {
+            role:    'user',
+            content: `Current headlines:\n${ctx}\n\nQuestion: ${q}`
+          }
+        ]
+      })
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err?.error?.message || `HTTP ${res.status}`);
+    }
+
+    const d = await res.json();
+    document.getElementById('aiText').textContent =
+      d.choices?.[0]?.message?.content || 'No response.';
+    document.getElementById('aiBox').style.display = 'block';
+    document.getElementById('aiIn').value = '';
+
+  } catch(e) {
+    document.getElementById('aiText').textContent =
+      `Error: ${e.message}. Check your Groq API key and try again.`;
+    document.getElementById('aiBox').style.display = 'block';
+  }
+
+  btn.disabled = false; btn.textContent = 'Ask AI →';
+}
+
+function closeAI() { document.getElementById('aiBox').style.display = 'none'; }
+
+// ══════════════════════════════════════════════
+// PULL TO REFRESH
+// ══════════════════════════════════════════════
+
+
+// ══════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════
+// ══════════════════════════════════════════════
+// TRENDING — Global & India
+// Sources: Google Trends RSS, Reddit JSON, Google News RSS
+// ══════════════════════════════════════════════
+
+async function fetchGNewsRSS(rssUrl) {
+  const freshUrl = rssUrl + (rssUrl.includes('?') ? '&' : '?') + '_t=' + Date.now();
+  try {
+    const proxied = `https://corsproxy.io/?${encodeURIComponent(freshUrl)}`;
+    const r = await fetch(proxied, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const text = await r.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, 'text/xml');
+    const items = [...xml.querySelectorAll('item')];
+    const nowG = Date.now() / 1000;
+    return items.slice(0, 15).map((it, i) => {
+      const title   = it.querySelector('title')?.textContent?.trim() || '';
+      const link    = it.querySelector('link')?.textContent?.trim() || '#';
+      const src     = it.querySelector('source')?.textContent?.trim() || 'Google News';
+      const pubDate = it.querySelector('pubDate')?.textContent?.trim() || '';
+      const ageSec  = pubDate ? (nowG - new Date(pubDate).getTime()/1000) : 0;
+      return { title, traffic: src, link, pubDate, news: [], src: 'gnews', rank: i + 1, ageSeconds: ageSec };
+    }).filter(x => x.title);
+  } catch(e) { return []; }
+}
+
+async function fetchTrendsRSS(geo) {
+  const url = `https://trends.google.com/trends/trendingsearches/daily/rss?geo=${geo}&_t=${Date.now()}`;
+  try {
+    const proxied = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+    const r = await fetch(proxied, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const text = await r.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, 'text/xml');
+    const items = [...xml.querySelectorAll('item')];
+    const now = Date.now() / 1000;
+    return items.map((it, i) => {
+      const title    = it.querySelector('title')?.textContent?.trim() || '';
+      const traffic  = it.querySelector('approx_traffic')?.textContent?.trim() || '';
+      const link     = it.querySelector('link')?.textContent?.trim() || `https://trends.google.com/trends/explore?q=${encodeURIComponent(title)}`;
+      const news     = [...it.querySelectorAll('news_item_title')].map(n => n.textContent.trim()).slice(0, 2);
+      const pubDate  = it.querySelector('pubDate')?.textContent?.trim() || '';
+      const ageSec   = pubDate ? (now - new Date(pubDate).getTime()/1000) : 0;
+      return { title, traffic, link, news, src: 'gtrends', rank: i + 1, ageSeconds: ageSec };
+    }).filter(x => x.title);
+  } catch(e) { return []; }
+}
+
+async function fetchRedditNew(sub) {
+  // /new endpoint gives most recent posts — better for dynamic intel
+  try {
+    const r = await fetch(`https://www.reddit.com/r/${sub}/new.json?limit=10&raw_json=1&_t=${Date.now()}`, {
+      headers: { 'Accept': 'application/json' },
+      cache: 'no-store',
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    const now = Date.now() / 1000;
+    return (d?.data?.children || [])
+      .map((c, i) => ({
+        title:      c.data.title,
+        traffic:    `↑ ${c.data.score.toLocaleString()}`,
+        link:       `https://reddit.com${c.data.permalink}`,  // always use permalink - avoids broken external URLs
+        news:       [],
+        src:        'reddit',
+        rank:       i + 1,
+        sub:        sub,
+        pubDate:    new Date(c.data.created_utc * 1000).toUTCString(),
+        ageSeconds: now - c.data.created_utc,
+      }))
+      .filter(x => x.title && !x.title.startsWith('['));
+  } catch(e) { return []; }
+}
+
+async function fetchRedditHot(sub) {
+  try {
+    const r = await fetch(`https://www.reddit.com/r/${sub}/hot.json?limit=15&raw_json=1&_t=${Date.now()}`, {
+      headers: { 'Accept': 'application/json' },
+      cache: 'no-store',
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    const now = Date.now() / 1000;
+    return (d?.data?.children || [])
+      .map((c, i) => ({
+        title:      c.data.title,
+        traffic:    `↑ ${c.data.score.toLocaleString()}`,
+        link:       `https://reddit.com${c.data.permalink}`,  // always use permalink - avoids broken external URLs
+        news:       [],
+        src:        'reddit',
+        rank:       i + 1,
+        sub:        sub,
+        pubDate:    new Date(c.data.created_utc * 1000).toUTCString(),
+        ageSeconds: now - c.data.created_utc,
+      }))
+      .filter(x => x.title && !x.title.startsWith('['));
+  } catch(e) { return []; }
+}
+
+async function fetchGNewsTop(geo, lang) {
+  const url = `https://news.google.com/rss?hl=${lang}&gl=${geo}&ceid=${geo}:${lang.split('-')[0]}&_t=${Date.now()}`;
+  try {
+    const proxied = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+    const r = await fetch(proxied, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const text = await r.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, 'text/xml');
+    const items = [...xml.querySelectorAll('item')];
+    const nowT  = Date.now() / 1000;
+    return items.slice(0, 15).map((it, i) => {
+      const title   = it.querySelector('title')?.textContent?.trim() || '';
+      const link    = it.querySelector('link')?.textContent?.trim() || '#';
+      const src     = it.querySelector('source')?.textContent?.trim() || 'Google News';
+      const pubDate = it.querySelector('pubDate')?.textContent?.trim() || '';
+      const ageSec  = pubDate ? (nowT - new Date(pubDate).getTime()/1000) : 0;
+      return { title, traffic: src, link, pubDate, news: [], src: 'gnews', rank: i + 1, ageSeconds: ageSec };
+    }).filter(x => x.title);
+  } catch(e) { return []; }
+}
+
+// ══════════════════════════════════════════════
+// BSE & NSE ANNOUNCEMENTS
+// Via Google News RSS search — reliable, no auth needed
+// ══════════════════════════════════════════════
+const ANN_KEYWORDS = {
+  results:  ['q1','q2','q3','q4','quarterly','results','profit','revenue','earnings','net profit','pat','ebitda'],
+  dividend: ['dividend','interim dividend','final dividend','buyback','bonus shares','rights issue','stock split'],
+  board:    ['board meeting','board of directors','agm','egm','annual general','extraordinary general'],
+  filing:   ['filing','regulatory','sebi','disclosure','shareholding','insider','pledge','block deal'],
+};
+
+function annType(title) {
+  const t = (title||'').toLowerCase();
+  if (ANN_KEYWORDS.results.some(k=>t.includes(k)))  return 'results';
+  if (ANN_KEYWORDS.dividend.some(k=>t.includes(k))) return 'dividend';
+  if (ANN_KEYWORDS.board.some(k=>t.includes(k)))    return 'board';
+  if (ANN_KEYWORDS.filing.some(k=>t.includes(k)))   return 'filing';
+  return 'other';
+}
+
+function annExchange(title, source) {
+  const t = ((title||'')+(source||'')).toLowerCase();
+  if (t.includes('nse') && t.includes('bse')) return 'both';
+  if (t.includes('nse')) return 'nse';
+  if (t.includes('bse')) return 'bse';
+  return 'both';
+}
+
+async function loadAnnouncements() {
+  const el    = document.getElementById('annList');
+  const badge = document.getElementById('annBadge');
+  el.innerHTML = '<div class="trend-loading">Fetching live exchange filings…</div>';
+
+  function annAge(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return '';
+    const s = Math.floor((Date.now() - d.getTime()) / 1000);
+    if (s < 60)    return 'just now';
+    if (s < 3600)  return Math.floor(s/60)+'m ago';
+    if (s < 86400) return Math.floor(s/3600)+'h ago';
+    return Math.floor(s/86400)+'d ago';
+  }
+
+  function filingType(text) {
+    const t = (text||'').toLowerCase();
+    if (/dividend|buyback|bonus|rights|split/.test(t))                 return 'dividend';
+    if (/result|profit|revenue|earnings|q[1-4]|quarterly|pat/.test(t)) return 'results';
+    if (/board meeting|agm|egm|annual general/.test(t))                return 'board';
+    if (/insider|promoter|stake|pledge|bulk|block deal/.test(t))       return 'insider';
+    return 'filing';
+  }
+
+  // Proxy fallback chain for NSE (needs session bypass)
+  async function fetchWithProxy(url, type) {
+    const proxies = [
+      'https://corsproxy.io/?' + encodeURIComponent(url),
+      'https://api.allorigins.win/raw?url=' + encodeURIComponent(url),
+      'https://corsproxy.org/?' + encodeURIComponent(url),
+      'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(url),
+    ];
+    for (const proxy of proxies) {
+      try {
+        const r = await fetch(proxy + '&_t=' + Date.now(), {
+          cache: 'no-store',
+          signal: AbortSignal.timeout(6000)
+        });
+        if (!r.ok) continue;
+        const text = await r.text();
+        if (!text || text.length < 100) continue;
+        if (text.includes('403') || text.includes('Forbidden') || text.includes('blocked')) continue;
+        return text;
+      } catch(e) { continue; }
+    }
+    return null;
+  }
+
+  const tagLabels = {results:'Results',dividend:'Dividend',board:'Board Mtg',filing:'Filing',insider:'Insider'};
+  const tagColors = {results:'#1e6f32',dividend:'#c5221f',board:'#1a73e8',filing:'#f57f17',insider:'#4527a0'};
+  const tagBg     = {results:'#e6f4ea',dividend:'#fce8e6',board:'#e8f0fe',filing:'#fff8e1',insider:'#ede7f6'};
+
+  let allItems = [];
+  const seen = new Set();
+
+  function addItem(title, link, source, dateStr, category) {
+    if (!title || title.length < 5) return;
+    const key = title.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,60);
+    if (seen.has(key)) return;
+    seen.add(key);
+    const d = new Date(dateStr);
+    allItems.push({
+      title, link: link||'#', source,
+      ts: isNaN(d) ? 0 : d.getTime(),
+      type: category || filingType(title),
+      age: annAge(dateStr)
+    });
+  }
+
+  function parseRSS(text, sourceName, defaultType) {
+    try {
+      const xml = new DOMParser().parseFromString(text, 'text/xml');
+      [...xml.querySelectorAll('item')].slice(0, 30).forEach(it => {
+        const title = stripHtml(it.querySelector('title')?.textContent || '').trim();
+        const link  = it.querySelector('link')?.textContent?.trim() || '#';
+        const dt    = it.querySelector('pubDate')?.textContent?.trim() || '';
+        if (title) addItem(title, link, sourceName, dt, defaultType || filingType(title));
+      });
+    } catch(e) {}
+  }
+
+  // ── SOURCE 1: NSE RSS feeds (9 specific feeds from nseindia.com/static/rss-feed) ──
+  const nseFeedsBase = 'https://www.nseindia.com/live_market/dynaContent/live_watch/live_index_watch/rss/';
+  const nseFeeds = [
+    { file: 'NSE_Corp_Announce.xml', type: 'filing',   label: 'NSE Announcements' },
+    { file: 'NSE_Results.xml',       type: 'results',  label: 'NSE Results'        },
+    { file: 'NSE_Dividends.xml',     type: 'dividend', label: 'NSE Dividends'      },
+    { file: 'NSE_BoardMeeting.xml',  type: 'board',    label: 'NSE Board Meetings' },
+    { file: 'NSE_InsiderTrading.xml',type: 'insider',  label: 'NSE Insider'        },
+    { file: 'NSE_Buyback.xml',       type: 'dividend', label: 'NSE Buyback'        },
+    { file: 'NSE_Bonus.xml',         type: 'dividend', label: 'NSE Bonus'          },
+    { file: 'NSE_RightsIssue.xml',   type: 'dividend', label: 'NSE Rights Issue'   },
+    { file: 'NSE_AGMEGM.xml',        type: 'board',    label: 'NSE AGM/EGM'        },
+  ];
+
+  await Promise.all(nseFeeds.map(async feed => {
+    try {
+      const text = await fetchWithProxy(nseFeedsBase + feed.file, feed.type);
+      if (text) parseRSS(text, feed.label, feed.type);
+    } catch(e) {}
+  }));
+
+  // ── SOURCE 2: BSE Public JSON API (direct BSE filings, ~2-5 min lag) ──
+  try {
+    const bseUrl = 'https://api.bseindia.com/BseIndiaAPI/api/Announcement/w?strCat=-1&strPrevDate=&strScrip=&strSearch=P&strToDate=&strType=C&page=1';
+    const r = await fetch('https://corsproxy.io/?' + encodeURIComponent(bseUrl), {
+      cache: 'no-store', signal: AbortSignal.timeout(8000)
+    });
+    if (r.ok) {
+      const d = await r.json();
+      const rows = d.Table || d.table || d.data || [];
+      rows.slice(0, 40).forEach(row => {
+        const title = (row.HEADLINE || row.headline || row.Subject || '').trim();
+        const scrip = (row.SCRIP_NAME || row.scrip_name || row.ShortName || '').trim();
+        const dt    = row.DissemDT || row.dissemdt || row.Dt || '';
+        const cat   = (row.CATEGORYNAME || row.categoryname || '').toLowerCase();
+        const attch = row.ATTACHMENTNAME || row.attachmentname || '';
+        const link  = attch
+          ? `https://www.bseindia.com/xml-data/corpfiling/AttachLive/${attch}`
+          : `https://www.bseindia.com/corporates/ann.html?scrip=${row.SCRIP_CD||''}`;
+        const full  = scrip ? `${scrip}: ${title}` : title;
+        const type  = /dividend|buyback|bonus|rights/.test(cat) ? 'dividend'
+                    : /result|financial/.test(cat)               ? 'results'
+                    : /board/.test(cat)                          ? 'board'
+                    : /insider|bulk|block/.test(cat)             ? 'insider'
+                    : 'filing';
+        addItem(full, link, 'BSE Direct', dt, type);
+      });
+    }
+  } catch(e) {}
+
+  // ── SOURCE 3: Google News RSS — NSE filings ──
+  try {
+    const url = 'https://news.google.com/rss/search?q=NSE+corporate+announcement+filing+India&hl=en-IN&gl=IN&ceid=IN:en&_t=' + Date.now();
+    const text = await fetchWithProxy(url);
+    if (text) parseRSS(text, 'NSE/Google News', null);
+  } catch(e) {}
+
+  // ── SOURCE 4: Google News RSS — BSE filings ──
+  try {
+    const url = 'https://news.google.com/rss/search?q=BSE+results+dividend+board+meeting+India&hl=en-IN&gl=IN&ceid=IN:en&_t=' + Date.now();
+    const text = await fetchWithProxy(url);
+    if (text) parseRSS(text, 'BSE/Google News', null);
+  } catch(e) {}
+
+  // ── SOURCE 5: Moneycontrol Corporate Announcements RSS ──
+  try {
+    const text = await fetchWithProxy('https://www.moneycontrol.com/rss/corporateannouncements.xml');
+    if (text) parseRSS(text, 'Moneycontrol', null);
+  } catch(e) {}
+
+  // ── SOURCE 6: ET Markets Stocks RSS ──
+  try {
+    const text = await fetchWithProxy('https://economictimes.indiatimes.com/markets/stocks/rssfeeds/2146842.cms');
+    if (text) parseRSS(text, 'ET Markets', null);
+  } catch(e) {}
+
+  // ── SOURCE 7: LiveMint Companies RSS ──
+  try {
+    const text = await fetchWithProxy('https://www.livemint.com/rss/companies');
+    if (text) parseRSS(text, 'LiveMint', null);
+  } catch(e) {}
+
+  // ── RENDER — sort newest first ──
+  allItems.sort((a, b) => (b.ts||0) - (a.ts||0));
+  badge.textContent = allItems.length || '—';
+
+  if (!allItems.length) {
+    el.innerHTML = '<div class="trend-err">No filings found. Tap Refresh to try again.</div>';
+    return;
+  }
+
+  el.innerHTML = allItems.map(item => {
+    const type    = item.type || 'filing';
+    const col     = tagColors[type] || '#5f6368';
+    const bg      = tagBg[type]    || '#f1f3f4';
+    const safeUrl = item.link?.startsWith('http') ? item.link : '#';
+    const cardData = encodeURIComponent(JSON.stringify({
+      title: item.title, summary: '', link: safeUrl,
+      source: item.source, term: 'Exchange', age: item.age || '',
+      isBreaking: false, sent: 'neutral', annType: type
+    }));
+    return `<div class="ann-item" onclick="openCard('${cardData}')">
+      <span class="ann-tag ${type}" style="background:${bg};color:${col};border:1px solid ${col}40">${tagLabels[type]||'Filing'}</span>
+      <div class="ann-body">
+        <div class="ann-title">${esc(item.title)}</div>
+        <div class="ann-meta">
+          <span style="font-size:10px;color:#57606a">${esc(item.source)}</span>
+          ${item.age ? `<span style="font-size:10px;color:#8c959f;margin-left:4px">${esc(item.age)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+
+const INTEL_TAGS = {
+  upgrade:  ['upgrade','buy rating','outperform','overweight','strong buy',' add ','accumulate','positive on'],
+  downgrade:['downgrade','sell rating','underperform','underweight','reduce','negative on','avoid'],
+  target:   ['target price','price target','tp ','pt ','upside of','downside of','₹','fair value'],
+  research: ['initiating coverage','research report','analyst note','brokerage','broker report','coverage'],
+  macro:    ['rbi rate','fed rate','inflation forecast','gdp forecast','policy outlook','rate cut','rate hike','monetary'],
+  fo:       ['f&o','options','put call','open interest','pcr','expiry','put writing','call writing','short covering'],
+  flow:     ['fii buying','dii buying','fii selling','bulk deal','block deal','institutional buying','promoter buy','promoter increase'],
+  insider:  ['insider buy','promoter buying','creeping acquisition','stake hike','increasing stake'],
+  risk:     ['red flag','warning signal','caution','risk ahead','bubble','overbought','overvalued'],
+  chatter:  ['rumour','whisper','buzz','sources say','reportedly','could announce','expected to announce'],
+};
+
+const INTEL_FORWARD = [
+  'expect','forecast','project','predict','target','upgrade','downgrade','will','next',
+  'outlook','before','likely','potential','could','should','estimate','guidance','anticipate',
+  'upcoming','ahead','prepare','watch','position','bet','play','opportunity','set to',
+  'poised','on track','may','might','hint','signal','suggest','indicate'
+];
+
+const INTEL_SOURCE_STRENGTH = {
+  'Seeking Alpha':4, 'Motley Fool':4, 'Reuters':4, 'Bloomberg':5,
+  'ET Markets':3, 'Moneycontrol':3, 'LiveMint':3, 'Business Standard':3,
+  'Reddit':2, 'Google News':2,
+};
+
+function intelTag(title) {
+  const t = (title||'').toLowerCase();
+  for (const [tag, kws] of Object.entries(INTEL_TAGS)) {
+    if (kws.some(k => t.includes(k))) return tag;
+  }
+  return 'chatter';
+}
+
+function intelHorizon(title) {
+  const t = (title||'').toLowerCase();
+  if (/intraday|today|session|open|close/.test(t))          return 'today';
+  if (/this week|next week|monday|tuesday|wednesday|thursday|friday/.test(t)) return 'week';
+  if (/q[1-4]|quarter|fy\d|this year|next year|annual|12 month|52.week/.test(t)) return 'quarter';
+  if (/long.term|multi.year|2025|2026|2027|decade/.test(t)) return 'longterm';
+  return 'week'; // default
+}
+
+function intelSignal(source, tag) {
+  const base = INTEL_SOURCE_STRENGTH[source] || 2;
+  const boost = ['upgrade','downgrade','target','research','insider','flow'].includes(tag) ? 1 : 0;
+  return Math.min(5, base + boost);
+}
+
+function isForwardLooking(title, desc) {
+  const t = ((title||'') + ' ' + (desc||'')).toLowerCase();
+  return INTEL_FORWARD.some(k => t.includes(k)) ||
+         Object.values(INTEL_TAGS).flat().some(k => t.includes(k));
+}
+
+function renderIntelItem(item) {
+  const tag      = intelTag(item.title);
+  const horizon  = intelHorizon(item.title);
+  const strength = intelSignal(item.source, tag);
+  const hLabels  = { today:'Today', week:'This week', quarter:'Quarter', longterm:'Long term' };
+  const hClass   = { today:'today', week:'week', quarter:'quarter', longterm:'longterm' };
+  const safeUrl  = item.link?.startsWith('http') ? item.link : '#';
+  const cardData = encodeURIComponent(JSON.stringify({
+    title: item.title, summary: item.summary || item.desc || '',
+    link: safeUrl, source: item.source || 'Intel',
+    term: '', age: item.age || '', isBreaking: false, sent: 'neutral',
+  }));
+  return `<div class="intel-item" onclick="openCard('${cardData}')">
+    <div class="intel-top">
+      <span class="intel-tag ${tag}">${tag.toUpperCase()}</span>
+      <span class="intel-horizon ${hClass[horizon]}">${hLabels[horizon]}</span>
+    </div>
+    <div class="intel-title">${esc(item.title)}</div>
+    <div class="intel-footer">
+      <span class="intel-source">${esc(item.source||'')}</span>
+      <span class="intel-source" style="color:var(--accent);font-weight:500">${item.age ? esc(item.age) : ''}</span>
+      <div class="intel-signal" title="Signal strength ${strength}/5">
+        ${[1,2,3,4,5].map(i => `<div class="intel-dot ${i<=strength?'on':'off'}"></div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+async function loadIntel() {
+  const el    = document.getElementById('intelList');
+  const badge = document.getElementById('intelBadge');
+  el.innerHTML = '<div class="trend-loading">Scanning intel sources…</div>';
+
+  // 16 sources in parallel for maximum depth
+  const [a,b,c,d,e2,f,g,h2,i2,j,k2,l,m,n2,o,p,q,r2,s2,t2] = await Promise.all([
+    // Analyst research & price targets
+    fetchGNewsRSS('https://news.google.com/rss/search?q=analyst+target+price+upgrade+downgrade+India+NSE&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=brokerage+report+buy+sell+hold+India+stock&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=initiating+coverage+research+India+BSE+NSE&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // Macro & policy outlook
+    fetchGNewsRSS('https://news.google.com/rss/search?q=RBI+rate+forecast+inflation+outlook+India+2025+2026&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=fed+rate+cut+hike+forecast+emerging+market+India&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // F&O & institutional flows
+    fetchGNewsRSS('https://news.google.com/rss/search?q=FII+DII+bulk+block+deal+India+institutional+buying&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=India+options+F%26O+open+interest+put+call+ratio&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // Earnings outlook & whispers
+    fetchGNewsRSS('https://news.google.com/rss/search?q=India+earnings+estimate+guidance+outlook+quarter&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=India+company+forecast+projection+next+quarter&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // Insider & promoter activity
+    fetchGNewsRSS('https://news.google.com/rss/search?q=promoter+buying+stake+increase+insider+India+NSE&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // Commodity & global macro
+    fetchGNewsRSS('https://news.google.com/rss/search?q=crude+oil+gold+forecast+outlook+next+week+India&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    // ET Markets & Seeking Alpha
+    fetchRSSasTrend('https://seekingalpha.com/market_currents.xml', 'Seeking Alpha').catch(()=>[]),
+    fetchRSSasTrend('https://economictimes.indiatimes.com/markets/stocks/rssfeeds/2146842.cms', 'ET Markets').catch(()=>[]),
+    // Reddit — hot AND new for freshness
+    fetchRedditHot('IndiaInvestments').catch(()=>[]),
+    fetchRedditHot('IndianStockMarket').catch(()=>[]),
+    fetchRedditHot('SecurityAnalysis').catch(()=>[]),
+    fetchRedditHot('investing').catch(()=>[]),
+    fetchRedditNew('IndiaInvestments').catch(()=>[]),
+    fetchRedditNew('IndianStockMarket').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=India+stock+market+analysis+outlook+today&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+    fetchGNewsRSS('https://news.google.com/rss/search?q=Nifty+outlook+tomorrow+prediction+support+resistance&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+  ]);
+
+  // Flatten and tag sources
+  const tagSource = (items, src) => items.map(x => ({...x, source: x.source||src}));
+  const raw = [
+    ...tagSource(a,'Google News'), ...tagSource(b,'Google News'),
+    ...tagSource(c,'Google News'), ...tagSource(d,'Google News'),
+    ...tagSource(e2,'Google News'),...tagSource(f,'Google News'),
+    ...tagSource(g,'Google News'), ...tagSource(h2,'Google News'),
+    ...tagSource(i2,'Google News'),...tagSource(j,'Google News'),
+    ...tagSource(k2,'Google News'),...tagSource(l,'Seeking Alpha'),
+    ...tagSource(m,'ET Markets'),  ...tagSource(n2,'Reddit'),
+    ...tagSource(o,'Reddit'),      ...tagSource(p,'Reddit'),
+    ...tagSource(q,'Reddit'),      ...tagSource(r2,'Reddit'),
+    ...tagSource(s2,'Reddit'),     ...tagSource(t2,'Google News'),
+  ];
+
+  // Deduplicate (no forward-looking filter — let tags classify all intel content)
+  const seen  = new Set();
+  const items = raw.filter(x => {
+    const k = (x.title||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,60);
+    if (!k || seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+
+  // Sort: newest first (chronological), tag priority as tiebreaker
+  const tagPriority = {upgrade:1,downgrade:1,target:2,research:2,insider:3,flow:3,fo:4,macro:4,risk:5,chatter:6};
+  // Pure chronological — newest first
+  items.sort((a, b) => (a.ageSeconds ?? 999999) - (b.ageSeconds ?? 999999));
+
+  badge.textContent = items.length || '—';
+
+  if (!items.length) {
+    el.innerHTML = '<div class="trend-err">No intel signals found. Try refreshing.</div>';
+    return;
+  }
+
+  el.innerHTML = items.map(item => renderIntelItem({
+    title:      item.title,
+    link:       item.link,
+    source:     item.source,
+    age:        item.ageSeconds > 0 ? (item.ageSeconds < 60 ? 'just now' : item.ageSeconds < 3600 ? Math.floor(item.ageSeconds/60)+'m ago' : item.ageSeconds < 86400 ? Math.floor(item.ageSeconds/3600)+'h ago' : Math.floor(item.ageSeconds/86400)+'d ago') : (item.pubDate ? fmtAge(item.pubDate) : ''),
+    ageSeconds: item.ageSeconds,
+    summary:    item.news?.join(' ') || '',
+    desc:       '',
+  })).join('');
+}
+
+async function loadTrending() {
+  document.getElementById('globalList').innerHTML = '<div class="trend-loading">Fetching global trends…</div>';
+  document.getElementById('indiaList').innerHTML  = '<div class="trend-loading">Fetching India business trends…</div>';
+
+  // ── GLOBAL (runs independently) ──
+  (async () => {
+    try {
+      const [gTrendsUS, redditWorld, redditNews, gnewsWorld] = await Promise.all([
+        fetchTrendsRSS('US'),
+        fetchRedditHot('worldnews'),
+        fetchRedditHot('news'),
+        fetchGNewsTop('US', 'en'),
+      ]);
+      const raw = [
+        ...gTrendsUS,
+        ...redditWorld.filter(x => isBizRelevant(x.title, '')),
+        ...redditNews.filter(x => isBizRelevant(x.title, '')),
+        ...gnewsWorld.filter(x => isBizRelevant(x.title, '')),
+      ];
+      const fallback = [...gTrendsUS, ...gnewsWorld];
+      const items = mergeTrending(raw.length >= 5 ? raw : fallback, [], 20);
+      renderTrendList('globalList', 'gBadge', items, 'Could not load global trends. Try refreshing.');
+    } catch(e) {
+      document.getElementById('globalList').innerHTML = `<div class="trend-err">Error: ${e.message}</div>`;
+    }
+  })();
+
+  // ── INDIA BUSINESS (runs independently) ──
+  (async () => {
+    try {
+      // Fetch all sources in parallel — no early break
+      const [gnews1, gnews2, etMarkets, liveMint, gTrendsIN, redditInvest] = await Promise.all([
+        fetchGNewsRSS('https://news.google.com/rss/search?q=India+business+economy+markets+stocks&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+        fetchGNewsRSS('https://news.google.com/rss/search?q=Nifty+Sensex+RBI+India+finance&hl=en-IN&gl=IN&ceid=IN:en').catch(()=>[]),
+        fetchRSSasTrend('https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms', 'ET Markets').catch(()=>[]),
+        fetchRSSasTrend('https://www.livemint.com/rss/markets', 'LiveMint').catch(()=>[]),
+        fetchTrendsRSS('IN').catch(()=>[]),
+        fetchRedditHot('IndiaInvestments').catch(()=>[]),
+      ]);
+
+      const raw = [...gnews1, ...gnews2, ...etMarkets, ...liveMint, ...gTrendsIN, ...redditInvest];
+
+      // Business filter first — prefer biz content, fall back to all
+      const bizAll  = raw.filter(x => isBizRelevant(x.title, x.news?.join(' ') || ''));
+      const pool    = bizAll.length >= 5 ? bizAll : raw;
+
+      // Dedup + per-source cap (all reddit = 3 max, gtrends = 5, others = 4)
+      const seen2   = new Set();
+      const srcCnt2 = {};
+      const capOf   = k => k === 'reddit' ? 5 : k === 'gtrends' ? 7 : 999; // gnews uncapped
+
+      const deduped = pool.filter(x => {
+        const k = (x.title||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,60);
+        if (!k || seen2.has(k)) return false;
+        const srcKey = x.src === 'reddit'  ? 'reddit'
+                     : x.src === 'gtrends' ? 'gtrends'
+                     : x.traffic && x.traffic.length < 30 && !x.traffic.startsWith('↑')
+                       ? x.traffic
+                       : x.src || 'other';
+        if ((srcCnt2[srcKey] || 0) >= capOf(srcKey)) return false;
+        seen2.add(k);
+        srcCnt2[srcKey] = (srcCnt2[srcKey] || 0) + 1;
+        return true;
+      });
+
+      // Sort newest first
+      deduped.sort((a, b) => (a.ageSeconds ?? 999999) - (b.ageSeconds ?? 999999));
+      const final = deduped.slice(0, 20);
+
+      // Re-rank
+      const ranked = final.map((x, i) => ({ ...x, rank: i + 1 }));
+
+      renderTrendList('indiaList', 'iBadge', ranked, 'Could not load India trends. Try refreshing.');
+    } catch(e) {
+      document.getElementById('indiaList').innerHTML = `<div class="trend-err">Error: ${e.message}</div>`;
+    }
+  })();
+}
+
+// Helper: fetch a standard RSS feed and convert to trend format
+async function fetchRSSasTrend(url, sourceName) {
+  const items = await fetchRSS(url);
+  if (!items) return [];
+  const nowR = Date.now() / 1000;
+  return items.slice(0, 20).map((it, i) => {
+    const title   = (it.querySelector('title')?.textContent || '').trim();
+    const link    = it.querySelector('link')?.textContent?.trim() || '#';
+    const pubDate = it.querySelector('pubDate')?.textContent?.trim() || '';
+    const ageSec  = pubDate ? (nowR - new Date(pubDate).getTime() / 1000) : 0;
+    return { title, traffic: sourceName, link, news: [], src: 'gnews', rank: i + 1, ageSeconds: ageSec };
+  }).filter(x => x.title);
+}
+
+function mergeTrending(primary, secondary, limit = 20) {
+  const seen        = new Set();
+  const sourceCnt   = {};
+  const now         = Date.now() / 1000;
+
+  // Source caps raised so 20 items can be reached
+  const srcCap = (key) => key === 'reddit' ? 5 : key === 'gtrends' ? 7 : 999; // gnews sources uncapped (naturally diverse publishers)
+
+  const result = [];
+  const tryAdd = (item) => {
+    // Source key: ALL reddit = one group, gtrends = one group, named sources by traffic
+    const srcKey = item.src === 'reddit'  ? 'reddit'
+                 : item.src === 'gtrends' ? 'gtrends'
+                 : item.traffic && item.traffic.length < 30 && !item.traffic.startsWith('↑')
+                   ? item.traffic
+                   : item.src || 'other';
+
+    if ((sourceCnt[srcKey] || 0) >= srcCap(srcKey)) return false;
+
+    // Dedup
+    const key = (item.title||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0, 60);
+    if (!key || seen.has(key)) return false;
+
+    seen.add(key);
+    sourceCnt[srcKey] = (sourceCnt[srcKey] || 0) + 1;
+    result.push({ ...item, rank: result.length + 1 });
+    return true;
+  };
+
+  for (const item of [...primary, ...secondary]) {
+    if (result.length >= limit) break;
+    tryAdd(item);
+  }
+  // Sort newest first
+  result.sort((a, b) => (a.ageSeconds ?? 999999) - (b.ageSeconds ?? 999999));
+  return result.map((x, i) => ({ ...x, rank: i + 1 }));
+}
+
+function renderTrendList(containerId, badgeId, items, emptyMsg) {
+  const el = document.getElementById(containerId);
+  const badge = document.getElementById(badgeId);
+  badge.textContent = items.length ? `${items.length}` : '—';
+
+  if (!items.length) {
+    el.innerHTML = `<div class="trend-err">${emptyMsg}</div>`;
+    return;
+  }
+
+  el.innerHTML = items.map(item => {
+    const srcClass = item.src || 'gnews';
+    const srcLabel = item.src === 'gtrends' ? 'Google Trends'
+                   : item.src === 'reddit'  ? 'Reddit'
+                   : item.src === 'hn'      ? 'Hacker News'
+                   : (item.traffic && item.traffic.length < 30) ? item.traffic
+                   : 'News';
+    const isHot    = item.rank <= 3;
+    const safeUrl  = item.link && item.link.startsWith('http') ? item.link : `https://www.google.com/search?q=${encodeURIComponent(item.title)}`;
+    const summary  = item.news?.length ? item.news.join(' · ') : (item.traffic && item.src !== 'gtrends' ? item.traffic : '');
+    const cardData = encodeURIComponent(JSON.stringify({
+      title: item.title, summary, link: safeUrl, source: srcLabel,
+      term: '', age: item.src === 'gtrends' && item.traffic ? item.traffic : '',
+      isBreaking: false, sent: 'neutral',
+    }));
+    return `<div class="trend-item" onclick="openCard('${cardData}')">
+      <div class="trend-rank ${isHot ? 'top3' : ''}">${item.rank}</div>
+      <div class="trend-body">
+        <div class="trend-title" title="${esc(item.title)}">${esc(item.title)}</div>
+        <div class="trend-meta">
+          <span class="trend-src ${srcClass}">${esc(srcLabel)}</span>
+          ${item.src === 'gtrends' && item.traffic ? `<span class="trend-traffic">${esc(item.traffic)}</span>` : ''}
+          ${isHot ? '<span class="trend-hot">▲ Hot</span>' : ''}${item.ageSeconds > 0 ? `<span class="trend-traffic" style='margin-left:2px'>${item.ageSeconds<3600?Math.floor(item.ageSeconds/60)+'m':item.ageSeconds<86400?Math.floor(item.ageSeconds/3600)+'h':Math.floor(item.ageSeconds/86400)+'d'} ago</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// Unified filter: business, economy, company + events that impact them
+const BIZ_KEYWORDS = [
+  // Markets & macro
+  'economy','gdp','inflation','deflation','recession','rate','repo','interest',
+  'budget','fiscal','tax','gst','duty','tariff','trade','export','import','deficit',
+  'currency','forex','rupee','inr','dollar','yen','euro','pound','yuan',
+  'rbi','fed','ecb','boe','central bank','monetary','policy',
+  'sensex','nifty','bse','nse','nasdaq','dow','s&p','ftse','hang seng','nikkei',
+  'stock','share','equity','market','index','bull','bear','rally','crash','correction',
+  'ipo','listing','demat','sebi','sec','fii','fpi','dii','foreign invest',
+  'bond','yield','gilt','treasury','debt','credit rating','moody','fitch','s&p rating',
+  // Business & corporate
+  'profit','revenue','earnings','results','quarter','q1','q2','q3','q4','annual report',
+  'merger','acquisition','takeover','deal','investment','funding','valuation',
+  'startup','unicorn','vc','private equity','ipo','public offer',
+  'layoff','hiring','job','employment','unemployment','workforce',
+  'ceo','cfo','coo','chairman','board','founder','executive',
+  // Sectors & companies
+  'bank','nbfc','insurance','fintech','lending','credit','loan','npa','default',
+  'it sector','tech','software','ai','cloud','semiconductor','chip',
+  'pharma','drug','fda','clinical','biotech','healthcare','hospital',
+  'auto','ev','electric vehicle','battery','tesla','tata motors',
+  'oil','gas','energy','solar','wind','power','coal','mining','metal','steel','cement',
+  'telecom','spectrum','5g','jio','airtel','vi','vodafone',
+  'real estate','realty','housing','construction','infrastructure',
+  'fmcg','retail','e-commerce','amazon','flipkart','walmart',
+  'reliance','tata','adani','mahindra','bajaj','hdfc','icici','sbi','infosys','tcs',
+  'wipro','hcl','ongc','bpcl','iocl','ntpc','powergrid','l&t','itc','nestle',
+  // Events that impact markets
+  'war','conflict','sanction','missile','attack','tension','ceasefire','peace deal',
+  'election','government','parliament','policy','reform','regulation','ban','approve',
+  'monsoon','drought','flood','cyclone','earthquake','disaster','calamity','climate',
+  'pandemic','disease','outbreak','supply chain','shortage','port','logistics',
+  'opec','crude','oil price','natural gas','commodity','gold','silver','copper',
+  'china','us china','india china','russia','ukraine','middle east','iran','israel',
+  'wto','imf','world bank','g20','g7','davos','un','nato',
+];
+
+function isBizRelevant(title, desc) {
+  const t = ((title || '') + ' ' + (desc || '')).toLowerCase();
+  return BIZ_KEYWORDS.some(k => t.includes(k));
+}
+
+function init() {
+  document.getElementById('suggestList').innerHTML =
+    SUGGESTIONS.slice(0,20).map(s=>`<button class="suggest-btn" onclick="addSug('${esc(s)}')" >+ ${esc(s)}</button>`).join('');
+  const savedKey = localStorage.getItem('nt_groqkey');
+  if (savedKey) document.getElementById('aiKey').value = savedKey;
+  renderSidebar();
+  autoTmr = setInterval(()=>{ if(terms.length&&!loading) doRefresh(); }, 5*60*1000);
+  loadTrending();
+  loadAnnouncements();
+  loadIntel();
+  setInterval(loadTrending, 10*60*1000);
+  setInterval(loadAnnouncements, 10*60*1000);
+  setInterval(loadIntel, 12*60*1000);
+  if (terms.length) setTimeout(doRefresh, 500);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+
+
+
+
+
+
+
+
+
+// ══════════════════════════════════════════════
+// MOBILE UI — script2, runs after script1
+// Uses event delegation — NO inline onclick in generated HTML
+// ══════════════════════════════════════════════
+
+function setLoading(on, msg, pct) {
+  const wrap = document.getElementById('loadWrap');
+  const btn  = document.getElementById('rfBtn');
+  if (!wrap || !btn) return;
+  wrap.style.display = on ? 'block' : 'none';
+  btn.disabled = on;
+  btn.textContent = on ? '…' : '↻ Refresh';
+  if (on && pct !== undefined) {
+    const lm = document.getElementById('loadMsg');
+    const lf = document.getElementById('loadFill');
+    if (lm) lm.textContent = msg || '';
+    if (lf) lf.style.width = pct + '%';
+  }
+}
+
+function renderFeed() {
+  const filtered = allNews.filter(n => {
+    if (actTerm !== 'ALL' && n.term !== actTerm) return false;
+    if (actSent !== 'ALL' && n.sent !== actSent) return false;
+    return true;
+  });
+  const el = document.getElementById('feedItems');
+  if (!el) return;
+
+  if (!filtered.length) {
+    el.innerHTML = '<div class="feed-empty"><h3>' + (allNews.length ? 'No stories match' : 'No news yet') + '</h3><p>' + (allNews.length ? 'Try a different filter' : 'Tap Refresh to load') + '</p></div>';
+    if (!allNews.length) {
+      const btn = document.createElement('button');
+      btn.className = 'start-btn';
+      btn.textContent = '↻ Load News Now';
+      btn.addEventListener('click', doRefresh);
+      el.firstChild.appendChild(btn);
+    }
+    el.onclick = null;
+    mUpdateFilterTabs();
+    return;
+  }
+
+  const SRCC = {'ET Markets':'#c0392b','Moneycontrol':'#2980b9','LiveMint':'#e74c3c','Reuters':'#ff6600','Yahoo Finance':'#6001d2','Bloomberg':'#1c1c1c','Reddit':'#ff4500','Google News':'#4285f4','Business Standard':'#c0392b'};
+  const annLbl = {results:'Results',dividend:'Dividend',board:'Board Mtg',filing:'Filing',other:'Corp'};
+  const hi = actTerm !== 'ALL' ? actTerm : null;
+
+  el.innerHTML = filtered.map((n, idx) => {
+    const col  = COLORS[terms.indexOf(n.term) % COLORS.length] || '#0969da';
+    const sc   = SRCC[n.source] || '#57606a';
+    const sdot = n.sent==='bull'?'#1a7f37':n.sent==='bear'?'#cf222e':'#8c959f';
+    const hl   = hi ? esc(n.title).replace(new RegExp('(' + hi.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')','gi'),'<mark>$1</mark>') : esc(n.title);
+    return '<div class="news-card" data-ni="' + idx + '">'
+      + '<div class="card-accent" style="background:' + col + '"></div>'
+      + '<div class="sent-dot" style="background:' + sdot + '"></div>'
+      + '<div class="card-body"><div class="card-meta">'
+      + (n.isBreaking ? '<span class="breaking-tag">BREAKING</span>' : '')
+      + (n.annType ? '<span class="ann-feed-badge ' + (n.annType||'other') + '">' + (annLbl[n.annType]||'Corp') + '</span>' : '')
+      + '<span class="src-badge" style="color:' + sc + '">' + esc(n.source) + '</span>'
+      + '<span class="term-tag" style="color:' + col + ';border-color:' + col + '30;background:' + col + '12">' + esc(n.term) + '</span>'
+      + '<span class="card-time">' + esc(n.age) + '</span>'
+      + '</div><div class="card-hl">' + hl + '</div>'
+      + (n.summary ? '<div class="card-sum">' + esc(n.summary) + '</div>' : '')
+      + '</div></div>';
+  }).join('');
+
+  el.onclick = function(e) {
+    const card = e.target.closest('[data-ni]');
+    if (!card) return;
+    openCard(filtered[parseInt(card.dataset.ni)]);
+  };
+
+  mUpdateFilterTabs();
+  const bb = document.getElementById('breakBadge');
+  const brk = allNews.filter(n=>n.isBreaking).length;
+  if (bb) { bb.textContent = brk ? brk + ' breaking' : ''; bb.style.display = brk ? 'inline' : 'none'; }
+  const up = document.getElementById('updatedEl');
+  if (up) up.textContent = 'Updated ' + new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+}
+
+function renderSidebar() {
+  mRenderTermPills();
+  mUpdateFilterTabs();
+  const cnt = document.getElementById('termCount');
+  if (cnt) cnt.textContent = terms.length + '/30';
+  const ab = document.getElementById('addBtn');
+  if (ab) ab.disabled = terms.length >= 30;
+  const ss = document.getElementById('suggestSec');
+  if (ss) ss.style.display = terms.length === 0 ? 'block' : 'none';
+}
+
+function mRenderTermPills() {
+  const el = document.getElementById('termPills');
+  if (!el) return;
+  el.innerHTML = terms.map((t, i) => {
+    const col = COLORS[i % COLORS.length];
+    const cnt = allNews.filter(n => n.term === t).length;
+    return '<div class="mpill" style="border-color:' + col + '" data-term="' + esc(t) + '">'
+      + '<span class="mpill-dot" style="background:' + col + '"></span>'
+      + '<span class="mpill-label">' + esc(t) + '</span>'
+      + '<span class="mpill-cnt">' + cnt + '</span>'
+      + '<button class="mpill-del" data-del="' + esc(t) + '">×</button>'
+      + '</div>';
+  }).join('');
+  el.onclick = function(e) {
+    const delBtn = e.target.closest('[data-del]');
+    if (delBtn) { e.stopPropagation(); rmTerm(delBtn.dataset.del); return; }
+    const pill = e.target.closest('[data-term]');
+    if (pill) setMFilter(pill.dataset.term);
+  };
+}
+
+function mUpdateFilterTabs() {
+  const el = document.getElementById('filterTabs');
+  if (!el) return;
+  el.innerHTML = ['ALL', ...terms].map(t => {
+    const col = t === 'ALL' ? null : COLORS[terms.indexOf(t) % COLORS.length];
+    const on  = actTerm === t;
+    const bg  = t === 'ALL' ? (on ? '#1a2332' : '#f0f2f5') : (on ? col + '25' : '#f0f2f5');
+    const clr = t === 'ALL' ? (on ? '#fff' : '#57606a') : (on ? col : '#57606a');
+    const brd = on && t !== 'ALL' ? col : 'transparent';
+    return '<button class="ftab-btn" style="background:' + bg + ';color:' + clr + ';border:1px solid ' + brd + '" data-filter="' + esc(t) + '">' + (t === 'ALL' ? 'All' : esc(t)) + '</button>';
+  }).join('');
+  el.onclick = function(e) {
+    const btn = e.target.closest('[data-filter]');
+    if (btn) setMFilter(btn.dataset.filter);
+  };
+}
+
+function setMFilter(t) {
+  actTerm = t;
+  mUpdateFilterTabs();
+  renderFeed();
+}
+
+function showTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  const p = document.getElementById('tab-' + tab);
+  const b = document.getElementById('btn-' + tab);
+  if (p) p.style.display = 'flex';
+  if (b) b.classList.add('active');
+  // Auto-load on first visit
+  // Auto-load only if panel is empty or stale (> 5 min)
+  const now = Date.now();
+  if (tab === 'exchange' && (!window._annLoaded || now - window._annLoaded > 300000)) { loadAnnouncements(); window._annLoaded = now; }
+  if (tab === 'trending' && (!window._trendLoaded || now - window._trendLoaded > 300000)) { loadTrending(); window._trendLoaded = now; }
+  if (tab === 'intel'    && (!window._intelLoaded || now - window._intelLoaded > 300000)) { loadIntel(); window._intelLoaded = now; }
+}
+
+function openCard(n) {
+  if (typeof n === 'string') n = JSON.parse(decodeURIComponent(n));
+  const col = n.term ? (COLORS[terms.indexOf(n.term) % COLORS.length] || '#0969da') : '#0969da';
+  const SRCC = {'ET Markets':'#c0392b','Google News':'#4285f4','Reuters':'#ff6600'};
+  const sc  = SRCC[n.source] || '#57606a';
+  const aL  = {results:'Results',dividend:'Dividend',board:'Board Mtg',filing:'Filing',other:'Corp'};
+  document.getElementById('mMeta').innerHTML =
+    (n.isBreaking ? '<span class="breaking-tag">BREAKING</span>' : '') +
+    (n.annType ? '<span class="ann-feed-badge ' + (n.annType||'other') + '">' + (aL[n.annType]||'Corp') + '</span>' : '') +
+    '<span class="src-badge" style="color:' + sc + '">' + esc(n.source||'') + '</span>' +
+    (n.age ? '<span style="font-size:11px;color:#8c959f">' + esc(n.age) + '</span>' : '');
+  document.getElementById('mTitle').textContent = n.title || '';
+  document.getElementById('mSum').textContent   = n.summary || 'Tap Read full article for the complete story.';
+  document.getElementById('mLink').href         = n.link || '#';
+  const modal = document.getElementById('modal');
+  modal.style.display = 'flex';
+  modal.style.visibility = 'visible';
+  modal.style.pointerEvents = 'all';
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+  modal.style.visibility = 'hidden';
+  modal.style.pointerEvents = 'none';
+}
+
+
+
+// Suggestions
+function buildSuggestions() {
+  const sl = document.getElementById('suggestList');
+  if (!sl) return;
+  sl.innerHTML = SUGGESTIONS.slice(0,16).map(s =>
+    '<button class="sug-btn" data-sug="' + esc(s) + '">' + esc(s) + '</button>'
+  ).join('');
+  sl.onclick = function(e) {
+    const btn = e.target.closest('[data-sug]');
+    if (btn) addSug(btn.dataset.sug);
+  };
+}
+
+// Pull to refresh
+let mTouchY = 0;
+document.addEventListener('touchstart', e => { mTouchY = e.touches[0].clientY; }, {passive:true});
+document.addEventListener('touchend', e => {
+  if (e.changedTouches[0].clientY - mTouchY > 80 && !loading) doRefresh();
+}, {passive:true});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function init() {
+  const sk = localStorage.getItem('nt_groqkey');
+  if (sk) { const k = document.getElementById('aiKey'); if(k) k.value = sk; }
+  buildSuggestions();
+  renderSidebar();
+  setInterval(() => { if (terms.length && !loading) doRefresh(); }, 5*60*1000);
+  setInterval(loadTrending,      10*60*1000);
+  setInterval(loadAnnouncements, 10*60*1000);
+  setInterval(loadIntel,         12*60*1000);
+  if (terms.length) setTimeout(doRefresh, 300);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+init();
+</script>
+</body>
+</html>
