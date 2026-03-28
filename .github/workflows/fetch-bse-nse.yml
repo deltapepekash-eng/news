@@ -1,1 +1,43 @@
+name: Fetch BSE/NSE Data
 
+on:
+  schedule:
+    # Runs every 15 minutes during IST market hours (Mon-Fri 03:45–11:00 UTC = 09:15–16:30 IST)
+    # and every 30 min outside hours for pre/post market news
+    - cron: '0,15,30,45 3-10 * * 1-5'   # Market hours (15 min)
+    - cron: '0,30 0-3,11-23 * * 1-5'    # Off hours (30 min)
+    - cron: '0 * * * 0,6'               # Weekends (hourly)
+  workflow_dispatch:                     # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch BSE & NSE data
+        run: python scripts/fetch_bse_nse.py
+
+      - name: Commit & push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bse_nse.json
+          git diff --staged --quiet || git commit -m "chore: refresh BSE/NSE data [skip ci]"
+          git push
