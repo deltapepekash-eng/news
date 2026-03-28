@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T21:01:35.442100+00:00",
+  "updated": "2026-03-28T23:02:10.971890+00:00",
   "count": 171,
   "log": [
     "BSE announcements: OK (pages 1-2)",
@@ -12,9 +12,9 @@
     "Business Standard: FAILED — 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/markets-106.rss",
     "Exchange News: 50 items (7d window)",
     "BSE/NSE Results: 23 items (7d window)",
-    "Corp Actions: 19 items (7d window)",
+    "Corp Actions: 18 items (7d window)",
     "Board Meetings: 31 items (7d window)",
-    "Bulk/Block Deals: 41 items (7d window)"
+    "Bulk/Block Deals: 40 items (7d window)"
   ],
   "items": [
     {
