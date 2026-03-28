@@ -12,37 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Fetch RSS
+      - name: Create simple JSON
         run: |
-          curl -L "https://news.google.com/rss/search?q=NSE+India&hl=en-IN&gl=IN&ceid=IN:en" -o rss.xml
-
-      - name: Convert to JSON
-        run: |
-          python3 <<EOF
-import xml.etree.ElementTree as ET
-import json
-
-tree = ET.parse('rss.xml')
-root = tree.getroot()
-
-items = []
-for item in root.findall('.//item')[:20]:
-    title = item.findtext('title','')
-    link = item.findtext('link','')
-
-    items.append({
-        "title": title,
-        "summary": "",
-        "link": link,
-        "pubDate": "",
-        "source": "News",
-        "term": "General",
-        "sent": "neut"
-    })
-
-with open('data.json', 'w') as f:
-    json.dump(items, f, indent=2)
-EOF
+          echo '[{"title":"Test News Working","link":"https://google.com"}]' > data.json
 
       - name: Commit
         run: |
