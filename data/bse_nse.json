@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T11:44:55.774595+00:00",
+  "updated": "2026-03-28T11:55:52.288289+00:00",
   "count": 200,
   "log": [
     "BSE official: OK",
@@ -8,9 +8,9 @@
     "ET Markets: 50 items",
     "LiveMint: 35 items",
     "Business Standard: FAILED — 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/markets-106.rss",
-    "Exchange News: 64 items",
+    "Exchange News: 62 items",
     "BSE/NSE Results: 53 items",
-    "Corp Actions: 31 items",
+    "Corp Actions: 32 items",
     "Board Meetings: 40 items",
     "Bulk/Block Deals: 40 items"
   ],
@@ -32,7 +32,15 @@
       "type": "dividend"
     },
     {
-      "title": "HCL Tech Q4 results 2026: 2nd dividend announcement this year soon! Board meeting date fixed - ET Now",
+      "title": "Atul Limited Board of Directors Meeting Scheduled for April 24, 2026 for FY26 Results - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMTRmakhpcmlQNHhWdHlTV2dHVlZwMjZtVFFtd3NPRTR0Zlp2anNmUjJGbXRGN1pXdTJwUDFiZE93RFA1N0NYSWNHWTlobmducFNjYjVFNWxYaUZXdjRyWlZpTi1fblRneWxRc0JvUGVYbEozUU1tcGMxcXp3VFlGLU90bjF6cjlKZ2tXUlA1WWptdUVOcE1sa003Tkg5dFdZVkZMRWdqX3JScFdTQTZna0pQUzh1bnlwa09tXzEzN0xjTzlyVnNISi1MQ1Jldy11bjA5ejVsbkxVOUtNNGdJQ1NYTHY?oc=5",
+      "source": "Exchange News",
+      "ts": 1774545405000,
+      "age": "1d ago",
+      "type": "results"
+    },
+    {
+      "title": "HCL Tech Q4 results 2026: 2nd dividend announcement this year soon! Board meeting date fixed - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcHJmdDZjTHB6NlRwYmppLW1WMHFVZ3FEOFRsZ1RnWGFOeXR6cVVYNk5CUFNzTmFzX0YydWxPaUROMllQUG5wQ1pEX0lQTV8zNm9GRTFYeUhoVkRPVzRvNjVWRU43SFRPdXRYTUkwWlJxRmttSkxqWGtldkJTeUZWUFNDazRSX1ZWdzJqOFN2aE5HMkxKdnozaldhbUZJMUlNZ3liVTBSb19HNE50VW1xbzNUOU93Z01GSWotMkxiek4zOXRSQ2RpUThFU1p6MVY0azVWbURLc01vUdIB3wFBVV95cUxQMHBpS01BY19yTWU3UXFTcEdmMHctcG1xWFV3anJSRlZhMFJoT3ZYYlR0dHhDMFI1ZnZ1empvRUVaeFdoMk1mNFdUTXpjTEhsV2dLOWZvNUJ1a2lYTDd6S3haUkxZUWpCc0VNd3BOQ1JNMWJWcXJ0SHdUb01DZXFSSXpiWmNlYzFfdWVPQ2FZX0VIZGhMbS01MUdRLWswQ1g0NmZ1eFdFd1k5YlpuN1BxRUNNNHMtb3RtTGdzX1hmX25KbmNpUUF3TXJlbWFqZnF4a0JqaDZ5ejBTWG1TdnZj?oc=5",
       "source": "Exchange News",
       "ts": 1774522555000,
@@ -64,7 +72,7 @@
       "type": "results"
     },
     {
-      "title": "TCS Q4 Results 2026 date: Final dividend announcement in quarterly earnings – Check board meeting schedule - ET Now",
+      "title": "TCS Q4 Results 2026 date: Final dividend announcement in quarterly earnings – Check board meeting schedule - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUGxwTTQ3Q1VKYktrM3pQU1NsNC1QQ05sc3hZVUJWLTdMVVZDY3hsdE5hSnI5T2RJSWNXY294WjRfZkVXdG5NTWJJSGNjdUtJSnVGeEZhNDBoeDYxYWUzR0RCemVwOTNoVmYwdmZuckwyS0g0ZmJ0LXg4bTBoSzBnV2pwVFpFeE9QQko3YjVXM3l4aHpGWUl6UkVtdXRQLW04THlOTzRvUEVZUkFscEhsbllMYlpTNV80VXRTejV5b0tFQ0VPTzNjalVHazRFeEdJdlhjOXVRNzdFLTd1OFVPekgwTmZ6ZThsU3pz0gHwAUFVX3lxTE1feTV3aDAtNmx6czBCQUc2dGhMS3FIWXF6WjU2T2tNb04yWDA1bXdvemlqWXRRQ01OSjNfOHAzYVhsQlZIcGlKOHU5RnNjR3FmQjNtcGk0ODZTbHBwdS1lZUszMnJLOFlTdFlmZFowZUZFZkNjem4yMmRUa0pkdUxscUFxNm51Wl8yOTlBTS1EQlpITExWc1FVc2JmdHUwSDNYSGcycnZWcDhLNk9MWkswcWxHUnlsbEwzaVg3b2RVSWpSSFRfc0Rnc01ndXpoMzdTZVlYWG96ZnFFMzFTUlRaaEtHZGx0cFpfZ2VGdXpraQ?oc=5",
       "source": "Exchange News",
       "ts": 1774366626000,
@@ -78,6 +86,14 @@
       "ts": 1773212400000,
       "age": "17d ago",
       "type": "results"
+    },
+    {
+      "title": "Upcoming Dividend Stocks 2026: List of Ex Record Date, Record Date, and Dividend Amount - ClearTax",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLTGRqaDNIYmVZS0JYdC04aG1ZM2RIbURYNVh5N2p1R3hBeFVFSzFSYldIZXJwdVNEVno3VHR5UVNEdktOek1GSGR5dEF2YU9MaGNVdlVFMUp0WHl5ckZVRg?oc=5",
+      "source": "Corp Actions",
+      "ts": 1772784000000,
+      "age": "22d ago",
+      "type": "dividend"
     },
     {
       "title": "Vishal Mega Mart bulk deal: Govt of Singapore, HDFC MF buy stakes as promoter sells 14% for Rs 7,636 crore - The Economic Times",
@@ -102,6 +118,14 @@
       "ts": 1771401600000,
       "age": "38d ago",
       "type": "dividend"
+    },
+    {
+      "title": "PTC India Submits Video Recording Link for Q3FY26 Results Investor Call - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcmVpMG9wbFF3a0VmcFFFNGktRHZ3WXQtYmd0bDgtR2tJQlFIOHo3aURIYTR1TF9nZnQ2MUZ1ZDFtOVBZUi1yWU0xc19UYjFjeWFheEdQVC1zWFgzbngyZHFhLTd0Q2tMQVJ0MUxTYjkxV1o1UkxLazRsY2paUkxTY2F6ZDlEUm9uZ1E1ZVA5dW5SZzdOWnRxWnhxNTgydG8wREx0c280R2x0Vl9wVF9nMkFZX1BERG9UaDVVeXphQWE2Wi13TUE?oc=5",
+      "source": "Exchange News",
+      "ts": 1771228800000,
+      "age": "40d ago",
+      "type": "results"
     },
     {
       "title": "PTC India Confirms February 20, 2026 Record Date for 30% Interim Dividend - scanx.trade",
@@ -144,6 +168,14 @@
       "type": "results"
     },
     {
+      "title": "HAL declares first interim dividend of Rs 35 per share, sets record date - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdi1EYlFrTXpwM2xBMnRUakJaQVJwRzd1RTVqcXpUVFVZVzl6Rk1kaldPMURvemZubGxERWNEWmlidkVxbGY3cjlUT01qQWVlcnpERE1VcDJsV1NlbTl0NURCVWtwRzBMbUVsa2cza25yV1pJeWtuaFR5bUhVckJLVGZSSG53RDJFUjZkRURLbFZWWk1Id25FcnoyMXBkYkZMNGF3a0F0SVJCY2dYZlkxN1liSzFMNmh2dlV2TjFYUFhpeWZXQ29HekQ1cDdlU0YyRzZBdXBGRV9LYXB6cFHSAeMBQVVfeXFMUHdvRk1HUERtNlMzcGJwN2hzVWFJd1dKOEVXS1hzRFZGOW1ydVgwSllUel80UGs2aHBqb0lneG1KVFh5cWllaTYyUGdxeWFYYkFvb01HMjk1OUVSN3BNLTBYdnNJUGFfOUd0dGR2UU1UcUM3cmxHeVdxLUFTSUc1UjNRQlRoQS1SQ3FwLW5uVmdYVmFIQ2xoWW1qX0wwR1RNWWJsSmNBdGY1NGM5eE1rWjVGSDA2cDBXX1htWTRybFQtT2xYcnRkdjdtRk90M2o2MDRGZjEtN0xkVm5EUjZqVno1UFE?oc=5",
+      "source": "Corp Actions",
+      "ts": 1770883200000,
+      "age": "44d ago",
+      "type": "dividend"
+    },
+    {
       "title": "Netweb Technologies down 4% in trade; 3.43 mn shares change hands on NSE - business-standard.com",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZngzdnlIaGhGaW5MMzFydmcxbE1VYUFONFYyZjRSNm5IdVM2V1h1eGpSelJzVlNJMGJtX1ZxY1FIalhiWmVab0hpZ0ZyY2daZWZ0clVzVHZwRjg2NTVJanNwSFA4Y3N0THIxMWV2X2dYZFp1Nk5mT0FlcmhXTmtyTk1hN0FMYUx2UTJGeHAyZUVNcnR0RXpVdkRuSW42RjhSSDZSOGNMdmIzT052ZS1Vc08wYTBZOF9qVUJMVEFjbVIzN0Y5QVJac2x6Wm9Ob2FsR095VG8wWlMybnNQa3ljRlN0QdIB6AFBVV95cUxNempfXy1YZHpDSldKZURPeXlQQ2hWMWk3UVJ0ZWdCenpTcnVaNXdTZllXMzlJR3E1REFzb3RiLVJMSnNMVFB1VFVobEw0MFZwR0FBZnJhQk1xMExuM016OElCSGlzMXUwUjVJSWxuLVNEelU4WllKTEJ5MTlxcHpFUnIyZ1hEYkxnV1RWWm5yRHlGNFJYUW9WbFo3R0xlbVNDY09zRXZGaVZscHFhTUlRLU5ObVRtZnExOHZRc3BTbjlBVlhOVGhEWEE3V3lzRUhSMElqUG50aHdvZXpoY3hBcWs5UV81ZVJQ?oc=5",
       "source": "Bulk/Block Deals",
@@ -184,7 +216,7 @@
       "type": "results"
     },
     {
-      "title": "BSE Q3 Results: Profit Rises 8%, Revenue Jumps 17%; Margin Contracts - ndtvprofit.com",
+      "title": "BSE Q3 Results: Profit Rises 8%, Revenue Jumps 17%; Margin Contracts - NDTV Profit",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVzZZTTBsX3Vobk5kbnhqRm82d0N1b2FfdXllYmN5MUJmWDV6UEE4SW5JdVVZYm5aTkRvbmkyc3ljUC1sbHRQUHE3aHV4cktPb3hseEhYQi1jajhLNjdKZGgxRWhwZnpsU1VuTEkweEtoZnpYQnVPUEliTVJaUGRSYXJaQjBDUmh6bktfQmRVX3JQTVXSAZsBQVVfeXFMTkV4d25JYUhYUzd3NXdqOTUxMkhmZjYwdkZLWVlqVnUxeGowSmVwYVdmaFc1S2NKaG9Nb190NmNYUHNIOW1mMmhrVEQxcDg3a0ZIQl9MX3pyQ1NrQUMxM2pUNHJzdVJla0syNTFoWFNYZ3VXVjdmUDdicUpNeW1pckFMZDJleUxxU1ByaXRTZzEtTjd1aG52MXRZRUk?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1770624000000,
@@ -216,7 +248,7 @@
       "type": "results"
     },
     {
-      "title": "BSE Corporate Announcements on Monday, Feb 9: Share buyback, dividend by PSU, pharma and other firms - Check full list - ET Now",
+      "title": "BSE Corporate Announcements on Monday, Feb 9: Share buyback, dividend by PSU, pharma and other firms - Check full list - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQzQ4TWdNOHdwaG9HR1UwS0dySXZJdkV6SUEyb2hNcGg5VHZ3akl4c2JfOEdfSjR1UVZSa0Exak14NTQxWjM0blVjMUVoZXRtUFFUV2VoNmtiY0tYLWFUajVlcDJ3NXVfVktPZ2dDaHVfN1FVS3RvX09YNkhxeERKaDhSR2x0SzZVSGdCaVBlT2l4TFUyT2JLdTB1OXMtUUZmSHZPWXdiVVNmNHczVzctdWk0Q21GU3VLcVhiRVlQTVgtZTh1OVRkc2I3YVVoTTJTQm9CTGEyMkFCdllTaDBnanBGeHpOekhRQjl2d2l1WkxmMGdzcUtr0gH8AUFVX3lxTE5qdm5lbTVFSGxveDVXMm94Q0VjNHBCN192RFZsQWU3TGlWbWw1cVM5bmZkMkM4dHhmNF8zWUdFbzFON1k1bHJSMFpEVXRHYWpVcWxlOG9iUnp4eTVNV2hOcjY3emVPMUNKUGowRHlNdWs5SXFpY0czNTl6dU94S1lpU0NRQmprRXJteEtUVmc1NUZiMW1rOWYyMjFVYmdycGlOOTl6TEtoVlZiS3lfR3FQZHB5TjhZTWx2cUoxZzl0Y01VX0RnMUxyaUJJb2xyc3FrOUUwRW5vVDhOOTcyYV95dFlHRFpCYVE4aHFYcnB4SWJ6VDNvWnVhenRZbA?oc=5",
       "source": "Corp Actions",
       "ts": 1770537600000,
@@ -248,7 +280,7 @@
       "type": "dividend"
     },
     {
-      "title": "Indian Oil dividend 2026: IOCL board meeting tomorrow to announce cash reward? - ET Now",
+      "title": "Indian Oil dividend 2026: IOCL board meeting tomorrow to announce cash reward? - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQnNJSlRpOGxLWlpnZVdHeEd3anpFekJwTDBpd3J6dDc3aDZJX3pWejdqUFRheTMzVzBFcEhBZ3BOMzlIcGxSZnJmb2tDbHNVRWUwN2FxSWNFU1gySXNrQ2ZycDQ4RXh3U0FKNlVLNkNtOE93N3d0QmJEYk5tdFh5b3FFYzFEbFhvbW9iX3VmaTVsTnZycndwZ3RqcnJ4OVgzaWR5VWhBR1YxNGdZVFJ0ZGhYejgwb0ZsWjIxZ2gwaHRkMlhydHJF0gHMAUFVX3lxTE1LdWJlVENEYTZTSlRtYXJYWE1FWnZxNkhaVnl0bFd4VmxpMktsZG1XaHFkOUhvSERQTlVJeWJ4eGZHLVlIMW55NGxvNkpwWl9LNGlvSUl2bkRfT0hQYW1oUkp6dUcwcTc3clZfcnh0dnJ4RlNXQ2tIenpkTnFFTzc2LS1qcFhVZEJtb09qN2ZTRlo5UHo0cmxyS3lhSGpBSHFpYzdiOXNOZS03bEF5ZXFaMjA4bDU4ZXJ1ZzNQYjlpX0k4c2NOZnB3NHFabw?oc=5",
       "source": "Exchange News",
       "ts": 1770278400000,
@@ -264,16 +296,16 @@
       "type": "dividend"
     },
     {
-      "title": "PI Industries Limited Board Meeting Scheduled for February 12, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQd1lmcnB3WldrYXJjYUZkWjlvYjRBeXVfNG5fNDRsb3lwU0JDejNta1ZtMndkUDVnWWUyR1R4cVE1Z0I1SFpjYWhsc1NYV1FBZ2FNc0F1MEZYTnNhVjZTYjdTZHluV2dLVHRNck5LUkFib1p2QU1hNGNuNEhUODJRR0ppbE01aE5yME9GUVA1QmlBUDhzVHZ1UV9uVFp5aC1CZ0hQRUxLRTVlZkFrbHFQNFUyTUpxUno2TzRFa1pxbmhZbWl6ZnJfLVNTVjNzRkdrQTdad2t1QWlFM0lpd052UFh1aXY5cVQ0Z1hOb05yTjVpSlNJLTNjNEg5VFFhRHc?oc=5",
+      "title": "Transport Corporation of India Board to Consider 1st Interim Dividend for FY26 on February 04, 2026 - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZ2x5VGZnS3NkZ3VPR2dXTGdPWWhTZy1aUkYtTmE4d1laSWtJeXA1N2lWSGJBT0RIQnVCb2kyLWxCcnM4eThRWVhwdFRJMVJHdUxxdkRPdGRGVTYtd3otdHZhOEhfM0NJV0I5d0FLaEFvdHJzSzc2VFlBR2VoQS1YWkVRbk5wVnRrUDZGbWJBV2hYM0c0TFhMNUVJOFB4X29kdGlJdUJQbUxqVTFtYTBGTm5TN2dLVGlkQVhiWHZSeW0xZU5XNTk5eWJVX3ZfZjVsMUIwUVlERklUdm1NQTAwQzk5aW05bmJWTkk0UkduTW1ZSzVqVlE?oc=5",
       "source": "Exchange News",
       "ts": 1770192000000,
       "age": "52d ago",
       "type": "dividend"
     },
     {
-      "title": "Transport Corporation of India Board to Consider 1st Interim Dividend for FY26 on February 04, 2026 - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZ2x5VGZnS3NkZ3VPR2dXTGdPWWhTZy1aUkYtTmE4d1laSWtJeXA1N2lWSGJBT0RIQnVCb2kyLWxCcnM4eThRWVhwdFRJMVJHdUxxdkRPdGRGVTYtd3otdHZhOEhfM0NJV0I5d0FLaEFvdHJzSzc2VFlBR2VoQS1YWkVRbk5wVnRrUDZGbWJBV2hYM0c0TFhMNUVJOFB4X29kdGlJdUJQbUxqVTFtYTBGTm5TN2dLVGlkQVhiWHZSeW0xZU5XNTk5eWJVX3ZfZjVsMUIwUVlERklUdm1NQTAwQzk5aW05bmJWTkk0UkduTW1ZSzVqVlE?oc=5",
+      "title": "PI Industries Limited Board Meeting Scheduled for February 12, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQd1lmcnB3WldrYXJjYUZkWjlvYjRBeXVfNG5fNDRsb3lwU0JDejNta1ZtMndkUDVnWWUyR1R4cVE1Z0I1SFpjYWhsc1NYV1FBZ2FNc0F1MEZYTnNhVjZTYjdTZHluV2dLVHRNck5LUkFib1p2QU1hNGNuNEhUODJRR0ppbE01aE5yME9GUVA1QmlBUDhzVHZ1UV9uVFp5aC1CZ0hQRUxLRTVlZkFrbHFQNFUyTUpxUno2TzRFa1pxbmhZbWl6ZnJfLVNTVjNzRkdrQTdad2t1QWlFM0lpd052UFh1aXY5cVQ0Z1hOb05yTjVpSlNJLTNjNEg5VFFhRHc?oc=5",
       "source": "Exchange News",
       "ts": 1770192000000,
       "age": "52d ago",
@@ -320,6 +352,14 @@
       "type": "results"
     },
     {
+      "title": "KPIT Technologies Submits Promoter Reclassification Application to Stock Exchanges - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZU9DcE9Xb3pmdDc0dWwtaGdxSDR1U2o5STNjUkFMOC0zNE1CVDltUDhfWkNBWkxUbGlEMXJyVHdWbG5IeENWdTdON3JrbVowVHBFODFpRFA2TmZMMzlaOWZ1WDU4Q01yWHpJRUI3S0JnbHIwZDVXUnZ2Ym9ocnJnZjNnRmgybk94YUItbzRXYmlOcVh6aW1pYVVkSlZjQzRzVnoxUE1pbUt1Z2hCMnBaMFh2UnpndG5jZUpNSndwM2xKbHlnMWtHeGVtQlU4bjFld2hYNGZkUXg?oc=5",
+      "source": "Exchange News",
+      "ts": 1770019200000,
+      "age": "54d ago",
+      "type": "insider"
+    },
+    {
       "title": "Savani Fin Share Price Today, Savani Fin Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Tc1A2ckNORWpDZkY5blAxaHFXbWhuaHRLM1Joem9qQUpWWXFhTWlOQ0V3V1BaZVdFYTByVEU0S3NYSkxnMVhGbnduTW85cTE1YXoyUTF2M1NUZlpFaEFhZW9fUzIyY3JpUzZQMGhLZGFsNGRQMEoyVm8xYTM?oc=5",
       "source": "Board Meetings",
@@ -328,11 +368,19 @@
       "type": "board"
     },
     {
-      "title": "ONGC dividend announcement date: Cash reward in Q3 results FY 2026 - Board meeting schedule, dividend history - ET Now",
+      "title": "ONGC dividend announcement date: Cash reward in Q3 results FY 2026 - Board meeting schedule, dividend history - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQcllmamZLclF0ZEM5dkR6TUlKZDNWYUlkZzMtU1VFcUFHUkpmX29sUjItazgyNktHVV9RRFNncGtxamE2Z3pueVM3MktWRWphb2pGSnoyS1l6UU5hN2NDTEJBZ0VlNFlYUi1CVG1qTEx2NXdwcGp1R2ZlNERVSEJwdkVPVi1jRzRqd3ZLTTF6T1RuWEstclFVankzZEhCOFVuOVoyVnBmaTVUQ1RvNzVkWHNmeldwUWhRM1FJR2Q0X1dWanhQbFJGSGlSMjJESlRWSS1EVnM5V3Zwa2tvVEpDZkk3MkVsNks2YVR2ZnNn0gHzAUFVX3lxTE5sSjhYazR5anhPOWdubE9zQ2hIczB2M2VobG5uOEJSNlZVREpvQngwSGRKNmV1b1o5TEZWb0dOdlE4MzNuOVpZTlN0QjFDYW15NDJ3QnhpUmJ6ZWNBdDlRallyY0d0Uzl2V0ZPOXZrOV9DZGgyb0hXNldOLVNCdnFfS2pLamM3dlE0Sy14Ri1zUC1pVVVrdFdwX1JCMUlYRzhTZXVLOHVVWnYwb1otVXd0NEl5bDhiRXU0UXctYVIyR2g2aFJRa1ZwTnN6bk5RRGxVX2x4bWc1QjhkaUZpOVJpcURPQ1BlUTZhTjdGSW1wcGZOaw?oc=5",
       "source": "Exchange News",
       "ts": 1769846400000,
       "age": "56d ago",
+      "type": "dividend"
+    },
+    {
+      "title": "MOIL Limited Schedules Board Meeting for January 30, 2026 to Review Q3FY26 Results and Consider Second Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPa21wSGlNUTByU19mR2JHeGM5UGd1aWF6RUIzNmZFQVVtOS1kM2ZoWjdkdkUtTWtBOHg5SDV2bHBBTjdUS1BZRXF4SWl3RXduNmZSaWtqT1BtdVF5eF93dUdyNjFaVzNfOEZSWndHMDcxaFE2djNMX2NWUUtTOW5oWUxnUDdpUDkzMG1JcmpCeWozakxwcmczV2ZLRTFscHliWWg0NkxCaFNyWjByRmFsNjNqclI2eTA3TFNCTjM4bENCbmlyQkQ5ZzhrVXhNM2RWY1duUy1qb1oyYVhyQXctY2xUdll4SEFNMnd6RU9UMHlDSlYxeWdfYUhZRk5rbU9vZXRKNQ?oc=5",
+      "source": "Exchange News",
+      "ts": 1769760000000,
+      "age": "57d ago",
       "type": "dividend"
     },
     {
@@ -400,7 +448,7 @@
       "type": "results"
     },
     {
-      "title": "GAIL dividend 2026 date: Announcement in quarterly results board meeting on Jan 31; record date fixed - ET Now",
+      "title": "GAIL dividend 2026 date: Announcement in quarterly results board meeting on Jan 31; record date fixed - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSm5vX3VsYlJ6YzhfazRJWUNudllldGpfb0d3RERLc1ZBS0h6eEVELVRDVm0zUGhyQUZFWHhKTDQ0alYxVDMwMG0ycjl0ZU9PQmV4TWxsNXpDWnNsMWdnbG4tNWFIWW01RzdDS1U2dWdLT0lOQVFrR1ZwNk5XeFFBcElWNEc4SHdlSWQxV1ZmSGZrUEc5Rm9KOUltTkc2cDQxTjlITVU5bktmWTVaMmtERzA1MHd2M1ZETXRydmR4SzdCZEhHRDZDQlZMOXBITndBMXl2MVZ6NnNTV19zOTgtTzUwcVY3R2tUS19n0gHwAUFVX3lxTE1vakdfUVdoT3EwT3lGXzljcjI5eUViR2ZLd3EtejR4ZS0yV21HWE5Id0M5OXg1RUV0VS1fRmVZbnBuV1hGNjU4dkU4SV9WbzdGRWppblo2dkZUazN1TjRsU0pwWjlqM1lnQVBXUDdyUzdOY0l5VkFJdVVWMGpPaG84VVBueGt2X3JvcEE1S2EzbmxsZ0JkMHYxc2FSM3ZrcEZoNS1GdkZNWi1vZDBGVk1iNm5SdmI1dGtZWUR3TXdodTJPSmRER1lsNmIwSjMtR2FOdWZOVnhzU2llQXlUTnd2RWFOcHJnVl8ybVVZMkRSTg?oc=5",
       "source": "Exchange News",
       "ts": 1769414400000,
@@ -472,20 +520,20 @@
       "type": "dividend"
     },
     {
-      "title": "Colgate-Palmolive India Schedules Board Meeting for January 29, 2026 to Approve Q3FY26 Financial Results - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOVkVfV1A4dGNvWEFueHlHNGJ0YW1mWm9FQXJTdnBLbFZaUXFpSHpDVFdCZjlEdl9EU1loMUZCQlVXSkE2SWNQVkhGMWw4elQ5N2h2NW5PVmZKRHhsWEU5Ynp2T0lrV2l6QzJCTEJ2SHZFQUZYcTdmb1ZQS2dKOUJkZmJDTXk0S3pEVnctZGtka1JNa1RHUURtUEU4cEJhNmUzdFlndDg3SWo2ZnkzUkFKamNpQWV6dTYtS1lDSi1UNkFrZWFsM2hkdUY1WTdrUGRhM3psaGhyYS1ocENEVGtwaHA5Zmh2OGJ4cTdLcnBtay0?oc=5",
-      "source": "Exchange News",
-      "ts": 1768896000000,
-      "age": "67d ago",
-      "type": "results"
-    },
-    {
       "title": "Sun Pharmaceutical Industries Schedules Board Meeting for Q3FY26 Results and Interim Dividend Consideration - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOMTBpa01GVnRaZEFTUDc3S1R6amV2WDhaenMybkpvZkFWNjV2VURjczB0c0xGaWJzTG5QS1BCN2p4S0d1Q2JoTEJPQjJlXzFqTEZhMFctMEZzNXZzbEdkVEJLU3dJbDIzdHl1dWcxNEFjakVnNE12RVpsTGxXQjRoaWZiYmh5Y3l6RDZXaE9RcWRZa25NMC1iVHJBNFFoOV9FSXZYR1ZoYjl5UGZmZm1aQ1pfTTQ0aWVSaDZ2aU9OVGZOVmRjZVBaUUtjaWROZk05M2ZHZi1qNEh0V0k1bGhoSjFuUjFPY0wtNlNhZXpDeWFrbjF4OVE?oc=5",
       "source": "Exchange News",
       "ts": 1768896000000,
       "age": "67d ago",
       "type": "dividend"
+    },
+    {
+      "title": "Colgate-Palmolive India Schedules Board Meeting for January 29, 2026 to Approve Q3FY26 Financial Results - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOVkVfV1A4dGNvWEFueHlHNGJ0YW1mWm9FQXJTdnBLbFZaUXFpSHpDVFdCZjlEdl9EU1loMUZCQlVXSkE2SWNQVkhGMWw4elQ5N2h2NW5PVmZKRHhsWEU5Ynp2T0lrV2l6QzJCTEJ2SHZFQUZYcTdmb1ZQS2dKOUJkZmJDTXk0S3pEVnctZGtka1JNa1RHUURtUEU4cEJhNmUzdFlndDg3SWo2ZnkzUkFKamNpQWV6dTYtS1lDSi1UNkFrZWFsM2hkdUY1WTdrUGRhM3psaGhyYS1ocENEVGtwaHA5Zmh2OGJ4cTdLcnBtay0?oc=5",
+      "source": "Exchange News",
+      "ts": 1768896000000,
+      "age": "67d ago",
+      "type": "results"
     },
     {
       "title": "Sequent Scientific Share Price Today, Sequent Scientific Stock Price Live NSE/BSE Updates - The Economic Times",
@@ -536,7 +584,7 @@
       "type": "results"
     },
     {
-      "title": "BPCL Dividend 2026 date out: 2nd interim dividend in Q3 results, board meeting next week - ET Now",
+      "title": "BPCL Dividend 2026 date out: 2nd interim dividend in Q3 results, board meeting next week - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPXzBMR1dLRXEwZnRTd1F5MUotc0pDcXV6LXhfdWxCeWdFTkg2Vy1iODZYbW9zR0EwMkdlbnRnN2FHYnF5U0dlcFZmZjNwVVpEOWJ5Z3BrZXBfM04xWWR4dGRCcVpaSUlNb2tSNTNmV2hJTGVZVW1Jbjd6aGkyMVZqZ2liM2x1dVYzV2hrbm05OHFJNGFlb1Z3NEhNbGd6b2lROEVDTmVyeVlSRWd5dTlLdXgxb2VDbFFqV3JvRzcxOGNZYWI0UEVYdDVuZlI4NEVCQTBXYtIB2gFBVV95cUxPbDJ5U25ZRFh0Y1lhZ2hIRjJWQjRyWTJMa3lWUEFsZFk0eWdTb3QzaC1ndWtDeEQzdWJIUmk4dUUxd3FXS0hhNGRtN1EzUUthVi1rcTloNFp5cUh4UUs1c1I0ZjhvRkJ6R2xXZUVjVVJPVzhXS0k5b21hVzVxQ3ZXSE1SVEVqWnFPZnd5NlJOaGpnR2FiM3RvVG52cFIxWVhpVnBNS3BWeE5zRVlETWZBcEl0VVVUZ3cydktfd29ndjUtZF9xVDZxX0psdHpnYjdHZFdsRzJnYXlzUQ?oc=5",
       "source": "Exchange News",
       "ts": 1768636800000,
@@ -624,16 +672,8 @@
       "type": "dividend"
     },
     {
-      "title": "Bank of Maharashtra Announces Interim Dividend of ₹1.00 Per Share for FY26 - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZ0VsNTY4SW5NTURzN3VxVnhrRGdtSTBGZW0xYUE0ZlNpLWtMRDg0MVd2aWpzTk8tTVItWkItZ0ctNFpBZVh3TjhFYTRhTTJJNUlXTjRKUjhpdFQ1ZkwtRmdKbnpLbnZlend6NkxPa0FzNDlmemxYRnhCbHFTUXdqeUllbWZ1elVyWVpBY3M2XzlnazY5Z2F1WlBLWVpvTEpiVnE1Z2xRTmpLeXhERkdmTjFWTTRpUlNxS3I0TzVWbmJaZUdybk9uUjFNejRvaU5zelZUNw?oc=5",
-      "source": "Exchange News",
-      "ts": 1768291200000,
-      "age": "74d ago",
-      "type": "dividend"
-    },
-    {
-      "title": "United Spirits Limited Board Meeting Scheduled for January 20, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQaUxra2FncUZuYmROUzVDbFZ5YjJ6cXlSYmt3X2NtNW1uelBWVDlEaGJWWUg5X2kyRmNMNVVUa3Fxb0VMN21XQ3lRZV9ubFJ5bHhxSkY1UUNLanVJV3h6T0VKbnRBQmxTRm00dDRneFg4UU5PM0lTZlVfZWl6SzMzZUlOSV9uTHAwd2IxMkJMeUJZZDFCV3pLQWhIV3NEbzZ6VGlGYWlmTlV4UWhRTm9OZng4U1RQY0FucWIyYTdGRk03YXNSTWtReTB4VVZGU0xXUmt4aFRteXd3S1BscEx2Sk1KZVVuRk4zcmJsaDdFclo3bzYxZ1I4QXNQYVFqUXZwZ1QzYld6c0w2Nm8?oc=5",
+      "title": "Shanthi Gears Limited Board Meeting Scheduled for January 22, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWFNHUWtqZjdzZFpPQW9OQU90ZHkycGV6Vy16aU5zUVhJT2MxWkhpSkR1TWc4Z0Q0MnBxaVN0dVdRazRfSXhZcDhzNUpHNHdUT1pPaldjcVZZZFJXbFNLdklEdGJncllVSG1sYmVhaHBvX3lDVm8zVlQtZnh1NHhzM1ptOXJ3STB5Ql9sLXpVbVVUTmI0bnZ5TnZqdTNNdm1NQ3ZLMFhZX0QxbnNZSUZlYzl1dVRmd0xqTEc5a25CSVd2cmdSRGxIaVg1UVF2LWI4b3BVUk5vZzdrUGEwMUEwLVlzVzdTUS1SXzFXRk9SZTZtTTBOdkxFbkg2aG5QZw?oc=5",
       "source": "Exchange News",
       "ts": 1768204800000,
       "age": "75d ago",
@@ -656,7 +696,7 @@
       "type": "results"
     },
     {
-      "title": "Central Bank of India Dividend 2026: Bank to announce 3rd interim dividend in Q3 results; board meeting on Jan 16 - ET Now",
+      "title": "Central Bank of India Dividend 2026: Bank to announce 3rd interim dividend in Q3 results; board meeting on Jan 16 - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRnN0WnBLUXd6TGNYeGhreUN4OUpxdkt4emFsNzUtdGd0ZHNoemZ5YmJQQTBVWjV1RmJVaVAwRUVPcVh4MjA0TGxjRkc4MWVWU1BhSG1MOEs1b2pQOXRxLVZsSEFmWTgyTUp1dmE2TVUtYk9kN2JwbkExZFYwblpPSmN1ZGktdkUzNXNoMlc1dnA1RXdtbmloZEMzdDN6Y2R1Z0haWXpXU2Vid2RPai1LcmM1Uk4zdHVmLU9EU01OcTJPMHF3QThTM3dGSEx0RVlVUFkycGNLS0lkd28zWGtYcHVrQmIzOG1Iank3UTNwSVU4c3VPNEHSAfsBQVVfeXFMTnR4clRZUXlPYnc5UlE0ekd3b3RTNTFzQVNRZG8xcVRGV3QwWGtfVFM4YVlHZXE3VzUxeG5FQnBtVHZVekFERWxsbE5ocEhwcXJlcFExRTU3Vkg4VW5BR2RhTzZYREhjUkhnb0gyM1d5Nm5JWG5YYVM1bENhMmZoSDNJcGdtSExwSGY3bWF6bmN5aG5kand5WTFWSndvSUNBQkozV3NGUC1TeXFzdmwtQndIN2RSX0FtU01NQjVQM25NQWRLOEIyOEhqNkxSclhYc3I2Snk5V000T09LWmMtVkpLbVNoM2lXa3JRS2hTM3FMQUFEX3lsWWRiaVk?oc=5",
       "source": "Exchange News",
       "ts": 1767945600000,
@@ -670,14 +710,6 @@
       "ts": 1767945600000,
       "age": "78d ago",
       "type": "insider"
-    },
-    {
-      "title": "Supreme Petrochem Ltd Schedules Board Meeting for January 20, 2026 to Review Q3FY26 Financial Results - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPendZaUk4bmVYMWlZNkdVaHRVdlVYXzhsVlhTZTdlM29ldldkcGhuWUlLUVZGTVdJc0h3ckVqQW5KSVdBbWIxMjJKczBXNHpDUFZkQWtoaEJqVTJxSFQ3MmtEaC1uU1JvQkRnazl4SUVkSEdEcUY4MzNoUkVONXpzLTF3NV91Z3g2UUdLY2tYbVhWNHFSbk9EQzkyemhQeXBHMGItRGFCQjNCOThEd3QwUElVY1NxQkw4eGdoZWp0YjV0dUhhaVlUYnd6SWVNVjVMazVrbzBSVkFhTlBad0J6TFVtMWdYNmJUS0tmNA?oc=5",
-      "source": "Exchange News",
-      "ts": 1767859200000,
-      "age": "79d ago",
-      "type": "results"
     },
     {
       "title": "Standard Glass Linin Share Price Today, Standard Glass Linin Stock Price Live NSE/BSE Updates - The Economic Times",
@@ -712,7 +744,7 @@
       "type": "dividend"
     },
     {
-      "title": "NHPC interim dividend in Q3 results FY 2026 – Check board meeting date, dividend history - ET Now",
+      "title": "NHPC interim dividend in Q3 results FY 2026 – Check board meeting date, dividend history - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSWRhVmpoMGlpdHRINFBNRVdJMVlKUzZXaTdDcnFCSWVjZzUtcHlmc0lXQ0RHNFdBNnF3WGxOUWJRZnlfQlVyUjRGNU9Cb1hmRkU5cmNDaDRmT2d2eDI2X0lIODlvUHhhNVJzSUh3bHVlaWtnQXJvbHZWNk0zanBYaFQ0eHUwYVl1YjUzVThRcGdXa3pWY2F1Zmt0RXhjNXctVlRfcEI0dEljQnNoSnhFTE9JdEZLWUZialJRUXEyVldqWDh2SW11MmY2VzNqN3JXdlhn0gHYAUFVX3lxTFBBVFp4anlIQWNVbVZYdXFvbnVZcjY2QzFVbDRCdUk2U202OWRfZ19uemlJNi1MSldHQjlzTS1UUWZSR1Q2S0pzYnBtV0Q4Z1c4eWY3SUh4YTQ1ZmJ1ZXZaYXNqUW9PVTNmcENCLUo5RDI4YmpwT1V5V2RrTjVCV09KUWdkVm5EdDlFN3F3WU11UGttNVJRd3F4dy1QZTg2VnNoYnRkeXJOcGY2eWxySEg0YkxVT2M1bEUtdjRNU081bTBLQ2dubi0tMVFaeWlsaDFfMWlXUXdDVg?oc=5",
       "source": "Exchange News",
       "ts": 1767513600000,
@@ -736,7 +768,7 @@
       "type": "results"
     },
     {
-      "title": "IDFC First Bank Q3 FY26 results date and time: Quarterly earnings announcement schedule of private lender OUT - Board meeting details - ET Now",
+      "title": "IDFC First Bank Q3 FY26 results date and time: Quarterly earnings announcement schedule of private lender OUT - Board meeting details - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPcm1tN0E5ZEp5QmR2Zll6VERkalVyQ2JURmNTQ0R4SGxfYVl6dm9FX09HQ05ldkdLV19qbDFIUm5aN2l4OW5HZWlWRnVtV09GSXlNTmpkV1VWZnRzRUtMVFRmTWZRRXJ4LUtpQ2FpNG12bHFQYU01b2pKWGV5eXdsX1V6dzExZTdNcHY3dFhzZEVibEJNWFRiM0F4UHUtMGNTYmp2Vl9QajdqdlFfM3JPWVBtb0V3clZGNnNfNHJhRmtIUjZhTXBNTHVlZnBUUmFKOFRRcG4tM2pvMVFkdFVEcHYtNFBpX05lM2RkUWVselRUTG83Vjh4TjF2ZnFsRFJYRHBYVXRoQmY3MkRRQWZiMWVUSdIBmAJBVV95cUxNUXZ3bmw2LTRFcE95WjNBMDFFV3dKam5BcHBHWkFVZFQ5c3ptenZiMnA3UHRFMFpjRWdmZEduRTBfZHlzdWNoTkZpQVlxbU5RWFNxeDR5blJjWkRLdHdZSktuR3dKdnNQQTVEeng3aWl5NU9CbHMzUWtkTDhhejA3Vnh5ZXAxcnctbVQtY2JidmdiMUNpdldvM1hoWUtqWmtuUFc3MmhQT0ozRWlGaVRabXVaMTBzZU1NZzJoZjF3cWJQWnVCd1o1M3E0dU5vajZ3bzA2b1otUVRGdkMzZEhxczl5QUlyZ0tTelJ6ei1PMVNlUTNiRGw2cXV6V0dfc3ltbVJRYWpHZmR5MmZNcXdvd3JOLW1zYlNE?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1767254400000,
@@ -768,14 +800,6 @@
       "type": "dividend"
     },
     {
-      "title": "TCS Q3 Results 2026 date: 3rd dividend announcement in quarterly earnings – Check record date, board meeting schedule - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWllJWTQ5QTFuSWdDTGY1WWF1NGlkUlVhVEozUHU1R2FvZGEzbTluNnd5ZzVoT3JiNDF2NjVxSVR0RFZpVXlLNFVjaU5GRDRfWTlMcGNZWXVzQjVvN0NJb2FITTNldnVobXlGN3R6Z3gtUnJFQTFMc2FvMnhFbnFBeV9OdlgzVElXWGRqb3NHN1JTRHZkTF9Ucm9FcGlQQUt2NDdibDRGX1I5Y0dmYnlTSkdVQi1Fc1NxYk9ub1U0M0poNVEtYUlxMEVSOXhJd1R1VEp1cVBlUUFIWGZtcGhHS05LVTBkYlRNYTBSRTF2eTdIaGhMbDB2LdIB_gFBVV95cUxOT1ZneXhuZ0FsWlNqdmxydUkxNjZCMk9tSDJra0d0RTA5UGZZbHE3bERxTmJ6aVNodDhKbFhmYkdwa3RXcnhzYzVoT1ZicF9MSllHTndVVE1FOEhoZFZUTnFMdHNyT3Ayelo3U2tvZFp4bWp3cE56SG1lcGdpQnBBYkpZbjAxRTA4TnBBQlQ5cUxOTnVoSlRRWEhIb3FGck56c1RadmlQZnNabjNUU1RiY1lQenpkLUxTb3JEeFVpQTRhRkhpRWFTMDlrTHVyVTFwRnpVQXhTSWNvZjU3WkFRbDVFemR3MjlaeVIzVVRPRXdFSUhMc3M3SDU1RVliQQ?oc=5",
-      "source": "Exchange News",
-      "ts": 1766476800000,
-      "age": "95d ago",
-      "type": "dividend"
-    },
-    {
       "title": "Belrise Industries block deal: SBI MF, BlackRock buy promoter's 6.56% stake worth Rs 897 crore - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPLV9FSUNxNmNWY2huSGQtV2FOVXRrQzNaOVBrdXlpM2x5YUdKR01jM1RwQjNBaUl6S1RERDNwVzNDLTJZQmZVTTA4R0FUXzRlQWRGbWFHQXdfeE1rLXlLdC0zMVpGZ2RMNFY0ZVNkbkRJYVBTN2xRa1o2S1JCZi1GdDM2UlVDcC1FQXl0dVBFbHl5M0VZTFNOYkhkMUNZODlhTHFwNC1XZWU5anVPZEJQeEl1N01MOHRoTkZGS2hMeFpvT2RocWRmTmpUSDI2MUtGQkNBM0FVdWtESkxKV3dMcldwUTJmN3dFcXl3RDllVm54N2tpaUxB0gH8AUFVX3lxTE13dlhoa1lta244VjRlY3hWS3dwdTBlLWhwU1Mxb2lBalNlclhnUEJjemZYMUVKajQ0SGZ0MEEtcWMzd0dFdGp0a29ERF9mX3ZpckJmYXU2b0daYV9SeGYxeDl2eTFTeXdPVF8wY18tYWliNUpCandnb01HbjhNcWI2cjJEdTlsZzYtWWlCNjlOWENObDNmU0JVb3BGdjdteVRINTM0T0VWSVMzMHN0YVp6NXRteUlzWnlBWndwdVZHNVFnYXlqVXFGWGdXSnVTUUNwRTVyVlZWWXB6ZzNnV00ybXUxbHJ3bE1lQzJRVkx1YjJJMUljNktobGV1TA?oc=5",
       "source": "Bulk/Block Deals",
@@ -800,7 +824,7 @@
       "type": "insider"
     },
     {
-      "title": "Belrise Industries Block Deal: BlackRock Raises Stake After Promoter Exit, SBI Mutual Fund Other Buyer - ndtvprofit.com",
+      "title": "Belrise Industries Block Deal: BlackRock Raises Stake After Promoter Exit, SBI Mutual Fund Other Buyer - NDTV Profit",
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQa1FBWURsS01XQmN0RUE4R3ptWThjM0Z3Z2c3R1hEdUJGTXJHZk9maXlOV21KT3dtSi1kZ256cE1PLTA5Y2pzSzJxTnhJdmpBaVllX0ZNTzd0NU9CR0pvV0tZalJzQy0xWGVTS3AtSTUzc0g5VHh2bTlOVlAzV18tQ3BkaHlGZ05VYUhVTl94QUNRQ2JUaFp5T2NFSklPWG1WTmVYS1AxeTk0Z3dLYkVtRWxlVGl5QVNxSS1NdE5rVkZzTndIZHBHOHB0XzM4NFpQdlRINWpMTnhrY2PSAeMBQVVfeXFMTU9sNHZJRDBfbnVZQlR3dnZoSW9rS2hScGxFdWVteXZUc3I4RDdSWmdHRGYtVDZSZXVLVlVCT0RFNF85ZzB3bm5NTDREb3pGbnd3R3lsZ3d3bmhDYkNUR0dJQW51dS12clYyUHcwNEpyb1g3Tzd4X0xCNkhuaW9YZ1FYdXp5SHBBOVNYN0htZTNzZkx0eXdtb2Y2Mm5haGhmYUMzRTBDNFRqTmNDU1dMaE5ZT3pSZHRGdDlJbjVTWFBnQjNUR2M0N1d0eHp0REpVZXJnbnB3RXBUang3VDJnMExtcXM?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 1766476800000,
@@ -808,7 +832,7 @@
       "type": "insider"
     },
     {
-      "title": "HCL Tech Q3 Results FY 2026 date and time: 4th interim dividend announcement in quarterly earnings – Board meeting schedule - ET Now",
+      "title": "HCL Tech Q3 Results FY 2026 date and time: 4th interim dividend announcement in quarterly earnings – Board meeting schedule - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTVJzZktXeEtXeVM2M052SWtrLXg4TlRJbVg1VXRDbzdOWHl5cUZRaDI2VC1OdXVhcDlNdXh5REtvWU0tZjJDQWxfbml2aDdZMzBCdGU0S3loTFB0S2VxakU5NHlyTkEwUkFzSmZNYldJamJMVDF4TkJpZ1o3UmswQ1Q4bklvLU5PTHV6cXgwMm1VeDlwWU0zaERweGdpV1VSVjZrQi05RjlyVUtHLUhWbHpISnpjU1VGSUNkZmpoWmRqQ0x1bEZIUjlkaVRpRnFUb29GcV9SYldDVkNVLVZ5a29uZjFVN1FuZnZKalB5UVJqNUhjUzlIeUZ0eFFzYWp2ekHSAYcCQVVfeXFMTkZVSldIOC1VUGlPRGU0aEEycW05c0FQNVhfTXpaNzRrLWt2UTMyR29MVmtsUnV4SmlYeDZFNG10RF9Ic0hHWjV1UEI3eURHZ2ItTVBXa21GU1hWUkFuVVI5Q1VLS1dBSGgydXdNRTVmRlZUWDMtNC12MnVUejVNbDdmeWpiQkJEbnVYbHZtRnpmMDJYb0ZHckJWMmYycUtaT0hDRVpOdGtWcVA3Rks0OFpLUGhJSDlHWFhobHJ6bXQ5dDJSTU9BXzNTV3A0MlFzYWY3eGVKZE5vX2dMLVpoOHlPRWlPdHhISjdnWlVBYjNPR18tOGVqUEhSSElYZlNsY1owcDlBazQ?oc=5",
       "source": "Exchange News",
       "ts": 1766217600000,
@@ -824,14 +848,6 @@
       "type": "dividend"
     },
     {
-      "title": "Demerger, dividend, stock split, bonus, rights issue, buyback: Corporate actions next week - FULL List - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLUE2UFZyS3RFUjduWkJJQnA2SzVJWklONEllMjNUYmdlMDRKLW1GbkU1VEJmc25US2VYVVVxcEJ0V1pYdERnbnNjTy1tclVPd0FGOGktd2Vuc1p5MWZHaFFYTVV5a3VLbk5NdkVrU3IyRjkzNWs3SmwwRzZkaW15NmNNOU14aFZIRkEtU2Z0ZzR3M0FHVmN5ZHlzNFNLQkEzNEdDVlM4cUZ6eGlxRmZ4V1c0VWZMdmxzZUFjeWN4YlpxajRHU0tTQk40Q3QyMWFnc2ZxemFQeXVyNW5yS25J0gHkAUFVX3lxTFBaS3BzdHpxNGU4Yi1EaDBNWjhyNFhvdHEtSnMxdTVEZG1Ya3JUVXZzU0hWWEpHRWlfamU5Sk9fbE5xaTlia0MyTjU1bUhxM2UydWNGTHJkLV94RGxWbjhvb3hyOUVKdGY4VkphZnJRQzA2YmRRb19sSk5UT2ZEU0E3ekxiaUFTWjJKRmd4blZBWXhXRkRtTHljOHg2UG9fOVNtTzdfVGxjZkFuNXdUZGFEWGZSNi1IT2k0d2tyYl8zZTNVaXBYRzBtZy1WZkNOM1EyLXVpakh6alJoZ2JydUQ0TkR4SQ?oc=5",
-      "source": "Corp Actions",
-      "ts": 1766131200000,
-      "age": "99d ago",
-      "type": "dividend"
-    },
-    {
       "title": "Vintron Info Share Price Today, Vintron Info Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVmNFQkMtZXp2VDU0d2hoVDlWNUs2Q3c2emEzSndSZkJURGpxUGFjdnVyT3VoS3BqRHg1Ym1vVnlpcmZhTHVQNktwNC0tTmFOY1E5YlkyMlJiZ1E4RDNlX0JQQUs3aDdLX0VlaU9tUGF5bnQ4S0MxNFhtUVFmYWZZNG8wdl8xaXVWN3RndGtCX2g?oc=5",
       "source": "BSE/NSE Results",
@@ -842,6 +858,14 @@
     {
       "title": "Akzo Nobel bulk deal: Goldman Sachs buys Rs 106 cr shares as promoter offloads Rs 1,296 cr stake - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNcEl1SkQ5aHNoUG9FaFVrTk5XM1ZNM0FOMDFPWF91RE44TXYyX1lRRUhTLUk1RjNDa2RXYUJRMGdlSTRRMGdvVHlJV3RLUHBySDRaaWFXamN5NDBVNU5fSEoyR1BMWFpoc3g2MnJVWVJoWFA4TmNtY0FDd0pRN2ItUnlwSW1sMDN3akpPdS05X0pILTZObTZXYXRVQUZnTlB3OUVVTGpQU0FKM0pLM2dOUVM5ZXdXTExHQkFvRzllVHRhQXdxRHRsdnBUUnRoRGpjZGxMM0hCX3RkMHdvMUd0bnRrOUhBd0ZJZjBHSnB6bHhwNjZrN2JCLXhYRGzSAYICQVVfeXFMTldETU9IcWhYRkxTZFRMNmJXenFTQ08wVEtLRjVMR3VrRXJfMS1TOHFhOUgzNmV5Y0lLWlZybXIzZjFaSE5QaTN4d05PQkpXY1F3SVBtZU4wNV9jMmc3NW1mdFVCeEdzYVdNRi1maDRSaHpXdV9nWE13QTZnbS1HVTdBN2JmenJBT0o3R1Z4YUtMSGFYVFA1blVxeXVYUWpSaWR0dmZpSlRsZWtoZGxldkhPTkVjMzVtTEYxQzZUWGdUYkJJUWt0UUt6UUdSZGdXbWh3ZnJHcml1RFRzd2hlRng3UGtaanBaRmp5eWxhazZTX3VDYmhqSG1oMUpINHd2QnNR?oc=5",
+      "source": "Bulk/Block Deals",
+      "ts": 1765958400000,
+      "age": "101d ago",
+      "type": "insider"
+    },
+    {
+      "title": "Ola Electric shares rally 5% as Bhavish Aggarwal sells 2.6 cr shares via bulk deal to repay promoter loan, - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQMUdHU045STI2d1NsODhPSzFhdHdwcFNqUGQ3WGJuSHRHdlNyLXlYZGhKVFJ1TzdMNmRUMHNPNHE3Q1hNQ0pZYkplQXEzbElrOUt5dktha2xpb1ZzYU1EaFFKTnNaVmJrUThGT29zUzl6cjEzQU9iNjJDRHVsd014RDNBb01CREtPTDFrTG9JUzBjRENHS1dkYnJBZlRYSURxRE9iNWExRXNjMzRkeGlWaTV4bllnM3F0Vm56N1ZSVnhpd1p2WnRpMEtKZC1CcTE4TmstbnkxWjFvTUZVYzFzdVF5VlJmVmJqYlNoY1BRbzZXeW9XVkUxNlR5d0d5a08yMjRJUXhkZWtrNW_SAZACQVVfeXFMTVV4WG0xd01YU2ZkQXI0dGdzSmo2NFR1Uy1ab3lpY1hHOEdPcm50ejV0M0ZmTnlyZkQ5Vnk0ZUV2aVF2RmdBUGJ4N1psbDhNQUdBQTZHRFFsRVZsN2FFaFVBN3FkSmk0NUVxSGMwV2JfbE02TnktNkxIMHFCOGxwLUk4dEtDR1RpOXpVdEl6Skgwb25LbVRIV0tCOGRmLVdsUXE4WXF6TkNqX2pIQ0VveERzWHljQlRHTXFVeklzTE5qT2JjM0l6OWxnQlVjWGRrNThleFZkVEVia0RuTXJ4eTZSaFBzb1BmYUFneVVReGFya01BNDhZRnd5N0ZPY3Y5VkZ0QUV2cGpZSDQ3M2lxR3M?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 1765958400000,
       "age": "101d ago",
@@ -888,14 +912,6 @@
       "type": "insider"
     },
     {
-      "title": "Block deal effect: Bajaj Housing Finance shares fall 9% to 52-week low amid buzz of promoter's 2% stake... - Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQVUhJZjZMTjRzNjZpbFVnZE9VYjA4U2JuZEE4MXoyZnBZWGdFNGpQa0l6THRod01aY0tpT09IeUhCQmFlX0FGOThLMFhWdWtpLU5fWkp2REwzLVQ2YkFIZXdXWHp4Q21YZ1VOZHdKU0JoMENxdFVwdFFRWC0zcFpfU0s2WXhjWlRXMW1WVFBSN1RKQjZTYXhaMC1rWklzQ0tnSmwxeVAxNEZkZGFjZUR3OEl6Ql9mZ2xHdE85cFVIdThLNnQ3THhDTUxsZ1hYX2hYejl5eHhFQkpGSmN1aXdJX3prVHpOTmFPNFdmVzBZODlfOGlwWVlwUTF1OUY1QnfSAYQCQVVfeXFMT2c4STZzeEt6TjJjNktYX3FIejBBMUxxTHo4RFpXRVEySWR3V3ltZkJ2T1Uwd0tzYWlUdFoyYzNJbzdGSWphcEt5ZUxuVTN0TXZCZHJ1TFhveW5yV0xnVXlHUEVLVHpUSVpFMFBqWGVVaGVmc2YtekpUQTduQ3VmRkRmWlBxcmZtT2R0OHAwckthX3g0S3daenVRZkhMb2xQY3YydS16S1ctd19GQmhRbDhfZmxkVDZEbVotMlVZeDBYdGp1QUtVMWdpdlpuMzVQRTNCVVhXTlBQRjV6N1VfVm9ZX3Bid2RtSmU1d0VlTjZkZXNuRDZlU0NEbHdobUVjWUg2RUI?oc=5",
-      "source": "Bulk/Block Deals",
-      "ts": 1764662400000,
-      "age": "116d ago",
-      "type": "insider"
-    },
-    {
       "title": "Bajaj Housing Finance shares crack 9%, hit 52-week low as promoter likely sells 2.35% stake via block deal - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPMk10OFlfWkJabGdOMUR5SE11eHYxWlV1NTdab2JCSkF4R3RHT2dDeklMQ2RQbHo5YzZvc2JVS2pSd1h5Qkp0SEktTEM4M21MenpQYUxvd19LdS05SGtyV2RtZ2F2X0VDeHhFOGZNWEVpMTl2aVMzUndZOE5FZjlZWEpRVFI1OTQ5RnQ1TllhUGpkUGJhTDBDSnBCWkZfOWtkQm83R2diYTZqa3JnRFZXNTdMdDBxNlZrUUdELU8ybi1PeGNSVGk3ZUg4V3pjdlV6S0F1QkVVSVB2MFBtSmdzY19mNDYtMTNPZkowbGZB0gHzAUFVX3lxTE1iNXYxaXZXck1nN21jb3Y3S1M4SHhOZU1ZSWo4SjFQdUdoTlA3cENlREZSamh4azB2ak5Ya3BfSFQ2RktqQ1FPUEdQMnF1TDBWZ2FJc3hKTFlGeE1Eb0RMVDdkR09MRGY1c0xvcFpiSTlSRW1RSGR2Z0NwS3MtM1Q5c25ndkltRXVuQmFHSURvOUxFYlN4MllnTWtBdGV3TDBwMXNjdGgxYlZ4Q0NCbXk2ak5OTTQ3MlR2V1ZsaUVmSDQ0dDk3UEFBWlFMTmtVaHBZSGZ5MlEzRC1NYXd4elZjWXlxYXkxalVOT3Yza2NrWWdKVQ?oc=5",
       "source": "Bulk/Block Deals",
@@ -904,7 +920,7 @@
       "type": "insider"
     },
     {
-      "title": "Indian Oil dividend 2025: IOCL to announce 2nd interim dividend after bonus issue soon - ET Now",
+      "title": "Indian Oil dividend 2025: IOCL to announce 2nd interim dividend after bonus issue soon - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORWlhYmQtMDUzWmk0U2xLQmVFdm9rakhpSkxZdVFWZHJVSG8yVzFQMDBZcnNOMDVrN0dvaU9JRmVDRWdPX0JLQWZLb3hSaVplbFlRRHVwa0FBeldnemppcGlCMGxsMWIzTVlLaHF6aHRDOTctbmVQbHBBX05fbDdSRkExaE1QYXZIY2FkTUNCMGNxdFBfb3ZmT1NMdzJLY1NuamJvb29EM0x4d0FHRFRKeWR0bEJfcElKaEU1Y0Z6RGRzREwzY3kyUzdkaXZ4Q0hUcHE00gHYAUFVX3lxTE9mWUpfaEV6M3kybnB6Z1NoSEhvNXFOLXdybmdzblk1bzNHMjhSNXZDVVBOODdWVGlqd2VDeVRpREE3T0VPaTlLV01RV19TMjlfT204QnJqS0UwV25YZGJnSlJPeXN0VkZlanRKUXhmWG9MWE5fYUtabGhmT2hHQTRiNnlCVzlYTUx4Tnc2OWpYVk9salRjTlNwSmpjejVhY29YM19iUDNxN3BZUmh0N0RYVXZhR2hfMjhMTzJTOEJRcHNjbk1BaV9vUlFoTEJreVJsYUJidlVOLQ?oc=5",
       "source": "Corp Actions",
       "ts": 1764403200000,
@@ -976,7 +992,7 @@
       "type": "results"
     },
     {
-      "title": "NTPC Q2 results FY 2026 date and time: Dividend announcement by PSU in quarterly earnings; check record date, board meeting schedule - ET Now",
+      "title": "NTPC Q2 results FY 2026 date and time: Dividend announcement by PSU in quarterly earnings; check record date, board meeting schedule - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQU3BfMFJ3OTZ3R0ZxRVFtZlktV2ZWQWxVOTFyQnFkVHhpMFF5bHZETlFxWEJSSm1LcTFlaElTazc5Rk5xVkhMbDBPTUw2NjNFcW1IV2kyQmNnNWc0aUNGU0tpcDBjLUtRcXBUWFlEeXRFNm9venhhLUtMTmxVb1hRVXlSWW1fN2x2NXBONjRUQXhCM3NkUnFneldjTHN5R0tSMW1SUUdvaUVmaktzRXdrbGpoejdHVEZVSHUzQzl1djlBZ1VvanU2azhmTU14M1ZYdlFBMXdGNHlLVG1PaXhWSVZmbUxTQktXUTB1eEMwTG1jUktzaDdSYUxSSkdpY01QZktwT1JLTThZekcya3fSAZMCQVVfeXFMT2gwRUJad0N2bmZhVHRRYzRwbXVwU0x2MlNTZmtsTkVYdGdLeXp0bEEtclJUa0VTeXZCamVFWUNhMHRBWkJ0ZTE2ZENENVNTcDd0WUYwVVdzYngySDFFZF9kNi03UlNtVWVjRmJaM09hTUxaekNmWHo1NDJCelJkN2pXYnJVdm5lQ0RLeUZGdWxOR2tDazctNU9aVHg1YnoxTE1oZWR4SVZ3dmRHdWxMTE5QcmZNbzlzYVBQc0tydkRFTy03NTIwemR0SHptUWM1cTAwLXJsVkJmMDRub29YZWxzRUVnMnZoanRQQ1M2ZjU5VkhGMEl4d2dHMm1kZzdyV0t3YzBxYkQ4ODk4WVNFajhFblE?oc=5",
       "source": "Exchange News",
       "ts": 1761375600000,
@@ -984,7 +1000,7 @@
       "type": "dividend"
     },
     {
-      "title": "ONGC dividend announcement in Q2 results FY 2026; Quarterly earnings release date and time - ET Now",
+      "title": "ONGC dividend announcement in Q2 results FY 2026; Quarterly earnings release date and time - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd0ZzNWVWbkxndnZncjlRNUthY2ZhZ2RVSlJ2YVZiNnpwWFJldUVWeEk1U2FiQXlMTmVXb0xOMnU1di01SzJhcmctTFg4YnlOYzlzYWE4V19FYWN2WUt6b1dyR2Y0ZkphRHduWEFtRW1xdjV2ZFhNdmJzVjIzUXBFdUZJVVZtMUJYaEo0cURpUWcyQ0duakF6ZXgtTzlkVFROdjRMeTczS3FsQkN3QmRHbkFUcy12bEtlaFdMQXY1c2c4eVFyWGlQNmVWSy1CbmZPeEp6blJFTU_SAd4BQVVfeXFMTnJ0S2FvYVZFcUZ6QzZyUTF0VEhwWXh6M3g0Q1J2M0ZTdktDU3dzYjN4MURqZ0ptcko2QUtVYUg3ajJfV2NJMFVnanNNNzZvaGp1UmZITnotSjhyRDNzYkRncVAybzJKREdnYmQ4Y014RldodDJ0cllESUpsOHlOTkhwYU5wcGdyQUotcHU1RmQ5NlBZc2RFcS0xZEItbktNdC01cEtFYTJSTF9mY1FGTi1Nb05KWTlxdHhNUEF2cGFzWTZQNTZ3Ql8xb09QLUY3YldpekJrZVVsVTdhaHJ3?oc=5",
       "source": "Exchange News",
       "ts": 1761375600000,
@@ -992,7 +1008,7 @@
       "type": "dividend"
     },
     {
-      "title": "BPCL Q2 Results 2026 date, time OUT: Dividend announcement by PSU in quarterly earnings – Check board meeting schedule - ET Now",
+      "title": "BPCL Q2 Results 2026 date, time OUT: Dividend announcement by PSU in quarterly earnings – Check board meeting schedule - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb19ETnBfZWh5VWhqVDZ6eDBjUEhSNjdxRWk3TFh0c2pGTXVmbWFSbkl4M1ZEdWg4OTdUWlc2MkJnOEdBaFBPU0NELU9xY2x1dVo2aElQdFNQTFVwdjN6ZmQyMHFWYTlpcTVoSG5fVU5QeFhfNWFQaFo5eXZNNmxiOVdXc21yelBTLUR5NEJUOHFsaUwtVGVYcEZGWDBLQkthRmtRZElXcW1SdmJKcmtNbHhSY0R4NUs4SGhjRzRtR3Q4T2ZJVnZxdU1XZHRUQmVJNWFld3BybmFkcmZGb3I5clNQaFV0SmdrLXYyQk4taEVfcXpiUm01VThR0gH_AUFVX3lxTE5ubVd6aFZRYXk1eE0yMGF1NldaNEZDSjFrbXNCMEU3ZlZUZ2JhNlJaTmZtZVM4QTFNdTBpRTg4WEllbFd4WmpZSHBBTVFLdDJEcWZCdzljYldsQnlla1hXdnhiQkZlVkhha0QzQTYtaGdVc2lpQWNvOFlKSUJZRFRndi1aYW1UQ1otLUk3TWpJeVFiZjRYN1ZGZG83UHpJWTZRczdoSHY4WmxIbGNHZUJzcmN2VDB5YUlCdmZRWk53QjJxVkFYUnB6c2hHNHpMeWVmN0ZpSGFwRnEtb0xjc2Z5QU5SRnJwYnF5X0FxZGZROVR6ckRNVmpJYlhUbm0tNA?oc=5",
       "source": "Exchange News",
       "ts": 1761202800000,
@@ -1000,15 +1016,7 @@
       "type": "dividend"
     },
     {
-      "title": "ITC Hotels Q2 results 2026 date, time: ITC-promoted firm’s quarterly earnings this week – Board meeting schedule - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY3VtaFVJMGoxOElKcXFzSkJWRTA1SWVDVmtKbWFjQTJjcHlEMkM1cjYtUWJTNC1yWjlqcDk4V3NFeEJYeGpieFdxbTFnVHVRaTZhcnlpaG9KSzhNTzBXMzNQekxCcUpRWEllSUJRdHE3eVowVW9seHNDOVFsT0NISnZweV9qQVFEbWxuX0NTTGRLX0FEaG1PaDdKSDdNN1FNLUxwYklrS2U2WnVIcFZSRjNKMjVEcGtLRndqSDJ0aFhMUnVQRXdid3dHX0pxcDJna3Myb2RjV3NLY0JhbklYOEhNY1RONzU5azhtTjB6SkvSAfYBQVVfeXFMTmJEZHdHaTVVdDlhcWpvVlU0Uk03V0hDRXQzNWNEZURqalRQX3lUUFFhSlkxaDRpV2xDVlU1VnducWlVTWtUMnJ5NDdiS2ZlYXBlX3RmMXBHblpFSzU5SDJlMmJnN2dDMmFGSkp6WVU4UGlkbXFNYUV5a09KcWtLX2ZnU2pTN0pTZmJyc0tkaEp0WHdoa3dObnBXZTZLTGM2dFozYVFQU2N1R2JVTjZmLU5FeHFMSHVhU1dyZmo0V3V2NENnNUx1ejZQQWVBeHNLQTZnYjB0eXlHMmF5Q3BtN00xYlNYV3N2MEdPMDhsbGNEMzRwQzNR?oc=5",
-      "source": "Exchange News",
-      "ts": 1760943600000,
-      "age": "159d ago",
-      "type": "results"
-    },
-    {
-      "title": "Indian Oil Q2 Results FY 2026 date, time: IOC to announce quarterly earnings soon – Check board meeting schedule of oil PSU - ET Now",
+      "title": "Indian Oil Q2 Results FY 2026 date, time: IOC to announce quarterly earnings soon – Check board meeting schedule of oil PSU - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPeDdzVjR1TXlqa2pib2wzcllRbnRKTGNfSUhPVHcyY0RBWDNDV0hyQlZkdXRVbTJ2MHhuOXpFSlFLRmhjc2ltSmd5cGpCeHZ3MUlMQ1d4TEU4YmVic3NYQmNibFVKMTRsRC1ZZUh5XzJWNGZibHpHdElxLWZsWHVhRVdJSnAyN2pCaDV5M2JIT01BSzRlVm5fUFIzSHpaSEhyaWlzNlp2Ymc3dDE2OENBRS10YUlXS1I4UmFOck14LXQ3RzhQZ0xvbUZtVGJNOEFqN0JpLS1lbzRsMnVmRndZWkRjTEUwTDNhZkx2NlBHRnFjMzNiZW440gH8AUFVX3lxTE9MWl9xOUJvRUlaVXB2M1QteWFENnJwMUhjZzVGSEZzajQ0aUpPMGd5UnV2V2kzZUhrV2d4LUpxQmhDVjhHM2g5OHhHdW8zNThFSnNzcEZ6bHlpRGtNbG8yTDZpanRsUGlDSkdyTG9HalZxQ3M0ZVM2TGc4N3hGODZNUnR1NDNobGNZU3J1Y01iTFJlSjFTaUx3YWhKNl9sSlAwZEY5ZDlzWG9rMnhRaTFPbk9Qb2IydmgzcWE2eXJ1Y3doUFJmSk1MSk9MSWlGUFdha3lBUlBZMG5WdXB6c2lLREFNNE1seVhibkl6VzJTbzBlMmpfYVJqMWxnLQ?oc=5",
       "source": "Exchange News",
       "ts": 1760857200000,
@@ -1032,7 +1040,7 @@
       "type": "board"
     },
     {
-      "title": "Quarterly results NEXT week: RIL, Infosys, Tata Tech and others; NSE, BSE companies set to release Q2 FY26 earnings - FULL LIST - ET Now",
+      "title": "Quarterly results NEXT week: RIL, Infosys, Tata Tech and others; NSE, BSE companies set to release Q2 FY26 earnings - FULL LIST - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMzVGOC1sYkRScXhaZ3M3ZVY5M3Azb1Rvazd2dFJWc1hSTjNjRVBGU1c3QlRfeTJYVmRXTTduUFFuZW5oSjlxekpweVJSVDRSdVdjMC01MHBsUzJ3azhMRjdwMzQ2bTdrc0FRbTk4QTBSY0UyREhZQ3NFN3RuY0RqeVh3TzFSTV83WVlFU0Z1blM2N1ZLTklmay1ISHNwTi02QmhCbFdBaUZRYlhLNk1uOF9pNTRTWHFvazNPdFZScW1DV1ZIMlBTd01RM1NoMU5zNHU00gHYAUFVX3lxTE92WS1lQm9RV0V6TFBJclc4a3cwbWczbVREckVoQnZUdUduUkRDcUZVNlF0Nk11b1NoZjZxamtDY0pQakdnc25pRFVZRm5WZDlLcnRkV1hQUkQtc1F0cUhqbEdCeFBkdU4wY1JDdFU0cUNLVkVuTTM0bXhEZFZiQmxQYkVYNGVnMzFZdFVJbVBHVVVVOWtqVE9HVmV0a2tJYS1ycXRsdTUtN0I4UGx4X1gxVkxJb3ZGN1lQcXU4NEpCeEk5Vkh4YnVzOHlRWkYyWnpoR3kwZmtVcQ?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1760166000000,
@@ -1040,7 +1048,7 @@
       "type": "results"
     },
     {
-      "title": "IRFC Dividend 2025, Q2 results FY 2026 announcement date and time: Cash reward next week – Board meeting schedule - ET Now",
+      "title": "IRFC Dividend 2025, Q2 results FY 2026 announcement date and time: Cash reward next week – Board meeting schedule - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQeWxWU3JqcTF5cVo4dVJIVmt2Szhnc1NhWjRRb1VRSG91Nmx5T0JQekowM2kxZEtTamphaEVYTTNEVmJqLThiS282TW80Zzh1dHVLLTFkemppdV8welR1RjdBOXpGZGVPdDZCRGdnb2l6ZVU3aS1JUk1hMHZyYzV6T2pEWnh4aVBLbjNveHhsTGc2Smg3SWhEbFh4N0NwNko4cl9Va3FhWEo4dFNXWnRMa2hFMS1pOWZ5aHZRcFF4LW9PVWNaSTdvdXl5UXlYMllVOWhZV1VCS29hTThJMkNFcmZhZXBWOTF5UnRWaTl3cDdwSlnSAfgBQVVfeXFMTU9vSS1TdENMUjVweDJMZ2lQMUo2elRlOFppYTRZZ3VuYnlZOGlZU3BlN1h0eDNBN24zLVZLMTl2YjZsNkR5SEl4OWJpLWpiLUpNaURacENCSGpSUHJqNXlUQUU5MmtHNFNvaEFST2NqLUc4UjVYUDBJeVJDdE9QV2RWZ3F3eTFSUUhVRWU4dUw2MmRKUW1WSDZrWENmUUZ2Nmh2X0ttWFNlMFR5NHBKTGJ0QzRfQ1dIRWx6VXNDM25YRmZ3QmYxaFVqTk9KR21DVWxYTHFwdlAxXzA0UUpyYXk5VGpMRERnMW1EdmpUN3c4emZJU1h2blU?oc=5",
       "source": "Exchange News",
       "ts": 1759820400000,
@@ -1056,7 +1064,7 @@
       "type": "insider"
     },
     {
-      "title": "HUL dividend announcement in Q2 results FY 2026 – Check board meeting, earnings call date and time - ET Now",
+      "title": "HUL dividend announcement in Q2 results FY 2026 – Check board meeting, earnings call date and time - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcXo5Z0UzeVdkcG10YTA5d0ExMVBBQkphcFlvWnJZejNyNFVsNk4tUFhjejhGZTh6ekh6TXVLclBMR0FTU1hlMEJhM2NtVEZoRXd1N1BOR1VoYURra2x4aS1oYXBsX0M2RWJBcmh5OGdCaWVLTS1rWnhnVnBPUHlybzY1dEJLeXJRa21pRnNLRi1KRElvWExfN0NoVVVoMGdaaGYtNmhUWndCTGdtOHNDaTYyY0E2MEFmU2stN21iZ0I1eUwtSndVZlY0UHgzdjN4LVVwUDZxTkZISmJSRnFfdtIB5gFBVV95cUxOUjlzajN1bHExcnZfTURPQmFKYXNkQ3FwdEc3MUhKQUhDUnN4Vms4ZWMzV3Z1Vjc4STBNcS0zcnhCYnFzbGJjT3VHSldlZk9NMDVjbXJwSmpmWkRNdURMTk9USWVwQ1ppUkNMVkNISl80dS1TWmpKZng1WG9mbGFNSHRld19CWEcwY0xNbC1DY3NkYW1ONGR6dGlxRHBsR2FVeF8xTWZrS3hsTHhQWVY1cUpEMVN2NUEzSWNjWlhQLVhGdC1xUHlYTW4tZU51SWgtMWJYeTZkTTV4TG85bDdibS1JbHpwZw?oc=5",
       "source": "Exchange News",
       "ts": 1758524400000,
@@ -1144,7 +1152,7 @@
       "type": "results"
     },
     {
-      "title": "BSE Q1 Results FY 2026: Profit zooms over 100% YoY, revenue up 59% YoY - Quarterly earnings details of stock exchange - ET Now",
+      "title": "BSE Q1 Results FY 2026: Profit zooms over 100% YoY, revenue up 59% YoY - Quarterly earnings details of stock exchange - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdG5pbTJydE4wVWwwOFN2SmZKV05UdWU1ODhmd1RieHVmVEN5eWJUa3VzTWhGU0JmOXJuYmQxNERxNEw2bmZNbDFWSHBiZ21paWU1dUpQTHAycGxHeFV4NkNjb0FkQTg0WFlLTEtNelA3Wk1qLWNQSV96Y3AtcVlQMXBueHFNM2VyY19lbFZ0TndDVHItQmxFVC1jWkRscXE5Tzg5eEpkdDJUZlpKN3labE5tWGFuOF9RanBqaTNUMTk1TTdFc0FSbGkwNUpmTVdxc0FaOHAxd3pHNWZKX3JJRnBFd0E5elFwbmFKUzUzeEFvVVYzV3fSAfsBQVVfeXFMTmE2NXJDOWx0ZGdvUFRyN1ZrcXpGTkRfRGZnQTFSb2V1Y2FpMEF4cGs1TGtVQnE0VDZ2al9Ua3FmSzdoZTczRDEwV25KMWNGN0U3d1pCdi1mSExEOC02RmZRdEpjYzE5TEJ2SnpuWVFOZEw2NUZxZHBtQWlWVUQyTC1WbDFSd1dFY05DZ0xvMVEwUkJOMldDSlVFT29JLTBBY2xseXVZdFk0bW55YnVlLWhTVjZEOXBnMDNua3FFa2R0WkdFd1FuZDBwTXN1S2lCVkR4UWs5UktBSHhBeTNTdWF1UUhKX3U3UExUTERpaW8yemdPWDFPZTQtRG8?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1754550000000,
@@ -1160,7 +1168,7 @@
       "type": "results"
     },
     {
-      "title": "Q1 Results FY 2026 Calendar for Monday, July 28: Adani Green, BEL, UPL, IndusInd Bank, GAIL, RailTel among 92 BSE, NSE companies - ET Now",
+      "title": "Q1 Results FY 2026 Calendar for Monday, July 28: Adani Green, BEL, UPL, IndusInd Bank, GAIL, RailTel among 92 BSE, NSE companies - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPcFhEWTM5VFl6WnFsTl90am5rM0I2OUxqRWtGZGhWdFlSRXhUQURRRG5ybWtQUVBjN0JLRmlXV1FGVmFKcHdxc01WLTNuVloyZUJ4dFh4TFEtaDM0SHh1d0ZVVzQ1SEFweXp0dm82OU1taWVYWnQwMzlOdWVka3JpYTVkaWpPVkVTTlBRMF8xOThCTmJBS0ttTTE3ODEwMi1JUG9EZHhnekZDS016bEJXcjJOR2ZhODlKUENFNjBBc293dzFaaV96VWVHbG9WVkJyanpXZTRkbHlGbEF5c2V3NERfTTRqeTRfbmxVTVdsY01IUF8wUzV5VUp3Q21zbDVVU1HSAYcCQVVfeXFMUHhtSjdEek9qVkJzWEZISDdFc0FXZURReGpjUVJiSmJXQmRWMmxEeEdPY3RxY3FXVVlqNFd1dVRvZ3pZSEZYUUt4eG5XSjgwa2oybTZFV2E1QnVRbFVfRWVrUWg4M3ZZNnp3c0tPR2N4MkIwRGdNeGlZdGlucTN6VFFtZzFITzUzSkxScG9oYVNpOEwtYnlhSlI5WkNxSlBNdDhNMzQzLTV4QklfV00zZGhyME45MVlVaHRvWkROZmtFeVU2bW5mUGNRbHM2aTBQNS1sLTh1TUl2bGJ6RGNSMGFhZ3VyODhtZnM5VGpCbnkyckZ3S2YwNy02NVlvZTREeFdtbkZYYjg?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1753599600000,
@@ -1192,16 +1200,16 @@
       "type": "board"
     },
     {
-      "title": "Vishal Mega Mart promoter Samayat Services sells 19.36% equity stake in retail major via bulk deals - Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVjl5bTFDc1NPdGdYaE9qQ041R293enB0RFowaUFhN2NEb0dhZEZ4Sk84c1RKVkY5Wl9ZLVNPRkg2WHhNMnROVUFuRGsxNzhUUTdVUGJ1YU16a2VjSjkxb1lWVDJVc1AxU0JZV0lzaTkyancwbzFUbFZGaC1vSjFRSjltM2VlTllzSzh6LXVHVC1hd19RMVpyYWNvRkhZcHZtVHlscGpJdFZnc2t3blhLTkxOdjB5OEU4ZGxlNzVNcXJJcmNnZlE0OGJFVUZxb3k4QWNZUXFmSEtJckx5V1h6TER0QlBndm5uSlZ6bDVlTHVYTktkOVJOOFpDcmdGYjQxT0FHakdtSdIBjAJBVV95cUxNLXMwMDZ3ZEdzdjE1T09YQUhESDFEeThLem1NTElVcW13aFFpMFNuM2tGS0xuTlNiWmlIdEFaMGZYZmFseERBcXFWZEV5ZjdWMVF6WHFBdFZBT3M3V1I3aE9HcnZDZnVJLVU2ZVlQU1VGY2tvREhwT1JwdTJoNHd1bFdud3JCWHRpa1d2NW03SGNqQ2Z2enczaHRjczVjWERnbzFqWWliR0trci1GN3pSTkdUY1NZOWV6Y2dUMndFNVZHTkdKaTA5MTA5bzJrUXhaTVhsUWZXdEhYbmRDOEh5RFJqWVFDYkY1RW8tNzF2VkNEVnNVUTg1b0k2dDNPWC1NdHNWWEpIcTFWZVdx?oc=5",
+      "title": "Vishal Mega Mart block deal: US asset manager Vanguard buys stake worth Rs 655 crore - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT3RGa3Z4V29RLWV6emVkQ0twVHRDSzFxZkRrVmlieVlUQ2Q3VVpBYTVxelp6SWdFRVdzLW13NHN5d25YcVYxR0hja3RhSEN5M0I3N1l1MUNoQTYxMnNQc3NLZk42RUpqek9IMGh5cTR1UlpUR2gtd1FIUHVIVjAwVUxReW1JeFVEbThiM3k5d1dMSnFXMUlmWXdVUVc5QTYzTDRkQ1A5end4Z1cwbllsZU9MQ3d0eWo3bThGTkE4cS1iTVl4TkZwR2tGek51Wk5fZDJkeU4zY0IycjlFZW9FVnNreTc2cjBueU1ZMzZ30gHzAUFVX3lxTE16RUNCZ2pjNmU3aF92M05fc2VLZDRfTXdwRlVGTF9lRGV4U2ZlOXpIZFFhOFdmRnEzcEFvalg3V2VFQmQ0ajVvTk5JaXJpVHVOMnFWUmFIbUQyVkhIbVkwY3FCZ3FSeEpCajA1RmVjVXgxWVhiVEJ5X2FwWjFVelNGQ1NWYkVqUXExdW9wcXNjMjZrX3NlS3JLS0VNdUNXcUtXcUxPeG1QUkNLSFRPQ1dia0xZMEdEWUtrTHVMNk1MZ1hDaXNYR3VLNjBoY1p5bkRNdDNhdHBIdnNRN0xuUEYyVDA0Q1JCa3hlS0cwVmIxYUlmSQ?oc=5",
       "source": "Bulk/Block Deals",
-      "ts": 1750230000000,
-      "age": "283d ago",
+      "ts": 1750402800000,
+      "age": "281d ago",
       "type": "insider"
     },
     {
-      "title": "Promoter, PE & VC selling crosses Rs 40,000 crore in 2 weeks: Red flag for Nifty bulls? - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN2VTTmdaWFJVQWdZNGVmQlNkdm9qUWJfZjItelBsOFlycWVuRDNCZkdVNHQ2LW9FRmpoc1NzQXYyRDBaTmY2cE8zM1F4M1lsdHh4YnpDUWpleXNBaXdPUENDWmNTd3BsRXJ3d2FlcC1hMVhuWFprVlhUbWVoSXNIbGo2MG1HNk90X1hQMzNuRGpBZTBTbmp2QmZCN0FYQl94OFlUY3hJMl9LTXJ6dG55ZFlMbWlOS29lb2VtR1pSZ2JYWG1DX3lCMUpjWDVmSHJMYjB6OHptVzNYcXJscDJ1Yjl6Qm1odzJFVlhR0gHwAUFVX3lxTE1LSEhFTExxZC1KQmFXQmNYcEFLUXgwOVA4QTY5QXpXMFNKQno4cjY1OXZjZl9ZbEx2MDZsQV92OERfcHI3dmE0Z2NHMGlGYmUzRXhnNjY1ZDNTdHh3b082VlJ4VWRWYU9hYUtJOUdPN2Q0VGx3aFNGM3luOU91NldSWTJSOGFHMjNlVF91SU5ZY3RqeDFmeFFCNVdQb2diakZPdTRSVVNTakFGMGhkVmlZMjc5b0hRS0g4Szk0YXJvX1lmVWlNWjV6S2gzMDlhNWEzX3cwNFpMMDNRbFl3bUZuRC14SWRHRHZaRC05QUlLNQ?oc=5",
+      "title": "Vishal Mega Mart promoter Samayat Services sells 19.36% equity stake in retail major via bulk deals - Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVjl5bTFDc1NPdGdYaE9qQ041R293enB0RFowaUFhN2NEb0dhZEZ4Sk84c1RKVkY5Wl9ZLVNPRkg2WHhNMnROVUFuRGsxNzhUUTdVUGJ1YU16a2VjSjkxb1lWVDJVc1AxU0JZV0lzaTkyancwbzFUbFZGaC1vSjFRSjltM2VlTllzSzh6LXVHVC1hd19RMVpyYWNvRkhZcHZtVHlscGpJdFZnc2t3blhLTkxOdjB5OEU4ZGxlNzVNcXJJcmNnZlE0OGJFVUZxb3k4QWNZUXFmSEtJckx5V1h6TER0QlBndm5uSlZ6bDVlTHVYTktkOVJOOFpDcmdGYjQxT0FHakdtSdIBjAJBVV95cUxNLXMwMDZ3ZEdzdjE1T09YQUhESDFEeThLem1NTElVcW13aFFpMFNuM2tGS0xuTlNiWmlIdEFaMGZYZmFseERBcXFWZEV5ZjdWMVF6WHFBdFZBT3M3V1I3aE9HcnZDZnVJLVU2ZVlQU1VGY2tvREhwT1JwdTJoNHd1bFdud3JCWHRpa1d2NW03SGNqQ2Z2enczaHRjczVjWERnbzFqWWliR0trci1GN3pSTkdUY1NZOWV6Y2dUMndFNVZHTkdKaTA5MTA5bzJrUXhaTVhsUWZXdEhYbmRDOEh5RFJqWVFDYkY1RW8tNzF2VkNEVnNVUTg1b0k2dDNPWC1NdHNWWEpIcTFWZVdx?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 1750230000000,
       "age": "283d ago",
@@ -1216,16 +1224,16 @@
       "type": "insider"
     },
     {
-      "title": "Vishal Mega Mart shares rally 4% after Samayat Services LLP sells 19.6% stake for ₹10,220 crore; check the buyers' list - Upstox",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQaGRkYmMwQzR5eFZ3d3JYUWRtalNwbTVVd1N3eHZoVXZRbFBqeXFBaUc4d0RvcWJROG00OUdaMkQ5N2xUZjN2d0txa014bXM0MHhZTFRaSkhielhRNWxzWDNhemJTZHZTaENkdWFuRzlEWGNiU2xkc2VpSzFmbzUwdDBfRmtoUkt2MXNhY0dBems3Y1hubjY5MWlkdEpnLTRVT3R1eEh3V1dMS2cyUGVYX3lFN19nWmhNY2tBOFBzRnViLURxSndRbWNrcVlZNHZJX3V1Qnh6eXM5amtFN1oyc2hZaWl5YjNWUnJhX3NZX3E4ZFJ3c3BTdnFJQmRlY2c?oc=5",
+      "title": "Promoter, PE & VC selling crosses Rs 40,000 crore in 2 weeks: Red flag for Nifty bulls? - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN2VTTmdaWFJVQWdZNGVmQlNkdm9qUWJfZjItelBsOFlycWVuRDNCZkdVNHQ2LW9FRmpoc1NzQXYyRDBaTmY2cE8zM1F4M1lsdHh4YnpDUWpleXNBaXdPUENDWmNTd3BsRXJ3d2FlcC1hMVhuWFprVlhUbWVoSXNIbGo2MG1HNk90X1hQMzNuRGpBZTBTbmp2QmZCN0FYQl94OFlUY3hJMl9LTXJ6dG55ZFlMbWlOS29lb2VtR1pSZ2JYWG1DX3lCMUpjWDVmSHJMYjB6OHptVzNYcXJscDJ1Yjl6Qm1odzJFVlhR0gHwAUFVX3lxTE1LSEhFTExxZC1KQmFXQmNYcEFLUXgwOVA4QTY5QXpXMFNKQno4cjY1OXZjZl9ZbEx2MDZsQV92OERfcHI3dmE0Z2NHMGlGYmUzRXhnNjY1ZDNTdHh3b082VlJ4VWRWYU9hYUtJOUdPN2Q0VGx3aFNGM3luOU91NldSWTJSOGFHMjNlVF91SU5ZY3RqeDFmeFFCNVdQb2diakZPdTRSVVNTakFGMGhkVmlZMjc5b0hRS0g4Szk0YXJvX1lmVWlNWjV6S2gzMDlhNWEzX3cwNFpMMDNRbFl3bUZuRC14SWRHRHZaRC05QUlLNQ?oc=5",
       "source": "Bulk/Block Deals",
-      "ts": 1750143600000,
-      "age": "284d ago",
+      "ts": 1750230000000,
+      "age": "283d ago",
       "type": "insider"
     },
     {
-      "title": "Vishal Mega Mart shares tumble 8% on block deals; Rs 11,100 cr shares change hands - Business Today",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcVpSamxRMVljbjFfOUhqdVFhY2gtdE0zNTNtdkF6S0p4cDl3bjE3V1R6QWJMQVB5QWZnN3F2MWJobWN1YXk3TEFBUXJQMTlRbXNkRjFmbTNmX0RWU2tNakk2RmNNZ2F6VE9weWZpSURDc1JJN2N3WUxMSnRnZnhoUnNPXy11dTl4TlRpQTdETkRyTUl5VnRCTVgzTGNzVzVLaXpPSnVHNUdDNGpYWjlrQXNsQVd0aXJRR05tQ3kzdjJHdXQtY0FOWkxHMTlTLWNHczhZbWk5NEVTak1OYi04dtIB5gFBVV95cUxNYTJ2OEwxaVFLZmdqUFdhblNoUEhzLWd3YlhVMWlzbWVMSjlxNnp0MGpsOW52c0NkUmpGMXhuS1MwY1BDc0NFNWlCaDh4TWI3cVVoT2J2bWNadGl3VE9Uc0RTQVdYN0xxTEZLbVdvaWJMdGlDLTYyQUZsdk5UMVN6dEdTMElVVkcxMndKZjE4bUxxOHg1OGhwQUQ2bV90eEprV2NwOXFNUmRMUFFQUDROMlJORUZIRGlwTWtkd1J3SEJFSzJzYzZyaURGQW81SFdkOGtxUE1oQVlLckRiQld5ZTJ4WXNWZw?oc=5",
+      "title": "Vishal Mega Mart shares rally 4% after Samayat Services LLP sells 19.6% stake for ₹10,220 crore; check the buyers' list - Upstox",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQaGRkYmMwQzR5eFZ3d3JYUWRtalNwbTVVd1N3eHZoVXZRbFBqeXFBaUc4d0RvcWJROG00OUdaMkQ5N2xUZjN2d0txa014bXM0MHhZTFRaSkhielhRNWxzWDNhemJTZHZTaENkdWFuRzlEWGNiU2xkc2VpSzFmbzUwdDBfRmtoUkt2MXNhY0dBems3Y1hubjY5MWlkdEpnLTRVT3R1eEh3V1dMS2cyUGVYX3lFN19nWmhNY2tBOFBzRnViLURxSndRbWNrcVlZNHZJX3V1Qnh6eXM5amtFN1oyc2hZaWl5YjNWUnJhX3NZX3E4ZFJ3c3BTdnFJQmRlY2c?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 1750143600000,
       "age": "284d ago",
@@ -1264,7 +1272,7 @@
       "type": "insider"
     },
     {
-      "title": "​BSE share price target: 198% jump in 1 year; BUY or book profit in 2025​? - ET Now",
+      "title": "​BSE share price target: 198% jump in 1 year; BUY or book profit in 2025​? - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaVZTck91Z1R5NEJta2dwcmJGSlVEV2h4QUd1ZTdqdVhjSC1mMnBVNndydVg1YmhHcFFtWXVBTGVYamRIanVFVE4xbGJoM3hndV9DSXVfaEgzbnVaWm1CN0VpSVVMQy1MazgyRTE3T1l4bWNOeWtYZkpOOGZDTlR6YVB6TnFKWlhPTXVXRWYxVml4NDItZzd1UHllbHR5RXFOUHdheDM3anJuS2lmdWcxNmkwVzhBNWhZeWpacjlYU0Q1VHZP0gHKAUFVX3lxTE1XQy1WSm1QN2MzYmhXU2RldXlzQmQteGlZd3dGRTRHZHRmSjZ3ZVpjdkRtM3U4U1JFbkNramRBWG9pNnNUV1EyYzUtMzNIS084a3hPbUVnRHM2X0N6Ukw5YUhnaUMwdE1tTll4ZGxVTXVJQVk0eFhCVklZdG9UQUZQYXNYUGgwZVNyZXRMaWdEOHBXcmFqSVoxSVBUUVAzNkFkekYzN28ycnA5WWY1VnJkQ0lPZmFzMklpVG84NkFnRlI1VW1sdEIxVFE?oc=5",
       "source": "Corp Actions",
       "ts": 1748934000000,
@@ -1440,6 +1448,14 @@
       "type": "insider"
     },
     {
+      "title": "Wipro among 5 stocks to track today for stock split, rights issue, ex-bonus and dividend - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaTdEa04wTlNsRWV2WDItR1VhTlpNYWhnSUVORG5iSmdBLWdBVlNUYjFKcHpiTjZiZ2I2SkM2aFl5ZmVsUGwxVXJFa2QwWWFXQmREM2tkTC1keV9kdDVuRmNfQ1NKc0ZIcmhwQWNIWVdkc0dodDhPdmxTMDBIM0NabktuSy1RbVoyMEh2RS12cFREWWFVeWwwNk9GOEp2SWE0QVNzaGpMdEdOdG00dmpRM0ZtMEFGS3VHNXpKSEl5Q1NWakRuODA0aGxpYzZ4YVRnMEJWN1Z0X0lkcV9taEVyOW4zOWZaZ9IB6wFBVV95cUxOZUNXQTI1WlNFZ3dJbzJzTEN2RkN1Ty0zMkVISDFtbW9vRFpXbHljVGh3MURIWXVxM1QyYld0U09Pa05QN21GWE1ueDFZRzR6Q3FEODRCVkdubVN4cUMtNEdrOXhJMHNacWgzVGltUU5XUG1XUnJNM3dHaFI4MzVFUGlRbkFpWjRxdEJPc3l1NXpMRDE0bm1QV0xnOERnNlRhMWNmLUY3bWR0Ul92b3JaVHJQcXRzRXAzQ2RzeFZFOUlTQWhiSVFSTHl3b3NGYWhPRXRXZGs1MVE5eUFDUmNjUFY1WFBSZHlEYUg4?oc=5",
+      "source": "Corp Actions",
+      "ts": 1733212800000,
+      "age": "480d ago",
+      "type": "dividend"
+    },
+    {
       "title": "Dividend, bonus: Indo US Bio-Tech, Wipro, 3 others to go ex-date tomorrow - business-standard.com",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVjNRb19rdFdwSHlycmI1VGtIU21yb1ZYUnZPXzcycEQxQUVTTkZza3ZtWll6MnU1RGw3RjlfMGN3Q1RVdXZMNklpWEZJYzhpZ3NjLVgtOTUzaVZERHlJTGNHR0tKZHl5THA2T1ZVd0xIQkhwS3djVzdhRVU2Q2IxeXl6T25nTDY1WFZYbzcycDhCM1lIbWM1YlFyMXlRYnJwejdUMnJRZkQ1MUJOTVpPZ1gxSUNFZGhjbk1DV2xMeVZ3ZjluMFM0c2JfRkVwN0tZTUHSAdcBQVVfeXFMTktjVlloSnRrMkR3Qi1GNlBvb0hram1vejhUOTFxWGRsTFp5bGNSWmJPOGF0N0NBakludkx5Yy10UmFOOTh4d3FjRG5QZ3JyRFljWnlrQ2xSa1dhQWJWZGNPZFUxTkhJTHlGSTZFMlJyRHRZX2lCc1JQVlQ3LVhDZjNCR0xhUDMzVElfVjZRUG1aSW1IdXU3S0FOcHM0RGFYTFV4SEhBdk4yNXVRZGYzUkUwWm5GTXJPQW5Ec0tncFBpaVJiNFBwd0JqMVZPZjJkM2VlT0dwQUk?oc=5",
       "source": "Corp Actions",
@@ -1464,14 +1480,6 @@
       "type": "board"
     },
     {
-      "title": "Coal India, REC among 41 stocks with record dates for dividend, bonus, split this week. Do you own any? - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNNzl1TTh0NEVxVm03WFBJbzdnZXZQZzFBQVZEaTNpaWhIYnFpVGVxMzE5QVM3WGtQdDdBUHBnUzI3MmpqVW55cFJSZEZXU1lvbjVHbnVUVjFnTE5WYzRORmdqRHZGYjlrOWZpbWFzb25Rc2cyNVNxSEpRMFF6WVdkVUNkclBxNmNyMnBSNnFQX3hLR2FYZWVaTVA0cVozMDJxSHVCVEJuelh2bGdoWEJkUFZlMXZ1emlONVN4TWxXVW1uOHNMRU5ZckNkV2tVZ1EwSUtMaW10MjBhZFNWNFF2X0hucjJpV2Jqd25mN3lqbW4wWDUyUWpKbmR1dUZWSEhBZnfSAYcCQVVfeXFMTWlJTDFEaWZnYzBjdFp1Wk5yal9CTXk3TVYtWDdhWVJIbURCS3J2b0p0dWlFaW8wa250ZUlfZ2xVZTJaeDY0NnBvcTY5X2xXc0lnRmUxN2pldng2TXlJOHBqRXlMdFRWN2Z2aWM5WnZ3Vnd1V3dVX1c1cTZUQzRvOXZpTkh1MnBNbnZ2T2luSUhFeThWNlhOM2pOdDNQNkRlbkY3WVFxSnJ6alVrOEdva2t6SU5HUzktTHFyMWhrWElpMEFMX0d6cFRoMkFSWmZkeFJ6Q0pJTGlreXlxUmdHTXd6T1g5Vi1KQ09KeUhhQm9TT21nQVkwNzJOSXVUTVhhS3pGOEI0cHc?oc=5",
-      "source": "Corp Actions",
-      "ts": 1730530800000,
-      "age": "511d ago",
-      "type": "dividend"
-    },
-    {
       "title": "GE T&D India Share Price Today, GE T&D India Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR0FOMEUtNmthYlpZdHBMekpKUnpMNG5sZ3Eza3J3THB5Y042a1BEQ1hVQlZ2MG1UeUNQSXAtVGl2TnItR0JVSjlaSE1BN3NIYUtrNDl5enBBdU5TTjlBUHhkNnB0TmFodHRpNlVHQ20zVDhHUkN2VFFKdHZzeldmVUV3TUVLX3lXd1JOdS1OWDI?oc=5",
       "source": "BSE/NSE Results",
@@ -1480,20 +1488,20 @@
       "type": "results"
     },
     {
-      "title": "UNITDSPR Share Price Today - United Spirits on NSE/BSE - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VUDdGOWdTUnhUd2R2T2VTOVUwU0VUbFI2WWR1Z0xOeEJzNl9SZTRhb2RuSTg5cHVsMW1iTlFBVHFSSFk2ajJJUElYX3ZrNnd6Nzg2bjlJQ1FRUQ?oc=5",
-      "source": "Exchange News",
-      "ts": 1729103584000,
-      "age": "527d ago",
-      "type": "filing"
-    },
-    {
       "title": "Garuda Construction Share Price Today, Garuda Construction Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSmduOTFBRFJTNkQzMUV6YnF6Zk5yRFp0NjhlUExGM0RpaDNHaEowcGdNUHptYU8tWjFlMVdHMFM4QzhoTm5Db21rdVVUNkNMV1RRTW1GTzE1cFhRQjhDUUFYdzJISld0NVhrUWZYZ1E1ajRqbXM4dUdsOUZPNHR2WGRjQUdxeGlOSUNCelhsY0R4LVZDY04wNVRGWU9UTmNIM3A1UVY5R2M?oc=5",
       "source": "BSE/NSE Results",
       "ts": 1728963689000,
       "age": "529d ago",
       "type": "results"
+    },
+    {
+      "title": "Century Texttiles Share Price Today, Century Texttiles Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVkzNFQyZzFQUWhrVGtlZXRsOXU1XzREMnhvYlIzWTVmNzYxd1hsamppdGRBVC1vN2d2ZHloeG1ua212Y3Y5TXRHekM3djhyNkc2Nk5pR1FDY3BLTDlUVkVsZC13TjEySUEtS2RpTnQtc3Nja2FicXlUVTV2N3NON3hwU2FaekNWUjRrQVI3eVotYWpjUjRF?oc=5",
+      "source": "Board Meetings",
+      "ts": 1728382308000,
+      "age": "536d ago",
+      "type": "board"
     },
     {
       "title": "Kkrrafton Developers Share Price Today, Kkrrafton Developers Stock Price Live NSE/BSE Updates - The Economic Times",
@@ -1590,14 +1598,6 @@
       "ts": 1721458800000,
       "age": "616d ago",
       "type": "dividend"
-    },
-    {
-      "title": "Emcure Pharmaceutica Share Price Today, Emcure Pharmaceutica Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRW1FYVl6dUNKOXRfQ1NvTFZnOUF1NjdnVTdGYUh5US1fc21sbmhaU2ZMWnUyYndhaFdEWUJpcXFXcldrakJzaDFkLUZSaTRURC0wQmNDQllHcWdGbkRDTjNmWk5IaTJnWTZBdlhfVnc3aEJTY1VreTBlRVFNdl9scGl3bnJ5a21iM1l1dzVZdGNTTVpo?oc=5",
-      "source": "Board Meetings",
-      "ts": 1719612862000,
-      "age": "637d ago",
-      "type": "board"
     },
     {
       "title": "Promoter of Inox Wind divests 4.6% stake for Rs 904 cr via open market - business-standard.com",
