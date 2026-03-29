@@ -1,21 +1,28 @@
 {
-  "updated": "2026-03-29T11:05:36.301513+00:00",
-  "bse_count": 27,
-  "news_count": 10,
+  "updated": "2026-03-29T12:05:16.551073+00:00",
+  "bse_count": 28,
+  "news_count": 9,
   "log": [
-    "BSE NEWS_DT='2026-03-29T16:30:45.863' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
-    "BSE page 1: 0/29 with timestamps",
+    "BSE NEWS_DT='2026-03-29T16:38:40.183' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE page 1: 0/30 with timestamps",
     "BSE page 2: 0/0 with timestamps",
     "BSE actions: 21",
     "BSE calendar: 4",
     "NSE: no data",
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
-    "Corp Actions: 30 items",
-    "Board Meetings: 29 items",
+    "Corp Actions: 26 items",
+    "Board Meetings: 25 items",
     "Bulk/Block Deals: 30 items"
   ],
   "bse_items": [
+    {
+      "title": "Please refer attachment.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/428d6d26-c047-4a83-813a-8081ef47956f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
     {
       "title": "We hereby submit the Intimation regarding Opening of 12th Store of D. P. Jewellers, A Brand of D. P. Abhushan Limited at Dhar (M.P.)",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d21a2118-152c-424b-8f79-d3a3842d996a.pdf",
@@ -224,13 +231,6 @@
     {
       "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
-      "source": "Board Meetings",
-      "ts": 1774594800000,
-      "type": "board"
-    },
-    {
-      "title": "Affle (India) Share Price Today, Affle (India) Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMnZsajBVWU1yekF0RlFfdTFwX2ZpYjZTU216V2RCcGJzSjQxRXJvXzN5R3lzZWQ2QXFZSHdLUHhpRV9aa0s2UUk0V0RhelQzeURCdEFuc2s5U0pOcDJKaE55MjQ2X0VxQkNrQmRhWk82VnVvSVVOc0EzS242cWthaWl3?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
