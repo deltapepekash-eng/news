@@ -1,21 +1,112 @@
 {
-  "updated": "2026-03-29T12:05:16.551073+00:00",
-  "bse_count": 28,
-  "news_count": 9,
+  "updated": "2026-03-29T14:04:37.495199+00:00",
+  "bse_count": 41,
+  "news_count": 10,
   "log": [
-    "BSE NEWS_DT='2026-03-29T16:38:40.183' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
-    "BSE page 1: 0/30 with timestamps",
+    "BSE NEWS_DT='2026-03-29T19:25:51.4' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE page 1: 0/44 with timestamps",
     "BSE page 2: 0/0 with timestamps",
     "BSE actions: 21",
     "BSE calendar: 4",
     "NSE: no data",
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
-    "Corp Actions: 26 items",
-    "Board Meetings: 25 items",
+    "Corp Actions: 30 items",
+    "Board Meetings: 24 items",
     "Bulk/Block Deals: 30 items"
   ],
   "bse_items": [
+    {
+      "title": "Intimation of receipt of Award from NTPC Limited",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c06f7ebf-81f6-4353-a3a4-0f88c484173d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We wish to inform that the Board of Directors at its meeting held on March 29, 2026, inter alia considered and approved the execution of:\r\n(i) Merger Implementation Agreement by and amongst ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b06b92a5-c20c-4a5f-a9bc-1171bddee91e.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Intimation regarding a Conference call for Analysts/ Investors (\"Conference Call\") scheduled to be held on Monday, March 30, 2026, to discuss about the Scheme of Amalgamation, is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/095901ac-b1aa-454b-a569-884eb5bdd0f4.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Store Opening Intimation",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/380c4d99-4519-42a5-9af7-a1fbc5ad37a5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Investor Presentation on the Scheme of Amalgamation of Indovida India Private Limited (Transferor Company) with EPL Limited (Transferee Company) and their respective shareholders, is ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/843ce769-9013-4b9f-8b21-e43d7f8d51c5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release titled - ''EPL and Indovida to Merge, Creating a Consumer Packaging Leader for Emerging Markets'', is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e9968f9-11cf-4842-9fa1-e4c158788033.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation under Regulation 30",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fdd73fcf-713d-48ba-83b1-d9a6d3d05973.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We wish to inform you that the Board of Directors of the Company has, at its meeting held today i.e. on March 29, 2026, inter alia considered and approved the Scheme of Amalgamation (by ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/96d17f4a-059c-4fbc-bc1c-101993eef35c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Pasupati Fincap Limited informed exchange about the publication of EGM Notice in one english and one vernacular language.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/089fa41c-ecf0-45b3-a9e3-c1d62cc2be44.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Intimation under Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ('Listing Regulations') and Outcome of the Board Meeting ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/56706eae-2023-4b31-87b5-00b96da95c21.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "As per the disclosure attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8128d71f-e510-4152-9316-f4cf20807579.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Allotment of equity shares on Preferential basis",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ed958a8e-d8a9-44f9-bbe0-431d4c05fd2e.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Update under Regulation 30 read with Para A Part A of Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5b059bd6-29ff-4578-9e3c-ad3768f6b4d6.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
     {
       "title": "Please refer attachment.",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/428d6d26-c047-4a83-813a-8081ef47956f.pdf",
@@ -220,6 +311,13 @@
       "source": "BSE/NSE Results",
       "ts": 1774671958000,
       "type": "results"
+    },
+    {
+      "title": "Procter & Gamble Health Limited Schedules Board Meeting for May 26, 2026 to Review FY26 Financial Results and Final Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPaHdZZUM1dWwtT0FSaS1Ya0hHR2Y4VFZjTDVZSmlFQ3cyc3VVUkFkT3dxQjk1ZjNvaHo2ZEVqX1dqN1VwcVR5NVRoQldKNEh3eFFmUUpsLUVNRWZnQ09JWXZnQkswenV1bHlzbzVzUnFlQkJwaF9TM25GZ09CeERSNUlGMkhHcVBleUEwTk9Rdm53X1ZIV2lZUDR3RllfcUVBTGtMaUoxa0N0NWJ0OE5IQzE4TkVnU1VHZzZ3NXlscGVhSkFNRHFWMUppOXFLcDFVNTJTWFVqZ2l6WS1HNDY2dThZTTIxcXlHNldOOUpOOVMzSjVlN2otdU9IaEFEcXVJcm9pYVMyZ1RRdw?oc=5",
+      "source": "Exchange News",
+      "ts": 1774623930000,
+      "type": "dividend"
     },
     {
       "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
