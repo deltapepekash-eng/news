@@ -1,10 +1,15 @@
 {
-  "updated": "2026-03-29T16:18:26.154763+00:00",
-  "bse_count": 0,
+  "updated": "2026-03-29T16:19:19.573122+00:00",
+  "bse_count": 53,
   "news_count": 24,
   "log": [
-    "BSE: package not installed",
-    "NSE: nsepython not installed",
+    "BSE NEWS_DT='2026-03-29T21:48:36.653' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE p1: 0/50 with ts",
+    "BSE p2: 0/10 with ts",
+    "BSE p3: 0/0 with ts",
+    "BSE actions: 21",
+    "BSE calendar: 4",
+    "NSE: no data",
     "Moneycontrol Corp: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/corporateannouncements.xml",
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
@@ -17,7 +22,379 @@
     "Ratings: 30 items",
     "Orders Won: 30 items"
   ],
-  "bse_items": [],
+  "bse_items": [
+    {
+      "title": "Outcome of Board Meeting",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5dd0c463-7464-40b8-b308-b09b0c15e82c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Update on Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/43615170-02c9-47fa-afeb-550492582551.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of receipt of Order worth Rs. 22.91 Crore (excl. taxes) from North Central Railway",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/702050d1-d6e6-4970-98c1-dfbe434652ee.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper publication regarding the Extra-Ordinary General Meeting (EGM) has been made today, i.e., Sunday, March 29, 2026, in connection with the ensuing EGM of the Company scheduled to ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7dc3e8f8-1af9-46d1-be00-7fc15de2db6c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Update on commissioning of third phase of 11.429 MW capacity of BESS project in Rajsthan",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/61001bc1-b34c-40ee-8054-88f77f8625c6.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of store opening",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ab6c4519-ebb1-4d69-aad0-cf86a9634ae2.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure under Regulation 30 of SEBI (LODR) Regulations",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/178b9c66-6372-4bbd-b8a6-41684bb9a346.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed herewith Disclosure under Regulation 30 of  SEBI (Listing Obligations and Disclosure) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e783b06-b306-4029-8ff1-71eb642364a0.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f5028b58-bc8f-4787-8ef3-29836b9d31b2.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Announcement regarding Grant of Stock Options under ESOP 2018 Plan.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e9d679a-f9d8-4d81-9915-f675d83d5804.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation about allotment of equity shares on exercise of stock options under ESOP 2018 Plan and Grant of stock options to eligible employee under the said Plan of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8aa224ce-276f-4503-8b5b-80b870665455.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to SEBI (PIT) Regulations, 2015 as amended from time to time and as per BSE circular, we hereby would like to inform that trading window shall remain close from Wednesday 1st April, ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5f83271c-ca71-4611-97ff-3e38477bbbfc.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find attached an update.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6959d826-fb20-4bb9-8b13-4707e0114516.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of receipt of Award from NTPC Limited",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c06f7ebf-81f6-4353-a3a4-0f88c484173d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We wish to inform that the Board of Directors at its meeting held on March 29, 2026, inter alia considered and approved the execution of:\r\n(i) Merger Implementation Agreement by and amongst ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b06b92a5-c20c-4a5f-a9bc-1171bddee91e.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Intimation regarding a Conference call for Analysts/ Investors (\"Conference Call\") scheduled to be held on Monday, March 30, 2026, to discuss about the Scheme of Amalgamation, is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/095901ac-b1aa-454b-a569-884eb5bdd0f4.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Store Opening Intimation",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/380c4d99-4519-42a5-9af7-a1fbc5ad37a5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Investor Presentation on the Scheme of Amalgamation of Indovida India Private Limited (Transferor Company) with EPL Limited (Transferee Company) and their respective shareholders, is ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/843ce769-9013-4b9f-8b21-e43d7f8d51c5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release titled - ''EPL and Indovida to Merge, Creating a Consumer Packaging Leader for Emerging Markets'', is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e9968f9-11cf-4842-9fa1-e4c158788033.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation under Regulation 30",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fdd73fcf-713d-48ba-83b1-d9a6d3d05973.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We wish to inform you that the Board of Directors of the Company has, at its meeting held today i.e. on March 29, 2026, inter alia considered and approved the Scheme of Amalgamation (by ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/96d17f4a-059c-4fbc-bc1c-101993eef35c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Pasupati Fincap Limited informed exchange about the publication of EGM Notice in one english and one vernacular language.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/089fa41c-ecf0-45b3-a9e3-c1d62cc2be44.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Intimation under Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ('Listing Regulations') and Outcome of the Board Meeting ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/56706eae-2023-4b31-87b5-00b96da95c21.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "As per the disclosure attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8128d71f-e510-4152-9316-f4cf20807579.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Allotment of equity shares on Preferential basis",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ed958a8e-d8a9-44f9-bbe0-431d4c05fd2e.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Update under Regulation 30 read with Para A Part A of Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5b059bd6-29ff-4578-9e3c-ad3768f6b4d6.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Please refer attachment.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/428d6d26-c047-4a83-813a-8081ef47956f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We hereby submit the Intimation regarding Opening of 12th Store of D. P. Jewellers, A Brand of D. P. Abhushan Limited at Dhar (M.P.)",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d21a2118-152c-424b-8f79-d3a3842d996a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Company has received Notification of Award for a project.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/616caf88-5920-4d56-bbc1-d635e9180dcd.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Proceedings of EGM held on 29-03-2026 at 11.30 a.m and concluded at 11.56 a.m.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c417c0fc-70b4-4ad0-a2ac-260635ff60fd.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/81450062-b9c9-407d-8c31-b2a1b6d1f169.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Disclosure under Regulation 29(2) of SEBI (SAST) Regulation.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fe48f52d-803b-4aee-ad35-e9e88805e798.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Closure of Trading window from 1st April, 2026 till the end of 48 hours after the declaration of audited financial results for the 4th Quarter and Financial year ended 2025-26 ended 31st March 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ae7f6d60-8724-4d54-863e-b8b72b3e2f64.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation under Regulation 30 of the SEBI (LODR), Regulations, 2015- The Company has emerged as the L1 bidder for the construction of 12 high rise residential buildings (G+13) using monolithic ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/400d56a3-53ce-4543-b90b-b566e833537d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/09f9848c-edf5-4879-a3ea-9103fb1bb6ca.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "GST Authority Order",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e1c4404e-9be7-427f-bfdc-60543edc4a26.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of closure of trading window.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/39e15955-cab6-45c5-9064-3f0a7ef9ca58.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation of Assessment order under Section 143(3) of the Income Tax Act, 1961 dated March 28, 2026 from the office of Assistant Commissioner of Income Tax, Central Circle 13, Delhi",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/92d073a6-383d-4665-96a9-5e6e298a6032.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Board has declared Financials in pursuance of implementation of Resolution plan as approved by NCLT",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ee38f9ff-f239-4858-b489-3d75e15183e3.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Intimation regarding the execution of the (i) Second Amendment Agreement to the Share Purchase Agreement entered into for the acquisition of shares of Vizag Hospital and Cancer Research ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a97ac7af-294f-42a9-a4c2-3121b3c792d5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Announcement under Regulation 30 of SEBI LODR - Order passed by the Hon''ble NCLT dated 12.03.2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/551eee98-6ea0-43fb-9ef8-a448cc3f612b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Media release with title \"CMS info Systems strengthens ATM Management Solutions Platform through acquisition of FSS''s Managed Services business\".",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d4829a11-7044-40e1-bd83-9b21cc6a69fc.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ac12f4a2-2e4e-416e-a19d-c8d8353cc67b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Company has declared it''s financials in pursuance of implementation of Resolution Plan as approved by NCLT.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0d47c2a5-5509-4607-8871-dc88d78322de.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Financial results declared in pursuance for implementation of Resolution plan as approved by NCLT",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5a003000-6a4a-4d31-8471-272cabfb0f52.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Declaration of Financial Results in pursuance of implementation of Resolution Plan Approved by NCLT.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3b950ed1-44ee-410d-b5c9-086b54db33f4.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Receipt of show cause cum demand notice.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/42e70dae-1b1d-41a4-a007-5e4b625cba90.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "As enclosed",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d5253507-33b4-4d23-8be0-5b01b42b6cda.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Pursuant to Regulation 30 read with Part A of Schedule III of Listing Regulations, please note that based on the Scrutinizer''s Report dated March 28, 2026, the Shareholders of the Company ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/22c89cbe-baa4-42f1-bb48-39e19ad59d7b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Scrutinizer''s Report - Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9376a9c0-1d03-4cb3-a183-02f7d4da5fbe.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Outcome of Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/79439ae4-b915-485e-bde9-0d459805f4f8.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Assessment Order from Income Tax department",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9ad00457-b819-4600-bfda-57e19c04c307.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The trading window has been closed from 01.04.2026 till 48 hours of the approval of the audited financial statements for the FY ended 31.03.2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7924732d-df35-409e-a5b2-852dc5649f99.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    }
+  ],
   "news_items": [
     {
       "title": "Torrent Pharma Schedules NCLT Shareholder Meeting for J.B. Chemicals Amalgamation - scanx.trade",
@@ -55,28 +432,28 @@
       "type": "insider"
     },
     {
-      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0E0bjhxdV9ERjZaaEwtb0h5MGRRLWpna0p0MFc4ejdQRFVfelVqMzRGTDM4TXNvMENwbzQtMmxfWGdhT1oxVTFjY0lXYm1BajdsYkJ3dmVtN2VqZ0p4Uzg5NmpfRnB2WjJPNHVtaTZSOGd2R05PQnA5dFlscVppLU5sazVTNEJ0M2pn?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnlvVk1wbk4wZU0zZlIyQ29WaC1wR016T3lfT0R4OTZsbVhWck1XZnlWZkpkc0pPOTRmRkJLZnZIY1VmeUZQOEpIT0ZnUDlrbU1PM1hYSEhod1RsVHFxcTJXNHZqQ3VBZ01aRmVCMUQ3NXlwbi1feWFEUnpSYXdhLVFHSzlCQQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
@@ -111,6 +488,13 @@
       "type": "dividend"
     },
     {
+      "title": "Stock Market Holiday: Are NSE, BSE open or closed today on 26 March for Ram Navami celebration? Check now - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQYjVnaWd1MGlpaEhRQjliUnFjeXF6TG8taklISTVtRUNUZE9LYk54dWUtNUFzWml1YU1WMkFvMUVSWFAydE90U2JYMVo5cExLQWozUW9SNkZPZV8zQUQ0MEktUHhPSGNwajF3ZUcxOGhpZ0U2bHJGVXg0Z2lPSUwwUXF3Zy02S0Q5Vld2TU1qY2xUY3NCdzIxNHFPcUFJSWptY3A5ZTNva1RfVWhCMGZLTFdJdk1WYVNxNXQ3Uks3MDV5T053Vy1FRUVBcmFndG55UlRKQTBzU3g3VW1YSk5JRktaTWo1UVVNcFBXaGd6NlVOd0Q2aXUxYkptYXBpdWN4NEtwdmYyYldHUnRLWmRTTGpBWkFtbFNGSmFhSmpheW5HV1nSAagCQVVfeXFMTnZPS1BScFBudGY0RmNRODRFckJWNlFvT2c1WXdud1JyMnFpcnJSOHlFS21lRWF1NFF2VFJhSnpNY09jNDBocENJQXRIcmp6cm1lcnByRlp5M3ZocU1KYUlwMUZVRjdBeUF1XzNnbFRiUWJkdnRia0xNbDVYRk9ZTmV3TnZwVmFMLVNtR216LTZPR0hPdGdCSWpVTk4tQkQyNXBPQ1NyVDNiWUZNMi1QdnNpWG5ld1ZtcnV6dmlYeno2YllBcEQ5cUtGWjA5SHByNGpWTTBJOGZXTFRldjNlNzB3V0xrYWhIUm1fUGF1NTZJcUwtellHN01MZHVfN256SXNWWWdSeWtzMWdrQm1EaGdROHdwVEZtMzMtZWwtX3FPM294aHpsODU?oc=5",
+      "source": "Trading Window",
+      "ts": 1774488600000,
+      "type": "insider"
+    },
+    {
       "title": "Coal India Limited Announces Trading Window Closure from April 1, 2026 - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNY01KM3VrSUl1UHJpYkRKdUpvU2pYNDlZcERvbnFyZEJwWlFpaHZ6ZGhWU2JsdHVTTUh5ZlJyQ2F4cjNXLUFmbTN3WHk0VHVQSEQyRElFNG5zY25PU0tiR2JMeDZrTnFpRUNEOUJFQlNiZDNqSkNxbzltT2pncUxQRWJ2OHhCdExhME4yeE8tV255SmFvLUtwRGQtancxbndMT3lBVjhEb2E4aXRHNHZuanR3YnVzSXRwTHh6NEZZcHZmS0kx?oc=5",
       "source": "Trading Window",
@@ -139,13 +523,6 @@
       "type": "results"
     },
     {
-      "title": "IRFC Closes Trading Window for FY26 Financial Results - Whalesbook",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcWlqb2ktaHFISFRZa0hodlZOU25qcXVrOTViYm83RmJUZ3pzT29wZTduNVpocnBkcm03MFVzSVBfSXR0TWFvdVRudXM5SG90eDZqeHA5M3lrZm9Oal9hS2M0YVdZOHZnSXRTZ3N1TDY1NlZzVmdYOEVJcDJoT1NGeWNrNnliTzkzQXF2LTlQbVp0c1R1cEtFb1FLV1BPcVBqR2FkdHNKYU5kZGJrZEFkdTV1LVRWMS01b2c4XzEyTWJXd1Q0Nll1NzJ4M3FMZ3dZdEVuTjVDWVpyQlk?oc=5",
-      "source": "Trading Window",
-      "ts": 1774347682000,
-      "type": "insider"
-    },
-    {
       "title": "NHPC Announces Trading Window Closure from April 1, 2026 Ahead of FY 2025-26 Results - PSU Connect",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN2FJMGUyVlJRc2I2SHBTVklfY2V6ZGJpaXVmQjNwNXpybzhNRmpRV0RhSzFWNFozMWN3UGRkQUE2T1ZyZ1N4NFVqUE1JeVBaVUFpMnZJRkFpdkZOaEZRbzZXY2NFa0lrT2tTbG1SeVpXbTczUEdEZHlHU2tWTkt4TnMydUxqcnNLUzVRUTBGYWo3MjVYdjlQVmpBX3FadHJBV25VUkttZElHRTVVZGNUUHVnWXZtUjB5cFJZ?oc=5",
       "source": "Trading Window",
@@ -167,11 +544,11 @@
       "type": "filing"
     },
     {
-      "title": "POWERGRID Trading Window Closed from March 31: After Stellar Q3 Results, All Eyes on Q4 & Final Dividend - PSU Connect",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUGdfZG9yTjhNUDJjOGtIZDZhVnM3eDRrajFuWjIyaWxZYnc3dFhEYkViLXhweDlHQ2FPYzZhWDllNjYwWUpJSGtQRl8ydF84cDY4cWRyWTZmMEE0UWtKT2xCb3F2R1FnZFlPZTZJd2ZFQzFhcWc3NUJ3dHRPVm5pcUl0TFVEMm1pNUZ2cUxPTXd2OHNOcnFXUm96bXVUakJ2ZjQtT21BNHZQa2I0NU5YMGRvZG94M05QV1J0a3IzdTJJNTh5QVp5ZDFuS0xNU0VBcUE?oc=5",
-      "source": "Trading Window",
-      "ts": 1774262460000,
-      "type": "insider"
+      "title": "Moody's Upgrades Piramal Finance Outlook to Positive, Affirms Ba3 Rating - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNTFpbFFXZWR6RTZVZ3NrR1pWVUhBZ2lPSVhtTzhJSkplTHRvSjRQNEU2S1JLS01OcjdKd2t3MWtTV1JsMlpKVHRGc0FhRHdUOWhQajVUaHB2YXZOZUhfYUl0aVFkekN5SFNFZ2J2RHdBUlk1OGQ5aENhbHo0VC1hSjh4SFBpbE90dVZHTV8tV1U0aXpwYncyVW4zQ2Q1cE85d1U2X1lEbUFYQ29pUmdIeU1TaElyTDZSQ2FZbUZ2V0RwUQ?oc=5",
+      "source": "Ratings",
+      "ts": 1774297248000,
+      "type": "filing"
     },
     {
       "title": "NTPC Closes Trading Window from April 1, 2026 Ahead of Q4 & FY26 Results | Q3 PAT Up 5.85% to ₹4,987 Cr - PSU Connect",
