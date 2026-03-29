@@ -22,8 +22,7 @@ jobs:
         run: pip install requests
 
       - name: Run Python script
-        run: python Fetch.py
-
+        run: python scripts/fetch_bse_nse.py
       - name: Commit & push changes
         run: |
           git config --global user.name "github-actions"
