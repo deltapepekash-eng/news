@@ -1,15 +1,15 @@
 {
-  "updated": "2026-03-29T17:51:39.244134+00:00",
+  "updated": "2026-03-29T19:48:22.676568+00:00",
   "bse_count": 0,
-  "news_count": 23,
+  "news_count": 30,
   "log": [
     "BSE: package not installed",
     "NSE: nsepython not installed",
     "Moneycontrol Corp: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/corporateannouncements.xml",
     "Exchange News: 30 items",
-    "BSE/NSE Results: 30 items",
+    "BSE/NSE Results: 29 items",
     "Corp Actions: 30 items",
-    "Board Meetings: 29 items",
+    "Board Meetings: 30 items",
     "Bulk/Block Deals: 30 items",
     "Trading Window: 30 items",
     "Share Allotment: 30 items",
@@ -27,7 +27,7 @@
       "type": "filing"
     },
     {
-      "title": "B.A.G. Films and Media Allots 98 Lakh Equity Shares Through Warrant Conversion - indiaipo.in",
+      "title": "B.A.G. Films and Media Allots 98 Lakh Equity Shares Through Warrant Conversion - India IPO",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX1lEOEhZQjN1aWQ4MENwbkZEMjJvWmM0MHZYUTJmYUNYQXpyMnFWcnhVaHBuR2Q5a3RGLVJIRG94WVJBRWVlWVFCRGlsaEFjZHZWZ25MSllaUTV6aVhyc3VUYzFkZzdFT1J1WThZNFNNZTRtRDB5U0ZTVmhjdjI4UzlFX3ZCaDF4WjlBMVBoaTFNSWlfUnRfcFE0UGhfQ2RRZU85ZjJQWlJwYUhqQnNGNA?oc=5",
       "source": "Share Allotment",
       "ts": 1774759156000,
@@ -62,8 +62,50 @@
       "type": "board"
     },
     {
+      "title": "Godha Cabcon & Insul Share Price Today, Godha Cabcon & Insul Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONzYxUFFFNVBSMUE3M2xWUDJFOWVzd2F5dm10aExoMks2OXB3c2FVOFR2VW1KSWFqc1dCNEVGcGtZaWxteXlpRkxGMXhmWEZDelZIWmptbThNcHctdU5EUXNTeHVKc1YtaGlUdm1RWGxBanA1d3dnd2VkM1QxWWI1SHZjSXVzQUE2NHNj?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "Lakshmi Machine Share Price Today, Lakshmi Machine Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBHd1hDRGphZ3VGbkEtS2RLd1BEYW9GalVDRWoxLVhCQzUxOGw0WHM1WWkyZ2tqWmM4YjA2ZXFjTHpjQkh6NlN1UTM2WmRFTVdfZlhJRmR3SkpvU1o1V3U0RE80bkxmVUUtMVdXcVBudG9uem5VVERRbG1Raw?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "Fusion Micro Finance Share Price Today, Fusion Micro Finance Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYmdxTktuT1VBZ2NsVnVlb054S3YtVFpzdkxRODRaWlV5aklINjNqQ0xTekpVWm14R1UwQXVZRFY2cE9DQnF2cThxZjVjdGNtaDdlU01Hd3E0YlpFV19mVGhhUkNIUzVYZWp5aFV4eXVyTC0zb1R4Znk5eEtVT1hpZ2RSZmF5LW1mZzdGWA?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "Sanstar L Share Price Today, Sanstar L Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ycWZNeVVPalp1WHhzdm5vNXdQOXAtN3d4N0tWcUZ2alJPVnRpWGhNRDA3dGRfYVpKLTdYenBDQVJ5d2pfb0E0bVo4eVNlRTA3OGJPUWQ5ckEwbTVlSUw4Z2lMTGt2Q3h5d1dhOFFHeGlRS2hXSDBzaVU0T1pqbEk?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
       "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnlvVk1wbk4wZU0zZlIyQ29WaC1wR016T3lfT0R4OTZsbVhWck1XZnlWZkpkc0pPOTRmRkJLZnZIY1VmeUZQOEpIT0ZnUDlrbU1PM1hYSEhod1RsVHFxcTJXNHZqQ3VBZ01aRmVCMUQ3NXlwbi1feWFEUnpSYXdhLVFHSzlCQQ?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "Reliance Naval & Engg Share Price Today, Reliance Naval & Engg Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc2hrekdwLWZieWUzNXZXZlRkbWExc1V4dDdWNTB5cW9PcjRERElzNDVGUXlRNmh2NlZNaU5mNjdSMGJiM2NEN3lZcnk5akctU3ZGaVNqUFREZFNmclBneEhPWEsxX29FakxBYm9uWWxjdnEwbVM4OS1pRVhyVVpBVUp1QjM4d1ZGUXZYYl9qQUUzUzhrZHF3a25aMHhubGlwU3dF?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
@@ -83,8 +125,15 @@
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
+      "title": "Fischer Chemic Share Price Today, Fischer Chemic Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPd3dRRkUxdFpaTkF6bE1nVFZyX1VOaWJkbjV3Tk9SVlJ0Q0JfQnZVUEZ1aksyTUFkY3BWdklUWWQxQ3R2VjczbXpTLTl6cVpiaDdRSkpOelg0bWNPRHlZR25ndFZ5a2xIM2N1Y3prM3BWUUotSzB2LVJiUnpBRTdJVzRLMnRmZHhLYVVOUVhKR0RwdjVzUkE?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "ETT Ltd Share Price Today, ETT Ltd Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUWFselJUVVd5WjR3OVFvRkgxYXllNFI2QWtIa1JpQ1BsRktzRDBnRlg0VlUyTHRzMzRIak5lSzhXWG5NMmRmOWdxYlB2dnlNUXV2ZGpQLUF5Rkt4TTVtenFJVWt6T25ZdFdaU1Zqc0VKT0UxZHB3XzNIOWZ0eUJTQ3RGck9iU3lvb0psQ1lGWDUtMVpZM1hKbVlTUQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
@@ -125,13 +174,6 @@
       "type": "insider"
     },
     {
-      "title": "Emirates NBD gets UAE central bank nod for majority stake in RBL Bank - Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdFZZcUh6MXpmb2c1dW9UM3h6ai1pQVJRUWtCTnd5dW9lQTVuT0ZDSWt1N29NQk5EcTFUWUQwakQ0TVBmbVdPald2Q2V3UVl3dDhYNEdJUTJCUnA0VW0taTZrR09hbHNCWjRPREwtWm5DRUxCMk9fTHM5cUgzc09paktrWVpJZ19hMnpSZXAzOThrdkhoUE1CQXFoZ1kweEFZMnd2UTBkTUotUmlpVTQ4cFlhVW5CclFrTDVEMXBqRXRWU2FiNzJrRWlUbHXSAdIBQVVfeXFMT2R5QmVTcU5aOW9rWEZzYWVIcU5jdTVWZmZOM3NfclczSk5qSjdCeElCdm13UDdkZmRRRmdPWmhFNGJUV3VKNDFnbENfM212Y3BXdnZRLXlKOGNuN3FRbENjeGVxblNGSjNvem50cW5NakhyalJFTjhndjZ0Q0VZLXFRdWxZdERaRmIwMUpRNHBiNWFmaFJnZF9GT0drVWdUZnFjMGVobkhROFkxTEtPS1Q0cDNQNGlHVktNcnZYR1FkNEU5Q2xaWEZDMU9yS1ptYUp3?oc=5",
-      "source": "M&A",
-      "ts": 1774457896000,
-      "type": "filing"
-    },
-    {
       "title": "TCS Q4 results FY26: IT major releases earnings date, final dividend in focus; check financials, other details - Upstox",
       "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPTktrdV9kQk9xajhlVXhFLVQ4STBrRURqYXdycUtqeC1uZFZBcEI4UkdzYmc0V1FXSW1fUGpDS2xDekZpd1czTUF1dktLbnBXMk54WEYtV0lvbTNkbkxLbHprMEdSSVViX1Rjb194V1FEVUphQy1qNFpfWWRRYWF4ZW56aVotYTVURlR3NldlXzFnSC00eU9uckJGV1lqQUtjcWI0Q0RUWEpLaGpUbFFsaTd5a0NUTW9ibncyM0l4VDlsc2N2VkdJdkp4Z3VBUGpLek1SdnpuRWtDeHZQREFlYkF6bW5fZ29Tdlg2V2FLMlJXNVRCNy0wWTJ0QkFpU2VDSVp5WkVn?oc=5",
       "source": "Exchange News",
@@ -165,6 +207,13 @@
       "source": "Share Allotment",
       "ts": 1774331182000,
       "type": "filing"
+    },
+    {
+      "title": "POWERGRID Trading Window Closed from March 31: After Stellar Q3 Results, All Eyes on Q4 & Final Dividend - PSU Connect",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUGdfZG9yTjhNUDJjOGtIZDZhVnM3eDRrajFuWjIyaWxZYnc3dFhEYkViLXhweDlHQ2FPYzZhWDllNjYwWUpJSGtQRl8ydF84cDY4cWRyWTZmMEE0UWtKT2xCb3F2R1FnZFlPZTZJd2ZFQzFhcWc3NUJ3dHRPVm5pcUl0TFVEMm1pNUZ2cUxPTXd2OHNOcnFXUm96bXVUakJ2ZjQtT21BNHZQa2I0NU5YMGRvZG94M05QV1J0a3IzdTJJNTh5QVp5ZDFuS0xNU0VBcUE?oc=5",
+      "source": "Trading Window",
+      "ts": 1774262460000,
+      "type": "insider"
     },
     {
       "title": "NTPC Closes Trading Window from April 1, 2026 Ahead of Q4 & FY26 Results | Q3 PAT Up 5.85% to ₹4,987 Cr - PSU Connect",
