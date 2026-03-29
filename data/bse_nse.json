@@ -1,11 +1,11 @@
 {
-  "updated": "2026-03-29T16:19:19.573122+00:00",
-  "bse_count": 53,
+  "updated": "2026-03-29T16:44:35.851752+00:00",
+  "bse_count": 55,
   "news_count": 24,
   "log": [
-    "BSE NEWS_DT='2026-03-29T21:48:36.653' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE NEWS_DT='2026-03-29T22:09:59.367' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
     "BSE p1: 0/50 with ts",
-    "BSE p2: 0/10 with ts",
+    "BSE p2: 0/13 with ts",
     "BSE p3: 0/0 with ts",
     "BSE actions: 21",
     "BSE calendar: 4",
@@ -14,7 +14,7 @@
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
     "Corp Actions: 30 items",
-    "Board Meetings: 24 items",
+    "Board Meetings: 25 items",
     "Bulk/Block Deals: 30 items",
     "Trading Window: 30 items",
     "Share Allotment: 30 items",
@@ -23,6 +23,27 @@
     "Orders Won: 30 items"
   ],
   "bse_items": [
+    {
+      "title": "Closure of Trading window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ff09da2f-d4d4-4d38-a2f0-41f9b8cfbb3f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Monetisation of DUDP Project",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/68c6630d-7f8b-40ed-96ce-45352d025c12.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "intimation of Closure of trading Window for the financial results of fourth quarter and year ending on 31-03-2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/41063711-8bf7-4f52-a718-b89d978fae09.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
     {
       "title": "Outcome of Board Meeting",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5dd0c463-7464-40b8-b308-b09b0c15e82c.pdf",
@@ -234,13 +255,6 @@
       "type": "board"
     },
     {
-      "title": "Closure of Trading Window",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/81450062-b9c9-407d-8c31-b2a1b6d1f169.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
       "title": "Disclosure under Regulation 29(2) of SEBI (SAST) Regulation.",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fe48f52d-803b-4aee-ad35-e9e88805e798.pdf",
       "source": "BSE",
@@ -432,28 +446,35 @@
       "type": "insider"
     },
     {
-      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0E0bjhxdV9ERjZaaEwtb0h5MGRRLWpna0p0MFc4ejdQRFVfelVqMzRGTDM4TXNvMENwbzQtMmxfWGdhT1oxVTFjY0lXYm1BajdsYkJ3dmVtN2VqZ0p4Uzg5NmpfRnB2WjJPNHVtaTZSOGd2R05PQnA5dFlscVppLU5sazVTNEJ0M2pn?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnlvVk1wbk4wZU0zZlIyQ29WaC1wR016T3lfT0R4OTZsbVhWck1XZnlWZkpkc0pPOTRmRkJLZnZIY1VmeUZQOEpIT0ZnUDlrbU1PM1hYSEhod1RsVHFxcTJXNHZqQ3VBZ01aRmVCMUQ3NXlwbi1feWFEUnpSYXdhLVFHSzlCQQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeU1JdjNKNWx5UU92cll3M2ZZWGpOdDVsNHNLUnFsVHk5U25nSjJYdUVQODZDLVNVakRMdGltckx4d3kzcnV5VWpWeEdIZkkyUVFWaXQ1Z05sdmtRUFVvOU9Yc2praFpFZy00RUVIOVdWaGdiZUFMS2NHaExjZGZ5TFFUVmY?oc=5",
+      "source": "Board Meetings",
+      "ts": 1774594800000,
+      "type": "board"
+    },
+    {
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
@@ -486,13 +507,6 @@
       "source": "Exchange News",
       "ts": 1774522935000,
       "type": "dividend"
-    },
-    {
-      "title": "Stock Market Holiday: Are NSE, BSE open or closed today on 26 March for Ram Navami celebration? Check now - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQYjVnaWd1MGlpaEhRQjliUnFjeXF6TG8taklISTVtRUNUZE9LYk54dWUtNUFzWml1YU1WMkFvMUVSWFAydE90U2JYMVo5cExLQWozUW9SNkZPZV8zQUQ0MEktUHhPSGNwajF3ZUcxOGhpZ0U2bHJGVXg0Z2lPSUwwUXF3Zy02S0Q5Vld2TU1qY2xUY3NCdzIxNHFPcUFJSWptY3A5ZTNva1RfVWhCMGZLTFdJdk1WYVNxNXQ3Uks3MDV5T053Vy1FRUVBcmFndG55UlRKQTBzU3g3VW1YSk5JRktaTWo1UVVNcFBXaGd6NlVOd0Q2aXUxYkptYXBpdWN4NEtwdmYyYldHUnRLWmRTTGpBWkFtbFNGSmFhSmpheW5HV1nSAagCQVVfeXFMTnZPS1BScFBudGY0RmNRODRFckJWNlFvT2c1WXdud1JyMnFpcnJSOHlFS21lRWF1NFF2VFJhSnpNY09jNDBocENJQXRIcmp6cm1lcnByRlp5M3ZocU1KYUlwMUZVRjdBeUF1XzNnbFRiUWJkdnRia0xNbDVYRk9ZTmV3TnZwVmFMLVNtR216LTZPR0hPdGdCSWpVTk4tQkQyNXBPQ1NyVDNiWUZNMi1QdnNpWG5ld1ZtcnV6dmlYeno2YllBcEQ5cUtGWjA5SHByNGpWTTBJOGZXTFRldjNlNzB3V0xrYWhIUm1fUGF1NTZJcUwtellHN01MZHVfN256SXNWWWdSeWtzMWdrQm1EaGdROHdwVEZtMzMtZWwtX3FPM294aHpsODU?oc=5",
-      "source": "Trading Window",
-      "ts": 1774488600000,
-      "type": "insider"
     },
     {
       "title": "Coal India Limited Announces Trading Window Closure from April 1, 2026 - scanx.trade",
@@ -544,11 +558,11 @@
       "type": "filing"
     },
     {
-      "title": "Moody's Upgrades Piramal Finance Outlook to Positive, Affirms Ba3 Rating - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNTFpbFFXZWR6RTZVZ3NrR1pWVUhBZ2lPSVhtTzhJSkplTHRvSjRQNEU2S1JLS01OcjdKd2t3MWtTV1JsMlpKVHRGc0FhRHdUOWhQajVUaHB2YXZOZUhfYUl0aVFkekN5SFNFZ2J2RHdBUlk1OGQ5aENhbHo0VC1hSjh4SFBpbE90dVZHTV8tV1U0aXpwYncyVW4zQ2Q1cE85d1U2X1lEbUFYQ29pUmdIeU1TaElyTDZSQ2FZbUZ2V0RwUQ?oc=5",
-      "source": "Ratings",
-      "ts": 1774297248000,
-      "type": "filing"
+      "title": "POWERGRID Trading Window Closed from March 31: After Stellar Q3 Results, All Eyes on Q4 & Final Dividend - PSU Connect",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUGdfZG9yTjhNUDJjOGtIZDZhVnM3eDRrajFuWjIyaWxZYnc3dFhEYkViLXhweDlHQ2FPYzZhWDllNjYwWUpJSGtQRl8ydF84cDY4cWRyWTZmMEE0UWtKT2xCb3F2R1FnZFlPZTZJd2ZFQzFhcWc3NUJ3dHRPVm5pcUl0TFVEMm1pNUZ2cUxPTXd2OHNOcnFXUm96bXVUakJ2ZjQtT21BNHZQa2I0NU5YMGRvZG94M05QV1J0a3IzdTJJNTh5QVp5ZDFuS0xNU0VBcUE?oc=5",
+      "source": "Trading Window",
+      "ts": 1774262460000,
+      "type": "insider"
     },
     {
       "title": "NTPC Closes Trading Window from April 1, 2026 Ahead of Q4 & FY26 Results | Q3 PAT Up 5.85% to ₹4,987 Cr - PSU Connect",
