@@ -35,12 +35,18 @@ def parse_dt(s: str):
     s = re.sub(r'\s+[+-]\d{4}$', '', s).strip()  # strip trailing +0530 etc
     s = re.sub(r'\s+GMT$', '', s).strip()
     fmts = [
-        '%d %b %Y %I:%M:%S %p',   # "28 Mar 2026 2:05:11 PM"  ← BSE primary format
-        '%d %b %Y %I:%M %p',      # "28 Mar 2026 2:05 PM"
-        '%d %b %Y %H:%M:%S',      # "28 Mar 2026 14:05:11"
+        # ── BSE ACTUAL FORMAT (M/D/YYYY h:mm:ss AM/PM) ─────────────────────
+        '%m/%d/%Y %I:%M:%S %p',   # "3/28/2026 2:05:11 PM"  ← confirmed BSE format
+        '%m/%d/%Y %I:%M %p',      # "3/28/2026 2:05 PM"
+        '%m/%d/%Y %H:%M:%S',      # "3/28/2026 14:05:11"
+        '%m/%d/%Y',               # "3/28/2026"
+        # ── OTHER FORMATS ───────────────────────────────────────────────────
+        '%d %b %Y %I:%M:%S %p',   # "28 Mar 2026 2:05:11 PM"
+        '%d %b %Y %I:%M %p',
+        '%d %b %Y %H:%M:%S',
         '%Y-%m-%dT%H:%M:%S',      # ISO 8601
         '%Y-%m-%d %H:%M:%S',
-        '%a, %d %b %Y %H:%M:%S',  # RFC 822 (RSS)
+        '%a, %d %b %Y %H:%M:%S',  # RFC 822 (RSS pubDate)
         '%d/%m/%Y %H:%M:%S',
         '%d/%m/%Y',
         '%d %b %Y',
@@ -112,6 +118,15 @@ def fetch_bse_official():
                 data = bse.announcements(page_no=page)
                 rows = data.get('Table') or []
                 print(f"  BSE page {page}: {len(rows)} rows")
+                # Debug: log actual field values from first row to diagnose date format
+                if rows and page == 1:
+                    first = rows[0]
+                    all_keys = list(first.keys())
+                    news_dt = first.get('NEWS_DT') or first.get('DissemDT') or 'NOT FOUND'
+                    print(f"  BSE field keys: {all_keys[:10]}")
+                    print(f"  BSE NEWS_DT sample: '{news_dt}'")
+                    log.append(f"BSE NEWS_DT sample: '{news_dt}' | keys: {all_keys[:8]}")
+                added_count = 0
                 for row in rows:
                     title  = (row.get('HEADLINE') or '').strip()
                     scrip  = (row.get('SCRIP_NAME') or row.get('ShortName') or '').strip()
@@ -130,9 +145,13 @@ def fetch_bse_official():
                           else 'insider'  if 'insider' in cat
                           else classify(title))
                     full = f"{scrip}: {title}" if scrip and scrip.lower() not in title.lower() else title
-                    add(full, link, 'BSE', parse_dt(dt_raw), tp)
-
-            log.append(f"BSE announcements: OK (pages 1-2)")
+                    parsed = parse_dt(dt_raw)
+                    ts_val = to_ms(parsed)
+                    if ts_val > 0:
+                        added_count += 1
+                    add(full, link, 'BSE', parsed, tp)
+                print(f"  BSE page {page}: {added_count}/{len(rows)} items with valid timestamps")
+                log.append(f"BSE page {page}: {added_count}/{len(rows)} items with valid timestamps")
 
             # Forthcoming corporate actions ± 14 days
             try:
