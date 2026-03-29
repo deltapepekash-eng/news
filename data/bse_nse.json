@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T05:55:02.983858+00:00",
-  "count": 89,
+  "updated": "2026-03-29T08:02:46.879949+00:00",
+  "count": 96,
   "log": [
-    "BSE NEWS_DT sample: '2026-03-29T11:07:42.59' | keys: ['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
-    "BSE page 1: 0/2 items with valid timestamps",
+    "BSE NEWS_DT sample: '2026-03-29T13:29:42.333' | keys: ['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE page 1: 0/10 items with valid timestamps",
     "BSE page 2: 0/0 items with valid timestamps",
     "BSE actions: 21 items",
     "BSE result calendar: 4 items",
@@ -12,13 +12,41 @@
     "LiveMint: 35 items (7d window)",
     "Moneycontrol: FAILED — 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/corporateannouncements.xml",
     "Business Standard: FAILED — 403 Client Error: Forbidden for url: https://www.business-standard.com/rss/markets-106.rss",
-    "Exchange News: 44 items (7d window)",
+    "Exchange News: 43 items (7d window)",
     "BSE/NSE Results: 21 items (7d window)",
     "Corp Actions: 18 items (7d window)",
-    "Board Meetings: 26 items (7d window)",
+    "Board Meetings: 25 items (7d window)",
     "Bulk/Block Deals: 39 items (7d window)"
   ],
   "items": [
+    {
+      "title": "Vedanta to split into five companies in April; Anil Agarwal says demerger to create ‘phenomenal’ shareholder value: Report",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-to-split-into-five-companies-in-april-anil-agarwal-says-demerger-to-create-phenomenal-shareholder-value-report/articleshow/129877048.cms",
+      "source": "ET Markets",
+      "ts": 1774788210000,
+      "type": "filing"
+    },
+    {
+      "title": "War is profitable, time to get richer: 'Rich Dad Poor Dad' author Robert Kiyosaki",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/war-is-profitable-time-to-get-richer-rich-dad-poor-dad-author-robert-kiyosaki/articleshow/129876638.cms",
+      "source": "ET Markets",
+      "ts": 1774785510000,
+      "type": "results"
+    },
+    {
+      "title": "Dividend, bonus issue alert: IREDA among 12 stocks turning ex-date for corporate actions this week. Do you own any?",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/dividend-bonus-issue-alert-ireda-among-12-stocks-turning-ex-date-for-corporate-actions-this-week-do-you-own-any/slideshow/129876771.cms",
+      "source": "ET Markets",
+      "ts": 1774784741000,
+      "type": "dividend"
+    },
+    {
+      "title": "8 midcap stocks with massive upside potential of up to 75%. Do you own any?",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/8-midcap-stocks-with-massive-upside-potential-of-up-to-75-do-you-own-any/slideshow/129876422.cms",
+      "source": "ET Markets",
+      "ts": 1774783320000,
+      "type": "filing"
+    },
     {
       "title": "Market trading guide: Buy ACME Solar and Dalmia Bharat on Monday for short-term gains up to 16%. Here’s why",
       "link": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-buy-acme-solar-and-dalmia-bharat-on-monday-for-short-term-gains-up-to-16-heres-why/articleshow/129876087.cms",
@@ -454,13 +482,6 @@
       "type": "filing"
     },
     {
-      "title": "Vedanta shares fall 3% after stock turns ex-date for Rs 11 interim dividend",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-shares-fall-3-after-stock-turns-ex-date-for-rs-11-interim-dividend/articleshow/129838845.cms",
-      "source": "ET Markets",
-      "ts": 1774606782000,
-      "type": "dividend"
-    },
-    {
       "title": "SpaceX IPO: Musk may offer 30% stake to retail investors as company plans April briefings",
       "link": "https://www.livemint.com/companies/news/spacex-ipo-musk-may-offer-30-stake-to-retail-investors-as-company-plans-april-briefings-11774577885027.html",
       "source": "LiveMint",
@@ -468,31 +489,10 @@
       "type": "insider"
     },
     {
-      "title": "UBS picks: Reliance Industries, Adani Ports, among 10 largecap stocks that can rally up to 42%",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/news/ubs-picks-reliance-industries-adani-ports-among-10-largecap-stocks-that-can-rally-up-to-42/slideshow/129838891.cms",
-      "source": "ET Markets",
-      "ts": 1774606232000,
-      "type": "filing"
-    },
-    {
-      "title": "UPL Share Price Live Updates: UPL's Share Price Takes a Hit",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-stock-price-live-updates-27-mar-2026/liveblog/129838768.cms",
-      "source": "ET Markets",
-      "ts": 1774606024000,
-      "type": "filing"
-    },
-    {
       "title": "Who is Lindsay-Rae McIntyre? Microsoft's diversity head quits as HR team undergoes major AI-first restructuring",
       "link": "https://www.livemint.com/companies/people/who-is-lindsay-rae-mcintyre-microsofts-diversity-head-quits-as-hr-team-undergoes-major-ai-first-restructuring-11774581156954.html",
       "source": "LiveMint",
       "ts": 1774605959000,
-      "type": "filing"
-    },
-    {
-      "title": "Stocks to buy: Goldman Sachs lists top 7 quality stocks that look attractively priced",
-      "link": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-goldman-sachs-lists-top-7-quality-stocks-that-look-attractively-priced/slideshow/129838573.cms",
-      "source": "ET Markets",
-      "ts": 1774604776000,
       "type": "filing"
     },
     {
@@ -626,6 +626,55 @@
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRTBSMTZmR0M5aWhYQVA5RUVLd1dNQUFzSldHdGI2eDVBRzA4anYyWE1JMnlJUWtzcU16TDVad0lVSGFoVXRtUDJNLU54UEpvcUpGOFdCUFZsWGdwdmdTQ2pmVGctZHJRZEVvZ1BVVGRMZ0YwUXpJNXpMYkZmMlZtSTg2V1I1V1RoSkRfMUtHQ01qNEJIR1E?oc=5",
       "source": "Board Meetings",
       "ts": 1774398060000,
+      "type": "board"
+    },
+    {
+      "title": "Financial results declared in pursuance for implementation of Resolution plan as approved by NCLT",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5a003000-6a4a-4d31-8471-272cabfb0f52.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Declaration of Financial Results in pursuance of implementation of Resolution Plan Approved by NCLT.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3b950ed1-44ee-410d-b5c9-086b54db33f4.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Receipt of show cause cum demand notice.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/42e70dae-1b1d-41a4-a007-5e4b625cba90.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "As enclosed",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d5253507-33b4-4d23-8be0-5b01b42b6cda.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Pursuant to Regulation 30 read with Part A of Schedule III of Listing Regulations, please note that based on the Scrutinizer''s Report dated March 28, 2026, the Shareholders of the Company ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/22c89cbe-baa4-42f1-bb48-39e19ad59d7b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Scrutinizer''s Report - Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9376a9c0-1d03-4cb3-a183-02f7d4da5fbe.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Outcome of Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/79439ae4-b915-485e-bde9-0d459805f4f8.pdf",
+      "source": "BSE",
+      "ts": 0,
       "type": "board"
     },
     {
