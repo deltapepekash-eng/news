@@ -1,11 +1,11 @@
 {
-  "updated": "2026-03-29T16:44:35.851752+00:00",
-  "bse_count": 55,
+  "updated": "2026-03-29T17:05:26.427460+00:00",
+  "bse_count": 56,
   "news_count": 24,
   "log": [
-    "BSE NEWS_DT='2026-03-29T22:09:59.367' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE NEWS_DT='2026-03-29T22:33:29.337' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
     "BSE p1: 0/50 with ts",
-    "BSE p2: 0/13 with ts",
+    "BSE p2: 0/16 with ts",
     "BSE p3: 0/0 with ts",
     "BSE actions: 21",
     "BSE calendar: 4",
@@ -23,6 +23,27 @@
     "Orders Won: 30 items"
   ],
   "bse_items": [
+    {
+      "title": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/39062ff3-1fae-4ad3-8df7-d665465cd2ad.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of closure of trading window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44526083-8ef9-441a-872a-2b963cf2d79f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "We wish to inform you that the board of Directors of the Company, at its meeting held today i.e. 29/03/2026 approved\r\n\r\n1. Rs. 6,51,00,000 in A.R.S. Liners  (India) Private Limited by way ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/317fd25e-0606-4609-a42b-f97f2b4691de.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
     {
       "title": "Closure of Trading window",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ff09da2f-d4d4-4d38-a2f0-41f9b8cfbb3f.pdf",
@@ -290,13 +311,6 @@
       "type": "filing"
     },
     {
-      "title": "Intimation of closure of trading window.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/39e15955-cab6-45c5-9064-3f0a7ef9ca58.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
       "title": "Intimation of Assessment order under Section 143(3) of the Income Tax Act, 1961 dated March 28, 2026 from the office of Assistant Commissioner of Income Tax, Central Circle 13, Delhi",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/92d073a6-383d-4665-96a9-5e6e298a6032.pdf",
       "source": "BSE",
@@ -327,13 +341,6 @@
     {
       "title": "Media release with title \"CMS info Systems strengthens ATM Management Solutions Platform through acquisition of FSS''s Managed Services business\".",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d4829a11-7044-40e1-bd83-9b21cc6a69fc.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ac12f4a2-2e4e-416e-a19d-c8d8353cc67b.pdf",
       "source": "BSE",
       "ts": 0,
       "type": "filing"
@@ -446,35 +453,35 @@
       "type": "insider"
     },
     {
-      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0E0bjhxdV9ERjZaaEwtb0h5MGRRLWpna0p0MFc4ejdQRFVfelVqMzRGTDM4TXNvMENwbzQtMmxfWGdhT1oxVTFjY0lXYm1BajdsYkJ3dmVtN2VqZ0p4Uzg5NmpfRnB2WjJPNHVtaTZSOGd2R05PQnA5dFlscVppLU5sazVTNEJ0M2pn?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnlvVk1wbk4wZU0zZlIyQ29WaC1wR016T3lfT0R4OTZsbVhWck1XZnlWZkpkc0pPOTRmRkJLZnZIY1VmeUZQOEpIT0ZnUDlrbU1PM1hYSEhod1RsVHFxcTJXNHZqQ3VBZ01aRmVCMUQ3NXlwbi1feWFEUnpSYXdhLVFHSzlCQQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeU1JdjNKNWx5UU92cll3M2ZZWGpOdDVsNHNLUnFsVHk5U25nSjJYdUVQODZDLVNVakRMdGltckx4d3kzcnV5VWpWeEdIZkkyUVFWaXQ1Z05sdmtRUFVvOU9Yc2praFpFZy00RUVIOVdWaGdiZUFMS2NHaExjZGZ5TFFUVmY?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
