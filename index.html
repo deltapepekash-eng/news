@@ -1197,7 +1197,7 @@ async function triggerGithubAction() {
   if (!GITHUB_OWNER || !GITHUB_REPO || !GITHUB_TOKEN) return false;
   try {
     const res = await fetch(
-      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/update-data.yml/dispatches`,
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/fetch-bse-nse.yml/dispatches`,
       {
         method: 'POST',
         headers: {
