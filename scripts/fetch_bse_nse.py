@@ -215,6 +215,8 @@ def fetch_bse_official():
                               else classify(title))
                         full   = f"{scrip}: {title}" if scrip and scrip.lower() not in title.lower() else title
                         parsed = parse_dt(dt_raw)
+                      if parsed is None:
+    print(f"FAILED DATE PARSE: {dt_raw}")
                         if to_ms(parsed) > 0:
                             ts_ok += 1
                         before = len(bse_items)
