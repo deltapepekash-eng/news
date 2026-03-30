@@ -4,11 +4,8 @@ name: Fetch BSE/NSE Data
 
 on:
   schedule:
-    # Market hours IST 09:15–16:30 = UTC 03:45–11:00, Mon–Fri
-    - cron: '*/15 3-11 * * 1-5'    # every 15 min during market hours
-    - cron: '0 * * * 1-5'          # hourly off-hours weekdays
-    - cron: '0 */2 * * 0,6'        # every 2h on weekends
-  workflow_dispatch:                # manual trigger from Actions tab
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
