@@ -129,16 +129,18 @@ def add_bse(title: str, link: str, source: str, dt, ann_type=None):
     bse_seen.add(k)
     ts = to_ms(dt)
 
-# Force timestamp if parsing failed
+# Fix timestamp if parsing failed
 if ts == 0:
     ts = int(datetime.now(timezone.utc).timestamp() * 1000)
-    bse_items.append({
-        "title":  title,
-        "link":   link or "#",
-        "source": source,
-        "ts":     ts,
-        "type":   ann_type or classify(title),
-    })
+
+# ✅ ALWAYS append (outside if)
+bse_items.append({
+    "title":  title,
+    "link":   link or "#",
+    "source": source,
+    "ts":     ts,
+    "type":   ann_type or classify(title),
+})
 
 
 def add_news(title: str, link: str, source: str, dt, ann_type=None):
