@@ -45,33 +45,52 @@ def slug(title: str, link: str = '') -> str:
 def parse_dt(s: str):
     if not s:
         return None
-    s = re.sub(r'\s+', ' ', s.strip())
-    s = re.sub(r'\s+[+-]\d{4}$', '', s).strip()
-    s = re.sub(r'\s+GMT$', '', s).strip()
+
+    s = s.strip()
+
+    # Normalize ISO format
+    s = s.replace('T', ' ')
+
+    # Fix fractional seconds
+    if '.' in s:
+        try:
+            main, frac = s.split('.', 1)
+            frac = re.sub(r'[^0-9]', '', frac)
+            frac = (frac + '000000')[:6]
+            s = f"{main}.{frac}"
+        except Exception:
+            pass
+
+    # Remove timezone noise
+    s = re.sub(r'\s+[+-]\d{4}$', '', s)
+    s = s.replace('GMT', '').strip()
+
+    # Try ISO first
+    try:
+        dt = datetime.fromisoformat(s)
+        return dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        pass
+
+    # Fallback formats
     fmts = [
-        '%m/%d/%Y %I:%M:%S %p',   # "3/28/2026 2:05:11 PM"  ← BSE actual
-        '%m/%d/%Y %I:%M %p',
-        '%m/%d/%Y %H:%M:%S',
-        '%m/%d/%Y',
-        '%d %b %Y %I:%M:%S %p',
-        '%d %b %Y %I:%M %p',
-        '%d %b %Y %H:%M:%S',
-        '%Y-%m-%dT%H:%M:%S',
+        '%Y-%m-%d %H:%M:%S.%f',
         '%Y-%m-%d %H:%M:%S',
-        '%a, %d %b %Y %H:%M:%S',
-        '%d/%m/%Y %H:%M:%S',
-        '%d/%m/%Y',
-        '%d %b %Y',
+        '%m/%d/%Y %I:%M:%S %p',
+        '%m/%d/%Y %I:%M %p',
+        '%d %b %Y %H:%M:%S',
+        '%d %b %Y %I:%M %p',
         '%Y-%m-%d',
     ]
+
     for fmt in fmts:
         try:
             dt = datetime.strptime(s, fmt)
             return dt.replace(tzinfo=timezone.utc)
         except Exception:
-            pass
-    return None
+            continue
 
+    return None
 
 def to_ms(dt) -> int:
     if dt is None:
