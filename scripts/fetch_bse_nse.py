@@ -216,15 +216,16 @@ def fetch_bse_official():
                         full   = f"{scrip}: {title}" if scrip and scrip.lower() not in title.lower() else title
                         parsed = parse_dt(dt_raw)
 
-if to_ms(parsed) > 0:
-    ts_ok += 1
+                        if to_ms(parsed) > 0:
+                            ts_ok += 1
 
-before = len(bse_items)
-add_bse(full, link, 'BSE', parsed, tp)
+                        before = len(bse_items)
+                        add_bse(full, link, 'BSE', parsed, tp)
 
-if len(bse_items) > before:
-    page_added += 1
+                        if len(bse_items) > before:
+                            page_added += 1
 
+  
                     total_added += page_added
                     log.append(f"BSE p{page}: {len(rows)} rows, {page_added} new, {ts_ok} with ts")
 
