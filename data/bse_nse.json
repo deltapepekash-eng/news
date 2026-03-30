@@ -1,10 +1,14 @@
 {
-  "updated": "2026-03-30T04:25:59.401754+00:00",
-  "bse_count": 0,
+  "updated": "2026-03-30T04:41:17.150044+00:00",
+  "bse_count": 25,
   "news_count": 29,
   "log": [
-    "BSE: package not installed",
-    "NSE: nsepython not installed",
+    "BSE NEWS_DT='2026-03-30T10:10:36.66' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE p1: 0/30 with ts",
+    "BSE p2: 0/0 with ts",
+    "BSE actions: 21",
+    "BSE calendar: 5",
+    "NSE: no data",
     "Moneycontrol Corp: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/corporateannouncements.xml",
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
@@ -17,7 +21,183 @@
     "Ratings: 30 items",
     "Orders Won: 30 items"
   ],
-  "bse_items": [],
+  "bse_items": [
+    {
+      "title": "The Exchange has received the Disclosures of reasons for encumbrance by promoter of listed companies under Reg. 31(1) read with Regulation 28(3) of SEBI (SAST) Regulations, 2011 on March ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/87EDF945_589A_4AEA_936F_7CC564BDEC97_101023.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Press Release on Credit Rating",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/60284afe-07f0-4628-9132-fece34788ae8.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Trading Window Closure notice intimation",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c4e51509-0a3a-4a94-8ca4-e9b420202f94.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "The Exchange has received Disclosure under Regulation 31(1) and 31(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 on March 29, 2026 for Indusind International ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/54E493C0_D085_4D97_BC42_FB18F9DEEFBF_095837.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Globus Spirits Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 07/05/2026 ,inter alia, to consider and approve i) standalone and consolidated ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fc1f6e3b-35aa-4beb-826c-9d4266be7f60.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Initmation about Credtit Rating",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/36065eba-d901-4da5-8cc5-da96d2433141.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Outcome of Board Meeting",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/48abea3f-f90b-42fb-a8bc-31b81e928a4f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Buyback of Shares by Multicare Pharmaceuticals Philippines Inc., a subsidiary company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bc1a8b63-311d-4158-9a02-c3b9ca240ba1.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "As Attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1dba7972-8459-41b3-85d8-27ba78ca48d1.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1abbb5fe-c982-4d13-bdb9-383d6c883c59.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of Closure of Trading Window is attached herewith. Closure period is from 01.04.2026 to 48 hours after the declaration of the audited financial results for the year and quarter ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1ce64e60-e042-47bd-b4bd-abc332f540ae.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e9c29fc8-5519-4345-b495-589cb79e4924.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a8c8a0a1-bc42-4c09-887f-ffa34e27bf6b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/460e1ec0-c56d-4061-8275-ad61bb0c4c7a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure of change in shareholding",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ec89adb3-37fb-4e35-937a-1be254d7098a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of Listing Regulations, please find enclosed Press Release- \"Wockhardt''s Zaynich (Zidebactam/ Cefepime) Receives Favourable Recommendation from CDSCO''s Subject ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c5ba0d6e-7658-4d1f-a678-543332b8d4be.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Operationalization of Projects",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/041fa27b-9413-4b07-aaf2-3e6ffda10896.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Aries Agro Limited has appointed Mr. Sourav Ganguly as Brand Ambassador of the Company for a period of 3 (Three) years",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/62978dc3-62eb-4ace-9478-6aff8b3a3d5d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Update on 50:50 Joint Venture between JSW Steel Limited and JFE Steel Corporation, Japan for the Steel Business of BPSL.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/068cf3c7-c64e-43e3-b3cb-bb5f2ab938b3.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Receipt of Order",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3aa2587e-c6ee-4e8d-8118-092827ca4783.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Company hereby informs the Exchange that the Special Audit as directed by the Income Tax Department, has been concluded.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f1942887-51d6-46a9-af2a-56b293b3e243.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Trading Members of the Exchange are hereby informed that effective from March 30, 2026, the Equity Shares of Central Mine Planning & Design Institute Ltd  (Scrip Code: 544739) are listed ....",
+      "link": "https://www.bseindia.com/corporates/ann.html?scripcode=544739",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation under Regulation 30 of SEBI Listing Regulations",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8039fcf3-5746-4b88-8012-f1719f23b2bf.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release regarding filing of Copyright in US Copyright Office is attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b74c9fc8-730a-4559-a668-fc1c54ed48fd.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Cessation of Mr. Chand Bihari Patodia (DIN:01389238) as Managing Director and Key Managerial Personnel of the Company upon completion of tenure with effect from the close of business hours ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6be5ecaf-08df-4d45-a0fd-ddc7f72596e9.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    }
+  ],
   "news_items": [
     {
       "title": "Torrent Pharma Schedules NCLT Shareholder Meeting for J.B. Chemicals Amalgamation - scanx.trade",
@@ -48,84 +228,84 @@
       "type": "insider"
     },
     {
-      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeU1JdjNKNWx5UU92cll3M2ZZWGpOdDVsNHNLUnFsVHk5U25nSjJYdUVQODZDLVNVakRMdGltckx4d3kzcnV5VWpWeEdIZkkyUVFWaXQ1Z05sdmtRUFVvOU9Yc2praFpFZy00RUVIOVdWaGdiZUFMS2NHaExjZGZ5TFFUVmY?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0E0bjhxdV9ERjZaaEwtb0h5MGRRLWpna0p0MFc4ejdQRFVfelVqMzRGTDM4TXNvMENwbzQtMmxfWGdhT1oxVTFjY0lXYm1BajdsYkJ3dmVtN2VqZ0p4Uzg5NmpfRnB2WjJPNHVtaTZSOGd2R05PQnA5dFlscVppLU5sazVTNEJ0M2pn?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Godha Cabcon & Insul Share Price Today, Godha Cabcon & Insul Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Godha Cabcon & Insul Share Price Today, Godha Cabcon & Insul Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONzYxUFFFNVBSMUE3M2xWUDJFOWVzd2F5dm10aExoMks2OXB3c2FVOFR2VW1KSWFqc1dCNEVGcGtZaWxteXlpRkxGMXhmWEZDelZIWmptbThNcHctdU5EUXNTeHVKc1YtaGlUdm1RWGxBanA1d3dnd2VkM1QxWWI1SHZjSXVzQUE2NHNj?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Lakshmi Machine Share Price Today, Lakshmi Machine Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Lakshmi Machine Share Price Today, Lakshmi Machine Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBHd1hDRGphZ3VGbkEtS2RLd1BEYW9GalVDRWoxLVhCQzUxOGw0WHM1WWkyZ2tqWmM4YjA2ZXFjTHpjQkh6NlN1UTM2WmRFTVdfZlhJRmR3SkpvU1o1V3U0RE80bkxmVUUtMVdXcVBudG9uem5VVERRbG1Raw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Sanstar L Share Price Today, Sanstar L Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Sanstar L Share Price Today, Sanstar L Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ycWZNeVVPalp1WHhzdm5vNXdQOXAtN3d4N0tWcUZ2alJPVnRpWGhNRDA3dGRfYVpKLTdYenBDQVJ5d2pfb0E0bVo4eVNlRTA3OGJPUWQ5ckEwbTVlSUw4Z2lMTGt2Q3h5d1dhOFFHeGlRS2hXSDBzaVU0T1pqbEk?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "India Steel Work Share Price Today, India Steel Work Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZnlvVk1wbk4wZU0zZlIyQ29WaC1wR016T3lfT0R4OTZsbVhWck1XZnlWZkpkc0pPOTRmRkJLZnZIY1VmeUZQOEpIT0ZnUDlrbU1PM1hYSEhod1RsVHFxcTJXNHZqQ3VBZ01aRmVCMUQ3NXlwbi1feWFEUnpSYXdhLVFHSzlCQQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Fusion Micro Finance Share Price Today, Fusion Micro Finance Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Fusion Micro Finance Share Price Today, Fusion Micro Finance Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYmdxTktuT1VBZ2NsVnVlb054S3YtVFpzdkxRODRaWlV5aklINjNqQ0xTekpVWm14R1UwQXVZRFY2cE9DQnF2cThxZjVjdGNtaDdlU01Hd3E0YlpFV19mVGhhUkNIUzVYZWp5aFV4eXVyTC0zb1R4Znk5eEtVT1hpZ2RSZmF5LW1mZzdGWA?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Fischer Chemic Share Price Today, Fischer Chemic Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Fischer Chemic Share Price Today, Fischer Chemic Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPd3dRRkUxdFpaTkF6bE1nVFZyX1VOaWJkbjV3Tk9SVlJ0Q0JfQnZVUEZ1aksyTUFkY3BWdklUWWQxQ3R2VjczbXpTLTl6cVpiaDdRSkpOelg0bWNPRHlZR25ndFZ5a2xIM2N1Y3prM3BWUUotSzB2LVJiUnpBRTdJVzRLMnRmZHhLYVVOUVhKR0RwdjVzUkE?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "ETT Ltd Share Price Today, ETT Ltd Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "ETT Ltd Share Price Today, ETT Ltd Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUWFselJUVVd5WjR3OVFvRkgxYXllNFI2QWtIa1JpQ1BsRktzRDBnRlg0VlUyTHRzMzRIak5lSzhXWG5NMmRmOWdxYlB2dnlNUXV2ZGpQLUF5Rkt4TTVtenFJVWt6T25ZdFdaU1Zqc0VKT0UxZHB3XzNIOWZ0eUJTQ3RGck9iU3lvb0psQ1lGWDUtMVpZM1hKbVlTUQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Ibull Real Estate Share Price Today, Ibull Real Estate Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Ibull Real Estate Share Price Today, Ibull Real Estate Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQelVxTEJTcVhzcDRyU3RyLVdZeEdOczg4T1c5ZGlHUHI0QkRrdUg0QzI4amtFQlFNbnE5djJSTXJyaFYtOEdHSDZXd2hGOEkyVGJsUU1VWlBfYWFKQmJzanAtdTVQRFMwU3B4X25Gb3lXOS1BV056MjUyUHBGMy1XeWpOdS1jZnNEQ3ZreUNnNE0zZw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
@@ -153,7 +333,7 @@
       "type": "board"
     },
     {
-      "title": "HCL Tech Q4 results 2026: 2nd dividend announcement this year soon! Board meeting date fixed - ET Now",
+      "title": "HCL Tech Q4 results 2026: 2nd dividend announcement this year soon! Board meeting date fixed - etnownews.com",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcHJmdDZjTHB6NlRwYmppLW1WMHFVZ3FEOFRsZ1RnWGFOeXR6cVVYNk5CUFNzTmFzX0YydWxPaUROMllQUG5wQ1pEX0lQTV8zNm9GRTFYeUhoVkRPVzRvNjVWRU43SFRPdXRYTUkwWlJxRmttSkxqWGtldkJTeUZWUFNDazRSX1ZWdzJqOFN2aE5HMkxKdnozaldhbUZJMUlNZ3liVTBSb19HNE50VW1xbzNUOU93Z01GSWotMkxiek4zOXRSQ2RpUThFU1p6MVY0azVWbURLc01vUdIB3wFBVV95cUxQMHBpS01BY19yTWU3UXFTcEdmMHctcG1xWFV3anJSRlZhMFJoT3ZYYlR0dHhDMFI1ZnZ1empvRUVaeFdoMk1mNFdUTXpjTEhsV2dLOWZvNUJ1a2lYTDd6S3haUkxZUWpCc0VNd3BOQ1JNMWJWcXJ0SHdUb01DZXFSSXpiWmNlYzFfdWVPQ2FZX0VIZGhMbS01MUdRLWswQ1g0NmZ1eFdFd1k5YlpuN1BxRUNNNHMtb3RtTGdzX1hmX25KbmNpUUF3TXJlbWFqZnF4a0JqaDZ5ejBTWG1TdnZj?oc=5",
       "source": "Exchange News",
       "ts": 1774522935000,
@@ -167,7 +347,7 @@
       "type": "insider"
     },
     {
-      "title": "TCS Q4 results FY26: IT major releases earnings date, final dividend in focus; check financials, other details - Upstox",
+      "title": "TCS Q4 results FY26: IT major releases earnings date, final dividend in focus; check financials, other details - upstox.com",
       "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPTktrdV9kQk9xajhlVXhFLVQ4STBrRURqYXdycUtqeC1uZFZBcEI4UkdzYmc0V1FXSW1fUGpDS2xDekZpd1czTUF1dktLbnBXMk54WEYtV0lvbTNkbkxLbHprMEdSSVViX1Rjb194V1FEVUphQy1qNFpfWWRRYWF4ZW56aVotYTVURlR3NldlXzFnSC00eU9uckJGV1lqQUtjcWI0Q0RUWEpLaGpUbFFsaTd5a0NUTW9ibncyM0l4VDlsc2N2VkdJdkp4Z3VBUGpLek1SdnpuRWtDeHZQREFlYkF6bW5fZ29Tdlg2V2FLMlJXNVRCNy0wWTJ0QkFpU2VDSVp5WkVn?oc=5",
       "source": "Exchange News",
       "ts": 1774424941000,
@@ -202,11 +382,11 @@
       "type": "filing"
     },
     {
-      "title": "POWERGRID Trading Window Closed from March 31: After Stellar Q3 Results, All Eyes on Q4 & Final Dividend - PSU Connect",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUGdfZG9yTjhNUDJjOGtIZDZhVnM3eDRrajFuWjIyaWxZYnc3dFhEYkViLXhweDlHQ2FPYzZhWDllNjYwWUpJSGtQRl8ydF84cDY4cWRyWTZmMEE0UWtKT2xCb3F2R1FnZFlPZTZJd2ZFQzFhcWc3NUJ3dHRPVm5pcUl0TFVEMm1pNUZ2cUxPTXd2OHNOcnFXUm96bXVUakJ2ZjQtT21BNHZQa2I0NU5YMGRvZG94M05QV1J0a3IzdTJJNTh5QVp5ZDFuS0xNU0VBcUE?oc=5",
-      "source": "Trading Window",
-      "ts": 1774262460000,
-      "type": "insider"
+      "title": "Moody's Upgrades Piramal Finance Outlook to Positive, Affirms Ba3 Rating - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNTFpbFFXZWR6RTZVZ3NrR1pWVUhBZ2lPSVhtTzhJSkplTHRvSjRQNEU2S1JLS01OcjdKd2t3MWtTV1JsMlpKVHRGc0FhRHdUOWhQajVUaHB2YXZOZUhfYUl0aVFkekN5SFNFZ2J2RHdBUlk1OGQ5aENhbHo0VC1hSjh4SFBpbE90dVZHTV8tV1U0aXpwYncyVW4zQ2Q1cE85d1U2X1lEbUFYQ29pUmdIeU1TaElyTDZSQ2FZbUZ2V0RwUQ?oc=5",
+      "source": "Ratings",
+      "ts": 1774297248000,
+      "type": "filing"
     },
     {
       "title": "NTPC Closes Trading Window from April 1, 2026 Ahead of Q4 & FY26 Results | Q3 PAT Up 5.85% to ₹4,987 Cr - PSU Connect",
