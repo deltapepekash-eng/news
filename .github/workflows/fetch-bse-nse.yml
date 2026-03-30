@@ -1,6 +1,7 @@
 name: Fetch BSE/NSE Data
 
 
+
 on:
   schedule:
     # Market hours IST 09:15–16:30 = UTC 03:45–11:00, Mon–Fri
