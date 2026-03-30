@@ -1,13 +1,13 @@
 {
-  "updated": "2026-03-30T06:56:38.227733+00:00",
-  "bse_count": 131,
-  "news_count": 31,
+  "updated": "2026-03-30T08:12:16.033479+00:00",
+  "bse_count": 148,
+  "news_count": 29,
   "log": [
-    "BSE NEWS_DT='2026-03-30T12:25:56.43' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
-    "BSE p1: 0/50 with ts",
+    "BSE NEWS_DT='2026-03-30T13:40:51.077' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE p1: 1/50 with ts",
     "BSE p2: 0/50 with ts",
     "BSE p3: 0/50 with ts",
-    "BSE p4: 0/17 with ts",
+    "BSE p4: 0/50 with ts",
     "BSE actions: 21",
     "BSE calendar: 5",
     "NSE: no data",
@@ -15,8 +15,8 @@
     "Exchange News: 30 items",
     "BSE/NSE Results: 30 items",
     "Corp Actions: 30 items",
-    "Board Meetings: 26 items",
-    "Bulk/Block Deals: 29 items",
+    "Board Meetings: 29 items",
+    "Bulk/Block Deals: 30 items",
     "Trading Window: 30 items",
     "Share Allotment: 30 items",
     "M&A: 30 items",
@@ -25,18 +25,662 @@
   ],
   "bse_items": [
     {
-      "title": "Attached herewith Newspaper Publication of the advertisement published on 29th March, 2026 in compliance with Regulation 84 SEBI ICDR Regulations towards Right Issue of the Company.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f038df65-88f1-486e-abfa-db01be0e709d.pdf",
+      "title": "Clarification regarding volume movement",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/66c28c21-7f50-432f-ae7f-9a6905059063.pdf",
+      "source": "BSE",
+      "ts": 1774877597000,
+      "type": "filing"
+    },
+    {
+      "title": "Raising of funds through the issuance of equity shares of face value ?5/- each by way of Rights Issue for an amount approximately upto ?30 Crores (Rupees Thirty Crores only), through a ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e4c9876-6815-466d-8d7d-11d162c6de09.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Intimation of Incorporation of Wholly owned Subsidiary",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cea8ecf3-3936-409f-ad8d-84725d04923b.pdf",
       "source": "BSE",
       "ts": 0,
       "type": "filing"
     },
     {
-      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Manan Mahajan & Others",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/45CD56EE_A1A7_4EEC_AF65_7EED457D3289_122512.pdf",
+      "title": "Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e051d5aa-c399-420c-8e05-eb8653640624.pdf",
       "source": "BSE",
       "ts": 0,
       "type": "insider"
+    },
+    {
+      "title": "Announcement under Regulation 30 of SEBI LODR- Approval received under Electronics Component Manufacturing Scheme (ECMS)",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e66f20ab-a955-4667-ba3b-870bdb703469.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of raising of demand of Rs 4524490/- vide Assessment order U/s 143 (3) dt. 29.03.2026 for AY 2024-25 by Assessment Unit, Income tax Department .",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9bc9209c-4caa-4a9a-a856-805d631ffc79.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Change in Internal Auditor of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6ee9fb33-78d7-4eea-b599-28242a47841a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of resignation of Shri R Balaji, MD&CEO",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4908a181-8eb9-44e5-9fd7-b45ee02752dd.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/30183e1c-56e5-41c1-a484-e9e356aadf05.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Proceedings of the Extraordinary General Meeting of the Company",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f3b67b57-f679-43ee-b998-27a448994ff6.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Closure of trading window intimation for 31st March 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d44f5186-d6f4-4d2b-8ecc-23e0a2c88cc9.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Outcome of Board Meeting.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2874f2f3-244a-4b31-9d9f-837f73cf33ae.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "This is to inform that pursuant to SEBI Regulations, 2015 as amended , and BSE Circular No. LIST/COMP/01/2019-20 dated 2nd April, 2019, the trading window for dealing in the securities ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f2778c94-183a-41b2-a10d-3040bc663a6a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Anzen India Energy Yield Plus Trust has informed the Exchange regarding Disclosure of material issue",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e4eae99f-b81e-4457-ba3a-facced236547.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The trading window for dealing in securities by Designated Person will remain closed from 1st April, 2026 till 48 hours after the dissemination of the Audited Financial Result of the Company ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3ee02b34-6ae7-46a6-b29c-f555783bd9de.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Newspaper Publication regarding opening of Special Window for Transfer and Dematerialization of Physical securities",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d83a2a33-ee87-445e-8b21-b60cebdf9ddb.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure under regulation 30 of SEBI LODR regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/890c7927-800d-458e-8f5d-7fb29ddc0005.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "ESG Rating",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7b4eb78f-9b95-452b-a4eb-baaa00a9674f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Closure of Trading Window for the purpose of financial results of 4th Quarter and year ending on 31st March, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e1cf0fd7-44cf-4fc9-b7e4-7833f973d802.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "pursuant to the SEBI (PIT) regulations, 2015, United Credit Limited has informed about closure of trading window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8eab0110-64fa-4038-97c8-5732a46d8e93.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Outcome for Board Meeting held on March 30, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b4d0eb0a-5f42-4408-a54f-efd9f47f47b8.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "AS ATTACHED",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8dd8a85c-94f9-4eff-8438-c618706c7619.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Please find enclosed a copy of the Press Release",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ff48f0fa-6e60-450f-a54b-82a861639ff0.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Closure of Trading Window for the Quarter ended on March 31, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e8274198-371c-48dd-84ed-2cc73888aaea.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "The Board of Directors at its Board Meeting held on Monday 30th March, 2026 appointed Ms. Manisha Agrawal (having Membership No. ACS 32460) as the Company Secretary cum Compliance Officer ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/dcdcc72f-fffa-43b9-8d1d-f11c96c263cb.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "The trading window will remain closed for all Directors/Promoters/Designated persons and their immediate relatives of the company from Wednesday 01st April,2026 till 48 hours after declaration ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/eb5bb466-74d2-4f6a-8cf4-fb018eae01e1.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "We hereby inform that the entire redemption amount of Rs. 50 Crore has been paid by the Company on the due date, today i.e. March 30, 2026 including the interest.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6b754382-b067-46ed-8ef0-fa93f31c18c1.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation for Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/17251b0f-b05a-4e8a-b4da-60c03c5f0ef0.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Outcome of Voting Result of Postal Ballot along with Scruitinizer Report.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/496b90da-3611-489c-bfaf-00f583ed8cc1.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "As per the attached notification",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/51bbe2ba-1c3b-414f-ad23-3a422f086ae3.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Voting Result of Postal Ballot notice dated 16th February, 2026 along with Scrutinizer''s Report",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8aaad94f-99bc-4539-8281-ba5dece80056.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Closure of the trading window as per attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/02ffa587-f528-466b-89ba-876a1b589dc4.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation for sale of shares by Promoter, pursuant to the Compliance of MPS Requirements",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6cce15bd-08c3-416a-9dea-fd4de1bec18c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "We hereby submitting the Intimation of Closure of Trading of the Company to prohibit the all Designated persons and their immediate relative from trading in the securities of the company ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/778c0d3e-3bbe-4e87-84bf-6e06bb21482a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Trading Window Closure",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/870dda61-87f3-4264-8276-c5b76f9e664d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "The trading window of Lex Nimble Solutions Limited for dealing in securities of Lex Nimble Solutions Limited shall remain closed from 01.04.2026 till 48 hours after the announcement of ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fa151926-d695-4609-9c58-6df33d8b0e0a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Outcome of postal ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/12d3bfa6-7643-4e73-8d8a-8e5bded68ecb.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Clarification in movement in price",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b80a4489-d73f-4c8a-a100-1108161672a0.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Diamond Power Infrastructure Limited has informed the exchange regarding the receipt of letter of intent",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b0ca33f4-2b57-4fdb-81f0-f944c662f754.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "POSTAL BALLOT SCRUTINIZER''S REPORT",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e447c21c-c2ee-40de-9f03-03cb7e62fba9.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Reporting of violation relating to Code of Conduct under SEBI(PIT) Reg, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/86a540a3-fb77-4373-ad6e-3ade7c193d24.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure related to execution of MOU with AITMC Ventures Private Limited",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bb13cecb-1f50-43f8-b272-9dbc4c002659.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of change in name of step-down subsidiary of the Company",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/25b9a6e6-0b96-49a6-b7ca-faece43c168f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The trading window for dealing in securities of the Company by designated person and their immediate relatives shall remain closed from Wednesday, 1 April, 2026 till 48 hours after the ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a11a1f00-0d80-46ae-bfb5-5f3112b76287.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of SEBI (LODR) Regulations, 2015, please find enclosed the details of the change in the directorate of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9eb771b8-e027-4c02-a149-16c257b914e5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Management Committee of the Company as authorized by the Board of Directors, has approved allotment of 30000 NCDs today i.e. March 30,2026. Details are provided in the attached letter.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e1528b99-17f4-4ccc-b4b5-d5a026c43ca5.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "The Trading Window for dealing in the securities of the company will remain closed from 01st April, 2026 till 48 hours after the announcement of Standalone and Consolidated Audited Financial ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/850704d7-8d69-4829-8679-7b4b5350a3bf.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find enclosed the intimation for Closure of Trading Window for Quarter and year ended on 31-03-2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8f96ffcb-b327-4c31-96d4-37b0ec295f50.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Salim Pyarali Govani & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/735EC4ED_04C0_4BA2_91DF_E2AFC65EADD2_125826.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Orders worth INR 405.71 Crores (excluding GST)",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/04580a70-71dc-4af4-b823-f382bc63580e.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The trading window for dealing in securities of Mipco Seamless Rings (Gujarat) Limited will remain closed from start of business hours of  1st April 2026 till 48 hours after the declaration ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4d624690-8103-4262-9fce-a074f801e08f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "closure of trading window closure",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c207920d-41c9-49a2-9030-022dba499ae7.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "This is to inform you that in terms of SEBI (PIT) Regulations, 2015 (as amended) read with the \"Code of Conduct to Regulate, Monitor and Report Trading by Designated Persons \" (''the Code'') ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d87abcac-a9a9-476e-be76-f5102b8d3846.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation for Closure of Trading Window - Trading Window will be closed 01st April 2026 up to expiry of 48 hours after the date of decalaration of the Audited Finanacial Results for Quarter ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/29b2dec5-91ed-41ee-91a6-2ada6f7c64f2.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find enclosed disclosure under SEBI (PIT) Regulations",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a28053eb-ab67-454a-9d8e-bb05ff898426.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Clarification on Price Movement",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cd612aaf-54bf-4ce7-9998-3e241bbb11d9.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of Closure of Trading Window - March 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8f1d5b49-4adc-44e8-a097-b5c3aa914356.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find attached disclosure for closure of Trading window of Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/28d51b62-ef75-4dda-8a81-9835ce5f9ada.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Allotment of 12365 equity shares under ESOP Scheme 2021",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3864e8d9-7c44-4eeb-9b9b-c54e99979545.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Nexxus Petro Industries Limited on its meeting held on 30th March 2026 for Sale of Undertaking of the Company pursuant to Regulation 30 of LODR Regulations 2015 for the land parcel-undertaking ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/66121b6d-b121-4fea-b456-39535b6f331f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of closure of Trading Window.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9c6a22bf-4223-4809-af96-7938c4bff391.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "As per the SEBI (prohibition of insider Trading)Regulations,2015,please find attached herewiht the intimation of closure of trading window...pfa",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/90de00ba-b7fd-4b3d-a78e-efb32d770091.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 10(6) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Mitesh Kothari",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/E74E36A7_64D8_4522_8EE9_561AD0F77CDC_124958.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation for re-appointment of Mr. Divakar G. Kamath as the Executive Director and Chief Financial Officer of the Company for a further period of 3 years from 1st April, 2026 to 31st ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c9ffa699-477b-4875-b542-611f54bf446c.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Meeting of the Board of Directors of the Company was held today i.e. March 30, 2026, at 12:00 P.M. and concluded at 12:30 P.M. The Board of Directors has inter-alia considered and approved ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/db20e981-4029-4cd8-be1c-37489e42e0a0.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Nexxus Petro Industries Limited has submitted Outcome of Board Meeting for Sale of Undertaking of the Company.Pursuant to Regulation 30 read with Schedule III of the SEBI (Listing Obligations ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c498ab32-40c2-4fc9-acc2-417cc916d897.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for BC Asia Inveestments XXV Ltd & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/59463D45_16D8_4BDE_9E4A_E1C71C4B9AAE_124637.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "PFA file",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e1c0f8dd-2196-4cc0-911e-d2fa940a2fcf.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The trading window of the company shall remain closed from Wednesday April 1, 2026 upto 48 hours after the declaration of financial results for the fourth quarter and year ending on March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d094524b-8b0d-4d94-9519-2ceb4967ee12.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation regarding Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cb852692-baac-4658-99c3-98cad4888d37.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Refer attached document.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/19917f48-c9e5-440b-a912-125c8369f143.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Receipt of Notification of Award (NOA) from NTPC Ltd.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c1c75d4f-f246-499a-ad84-ad95f20cf81d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to the SEBI (Prohibition of Insider Trading) Regulations, 2015 and code of Internal procedure and Conduct for Regulating, Monitoring and Reporting of Trading by Insiders adopted ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6945f9a9-905f-4d29-8e20-4b6dd2d15d23.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find attached intimation w.r.t Closure of Trading Window.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8b8353b4-2fdb-437a-9320-b1769c3e52e7.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Closure of Trading Window for Audited Financal Result for quarter ended 31.03.2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0b1681ee-dd72-44dd-be53-9d453763330a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Please find enclosed file.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/49ccf99e-a57e-4765-89cb-e0159d7f4764.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure from Mr. Pradeep Sanghavi",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/464bf1ce-dcba-402d-8858-4de012a1572f.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "We are pleased to inform that our company has bagged new contract from Department of Agricultural Research and Education (DARE), Indian Council of Agricultural Research (ICAR), Ministry ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/95ce0fde-ae79-4838-b6ff-8d000fbf5031.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has sought clarification from Indusind Bank Ltd on March 30, 2026, with reference to news appeared in https://economictimes.indiatimes.com/ dated March 30, 2026 quoting \"SFIO ....",
+      "link": "https://www.bseindia.com/corporates/ann.html?scripcode=532187",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 18(6) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for BC Asia Investments XXV Ltd & Others",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/70D85C5D_7F0D_41CF_812C_736DEC285263_124108.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "PTC has intimated about closure of trading window w.e.f. 1st April 2026 till 48 hours after declaration of financial results (standalone & consolidated) for the quarter and financial year ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a70930f8-556f-469e-9034-ea271fd8492b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "PDF Attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/87c38a3d-e169-45ba-92a2-c3a7e9d7d749.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Postal Ballot Notice",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fcdcaf1e-43e1-40e0-90f1-3379af32390d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "board"
+    },
+    {
+      "title": "Revised intimation for Closure of Trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b3d627f6-d4a1-4a74-bb0a-8b53e7696a46.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "CIT(A) -28, Delhi, has vide orders dated 27.03.2026, disposed off the aforesaid appeals and disallowed the Company''s claim under Sections 80-IA/ 80-IB for Assessment Year 1995-96 to 2004-05.\r\nThe ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/89579dce-4748-437f-92b3-775899a737bb.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Attached herewith Letter of Offer dated 11th March, 2026 for the Right issue of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/65846e70-34c6-447a-ac14-2060f0675a09.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "Please find enclosed outcome of meeting intimation.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/13e8a19a-d6be-4701-a52d-d4052829ce59.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Trading Window Closure for 31st March 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d75a2c49-8315-470b-b51e-81984bd30f01.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation of appointment is attached herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c0329b6f-10c3-4fa4-af7e-477819dab32b.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Allotment of NCDs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0d0e15db-0920-42e9-a82f-df5c6c0162a7.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
+      "title": "Closure of Trading Window for the quarter and financial year ended on 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b6ba0d4c-a315-4611-9c07-492f54c1ee95.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation for closing of trading window in terms of SEBI (Prohibition of Insider Trading) Regulations ,2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a1dec162-814b-4bba-a18e-43765ac205a7.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Closure of Trading window for the quarter ended 31st March 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a5c218b0-6d7e-4e85-9d5d-5fd4a2e28b6a.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "insider"
+    },
+    {
+      "title": "Attached herewith Newspaper Publication of the advertisement published on 29th March, 2026 in compliance with Regulation 84 SEBI ICDR Regulations towards Right Issue of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f038df65-88f1-486e-abfa-db01be0e709d.pdf",
+      "source": "BSE",
+      "ts": 0,
+      "type": "filing"
     },
     {
       "title": "Closure of trading window w.e.f. 01.04.2026",
@@ -88,20 +732,6 @@
       "type": "filing"
     },
     {
-      "title": "Intimation of Closure of Trading Window",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/83af423f-26a2-4319-b53e-d92b3031ded8.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Closure of Trading Window",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3b5c24ba-aa84-4d0e-8fce-2d293057f6ef.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
       "title": "as per the attached document",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9a6a8bf5-f5b6-4598-93c0-5638e9177b2c.pdf",
       "source": "BSE",
@@ -128,13 +758,6 @@
       "source": "BSE",
       "ts": 0,
       "type": "filing"
-    },
-    {
-      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Ruchika Chaturvedi & Kushal Chaturvedi",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/AFD52D54_2B56_4D29_BADB_558F256C5B8E_122109.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
     },
     {
       "title": "Clarification with reference to increase in volume",
@@ -333,13 +956,6 @@
       "type": "insider"
     },
     {
-      "title": "Trading Window Closure",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6769a447-472a-4b71-9776-d7bd3e70591b.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
       "title": "Intimation of Incorporation of Subsidiary Company",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/26673ddf-c1f3-437f-ab3f-59afb84db491.pdf",
       "source": "BSE",
@@ -349,13 +965,6 @@
     {
       "title": "Closure of Trading Window-Q4",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ed7f7817-f7f2-4c3b-9bb4-76cce0522b4f.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation regarding closure of Trading Window.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d19a04e9-cf6a-42ad-b7f9-0d5bc1a3d169.pdf",
       "source": "BSE",
       "ts": 0,
       "type": "insider"
@@ -396,13 +1005,6 @@
       "type": "filing"
     },
     {
-      "title": "Intimation for Closure of Trading Window",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bb54288d-bafa-4153-8fcf-16a7190b259f.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
       "title": "Investor Meet with Manu Dev on one-to-one basis",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f1fa9424-bd6f-43c0-9caa-c502f48cf682.pdf",
       "source": "BSE",
@@ -431,13 +1033,6 @@
       "type": "filing"
     },
     {
-      "title": "Outcome of postal ballot",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b6c2100b-89e3-44d9-9048-025467ea2ce8.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
       "title": "Pursuant to Regulation 44(3) of the SEBI (LODR) Regulation, 2015 we hereby the submitting the, consolidate voting results and Combined Scrutinizer Report of the EGM of the company held ....",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0234d6c0-3a88-46ff-ae61-3e1812a73207.pdf",
       "source": "BSE",
@@ -464,482 +1059,6 @@
       "source": "BSE",
       "ts": 0,
       "type": "board"
-    },
-    {
-      "title": "Kindly take on your record the enclosed disclosure for Trading Window Closure for the quarter ended 31st March, 2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e457f4e2-5c71-4d49-a8b3-f908ef4f995a.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "As attached",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fe3a73b2-98f5-46a1-bac5-81556c141df0.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Intimation of Closure of Trading window for the period ended March 31, 2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cd8b7f40-7c42-4e87-b655-5e4d0fde6a67.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Sarveshwar Foods Limited has informed the Exchange regarding closure of Trading Window pursuant to SEBI Prohibition of Insider Trading Regulations 2015 for the Quarter ended 31st March,2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/16a44174-2b33-4480-93b7-005371db4561.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Award of Work order for Selection of an Agency for Establishment, Operations and Management of ICCC and District Helpdesks under the Surakshit Matrritva Ashwashan (SUMAN) Program for National ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fdf312c8-08b8-4835-b3dc-66e841e68b26.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Acquisition of Leo Technology Ventures Inc.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9947e917-e9f2-42c8-8fc1-5abe8d97a847.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Allotment of 1,18,849 Equity shares upon conversion of Warrants",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/45750b0b-8bb6-466a-b0ab-2067881769d2.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Outcome of Finance Committee Meeting for conversion of 118849 warrants into equal no of equity shares",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ca3244be-dc93-4510-925d-8a13e81e17c9.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Appointment of Company Secretary, Compliance Officer and KMP of TRF Limited.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/86f55844-11fe-470e-8842-4bf38b45ca34.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intellect Design Arena Ltd. has informed the Exchange regarding the press release titled \"India''s Leading E-Commerce Giant Selects Purple Fabric Accounts Payable to Revolutionise Financial ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c696ec9e-67e8-4b3f-ab71-347e61a30524.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation on New Project Order",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4ae7dcb3-fdeb-4d6c-a055-f1e64a183956.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation under Regulation 57(4) of SEBI (Regulations), 2015",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9d1fee02-e2ae-4340-be03-a74023867c76.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation of Closure of Trading Window for the Quarter ended 31st March, 2026",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9cb9d7af-87c0-41d4-82fb-f6eb578f7865.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Please find the attached intimation under PIT Regulation received by the promoter for sale of shares",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/62496418-07a4-4358-a5aa-a86412e63b64.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Pursuant to SEBI (Prohibition of Insider Trading) Regulations, 2015, as amended from time to time and Company''s Code of Internal Procedures and Conduct of Prevention of Insider Trading ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b2d979c1-ebb7-475f-88de-b7d883879005.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "BASF India Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 19/05/2026 ,inter alia, to consider and approve Board Meeting to consider and approve ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/231bdaa6-ab1c-44a1-883c-14effffa6d54.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "The Board of Directors at their meeting held today has approved issuance of Corporate Guarantee in favor of ICICI Bank for an amount upto Rs. 1000 million plus interest and any other associated ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9e6d69ef-274d-4022-aad4-34e9d43786be.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Please find enclosed file.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f4b05f9a-b9a9-4c75-9e22-fb424315541f.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation of closure of Trading Window for the purpose of Audited Financial Results for the Financial Year ending 31st March, 2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fb35120c-ad08-4808-afb4-31c410ea393f.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Please find enclosed herewith the resignation of our Independent Director of the company.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4e366dc9-4548-4f2a-8397-2d088521706a.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Press Release -\"LG Electronics India Deploys Advanced HVAC Solutions at ''Seva Teerth'', the Prime Minister''s Office Building\"",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d1b01067-88f4-4b08-bfdd-61807229c102.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "We wish to inform you that the Trading Window for dealing in equity shares of the company shall remain closed from 1st April 2026 for all the designated persons and their immediate relative(s). ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a10e90d8-79ec-42b7-9648-ab2591150357.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation about Closure of Trading Window pursuant to the provisions of SEBI (Prohibition of Insider Trading) Regulation 2015",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ae2ced4e-c17d-4f33-b655-debe42e01e13.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation is enclosed",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/420e0e2a-68c3-4a9f-8ed8-3f47a425f12b.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Opening of 2 - Screen Multiplex in Chennai, Tamil Nadu",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1d6c119a-28f7-4037-80ce-8b0e23ec05ee.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Grant of Employee Stock Options and Performance Linked Stock Units",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7d03f736-ab4b-4dea-acb1-b87a2536c0b0.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Closure of Trading window pursuant to SEBI (Provision of insider Trading) Regulations, 2015",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3c212b56-26b6-4e0e-b7fb-13db2592a1b6.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "As per provisions of Regulation 30 of LODR Regulations the subsidiaries of Prime Focus Limited have proposed certain steps for internal restructuring within group to streamline business operations",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f85e924f-86a3-4a29-ae5f-b28539bee9ce.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Please find enclosed Results of Postal Ballot and Scrutinizers'' Report",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/663ecfbe-aa9d-4dfa-9df9-d4d688445572.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Intimation of Closure of Trading Window as per the SEBI (Prohibition of Insider Trading)  Regulation,2015",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/24481066-bddd-4445-9d17-e213543e7807.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation of 6th COC meeting to be held on 30-03-2026 at 4 pm",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d068e107-15e7-47a0-8cd4-4e7cb294333b.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Submission of newspaper advertisement with respect to another special window that has been opened for re-lodgement of transfer deeds of physical shares.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6cbc37a0-24c9-472f-b775-088332528f30.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Pursuant to provisions of Regulation 30 of LODR Regulations, we would like to inform that subsidiaries of Prime Focus Limited have proposed to undertake steps for internal restructuring ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/829f9127-18db-4f5c-818f-5822ac47bbc4.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Please find enclosed herewith Press Release on completion of Preferential Issue.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c2ab3684-989f-45da-9673-6e4b27b54136.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Closure of Trading window under SEBI (Prohibition of Insider Trading) Regulation, 2015 for the quarter ended March 31, 2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0a34647a-517e-4243-b992-b5e091678299.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "In terms of SEBI (Clause 4(2) of the Schedule B of Prohibition of Insider Trading) Regulations 2015 as amended, we have to inform you that the Trading Window for dealings in listed secuities ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8fe34354-103d-4eea-afff-03ca1537ceb5.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Submission of copies of Newspaper advertisement regarding another special window that has been opened for re-lodgement of transfer deeds of physical shares.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/53a6029e-5ef0-481e-94a4-962002529dd7.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "ADC India Communications Ltd-has informed BSE that the meeting of the Board of Directors of the Company is scheduled on 21/05/2026 ,inter alia, to consider and approve Board Meeting to ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/66668995-c628-42af-be22-ff76b997a952.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Details as per attachment enclosed.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1b09d5c8-3f59-45cc-90bb-5900a3c63779.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation of Closure of Trading Window as per attached letter",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f069e62f-ecaf-44c4-aedd-59591e9bb937.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "ESG Ratings",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2906a72a-53a3-4642-885e-054ff1692f1e.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "The Exchange has sought clarification from Vedanta Ltd on March 30, 2026, with reference to news appeared in https://energy.economictimes.indiatimes.com dated March 30, 2026 quoting \"Vedanta ....",
-      "link": "https://www.bseindia.com/corporates/ann.html?scripcode=500295",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "We wish to inform you that the Company has delivered its 2002 built Very Large Gas Carrier \"Jag Vishnu\" to the buyers.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c62f306f-7912-4106-aab3-8a07fda22cd1.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Closure of Trading Window from 01st April 2026 till 48 hours after the declaration of financial results for the quarter and financial year ended 31st March 2026.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4295a007-7fd2-4fcc-a932-d1b11dbda8d2.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Notice of Closure of Trading window",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1e5556c9-4c09-470b-a0f8-d2f7c0d8d64c.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "The Exchange has received the Disclosures of reasons for encumbrance by promoter of listed companies under Reg. 31(1) read with Regulation 28(3) of SEBI (SAST) Regulations, 2011 on March ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/87EDF945_589A_4AEA_936F_7CC564BDEC97_101023.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Press Release on Credit Rating",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/60284afe-07f0-4628-9132-fece34788ae8.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Trading Window Closure notice intimation",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c4e51509-0a3a-4a94-8ca4-e9b420202f94.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "The Exchange has received Disclosure under Regulation 31(1) and 31(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 on March 29, 2026 for Indusind International ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/54E493C0_D085_4D97_BC42_FB18F9DEEFBF_095837.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Globus Spirits Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 07/05/2026 ,inter alia, to consider and approve i) standalone and consolidated ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fc1f6e3b-35aa-4beb-826c-9d4266be7f60.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Initmation about Credtit Rating",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/36065eba-d901-4da5-8cc5-da96d2433141.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Outcome of Board Meeting",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/48abea3f-f90b-42fb-a8bc-31b81e928a4f.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Buyback of Shares by Multicare Pharmaceuticals Philippines Inc., a subsidiary company.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bc1a8b63-311d-4158-9a02-c3b9ca240ba1.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Press Release",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1abbb5fe-c982-4d13-bdb9-383d6c883c59.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation of Closure of Trading Window is attached herewith. Closure period is from 01.04.2026 to 48 hours after the declaration of the audited financial results for the year and quarter ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1ce64e60-e042-47bd-b4bd-abc332f540ae.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "insider"
-    },
-    {
-      "title": "Intimation is enclosed herewith.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a8c8a0a1-bc42-4c09-887f-ffa34e27bf6b.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Attached",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/460e1ec0-c56d-4061-8275-ad61bb0c4c7a.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Disclosure of change in shareholding",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ec89adb3-37fb-4e35-937a-1be254d7098a.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Pursuant to Regulation 30 of Listing Regulations, please find enclosed Press Release- \"Wockhardt''s Zaynich (Zidebactam/ Cefepime) Receives Favourable Recommendation from CDSCO''s Subject ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c5ba0d6e-7658-4d1f-a678-543332b8d4be.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Operationalization of Projects",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/041fa27b-9413-4b07-aaf2-3e6ffda10896.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Aries Agro Limited has appointed Mr. Sourav Ganguly as Brand Ambassador of the Company for a period of 3 (Three) years",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/62978dc3-62eb-4ace-9478-6aff8b3a3d5d.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Update on 50:50 Joint Venture between JSW Steel Limited and JFE Steel Corporation, Japan for the Steel Business of BPSL.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/068cf3c7-c64e-43e3-b3cb-bb5f2ab938b3.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Receipt of Order",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3aa2587e-c6ee-4e8d-8118-092827ca4783.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "The Company hereby informs the Exchange that the Special Audit as directed by the Income Tax Department, has been concluded.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f1942887-51d6-46a9-af2a-56b293b3e243.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Trading Members of the Exchange are hereby informed that effective from March 30, 2026, the Equity Shares of Central Mine Planning & Design Institute Ltd  (Scrip Code: 544739) are listed ....",
-      "link": "https://www.bseindia.com/corporates/ann.html?scripcode=544739",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Intimation under Regulation 30 of SEBI Listing Regulations",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8039fcf3-5746-4b88-8012-f1719f23b2bf.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Press Release regarding filing of Copyright in US Copyright Office is attached.",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b74c9fc8-730a-4559-a668-fc1c54ed48fd.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
-    },
-    {
-      "title": "Cessation of Mr. Chand Bihari Patodia (DIN:01389238) as Managing Director and Key Managerial Personnel of the Company upon completion of tenure with effect from the close of business hours ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6be5ecaf-08df-4d45-a0fd-ddc7f72596e9.pdf",
-      "source": "BSE",
-      "ts": 0,
-      "type": "filing"
     }
   ],
   "news_items": [
@@ -948,6 +1067,13 @@
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQck5BZlpBbVlNRnBIeFg4WDk2OWFyU3RQenRhNmlJT0x2cUExcktTOFVrblREbHJSUk15OGZkTmduTUY0N3hNSy01S3dYMzNUN3hRa2JhSHYxc01tTEdQbDZkbGVNZm1RelB0WDdTRWEza0NxazdCU2ZORkZ2V1VKM3dEV2xkWkhEVjJaT1hOaTJiMURxSzFEbWc1NkpuQWtCYmlSTjNTLXBxa1o1LUkyNTByNk9GSzhYOWlDU3RkSGxLZHJtbU1ZcFk1SVZQcEhQcUl3TXpPYmRraUxjRVNQbF9kc1Q?oc=5",
       "source": "Orders Won",
       "ts": 1774851833000,
+      "type": "filing"
+    },
+    {
+      "title": "Stock Market News: LIVE Update of Share Market Today (NSE/BSE) - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1tb1JFd1BXbkFWSDRMZTZhR1BiNDQ1VWFfOGowNFIxVUd2dC1kRzc4TXFJUFY1Vk9QbTFaaDRKblJLRjZWWGN1N0xYMGJJZw?oc=5",
+      "source": "Share Allotment",
+      "ts": 1774843402000,
       "type": "filing"
     },
     {
@@ -965,13 +1091,6 @@
       "type": "filing"
     },
     {
-      "title": "Senores Pharmaceuticals Completes Warrant Allotment Worth ₹95.00 Crore - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZlNHYnoydHptZVFOQ2ZVR21uSTkteGNaN3lVNW5UZ2tBT3BmSFdwcHh5c2k4TlZxcHhhdjJuQlBSVUtvTHpfZ3h6VGp0eGRCZXlHUzhpVnVkWmJyY0hYU1gxQ1drdEFHbGNFOElNczVEd3JLaTMwc2piZTZReTY3RFZVY28wenE4akdtSFVnV2paYnJhcXhkNkp1SDdDSFF0NXc3NmZFRFhYZ3hvYUdEWWxMMS1lWlJHTU10N29rcGpEMFB5emdkSHFFX2VLUEx0Mjlj?oc=5",
-      "source": "Share Allotment",
-      "ts": 1774698176000,
-      "type": "filing"
-    },
-    {
       "title": "Procter & Gamble Health Limited Schedules Board Meeting for May 26, 2026 to Review FY26 Financial Results and Final Dividend - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPaHdZZUM1dWwtT0FSaS1Ya0hHR2Y4VFZjTDVZSmlFQ3cyc3VVUkFkT3dxQjk1ZjNvaHo2ZEVqX1dqN1VwcVR5NVRoQldKNEh3eFFmUUpsLUVNRWZnQ09JWXZnQkswenV1bHlzbzVzUnFlQkJwaF9TM25GZ09CeERSNUlGMkhHcVBleUEwTk9Rdm53X1ZIV2lZUDR3RllfcUVBTGtMaUoxa0N0NWJ0OE5IQzE4TkVnU1VHZzZ3NXlscGVhSkFNRHFWMUppOXFLcDFVNTJTWFVqZ2l6WS1HNDY2dThZTTIxcXlHNldOOUpOOVMzSjVlN2otdU9IaEFEcXVJcm9pYVMyZ1RRdw?oc=5",
       "source": "Exchange News",
@@ -986,84 +1105,84 @@
       "type": "insider"
     },
     {
-      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Sagility India Share Price Today, Sagility India Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeU1JdjNKNWx5UU92cll3M2ZZWGpOdDVsNHNLUnFsVHk5U25nSjJYdUVQODZDLVNVakRMdGltckx4d3kzcnV5VWpWeEdIZkkyUVFWaXQ1Z05sdmtRUFVvOU9Yc2praFpFZy00RUVIOVdWaGdiZUFMS2NHaExjZGZ5TFFUVmY?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Remedium Lifecare Share Price Today, Remedium Lifecare Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0E0bjhxdV9ERjZaaEwtb0h5MGRRLWpna0p0MFc4ejdQRFVfelVqMzRGTDM4TXNvMENwbzQtMmxfWGdhT1oxVTFjY0lXYm1BajdsYkJ3dmVtN2VqZ0p4Uzg5NmpfRnB2WjJPNHVtaTZSOGd2R05PQnA5dFlscVppLU5sazVTNEJ0M2pn?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Godha Cabcon & Insul Share Price Today, Godha Cabcon & Insul Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Godha Cabcon & Insul Share Price Today, Godha Cabcon & Insul Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONzYxUFFFNVBSMUE3M2xWUDJFOWVzd2F5dm10aExoMks2OXB3c2FVOFR2VW1KSWFqc1dCNEVGcGtZaWxteXlpRkxGMXhmWEZDelZIWmptbThNcHctdU5EUXNTeHVKc1YtaGlUdm1RWGxBanA1d3dnd2VkM1QxWWI1SHZjSXVzQUE2NHNj?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "JSPL Share Price Today, JSPL Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlDWlM3OC1RekIyNUptdWZETXVTUmxxR2ZENDVybFhMekstM1NBNHVPTVppeGI2dTF0ZlN0U0I5V0NpWkVzZ0pGcVVYRXh0cGs4OV9QVUNId3JGZW95bWtSNnN2N1o5dGZKbURSQ2llZEtJTVJLMWJCQnptbnNIeUo0Nm9Pdw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Sanstar L Share Price Today, Sanstar L Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Sanstar L Share Price Today, Sanstar L Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ycWZNeVVPalp1WHhzdm5vNXdQOXAtN3d4N0tWcUZ2alJPVnRpWGhNRDA3dGRfYVpKLTdYenBDQVJ5d2pfb0E0bVo4eVNlRTA3OGJPUWQ5ckEwbTVlSUw4Z2lMTGt2Q3h5d1dhOFFHeGlRS2hXSDBzaVU0T1pqbEk?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Good Value Irrigation Share Price Today, Good Value Irrigation Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Good Value Irrigation Share Price Today, Good Value Irrigation Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPc1g1ek1OZHh2N0QwNFk2WlM1YW5wb0x2Rl9MZUdUVWRuZk1xeUw2aFVraFd5UzNoWjc5V0gwenNJa1NpZDVKZFNULTh1SFBZamZvQ2xULUJHRWoydVZhNkJTRGNaTEZSMEpXd1RDbWRENXhKQk5hb3VzZ0dBYzVHc0hkUzZfWTI0LVVuaElR?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Infibeam Avenues Share Price Today, Infibeam Avenues Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEI2QTRYcTR5cC1BYXM3U2FsVHQzTGdwMDVrMWoyQzdGRjUyakhJaS1icjU3NDVhTjZtWGdHR2ZURnpLSk5MMmY5ckJYTy1YQ2pPWEN6a3ctNWplaHRHWWxTN25WNkppVzM4NUJnZWN4R0JFTGJtUVlhM2d5WlJ0Sm1udw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Lakshmi Machine Share Price Today, Lakshmi Machine Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Lakshmi Machine Share Price Today, Lakshmi Machine Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBHd1hDRGphZ3VGbkEtS2RLd1BEYW9GalVDRWoxLVhCQzUxOGw0WHM1WWkyZ2tqWmM4YjA2ZXFjTHpjQkh6NlN1UTM2WmRFTVdfZlhJRmR3SkpvU1o1V3U0RE80bkxmVUUtMVdXcVBudG9uem5VVERRbG1Raw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Fusion Micro Finance Share Price Today, Fusion Micro Finance Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Fusion Micro Finance Share Price Today, Fusion Micro Finance Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYmdxTktuT1VBZ2NsVnVlb054S3YtVFpzdkxRODRaWlV5aklINjNqQ0xTekpVWm14R1UwQXVZRFY2cE9DQnF2cThxZjVjdGNtaDdlU01Hd3E0YlpFV19mVGhhUkNIUzVYZWp5aFV4eXVyTC0zb1R4Znk5eEtVT1hpZ2RSZmF5LW1mZzdGWA?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Fischer Chemic Share Price Today, Fischer Chemic Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Fischer Chemic Share Price Today, Fischer Chemic Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPd3dRRkUxdFpaTkF6bE1nVFZyX1VOaWJkbjV3Tk9SVlJ0Q0JfQnZVUEZ1aksyTUFkY3BWdklUWWQxQ3R2VjczbXpTLTl6cVpiaDdRSkpOelg0bWNPRHlZR25ndFZ5a2xIM2N1Y3prM3BWUUotSzB2LVJiUnpBRTdJVzRLMnRmZHhLYVVOUVhKR0RwdjVzUkE?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "ETT Ltd Share Price Today, ETT Ltd Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "ETT Ltd Share Price Today, ETT Ltd Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUWFselJUVVd5WjR3OVFvRkgxYXllNFI2QWtIa1JpQ1BsRktzRDBnRlg0VlUyTHRzMzRIak5lSzhXWG5NMmRmOWdxYlB2dnlNUXV2ZGpQLUF5Rkt4TTVtenFJVWt6T25ZdFdaU1Zqc0VKT0UxZHB3XzNIOWZ0eUJTQ3RGck9iU3lvb0psQ1lGWDUtMVpZM1hKbVlTUQ?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
       "type": "board"
     },
     {
-      "title": "Ibull Real Estate Share Price Today, Ibull Real Estate Stock Price Live NSE/BSE Updates - The Economic Times",
+      "title": "Ibull Real Estate Share Price Today, Ibull Real Estate Stock Price Live NSE/BSE Updates - economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQelVxTEJTcVhzcDRyU3RyLVdZeEdOczg4T1c5ZGlHUHI0QkRrdUg0QzI4amtFQlFNbnE5djJSTXJyaFYtOEdHSDZXd2hGOEkyVGJsUU1VWlBfYWFKQmJzanAtdTVQRFMwU3B4X25Gb3lXOS1BV056MjUyUHBGMy1XeWpOdS1jZnNEQ3ZreUNnNE0zZw?oc=5",
       "source": "Board Meetings",
       "ts": 1774594800000,
@@ -1145,20 +1264,6 @@
       "source": "Trading Window",
       "ts": 1774262460000,
       "type": "insider"
-    },
-    {
-      "title": "NTPC Closes Trading Window from April 1, 2026 Ahead of Q4 & FY26 Results | Q3 PAT Up 5.85% to ₹4,987 Cr - PSU Connect",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ1pVanJkRHZUQm9RSXpqY0xwR09lbDMwclFnUzdRamFxcjBkNUY4MmdOWm81dWNqSVZiVEY0czNZUThGTXkyc0NqOHJtUl9kNFlZTTg3X0dCeVdIWURhZTZ2RWNaZnhOb25tSXlFU3pWaDJacS1qNFkyZk9UVGFyVks5dGVqOTZTUnZLN0pUTGpTZi04NnFiSTI3aG1zel9NbWZMLVRJRQ?oc=5",
-      "source": "Trading Window",
-      "ts": 1774251900000,
-      "type": "insider"
-    },
-    {
-      "title": "Setco Automotive Board Approves Merger Scheme with Wholly-Owned Subsidiary LCPL - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNmJXZWxMbzgxS09TRjFhcWVCcjBkMnpPcEJkUnQ1dzdGOXJCZVZPZWVXY1U5ZVJZNktHMW1hblFjNTRFS1BrSUhSVXl6d204UDNoZnNWVEVwcTZ6RV9CbHVpX1FiU2lLVkxuWnZqOHhSMkJ4R3QzSzRlbGJDdkpaMmlWSm5FTXBvMmtXX2d4TUZPSlh1cnlEUkZBWV9YdmM2cUtZelJMZEpmMHRZbVRyQ1RONXdrRVk5UDBWZFdrQnRvcHhGMjRudTRDVzZJVURlU0dTSFJFNTBEQmIyQWNTTGF5WDJhTzRPQmMtV2Fn?oc=5",
-      "source": "M&A",
-      "ts": 1774249200000,
-      "type": "filing"
     }
   ]
 }
