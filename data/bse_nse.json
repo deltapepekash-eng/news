@@ -1,31 +1,1660 @@
 {
-  "updated": "2026-04-02T05:52:25.133409+00:00",
-  "bse_count": 79,
+  "updated": "2026-04-02T09:40:32.970984+00:00",
+  "bse_count": 312,
   "news_count": 150,
   "log": [
-    "BSE NEWS_DT='2026-04-02T11:21:45.383' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE NEWS_DT='2026-04-02T15:09:54.587' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
     "BSE p1: 50 rows, 50 new, 50 with ts",
-    "BSE p2: 29 rows, 29 new, 29 with ts",
-    "BSE p3: empty — stopping pagination",
-    "BSE announcements total added: 79",
+    "BSE p2: 50 rows, 50 new, 50 with ts",
+    "BSE p3: 50 rows, 50 new, 50 with ts",
+    "BSE p4: 50 rows, 50 new, 50 with ts",
+    "BSE p5: 50 rows, 50 new, 50 with ts",
+    "BSE p6: 50 rows, 50 new, 50 with ts",
+    "BSE p7: 12 rows, 12 new, 12 with ts",
+    "BSE p8: empty — stopping pagination",
+    "BSE announcements total added: 312",
     "BSE actions: 23 fetched, 0 added",
     "BSE calendar: 22 fetched, 0 added",
     "NSE nse_get_corporate_announcements: module 'nsepython' has no attribute 'nse_get_corporate_announcements'",
     "NSE nse_corporate_actions: module 'nsepython' has no attribute 'nse_corporate_actions'",
     "NSE: no data returned",
     "Moneycontrol Corp: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/corporateannouncements.xml",
-    "Exchange News: 65 in feed, 50 tried, 50 new",
+    "Exchange News: 58 in feed, 50 tried, 50 new",
     "BSE/NSE Results: 41 in feed, 41 tried, 38 new",
-    "Corp Actions: 25 in feed, 25 tried, 25 new",
-    "Board Meetings: 38 in feed, 38 tried, 38 new",
-    "Bulk/Block Deals: 34 in feed, 34 tried, 34 new",
-    "Trading Window: 71 in feed, 50 tried, 46 new",
+    "Corp Actions: 26 in feed, 26 tried, 26 new",
+    "Board Meetings: 39 in feed, 39 tried, 39 new",
+    "Bulk/Block Deals: 27 in feed, 27 tried, 27 new",
+    "Trading Window: 71 in feed, 50 tried, 47 new",
     "Share Allotment: 55 in feed, 50 tried, 49 new",
-    "M&A: 48 in feed, 48 tried, 48 new",
-    "Ratings: 41 in feed, 41 tried, 41 new",
-    "Orders Won: 69 in feed, 50 tried, 49 new"
+    "M&A: 46 in feed, 46 tried, 46 new",
+    "Ratings: 40 in feed, 40 tried, 40 new",
+    "Orders Won: 68 in feed, 50 tried, 49 new"
   ],
   "bse_items": [
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Urvashi Tilakdhar",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/D508F944_895B_4BC1_AA5D_F884EC924B68_150949.pdf",
+      "source": "BSE",
+      "ts": 1775142594587,
+      "type": "insider"
+    },
+    {
+      "title": "It is to inform that Smt Sangeeta Ram, Faculty Member has been re-designated as Principal, Zonal Training Centre, Agra.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6d6a45e6-3f49-4b2b-8eaf-8f52b12c607a.pdf",
+      "source": "BSE",
+      "ts": 1775142591893,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure of warning letters received from BSE Limited and National Stock Exchange of India Limited",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b2c8a6cb-f98b-4ac4-a6f8-341f1c492cb1.pdf",
+      "source": "BSE",
+      "ts": 1775142508187,
+      "type": "filing"
+    },
+    {
+      "title": "Submitted compliance in terms of Regulation 57(5) of SEBI (LODR) Regulations 2015 for the quarter ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3079024b-62e0-4c83-b4af-ae41bc3d63b7.pdf",
+      "source": "BSE",
+      "ts": 1775142469270,
+      "type": "results"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ac9949ed-53ac-447e-bbe7-67c6aa835fac.pdf",
+      "source": "BSE",
+      "ts": 1775142432967,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 31(4) of SEBI (Substantial Acquisition of shares and Takeovers) Regulations 2011, enclosing the annual declaration for the financial year ended 31.3.2026 received ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/649ceed8-01c4-4b83-8ec5-8984fd8d1c22.pdf",
+      "source": "BSE",
+      "ts": 1775142420163,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6224e47a-30eb-4268-b793-2ecbca83ded5.pdf",
+      "source": "BSE",
+      "ts": 1775142402193,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation regarding appointment of Compliance Officer",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/46af4587-fa4e-40f4-9370-e9894c3163f7.pdf",
+      "source": "BSE",
+      "ts": 1775142372273,
+      "type": "filing"
+    },
+    {
+      "title": "Newtrac Foods & Beverages Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 08/04/2026 ,inter alia, to consider and approve 1. Approval for appointment ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ce5a499e-f1b6-474d-b9d2-3e01153d320b.pdf",
+      "source": "BSE",
+      "ts": 1775142325940,
+      "type": "board"
+    },
+    {
+      "title": "Annual Disclosure under Regulation 31(4) of SEBI(SAST) Regulations ,2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/56f05378-050d-45d1-a097-ca183cbbf04f.pdf",
+      "source": "BSE",
+      "ts": 1775142313523,
+      "type": "filing"
+    },
+    {
+      "title": "Company takes positive step towards sustainability with installation of solar roof panels",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c93f0961-00ed-40c3-bde9-68bd08d33515.pdf",
+      "source": "BSE",
+      "ts": 1775142259320,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed herewith the Press Release.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/38bdfce4-c191-45d4-956c-fd8af09bbf25.pdf",
+      "source": "BSE",
+      "ts": 1775142224680,
+      "type": "filing"
+    },
+    {
+      "title": "As attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/87df0a6c-0499-426a-a867-1f2145936e2c.pdf",
+      "source": "BSE",
+      "ts": 1775142171733,
+      "type": "filing"
+    },
+    {
+      "title": "Outcome of Committee Meeting regarding allotment of Commercial Papers",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d3d4c106-3902-4da9-a913-69b4e4c509ad.pdf",
+      "source": "BSE",
+      "ts": 1775141996347,
+      "type": "filing"
+    },
+    {
+      "title": "Mark Corporate Advisors Pvt Ltd (\"Manager to the Offer\") has submitted to BSE a copy of Offer Opening Public announcement under Regulation 18(7) of Securities and Exchange Board of India ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/51C9971C-9DF2-4E15-B32D-B2D8CF418E1B-145525.pdf",
+      "source": "BSE",
+      "ts": 1775141732127,
+      "type": "filing"
+    },
+    {
+      "title": "Interdepartmental Transfers of Executives of the Bank.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6a3c83c6-44ff-4160-973d-b880f68f35fd.pdf",
+      "source": "BSE",
+      "ts": 1775141703700,
+      "type": "filing"
+    },
+    {
+      "title": "Quarterly Disclosures by listed entities of defaults on payment of interest/ repayment of principal amount on loans from banks / financial institutions and unlisted debt securities",
+      "link": "https://www.bseindia.com/corporates/ann.html?scripcode=531338",
+      "source": "BSE",
+      "ts": 1775141697857,
+      "type": "results"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ba3db599-4c18-4731-aad9-bcac9e17fb27.pdf",
+      "source": "BSE",
+      "ts": 1775141677160,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 74(5) of SEBI  (Deposiories and Participants) Regulations, 2018, enclosing certificate dated  1.4.2026 received from M/s KFin Technologies Limited, the RTA of the ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ecac91a5-a0f1-4c50-bbe2-52788ce65059.pdf",
+      "source": "BSE",
+      "ts": 1775141660953,
+      "type": "filing"
+    },
+    {
+      "title": "Notice of Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/203932f7-3f02-47fb-88ce-236b53622258.pdf",
+      "source": "BSE",
+      "ts": 1775141623520,
+      "type": "board"
+    },
+    {
+      "title": "Genera Announcement - Capex Update",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/233230bd-73e0-47c7-b202-24b130018a8f.pdf",
+      "source": "BSE",
+      "ts": 1775141581633,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/50bcb204-1195-4dec-8f50-f8f3042c7ef2.pdf",
+      "source": "BSE",
+      "ts": 1775141548630,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI (DP) Regulation 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/664376f2-1b1f-40d4-9213-36feb3705e8c.pdf",
+      "source": "BSE",
+      "ts": 1775141450130,
+      "type": "filing"
+    },
+    {
+      "title": "We enclose herewith the intimation under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 for changes in the Senior Management Personnel of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f583ba23-a34a-4764-9fad-d661f93c2c3a.pdf",
+      "source": "BSE",
+      "ts": 1775141441287,
+      "type": "filing"
+    },
+    {
+      "title": "Annual disclosure under regulation 31(4) of SEBI (SAST) Regualtion, 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2f71a7fd-f34c-40fe-ac69-3d9379b86e16.pdf",
+      "source": "BSE",
+      "ts": 1775141403450,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached the clarification letter for clerical and typographical error in the disclosure made under Regulation 30 of the SEBI Listing Regulations, 2015 regarding Imagicaaworld ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cdd9284b-219e-4df1-8e5f-632fb44c3860.pdf",
+      "source": "BSE",
+      "ts": 1775141396387,
+      "type": "filing"
+    },
+    {
+      "title": "Project updates",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9a8f5bc8-3ec4-421b-822c-d4c4ba280f29.pdf",
+      "source": "BSE",
+      "ts": 1775141203317,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 31(4) of SEBI (SAST)Regulation,2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5dd7b69e-d11e-4e23-b796-e999118c97c0.pdf",
+      "source": "BSE",
+      "ts": 1775141166587,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of Postal Ballot.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/475a5800-42e7-4270-8960-e653307860b0.pdf",
+      "source": "BSE",
+      "ts": 1775141115687,
+      "type": "board"
+    },
+    {
+      "title": "General Announcement under Regulation 30 of SEBI (LODR) Regulation, 2015 on Capex Update",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/354a67d6-77c2-4718-8130-ef66180c7038.pdf",
+      "source": "BSE",
+      "ts": 1775141080017,
+      "type": "filing"
+    },
+    {
+      "title": "As per Attachment",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0db592be-315d-4e6b-a4bf-62b490759894.pdf",
+      "source": "BSE",
+      "ts": 1775141074970,
+      "type": "filing"
+    },
+    {
+      "title": "Notice of Postal Ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/11d7e504-5c24-45f8-a746-db9d6ea820b4.pdf",
+      "source": "BSE",
+      "ts": 1775141044600,
+      "type": "board"
+    },
+    {
+      "title": "Please find attached the Newspaper Advertisements regarding Second 100-Day \"Saksham Niveshak\" Campaign and Special Window for transfer requests and dematerialisation of physical shares",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/16f06d62-a3d3-4bac-b368-84c508e6d5f3.pdf",
+      "source": "BSE",
+      "ts": 1775140892850,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance Status of Regulation 6(1) and 7(1) of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e821365-964e-416f-9499-026c64fadaa7.pdf",
+      "source": "BSE",
+      "ts": 1775140892830,
+      "type": "filing"
+    },
+    {
+      "title": "This is to inform you that, the Company is in receipt of request under Regulation 31(A) of SEBI LODR 2015 from Promoters seeking reclassification from Promoter to Public Category.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9b82d09e-6e7f-4cbb-bb3c-81d5338127c3.pdf",
+      "source": "BSE",
+      "ts": 1775140861220,
+      "type": "insider"
+    },
+    {
+      "title": "Initiation of Second 100-Day Saksham Niveshak Campaign",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b31665c6-e9ac-4355-8902-3589221db7e1.pdf",
+      "source": "BSE",
+      "ts": 1775140849947,
+      "type": "filing"
+    },
+    {
+      "title": "Dear Sir/Madam\r\n\r\nPlease take this intimation on record.\r\n\r\nThanks & Regards\r\nCompany Secretary",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d6860ba6-3d7c-47d2-891f-7be273065ee8.pdf",
+      "source": "BSE",
+      "ts": 1775140782160,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a4eaef9a-3902-4bd7-acf3-fe19e2e4dfdd.pdf",
+      "source": "BSE",
+      "ts": 1775140764183,
+      "type": "filing"
+    },
+    {
+      "title": "Please see attached intimation regarding press release dated April 2, 2026 regarding TTBS wins five prestigious honours at ET Telecom Awards 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8936dc88-1e2f-4c5c-b541-7f3df5427521.pdf",
+      "source": "BSE",
+      "ts": 1775140701650,
+      "type": "filing"
+    },
+    {
+      "title": "As per captioned please find attached herewith the declaration of non-applicability of the above provision to our company.\r\n\r\nThis is for your records.\r\n\r\nThanks & Regards\r\nCS Mohini",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/513a7fc9-dacb-40a6-9e6e-1da3c04f55bf.pdf",
+      "source": "BSE",
+      "ts": 1775140477490,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Reg. 74(5) of SEBI (DP) Regulations, 2018.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cc2da696-ad24-4b74-8843-ce5a744fda93.pdf",
+      "source": "BSE",
+      "ts": 1775140376850,
+      "type": "filing"
+    },
+    {
+      "title": "As per the attached Letter.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b44ffc76-7e6b-4008-8bbb-07af1ddee031.pdf",
+      "source": "BSE",
+      "ts": 1775140324437,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/30e3d468-dc47-4a7d-b3d4-8450bec12f60.pdf",
+      "source": "BSE",
+      "ts": 1775140288223,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to SEBI Circular dated 26th November 2018 in respect of fund raising by issuance of Debt Securities by Large Entities and Disclosures and compliances thereof by such large Corporates, ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2ea8f10d-c2b1-450f-8506-1d1758cbadb1.pdf",
+      "source": "BSE",
+      "ts": 1775140137270,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance with Regulation 74(5) of SEBI (DP) Regulations,2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/04749e6b-aa28-426c-a0a1-3a2daf1314c1.pdf",
+      "source": "BSE",
+      "ts": 1775140115680,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for YSG Estates Pvt Ltd & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/E4E8497E_7A96_486A_A0DB_8242F91AD514_142732.pdf",
+      "source": "BSE",
+      "ts": 1775140057270,
+      "type": "insider"
+    },
+    {
+      "title": "Notice - Special Window for Re-lodgment of Transfer requests for Physical Shares.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ff58c0d2-15ba-48a2-82b5-6a29043ce074.pdf",
+      "source": "BSE",
+      "ts": 1775140036833,
+      "type": "filing"
+    },
+    {
+      "title": "Regu 31(4) of SEBI ( Sub Acq of share and takeovers) Regulation 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44d4a315-48b6-4184-9704-08dce71a49da.pdf",
+      "source": "BSE",
+      "ts": 1775140025800,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper publication- Another special window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/36e43587-e649-4773-9a6a-5011c3fcc321.pdf",
+      "source": "BSE",
+      "ts": 1775140016047,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/214c967a-9cb7-4192-8c7c-bfc6103a042e.pdf",
+      "source": "BSE",
+      "ts": 1775140010217,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI(DP)Regulations,2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/926116f5-118c-485e-8665-0ca30832c436.pdf",
+      "source": "BSE",
+      "ts": 1775140000773,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Rajendra Singh Pawar",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2F083958_39F4_4A23_B8A2_17D631B38154_142518.pdf",
+      "source": "BSE",
+      "ts": 1775139925513,
+      "type": "insider"
+    },
+    {
+      "title": "Regulation 30(1) and 30(2) of SEBI ( Sub Acq of share & takeovers) Regu 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1ae4bd78-45e4-4583-a6b3-4a754cd4cb92.pdf",
+      "source": "BSE",
+      "ts": 1775139842317,
+      "type": "filing"
+    },
+    {
+      "title": "HBL received letter of acceptance from Banaras Locomotive Works for supply, testing and commissioing of On-Board Kavach equipment (version 4.0) worth Rs.179.79 Crores (inclusive of 18% GST).",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2b848dc7-6d3c-4045-bbd9-7c1f721e8929.pdf",
+      "source": "BSE",
+      "ts": 1775139817057,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received Disclosure under Regulation 31(1) and 31(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 on April 02, 2026 for P Mamatha",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/D650227C_A543_4BA4_9BEC_EABAF8AEC4C7_142226.pdf",
+      "source": "BSE",
+      "ts": 1775139752837,
+      "type": "insider"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0fb4b2ae-e588-4302-90e2-aeed812382a1.pdf",
+      "source": "BSE",
+      "ts": 1775139735533,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosures under Regulation 31(4) of SEBI (Substantial Acquisition of Shares and Takeovers) Regulations, 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ff3d1cb7-0ed7-4524-a6c3-99014a641abe.pdf",
+      "source": "BSE",
+      "ts": 1775139717210,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received Disclosure under Regulation 31(1) and 31(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 on April 02, 2026 for Ajay Kumar Satia",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/E6B30DF5_BA4A_4C42_9F35_6D544416FB9F_142051.pdf",
+      "source": "BSE",
+      "ts": 1775139679087,
+      "type": "insider"
+    },
+    {
+      "title": "Please take on your record the material information under reg. 30 of SEBI (LODR) Regulations, 2015.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/50a51bfc-8dbf-435f-9ed8-fd30371d9b66.pdf",
+      "source": "BSE",
+      "ts": 1775139667303,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation for Approval of Application of reclassification of Promoters",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/67270d02-34f2-4124-983b-122204915e51.pdf",
+      "source": "BSE",
+      "ts": 1775139641087,
+      "type": "insider"
+    },
+    {
+      "title": "IIFL Capital Services Ltd (formerly known as IIFL Securities Ltd) (\"Manager to the Open Offer\") has submitted to BSE a copy of Letter of Offer to the Public Shareholders of Indo Borax & ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/98AFC418-1028-4E65-8A56-3EC60AB12B06-141938.pdf",
+      "source": "BSE",
+      "ts": 1775139592970,
+      "type": "filing"
+    },
+    {
+      "title": "Revised filing of the Regulation 7(2) read with the regulation 6(2) of SEBI (Prohibition of Insider Trading) Regulations, 2015, please find enclosed herewith the ''Form C'' as received ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4fc4f59b-9eec-49b5-9a53-760bd0d8dd12.pdf",
+      "source": "BSE",
+      "ts": 1775139577230,
+      "type": "insider"
+    },
+    {
+      "title": "Please find attached here with the certificate under Reg. 74(5) of SEBI DP Regulation for the year and quarter ended 31.03.2026 for your records.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6ae8279e-6751-43c9-9b97-e5bcf64c9ba8.pdf",
+      "source": "BSE",
+      "ts": 1775139550593,
+      "type": "results"
+    },
+    {
+      "title": "Intimation of Closure of Trading window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f32562de-771b-4859-8d40-738f9b4885df.pdf",
+      "source": "BSE",
+      "ts": 1775139544857,
+      "type": "insider"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018 for the quarter ended 31st March, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/36808b5a-d959-4509-9750-180b2b9d1e16.pdf",
+      "source": "BSE",
+      "ts": 1775139514057,
+      "type": "results"
+    },
+    {
+      "title": "<b>Format of the Annual Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''>    <tr>       <td><b>Sr. No.</b></td>       <td><b>Particulars</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ea0d03e7-0e69-473b-9491-e6edcb7ea7fb.pdf",
+      "source": "BSE",
+      "ts": 1775139487287,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received Disclosure under Regulation 31(1) and 31(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 on April 02, 2026 for Suchir Chemicals Pvt Ltd",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/F524EADA_5E5D_43E1_8B7E_67B42F9D9189_141541.pdf",
+      "source": "BSE",
+      "ts": 1775139345780,
+      "type": "insider"
+    },
+    {
+      "title": "Certificates issued by the Registrar and Share Transfer Agent are attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/842ac19a-7731-4ab4-985c-cd113dc1d1af.pdf",
+      "source": "BSE",
+      "ts": 1775139236873,
+      "type": "filing"
+    },
+    {
+      "title": "Key Business Numbers Q4 FY 2025-26",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9858e0e4-157a-42c5-9df4-e6fc2347c5f5.pdf",
+      "source": "BSE",
+      "ts": 1775139208003,
+      "type": "results"
+    },
+    {
+      "title": "Postal Ballot Noticed dated 26.03.2026 has been dispatched today i.e. 02nd April, 2026. The details are specified in the attached disclosure.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/110d286c-7d84-4e91-adee-9bdaef25d0af.pdf",
+      "source": "BSE",
+      "ts": 1775139184270,
+      "type": "board"
+    },
+    {
+      "title": "We hereby inform you that the Board of Directors of the Company, at their meeting held today, i.e., on Thursday, April 2, 2026, inter alia approved (i) the re-appointment of Secretarial ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/14e14c45-f7f7-4b35-9c96-c72f94669b67.pdf",
+      "source": "BSE",
+      "ts": 1775139049030,
+      "type": "board"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Shankar Varadharajan &  Others",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6DB38C02_E641_4EB7_BA6D_10701401A6DB_140822.pdf",
+      "source": "BSE",
+      "ts": 1775138908213,
+      "type": "insider"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Rajsashtan Global Securities Pvt Ltd",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7DECD15A_55D5_45DE_8FDB_029699CAE884_140620.pdf",
+      "source": "BSE",
+      "ts": 1775138789747,
+      "type": "insider"
+    },
+    {
+      "title": "Compliance Certificate in terms of Regulation 74(5) of SEBI (Depositories & Participants) Regulations, 2018 for the quarter ended March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/09fc45e7-0997-4952-834d-550b34498382.pdf",
+      "source": "BSE",
+      "ts": 1775138727030,
+      "type": "results"
+    },
+    {
+      "title": "<b>Format of the Annual Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''>    <tr>       <td><b>Sr. No.</b></td>       <td><b>Particulars</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/05394e01-76f2-4a75-91d5-109620b48d20.pdf",
+      "source": "BSE",
+      "ts": 1775138722467,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for True North Fund VI LLP",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/07C2CD8F_9226_47AE_B5B2_6D2C7E5E183D_140406.pdf",
+      "source": "BSE",
+      "ts": 1775138651247,
+      "type": "insider"
+    },
+    {
+      "title": "Disclosure Under Regulation 31(4) of the SEBI ( Substantial Acquisition of Shares and Takeovers) Regulations, 2011.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a7158e8a-b9e9-4576-a032-1170a616767f.pdf",
+      "source": "BSE",
+      "ts": 1775138634147,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Chirayu Agrawal",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/B3DDCB16_CE26_458E_B92B_85AF808B09A6_140259.pdf",
+      "source": "BSE",
+      "ts": 1775138583637,
+      "type": "insider"
+    },
+    {
+      "title": "Disclosure under Reg. 31(4) of SEBI (SAST) Regulations 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/81e8ad3d-ba76-4455-a9df-1b2fd1ad96bd.pdf",
+      "source": "BSE",
+      "ts": 1775138449963,
+      "type": "filing"
+    },
+    {
+      "title": "Announcement under Regulation 30 (LODR)_Receipt of Orders",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2c709d13-6072-4d00-9a6b-49e6329dd08d.pdf",
+      "source": "BSE",
+      "ts": 1775138443507,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Trinity Infraventures Ltd & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5F994E01_C54B_43B9_B327_353290EE0D48_140008.pdf",
+      "source": "BSE",
+      "ts": 1775138417207,
+      "type": "insider"
+    },
+    {
+      "title": "Annual disclosure Under regulation 31(4) of SEBI (SAST) Regulation 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/46c22eaa-305d-471c-91dc-72eee5804a5a.pdf",
+      "source": "BSE",
+      "ts": 1775138314597,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 10(6) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Trinity Infraventures Ltd & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9BB5A076_F536_437F_B218_457A73535649_135807.pdf",
+      "source": "BSE",
+      "ts": 1775138293807,
+      "type": "insider"
+    },
+    {
+      "title": "Pursuant to Regulation 30, 47 read with Schedule III Part of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we enclose herewith the following documents:\r\n\r\n1. ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a701a37d-81e6-4ac0-8417-6af79ee34840.pdf",
+      "source": "BSE",
+      "ts": 1775138261713,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Trinity Infraventures Ltd & PACs",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/41DD2184_ED14_4405_95F1_647974D0909E_135645.pdf",
+      "source": "BSE",
+      "ts": 1775138212263,
+      "type": "insider"
+    },
+    {
+      "title": "Please find enclosed herewith the Newspaper Publication - Notice for Compulsory Transfer of Equity Shares of the Company to IEPF in the Financial Year 2026-27",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0110260b-3d45-49f8-bd91-242671f9cfc0.pdf",
+      "source": "BSE",
+      "ts": 1775138124167,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed an update on the operating performance and demand trends witnessed during the quarter ended March 31, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0a3c199a-a8c1-4d0d-9401-bcaa6a6a3dc4.pdf",
+      "source": "BSE",
+      "ts": 1775138114363,
+      "type": "results"
+    },
+    {
+      "title": "<b>Format of the Annual Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''>    <tr>       <td><b>Sr. No.</b></td>       <td><b>Particulars</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d68fb994-b8fe-4275-920a-7312190e7ce9.pdf",
+      "source": "BSE",
+      "ts": 1775138005297,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation for closure of Trading Window for Designated persons.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ab42dda4-c883-4531-9c36-7686f537fc30.pdf",
+      "source": "BSE",
+      "ts": 1775137981677,
+      "type": "insider"
+    },
+    {
+      "title": "Pursuant to Regulation 30 read with Para A Part A of Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, Intimation of schedule of Analyst Meet cum ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f6e6e486-6556-4b7b-97e3-61a6a074367e.pdf",
+      "source": "BSE",
+      "ts": 1775137930870,
+      "type": "filing"
+    },
+    {
+      "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Urvashi Tilakdhar",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7EFEB588_668E_4C1E_A396_4DA04CFB830E_135138.pdf",
+      "source": "BSE",
+      "ts": 1775137902713,
+      "type": "insider"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cab418ee-0075-446c-9e02-7e952f6c0c1d.pdf",
+      "source": "BSE",
+      "ts": 1775137694853,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of Investors Education and Protection Fund  (IEPF) Second 100 days Campaign- Saksham Niveshak",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/45ae5820-790c-47d3-a4a2-40d89216a287.pdf",
+      "source": "BSE",
+      "ts": 1775137650053,
+      "type": "filing"
+    },
+    {
+      "title": "Galaxy Agrico Exports Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 09/04/2026 ,inter alia, to consider and approve 1. Appointment of Directors.\r\n2. ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/144901aa-9038-4d4b-9632-02c78825b5df.pdf",
+      "source": "BSE",
+      "ts": 1775137622303,
+      "type": "board"
+    },
+    {
+      "title": "Pursuant to Regulation 30 and other applicable provisions of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we enclose herewith a copy of the Notice sent to the ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/39dff81f-fe74-4bee-96d3-4f42f53c5abf.pdf",
+      "source": "BSE",
+      "ts": 1775137598477,
+      "type": "filing"
+    },
+    {
+      "title": "we hereby inform you that the Board of Directors of the Company, at their meeting held today, i.e. on Thursday, April 02, 2026, inter-alia approve 1. the Change in the name of the Company ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/692ebae1-8255-4736-b358-3f71bebbf93a.pdf",
+      "source": "BSE",
+      "ts": 1775137568900,
+      "type": "board"
+    },
+    {
+      "title": "As attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/644ea11d-bbfe-4ee4-b5fd-7844081c181e.pdf",
+      "source": "BSE",
+      "ts": 1775137447763,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of Investors Education and Protection Fund  (IEPF) Second 100 days Campaign- Saksham Niveshak",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c488264b-1f83-493d-8d07-7775322eb995.pdf",
+      "source": "BSE",
+      "ts": 1775137438237,
+      "type": "filing"
+    },
+    {
+      "title": "SAST Disclosure 31 (4).",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ac524c0f-0fba-4642-a5f8-0791f7e2e412.pdf",
+      "source": "BSE",
+      "ts": 1775137409180,
+      "type": "filing"
+    },
+    {
+      "title": "Kotak Mahindra Capital Company Ltd (\"Manager to the Offer\") has submitted to BSE a copy of Pre-Offer Advertisement in accordance with Regulation 18(7) of the Securities and Exchange Board ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2F9BD4AD-33D5-4EB6-ABFC-265E85A7D6C0-134145.pdf",
+      "source": "BSE",
+      "ts": 1775137309240,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed herewith copies of Notice published, in newspaper Business Standard - All Editions and Pratidin - Odiya Newspaper on Thursday, 2nd April, 2026 pursuant to provisions ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b09cbdd9-ee6e-4365-94ae-c934129b0be2.pdf",
+      "source": "BSE",
+      "ts": 1775137295950,
+      "type": "filing"
+    },
+    {
+      "title": "No physical certificate has been received for dematerialization during the quarter ended March 31, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/131d34d4-f8ed-4b8b-bdbb-2b9d1989bd05.pdf",
+      "source": "BSE",
+      "ts": 1775137287703,
+      "type": "results"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (Depository Participants) Regulation,2018.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/250df60d-2633-4495-bc1c-9f6d30e876f0.pdf",
+      "source": "BSE",
+      "ts": 1775137233733,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper publication and social media communication regarding special window for re-lodgement of transfer requests of physical shares",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/78916313-820d-44de-b54b-9aeba1c36f8f.pdf",
+      "source": "BSE",
+      "ts": 1775137043907,
+      "type": "filing"
+    },
+    {
+      "title": "Resignation of Independent Director-This announcement is made to update and replace the earlier announcement dated 01st April 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/96eb2614-b93a-41c0-bee0-ec5a15480bf0.pdf",
+      "source": "BSE",
+      "ts": 1775136969777,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of the SEBI (depositories \r\nand Participants) Regulation,2018 for the quarter ended \r\nMarch 31,2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/474ddbb2-6b91-497b-938c-7b9114837576.pdf",
+      "source": "BSE",
+      "ts": 1775136890030,
+      "type": "results"
+    },
+    {
+      "title": "Q4 FY 26 and FY 2025-26 Business update",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/22ec6f05-15d7-4385-82dc-2d4cf5109206.pdf",
+      "source": "BSE",
+      "ts": 1775136829960,
+      "type": "results"
+    },
+    {
+      "title": "As per letter attached.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3ba463c0-129d-4c03-a0b5-51ca208bab77.pdf",
+      "source": "BSE",
+      "ts": 1775136721390,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e841d3a2-274e-4fdf-adce-96d61db15365.pdf",
+      "source": "BSE",
+      "ts": 1775136716683,
+      "type": "filing"
+    },
+    {
+      "title": "Revised submission of Announcement made earlier on 31.03.2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/98e94144-4ee1-40f4-ae46-e21169355469.pdf",
+      "source": "BSE",
+      "ts": 1775136540587,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance Certificate under Reg 74(5) of SEBI (DP) Regulations, 2018.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/90e59d52-f725-4cb9-80f5-e8f82e090502.pdf",
+      "source": "BSE",
+      "ts": 1775136534580,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we hereby submit the proceedings of the 01st Extra-Ordinary General Meeting ('EGM') ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/70ae6498-0c34-46d1-91b9-b6bc556c738c.pdf",
+      "source": "BSE",
+      "ts": 1775136501490,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (Depositories and Participants) Regulations, 2018 for quarter ended March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1917d78a-6f57-4314-aaa7-13c330c37c0d.pdf",
+      "source": "BSE",
+      "ts": 1775136464887,
+      "type": "results"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (Depository Participant) Regulations, 2018 for the quarter ended March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/41dd2fc9-11f8-4bc6-b0de-a50e8e6614d0.pdf",
+      "source": "BSE",
+      "ts": 1775136429983,
+      "type": "results"
+    },
+    {
+      "title": "Intimation of resignation of Mr. Aniket Kishore Mahale from the post of Director",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/35f9a0ac-7ba4-4897-aed6-0e6d871eb0ee.pdf",
+      "source": "BSE",
+      "ts": 1775136408363,
+      "type": "filing"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations,2015 , we hereby submit the proceedings of the 01st Extra-Ordinary General Meeting ('EGM') ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/34f5422b-0419-4332-961b-7ac634740fa6.pdf",
+      "source": "BSE",
+      "ts": 1775136279367,
+      "type": "board"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of SEBI (LODR) Regulations, 2015 we hereby submit the newspaper publication of the notice to shareholders for the upcoming Extra Ordinary General Meeting of the ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/079affcc-b0ad-4198-a45e-b6efa12b30d2.pdf",
+      "source": "BSE",
+      "ts": 1775136167963,
+      "type": "filing"
+    },
+    {
+      "title": "Sodhani Capital Limited has informed to the exchange regarding notice of postal ballot.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/53867169-e11c-454e-ab32-a788f79abd39.pdf",
+      "source": "BSE",
+      "ts": 1775135986743,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) for quarter ended 31.03.2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/24356f8e-756e-4efe-9660-e35474306b81.pdf",
+      "source": "BSE",
+      "ts": 1775135961747,
+      "type": "results"
+    },
+    {
+      "title": "As per the captioned subject, please find attached herewith the  Annual disclosure.\r\n\r\nKindly update your records, same has also been mailed.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a69b5b00-c311-4d0f-be9d-d7a7c78966c8.pdf",
+      "source": "BSE",
+      "ts": 1775135922587,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of TV Interview of Mr. Amrut S Gada, Founder and Promoter of the Company with NDTV Profit",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/748de1b1-5cff-4af8-ac12-a0a8b467dce7.pdf",
+      "source": "BSE",
+      "ts": 1775135910190,
+      "type": "results"
+    },
+    {
+      "title": "As per the captioned subject, promoter, Mr. Rikin B. Agarwal hereby confirm on behalf of promoter and promoter group that they have not encumbered any shares directly or indirectly.\r\n\r\nPlease ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bc6a3803-7f9d-414d-96a9-4b5eb1b53a5b.pdf",
+      "source": "BSE",
+      "ts": 1775135723073,
+      "type": "insider"
+    },
+    {
+      "title": "Please find the attached Outcome of Board Meeting for Allotment of Equity Shares pursuant to Conversion of warrants",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/62c4170a-9ef5-401c-bbd5-447cfe59a9a9.pdf",
+      "source": "BSE",
+      "ts": 1775135696653,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a2b351cc-ff0a-4106-984c-477c60702adc.pdf",
+      "source": "BSE",
+      "ts": 1775135430300,
+      "type": "filing"
+    },
+    {
+      "title": "Please find the attached Outcome of Board Meeting  for Allotment of Equity Shares pursuant to Conversion of Warrants",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4912e017-77af-4016-98bb-ed8bbaa7ce50.pdf",
+      "source": "BSE",
+      "ts": 1775135337440,
+      "type": "board"
+    },
+    {
+      "title": "Newspaper Advertisement(s)- Notice Regarding Second 100-Day Campaign - \"Saksham Niveshak\".",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6052fbf8-98c0-4b31-9691-b525e8ccff8e.pdf",
+      "source": "BSE",
+      "ts": 1775135202470,
+      "type": "filing"
+    },
+    {
+      "title": "In continuation of our letter dated January 2, 2026 and pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015, we wish to inform that Ceigall ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ffbf036c-4b7a-4e54-a780-3480b0c0dbe9.pdf",
+      "source": "BSE",
+      "ts": 1775135112370,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached herewith intimation about increase in investment to be made for setting up of manufacturing facility of the Company in Ujjain, Madhya Pradesh.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/63ff821c-c12d-49fd-8948-72c7afa91536.pdf",
+      "source": "BSE",
+      "ts": 1775135044150,
+      "type": "filing"
+    },
+    {
+      "title": "Appointment of Senior Management Personnel - Chief Executive Officer",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cdbe380a-978c-4856-8a49-13998ec6a84a.pdf",
+      "source": "BSE",
+      "ts": 1775134992887,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation under Regulation 30 of SEBI Listing Regulations regarding Change in Senior Management",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fd876f3b-3317-42b1-95a5-42a799e6ed88.pdf",
+      "source": "BSE",
+      "ts": 1775134964330,
+      "type": "filing"
+    },
+    {
+      "title": "Reappointment of Mr. Ratneshwar Prasad (DIN 10625105) as an Independent Director for the second term of 5 consecutive Years commencing from May 30, 2026 to May 29, 2031 (Both days inclusive) ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b9c75000-6a19-493a-b2ad-91b8fbb66535.pdf",
+      "source": "BSE",
+      "ts": 1775134894933,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper advertisement regarding Second 100 days campaign tittle \"Saksham Niveshak\" and Special window for transfer and dematerialization of physical securities",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b8c518ac-ad92-45e4-a386-d1a72da3f21b.pdf",
+      "source": "BSE",
+      "ts": 1775134888500,
+      "type": "filing"
+    },
+    {
+      "title": "In continuation of our letter dated January 2, 2026 and pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015, we wish to inform that Ceigall ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/410ad4bd-b7e6-40f3-a48d-badb59ff0922.pdf",
+      "source": "BSE",
+      "ts": 1775134813550,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached the newspaper advertisements regarding Second 100-Day Saksham Niveshak Campaign and Special Window for re-lodgement of transfer and dematerialisation of physical shares",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/cf052899-f34b-4166-be2d-241d5de795d3.pdf",
+      "source": "BSE",
+      "ts": 1775134787990,
+      "type": "filing"
+    },
+    {
+      "title": "Submission of Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018 for the quarter ended March 31, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0c99d639-c701-436f-b8da-ae1c0768b629.pdf",
+      "source": "BSE",
+      "ts": 1775134773683,
+      "type": "results"
+    },
+    {
+      "title": "The trading window for dealing in equity shares shall remain closed for all the designated persons and immediate relatives, from April 1, 2026, till 48 hours after the declaration of Audited ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5a15d8f8-e13d-4154-8fd2-f74c6c5c7dc5.pdf",
+      "source": "BSE",
+      "ts": 1775134549640,
+      "type": "insider"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI DP Regulations 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a9f4b42f-be82-44ff-b946-5e5fdd990264.pdf",
+      "source": "BSE",
+      "ts": 1775134502783,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of the Order dated 26th March, 2026, issued by Joint Commissioner of Central Tax, CGST and Central Excise, Vadodara-1",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/af9b063f-2fd1-48b8-b44d-52a75aad2b7e.pdf",
+      "source": "BSE",
+      "ts": 1775134416020,
+      "type": "filing"
+    },
+    {
+      "title": "Please find newspaper advertisement for Notice of Postal Ballot published on 02nd April, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/89960748-aa86-45ac-8f2a-7f26b1bc3457.pdf",
+      "source": "BSE",
+      "ts": 1775134364110,
+      "type": "filing"
+    },
+    {
+      "title": "Submission of Declarations received  from Promoters of company under regulation 31(4) of SEBI (SAST) Regulation, 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/53ccf190-6bc8-4659-8d3c-db287363038a.pdf",
+      "source": "BSE",
+      "ts": 1775134184557,
+      "type": "insider"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI (DP) Regulations 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/27421f03-3fd0-4393-8ee6-feb7630219e2.pdf",
+      "source": "BSE",
+      "ts": 1775134099170,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of the SEBI (Depositories and Participants) Regulations, 2018 for the  Quarter ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ebd8459a-6ffd-4337-b1b7-f7b17fcf5667.pdf",
+      "source": "BSE",
+      "ts": 1775133962753,
+      "type": "results"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of the SEBI (Depositories and Participants) Regulation, 2018 for the quarter ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/815f026e-fed7-4d63-883b-8b2618f58cc7.pdf",
+      "source": "BSE",
+      "ts": 1775133838903,
+      "type": "results"
+    },
+    {
+      "title": "Promoter disclosure under Reg 31(4) of SEBI SAST Regulation 2011 for year ended 31.03.2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fbca9e6c-488f-4f1b-9858-a72ab6f31c85.pdf",
+      "source": "BSE",
+      "ts": 1775133825570,
+      "type": "insider"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018 for the quarter ended March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c80311be-46d9-4ac3-8069-a4624873ab0b.pdf",
+      "source": "BSE",
+      "ts": 1775133793873,
+      "type": "results"
+    },
+    {
+      "title": "We hereby confirm that our Company does not fall under the catefory of \"Large Corporate\" for the financial year 2026-27 as per the applicability criteria specified in the circular No.SEBI/HO/DDHS/CIR/P/2018/144 ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ac7966e8-9099-428a-b7f6-4edb56c8dac9.pdf",
+      "source": "BSE",
+      "ts": 1775133784333,
+      "type": "filing"
+    },
+    {
+      "title": "Postal ballot - Scrutinizer Report",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/32882625-057e-43cd-a9e9-dc05512d5b9c.pdf",
+      "source": "BSE",
+      "ts": 1775133763680,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI (DP) Regulations 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7d4db925-0bd2-4c48-81a4-21ae0491fcc8.pdf",
+      "source": "BSE",
+      "ts": 1775133719470,
+      "type": "filing"
+    },
+    {
+      "title": "The Company has executed C-ARM Development and Supply Agreement with GBT Korea Co, Ltd, Republic of Korea.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/91e1a15b-0f5c-4791-a424-39117b700959.pdf",
+      "source": "BSE",
+      "ts": 1775133714827,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached newspaper publication for dispatch of Postal Ballot Notice of Tenneco Clean Air India Limited.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/dd215f01-1b37-41ac-93ae-6ab1eca8b2b2.pdf",
+      "source": "BSE",
+      "ts": 1775133699967,
+      "type": "filing"
+    },
+    {
+      "title": "Declaration by promoter under reg 31(4) under SEBI SAST.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c82d5587-2e7c-49d5-888a-d88c1d58732d.pdf",
+      "source": "BSE",
+      "ts": 1775133693367,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation of Credit Rating of facility/ instrument of the Company",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/54e75f22-5b9f-4ca0-8a86-e5bff44be765.pdf",
+      "source": "BSE",
+      "ts": 1775133685163,
+      "type": "filing"
+    },
+    {
+      "title": "EGM of the Company to be held on Friday, 24.04.2026 at 11:00 A.M through VC/ OVAM.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/940de984-4faa-4414-a42d-4e3989afc9f0.pdf",
+      "source": "BSE",
+      "ts": 1775133620193,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Reg. 74(5) of SEBI (DP)Regulations, 2018 for quarter ended March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1a6bda86-e10a-40f4-b7c3-686944d793d3.pdf",
+      "source": "BSE",
+      "ts": 1775133617167,
+      "type": "results"
+    },
+    {
+      "title": "Voting Results and scrutinizer report for the postal ballot",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f86cc541-7f57-4787-801e-8f37f4b84ca6.pdf",
+      "source": "BSE",
+      "ts": 1775133611457,
+      "type": "board"
+    },
+    {
+      "title": "Refer attached document.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3b8a1870-8e15-43bd-bba5-ab213411df39.pdf",
+      "source": "BSE",
+      "ts": 1775133531400,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure under Regulation 30 of SEBI Listing Regulations, 2015 regarding New Tax Litigation",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/45d06ee6-f8cb-4980-b7a3-173aff0bdccf.pdf",
+      "source": "BSE",
+      "ts": 1775133490697,
+      "type": "filing"
+    },
+    {
+      "title": "Letter Attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ce441d5d-47ba-48b6-b66e-e24b06ee3e15.pdf",
+      "source": "BSE",
+      "ts": 1775133449780,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/00f7cbb6-7c9b-47e2-ad78-60b7248d143f.pdf",
+      "source": "BSE",
+      "ts": 1775133386610,
+      "type": "filing"
+    },
+    {
+      "title": "Submission of Compliance Certificate under Reg. 74(5) of SEBI (DP) Regulations, 2018 for the quarter ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/28eaf1f1-6ebc-414c-8a31-c37e9afc2c0b.pdf",
+      "source": "BSE",
+      "ts": 1775133277077,
+      "type": "results"
+    },
+    {
+      "title": "Please refer the attached document.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c1b8017c-239e-417a-be66-f807c2b76750.pdf",
+      "source": "BSE",
+      "ts": 1775133270877,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of the Annual Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''>    <tr>       <td><b>Sr. No.</b></td>       <td><b>Particulars</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/db146694-e35b-4d6d-8fb6-9da6a41edf55.pdf",
+      "source": "BSE",
+      "ts": 1775133216747,
+      "type": "filing"
+    },
+    {
+      "title": "We hereby declare that the member of Promoter and Promoter Group including acting in concerthave not made any other encumbrances of shares directly or indirectly during the financial year ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c03f7a45-3cab-4887-88b6-0f331de1a347.pdf",
+      "source": "BSE",
+      "ts": 1775133174990,
+      "type": "insider"
+    },
+    {
+      "title": "Prior intimation of Debenture Issue and Allotment Committee to be held on 08.01.2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/235a8440-8c9e-44f5-97d0-3542649d4b19.pdf",
+      "source": "BSE",
+      "ts": 1775133137220,
+      "type": "filing"
+    },
+    {
+      "title": "All Material Information, that have bearing on operation, Performance of the Company which includes all price sensitive information under regulation 30 of SEBI  (LODR) Reg, 2015 have always ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7868f21d-d4ed-468b-823e-274b7c0bdfe2.pdf",
+      "source": "BSE",
+      "ts": 1775133106147,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c55d5f00-fc68-40a3-becd-82faf9f747f6.pdf",
+      "source": "BSE",
+      "ts": 1775133104643,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached the compliance certificate as received from our RTA under Regulation 74(5) of SEBI (DP) Regulations for the quarter ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/374ff089-9359-4a6d-a4ad-39fdaa6fa9f4.pdf",
+      "source": "BSE",
+      "ts": 1775133103437,
+      "type": "results"
+    },
+    {
+      "title": "In terms of Regulation 33 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 and other applicable provisions, the Board of Directors of the Company in its meeting ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e29811ff-333f-4e22-8774-7750796e5d3e.pdf",
+      "source": "BSE",
+      "ts": 1775133063023,
+      "type": "board"
+    },
+    {
+      "title": "Certificate under Regulation 74(5) of SEBI (Depository and Participants) Regulations, 2018 for the 4th Quarter and Annual year ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/34409c4e-08f3-4462-98d1-ac21b040dd93.pdf",
+      "source": "BSE",
+      "ts": 1775133045340,
+      "type": "results"
+    },
+    {
+      "title": "Disclosure under Reg 31(4) of SEBI SAST Regulations 2011 submitted by M/s GTN Textiles Ltd being Main Promoter of M/s Patspin India Ltd",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/10cb8701-959e-40b2-8acb-d37cec91694a.pdf",
+      "source": "BSE",
+      "ts": 1775132994020,
+      "type": "insider"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulatrions, 2015, we wish to inform you that ICRA Limited have reviewed the credit rating assigned ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/13384c52-a3f9-4add-95e2-b56eb34d3e7a.pdf",
+      "source": "BSE",
+      "ts": 1775132971100,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed our reply regarding clarification on volume  movement.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ffde8a4f-0253-49cf-92af-c75daa30c48e.pdf",
+      "source": "BSE",
+      "ts": 1775132936323,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed herewith a copy of Press/Media Release titled Capillary Technologies appoints Sumit Kumar as President of the Middle East, Africa and India.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/92f6fbc2-fb1f-42b5-b1df-331f3e9f621b.pdf",
+      "source": "BSE",
+      "ts": 1775132894137,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of demise of Mr. Anil Kumar Bansal, Promoter, Chairman and Whole-time Director of the Company (DIN: 00232223)",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2b70dbd2-f674-41ba-b199-865648698e55.pdf",
+      "source": "BSE",
+      "ts": 1775132805323,
+      "type": "insider"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b74f272e-8904-49cd-b1e9-dc784b8b5327.pdf",
+      "source": "BSE",
+      "ts": 1775132734987,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper Publication - Notice of Special Window For Transfer and Dematerialisation of Physical Securities.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b4da46c5-03bd-453c-a549-5ad46cf7807e.pdf",
+      "source": "BSE",
+      "ts": 1775132686427,
+      "type": "filing"
+    },
+    {
+      "title": "Closure of trading Window",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b4c64723-a75c-4b43-ab64-ae75bc02a621.pdf",
+      "source": "BSE",
+      "ts": 1775132665610,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation of newspaper publication of Information regarding EGM of the Company",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6a6f714c-f91a-44c9-8fed-a0195878cd6d.pdf",
+      "source": "BSE",
+      "ts": 1775132630540,
+      "type": "board"
+    },
+    {
+      "title": "Regulation 24(A) of LODR is not applicable as the company is SME Listed.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/14407d61-5df8-4f19-99fa-09b914c84693.pdf",
+      "source": "BSE",
+      "ts": 1775132582040,
+      "type": "filing"
+    },
+    {
+      "title": "We hereby enclose the Quarterly Business updates of the Company at the end of the Fourth Quarter (Q4 FY 26) and Year ended on March 31,2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7166a4a6-af7e-4eb4-a54e-b4c0f78c5494.pdf",
+      "source": "BSE",
+      "ts": 1775132489950,
+      "type": "results"
+    },
+    {
+      "title": "As per the attached Letter.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e14cc87d-dc8d-4c86-a6f4-b059f5f80b91.pdf",
+      "source": "BSE",
+      "ts": 1775132468453,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release Intimation",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1a581430-fcc6-406e-b098-bdecbce1f2f8.pdf",
+      "source": "BSE",
+      "ts": 1775132308840,
+      "type": "filing"
+    },
+    {
+      "title": "Disclosure under regulation 31(4)",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1d428aa4-f2f5-45bd-a49f-62c1aa210426.pdf",
+      "source": "BSE",
+      "ts": 1775132284253,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/68fbb605-b3b9-411d-a432-4a1657b1a07a.pdf",
+      "source": "BSE",
+      "ts": 1775132175380,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed disclosure for Financial Year 2025-26.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/75e7993f-2125-4da2-9c9f-892511822ebc.pdf",
+      "source": "BSE",
+      "ts": 1775132134800,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance Certificate under Regulation 74(5) of SEBI (DP) Regulations, 2018 for March 31, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c0f75994-e86c-483d-b3e2-b035b5ae9f95.pdf",
+      "source": "BSE",
+      "ts": 1775132111377,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper Publication regarding special window for transfer and dematerialisation of physcial securities of Winro Commercial (India) Limited.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e2989cc3-f7f8-4d75-8f8d-d370eb45cea9.pdf",
+      "source": "BSE",
+      "ts": 1775132043720,
+      "type": "filing"
+    },
+    {
+      "title": "INTIMATION",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/006d203d-88ac-4ee4-9d49-cd802f10e9fe.pdf",
+      "source": "BSE",
+      "ts": 1775131997103,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed Certificate under Reg. 74 (5) of the SEBI (DP) Regulations, 2018 for the Quarter ended 31st March, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2db52380-1dd0-46d9-8385-c342bd356511.pdf",
+      "source": "BSE",
+      "ts": 1775131967237,
+      "type": "results"
+    },
+    {
+      "title": "As enclosed",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b90221d6-8fb7-4004-a4a3-bfbafc154841.pdf",
+      "source": "BSE",
+      "ts": 1775131790503,
+      "type": "filing"
+    },
+    {
+      "title": "We are enclosing herewith a press release dated April 02, 2026 titled ''Airtel, World''s Second Largest Telco, Hits 650 -Million Customer Milestone'' being issued by the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/467962d4-afec-46ac-a406-2cf9c7320488.pdf",
+      "source": "BSE",
+      "ts": 1775131783543,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper Publication informing about reminder notice of another special window for re-lodgment of transfer requests of physical shares.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/074a3faa-10b4-47da-b3b6-97722670bdf5.pdf",
+      "source": "BSE",
+      "ts": 1775131754943,
+      "type": "filing"
+    },
+    {
+      "title": "Change in Directorate",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/88c32930-841d-41e8-baf2-0f835fa38f2c.pdf",
+      "source": "BSE",
+      "ts": 1775131708860,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance Certificate as per Reg. 74 (5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5f99eb25-13ba-4597-a405-ddd1c4917724.pdf",
+      "source": "BSE",
+      "ts": 1775131514010,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper publication with respect to special window for transfer and dematerialisation of physical shares of the Company, is enclosed herewith.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/523cd5a8-5906-4992-9b02-07e62fbd62eb.pdf",
+      "source": "BSE",
+      "ts": 1775131503470,
+      "type": "filing"
+    },
+    {
+      "title": "Refer attached document.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5d71cc7a-da72-4b61-88de-703313dfee29.pdf",
+      "source": "BSE",
+      "ts": 1775131409530,
+      "type": "filing"
+    },
+    {
+      "title": "Change in Composition of SAIL Board",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9eb6fece-8cc2-4ad9-9ac3-25be30704fa8.pdf",
+      "source": "BSE",
+      "ts": 1775131376420,
+      "type": "filing"
+    },
+    {
+      "title": "Change in Directorate",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/86c12b84-cd4b-4aea-93ea-bc2dfbe0c655.pdf",
+      "source": "BSE",
+      "ts": 1775131212377,
+      "type": "filing"
+    },
+    {
+      "title": "<b>Format of Initial Disclosure to be made by an entity identified as a Large Corporate.</b><br/><br/> <table border=''1px''><tr> <td><b>Sr. No.</b></td> <td><b>Particulars</b></td> <td><b>Details</b></td> ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fef7e4d3-dc21-4ea5-b2d8-18739122344f.pdf",
+      "source": "BSE",
+      "ts": 1775131198337,
+      "type": "filing"
+    },
+    {
+      "title": "Change in Composition of SAIL Board",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bffd27a1-fd16-4690-b240-527eb9d42598.pdf",
+      "source": "BSE",
+      "ts": 1775131186820,
+      "type": "filing"
+    },
+    {
+      "title": "Company Letter attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/29b9fcf4-5f10-4ebc-90e5-5e0c923871cc.pdf",
+      "source": "BSE",
+      "ts": 1775131097540,
+      "type": "filing"
+    },
+    {
+      "title": "Attached herewith Certificate under Regulation 74(5) of SEBI (Depositories and Participants) Regulations, 2018 for the quarter  ended 31st March, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/883b93da-2e39-42a1-90b7-82e6cd04e5ad.pdf",
+      "source": "BSE",
+      "ts": 1775130972703,
+      "type": "results"
+    },
+    {
+      "title": "Please find the enclosed outcome of Board Meeting for your information.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4a98c864-8cda-47fa-b341-fd422df630df.pdf",
+      "source": "BSE",
+      "ts": 1775130954283,
+      "type": "board"
+    },
+    {
+      "title": "Please find enclosed intimation regarding allotment of equity shares pursuant to ESOP",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d44ed5bf-d24b-4efa-ad4d-8b1762ad5d47.pdf",
+      "source": "BSE",
+      "ts": 1775130919550,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under Reg 74(5) of SEBI DP Regulations",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/00a045de-b56a-4f37-bd07-5d7e9328ba77.pdf",
+      "source": "BSE",
+      "ts": 1775130919397,
+      "type": "filing"
+    },
+    {
+      "title": "Letter enclosed",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/142f3229-df0d-42f1-a03f-7b179c7ab368.pdf",
+      "source": "BSE",
+      "ts": 1775130867657,
+      "type": "insider"
+    },
+    {
+      "title": "Please find the intimation for Investor/Analyst meet scheduled to be held on 08th April, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5b7c76f9-7a08-49ee-b392-072edb89841c.pdf",
+      "source": "BSE",
+      "ts": 1775130808777,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance 57 (5) for the quarter ended 31st March 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f0cd7c6f-f7ef-41e0-800c-3e4d1b1d9236.pdf",
+      "source": "BSE",
+      "ts": 1775130771913,
+      "type": "results"
+    },
+    {
+      "title": "Please find enclosed herewith Certificate under Regulation 74(5) of SEBI (Depositories and Participants) Regulations, 2018 for the quarter and financial year ended March 31, 2026 received ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8616af25-c87f-4392-b315-6a3930aa0f0b.pdf",
+      "source": "BSE",
+      "ts": 1775130741933,
+      "type": "results"
+    },
+    {
+      "title": "Regulation 47 of SEBI (LODR) 2015, as amended, we enclosed herewith copies of newspaper advertisement published for EGM  of the company in following newspaper:\r\n1. Business Standard (English) ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7a3d7666-b647-460c-8c9b-b6dd94ceaf03.pdf",
+      "source": "BSE",
+      "ts": 1775130721410,
+      "type": "board"
+    },
+    {
+      "title": "Adani Energy Solutions Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 23/04/2026 ,inter alia, to consider and approve Audited Financial Results ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a58eeafc-fe8f-4a4d-8fbd-b839970eee81.pdf",
+      "source": "BSE",
+      "ts": 1775130610717,
+      "type": "board"
+    },
+    {
+      "title": "Pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we have enclosed herewith the press release on the Strategic Investment made by M/s. ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/703eb17d-ae4e-4432-882d-e2cf8238dfd0.pdf",
+      "source": "BSE",
+      "ts": 1775130570947,
+      "type": "filing"
+    },
+    {
+      "title": "Allotment of 753218 equity shares at FV Rs. 2 each under ICICI Bank Employees Stock Option Scheme 2000.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/69ba8f82-f70a-43a2-8136-f795e1547b79.pdf",
+      "source": "BSE",
+      "ts": 1775130546460,
+      "type": "filing"
+    },
+    {
+      "title": "As per attachment",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e69035bc-a331-46ea-8a8d-f94f83b42b37.pdf",
+      "source": "BSE",
+      "ts": 1775130516430,
+      "type": "filing"
+    },
+    {
+      "title": "As per the disclosure attached",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/42be871e-c166-492d-85e1-0be63ad6b77d.pdf",
+      "source": "BSE",
+      "ts": 1775130453887,
+      "type": "filing"
+    },
+    {
+      "title": "certificate under reg 74(5) of SEBI(DP) reg 2018  issued by RTA",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/884aad43-b81e-47e6-8808-622cddcabbc9.pdf",
+      "source": "BSE",
+      "ts": 1775130310483,
+      "type": "filing"
+    },
+    {
+      "title": "Update under Regulation 30(7) of SEBI LODR Regulations with respect to investment in Inventurus Knowledge Solutions Inc., a wholly owned subsidiary.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b30e7215-a017-4f62-8957-da02fe98d130.pdf",
+      "source": "BSE",
+      "ts": 1775130260263,
+      "type": "filing"
+    },
+    {
+      "title": "ECS Biztech Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 06/04/2026 ,inter alia, to consider and approve Intimation of Board Meeting under ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0fcda6d4-ff21-4cc3-b275-ecef7387da1e.pdf",
+      "source": "BSE",
+      "ts": 1775130176473,
+      "type": "board"
+    },
+    {
+      "title": "Please find enclosed herewith Disclosures required under Regulation 31(4) of Securities Exchange Board of India (Substantial Acquisition of Shares and Takeover) Regulations, 2011 for the ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2df1eae0-216d-43bb-8a48-dee57c8e7d93.pdf",
+      "source": "BSE",
+      "ts": 1775130135287,
+      "type": "filing"
+    },
+    {
+      "title": "Credit Rating - Bank facilities / Fixed Deposits",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fc3c5d12-4033-4732-9fe1-7c46e23fdb5c.pdf",
+      "source": "BSE",
+      "ts": 1775130039240,
+      "type": "filing"
+    },
+    {
+      "title": "Please find attached Certificate from RTA for month and quarter ended 31st March, 2026",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e5e3c3a6-d7dd-417c-9f1f-0a7809767983.pdf",
+      "source": "BSE",
+      "ts": 1775130012863,
+      "type": "results"
+    },
+    {
+      "title": "Disclosure under Regulation 31(4) of SEBI (SAST), Reg. 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3b82ed21-adea-46f2-89ce-8463498a371e.pdf",
+      "source": "BSE",
+      "ts": 1775129799720,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of approval by the Ministry of Corporate Affairs, via issuing a certificate of registration of the Regional Director Order for change of state of registered office from Tamil ....",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a1f34ead-15c2-4fc8-9bdc-9d19356a33d7.pdf",
+      "source": "BSE",
+      "ts": 1775129794480,
+      "type": "filing"
+    },
+    {
+      "title": "Certificate under reg 74(5) of SEBI(DP) reg 20215, issued by RTA",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ca0e4936-743e-49c7-92dc-09dfaf534ad3.pdf",
+      "source": "BSE",
+      "ts": 1775129740210,
+      "type": "filing"
+    },
+    {
+      "title": "Newspaper Advertisement in connection to Special Window opened from 5th February 2026 till 4th February 2027.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2c7811c9-0736-45c9-94e1-5d59509a48b9.pdf",
+      "source": "BSE",
+      "ts": 1775129720397,
+      "type": "filing"
+    },
+    {
+      "title": "Intimation of clarification on price movement",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5a9a7133-9fa9-4e39-874f-3393b7f0bad5.pdf",
+      "source": "BSE",
+      "ts": 1775129422880,
+      "type": "filing"
+    },
+    {
+      "title": "Press Release - Biralsoft Appoints Vikram Puranik as Chief Operating Officer",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1bfcea41-c963-4ebf-b6e2-14273c043582.pdf",
+      "source": "BSE",
+      "ts": 1775129404527,
+      "type": "filing"
+    },
+    {
+      "title": "Reply to clarification sought vide email dated 1st April 2026 with reference to Price Movement.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5fa04be0-a41f-41b6-8abf-3e657b7f263b.pdf",
+      "source": "BSE",
+      "ts": 1775129308897,
+      "type": "filing"
+    },
+    {
+      "title": "Navigant Corporate Advisors Ltd (\"Manager to the Offer\") has submitted to BSE a copy of Offer Opening Public Announcement to the Shareholders of Banganga Paper Industries Ltd (\"Target Company\").",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/BEB27E98-F34F-4A79-914C-CCB41D99A90C-112808.pdf",
+      "source": "BSE",
+      "ts": 1775129293757,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed herewith an update on the wholly owned material subsidiary of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bab1f924-2994-49b2-aa39-fafa9b3fc2f6.pdf",
+      "source": "BSE",
+      "ts": 1775129253440,
+      "type": "filing"
+    },
+    {
+      "title": "Endurance Technologies Limited has informed regarding resignation of Mr. Prabhas Chandra Dash, Head - Aftermarket (Senior Management Personnel) of the Company effective 1st April, 2026.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8f60dcf0-6dea-4c77-a45b-5bce2884d8fa.pdf",
+      "source": "BSE",
+      "ts": 1775129087547,
+      "type": "filing"
+    },
+    {
+      "title": "Publication of Notice for attention of the shareholders of the Company in respect of transfer of shares to the Investor Education and Protection Fund",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c54252c0-b99e-47d4-a57a-5fdacdec62d9.pdf",
+      "source": "BSE",
+      "ts": 1775129082337,
+      "type": "filing"
+    },
     {
       "title": "Quarterly Disclosures by listed entities of defaults on payment of interest/ repayment of principal amount on loans from banks / financial institutions and unlisted debt securities",
       "link": "https://www.bseindia.com/corporates/ann.html?scripcode=532629",
@@ -377,6 +2006,13 @@
       "type": "dividend"
     },
     {
+      "title": "The Exchange has received the disclosure under Regulation 29(1) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Neev Nirav Jogani",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7EBF6FC8_5F8F_461A_90A0_9510C0D5D454_100102.pdf",
+      "source": "BSE",
+      "ts": 1775124070127,
+      "type": "insider"
+    },
+    {
       "title": "The Exchange has received the disclosure under Regulation 29(2) of SEBI (Substantial Acquisition of Shares & Takeovers) Regulations, 2011 for Chandra Prakash Agrawal & PACs",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/CCCCECD2_E1DE_4791_B1BF_86AD4FB610B6_095829.pdf",
       "source": "BSE",
@@ -589,22 +2225,8 @@
       "type": "dividend"
     },
     {
-      "title": "Amara Raja Energy & Mobility Schedules Board Meeting for May 25, 2026 to Review Q4FY26 Results - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVGNOUmVFd2NnUWZ5OEI5MS1xdUJWNG5Tay00RXhWQ3BSZlhkRVZva1B2dmV5VWVBNlczVU02VVEzTGRnRGx0VTAxMjJNN0o1emV4cGY0ZENCbGIxcnc4cXRCNWwxN1hkNkNuT2ZkeHNXbmVTMm1zV0RuaklKZU01b2F0SEFpRElpRlpWWllqV0k4Tm5mRl9aUVh5cEVpSkdSSTJjLTZxdWJSX1htTFFlck1SenRod3lBTkJUZlFIWW5CcUgzVW45ME1PWUVqVUZoajZ2Q2VmRG1xYlVwOXg2eTh3?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "results"
-    },
-    {
       "title": "TCS Q4 results FY26: IT major releases earnings date, final dividend in focus; check financials, other details - Upstox",
       "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPTktrdV9kQk9xajhlVXhFLVQ4STBrRURqYXdycUtqeC1uZFZBcEI4UkdzYmc0V1FXSW1fUGpDS2xDekZpd1czTUF1dktLbnBXMk54WEYtV0lvbTNkbkxLbHprMEdSSVViX1Rjb194V1FEVUphQy1qNFpfWWRRYWF4ZW56aVotYTVURlR3NldlXzFnSC00eU9uckJGV1lqQUtjcWI0Q0RUWEpLaGpUbFFsaTd5a0NUTW9ibncyM0l4VDlsc2N2VkdJdkp4Z3VBUGpLek1SdnpuRWtDeHZQREFlYkF6bW5fZ29Tdlg2V2FLMlJXNVRCNy0wWTJ0QkFpU2VDSVp5WkVn?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "CMS Info Systems Declares ₹2.75 Interim Dividend: Record Date Set Today - HDFC Sky",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZVVtM0RtOHFKT21DbHh1eWFwOXBrRzlfemlEdE5kVVFJMzVzcU1wYTFuS2k2NUg2RlVPRTZUOWMxaTRHdjVOS0FUVENRRnhNei1hVm1zVEpIVHF5ZVVaTkJNdVFkMDlDUnZiSGNObGl3NEVhYm42VW1wbWcyS1UtTlJNRUV3dXFBZFVmbENSVjROcnlDeGFTWC1vWE90Zw?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -615,6 +2237,13 @@
       "source": "Exchange News",
       "ts": 0,
       "type": "results"
+    },
+    {
+      "title": "CMS Info Systems Declares ₹2.75 Interim Dividend: Record Date Set Today - HDFC Sky",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZVVtM0RtOHFKT21DbHh1eWFwOXBrRzlfemlEdE5kVVFJMzVzcU1wYTFuS2k2NUg2RlVPRTZUOWMxaTRHdjVOS0FUVENRRnhNei1hVm1zVEpIVHF5ZVVaTkJNdVFkMDlDUnZiSGNObGl3NEVhYm42VW1wbWcyS1UtTlJNRUV3dXFBZFVmbENSVjROcnlDeGFTWC1vWE90Zw?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
     },
     {
       "title": "HDFC Bank Dividend 2026: Private lender to announce cash reward in Q4 results - Check board meeting date - ET Now",
@@ -631,13 +2260,6 @@
       "type": "dividend"
     },
     {
-      "title": "BPCL Dividend 2026 date out: 2nd interim dividend in Q3 results, board meeting next week - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPXzBMR1dLRXEwZnRTd1F5MUotc0pDcXV6LXhfdWxCeWdFTkg2Vy1iODZYbW9zR0EwMkdlbnRnN2FHYnF5U0dlcFZmZjNwVVpEOWJ5Z3BrZXBfM04xWWR4dGRCcVpaSUlNb2tSNTNmV2hJTGVZVW1Jbjd6aGkyMVZqZ2liM2x1dVYzV2hrbm05OHFJNGFlb1Z3NEhNbGd6b2lROEVDTmVyeVlSRWd5dTlLdXgxb2VDbFFqV3JvRzcxOGNZYWI0UEVYdDVuZlI4NEVCQTBXYtIB2gFBVV95cUxPbDJ5U25ZRFh0Y1lhZ2hIRjJWQjRyWTJMa3lWUEFsZFk0eWdTb3QzaC1ndWtDeEQzdWJIUmk4dUUxd3FXS0hhNGRtN1EzUUthVi1rcTloNFp5cUh4UUs1c1I0ZjhvRkJ6R2xXZUVjVVJPVzhXS0k5b21hVzVxQ3ZXSE1SVEVqWnFPZnd5NlJOaGpnR2FiM3RvVG52cFIxWVhpVnBNS3BWeE5zRVlETWZBcEl0VVVUZ3cydktfd29ndjUtZF9xVDZxX0psdHpnYjdHZFdsRzJnYXlzUQ?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
       "title": "IIFL Finance Board Meeting Scheduled for January 22, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNZHJhQ1NxVllmRnBvMEhOcnIyWFRVU1cwUEV6TXg1aGxhNHh5M2h6VXNGNnF0OTEyYkFjeElmLTlvNXZLTU5sMWNoeWkyenZRTUpvZlVreXNuc010MnBYckdmM2ptUXpweHJ5bkJPaUItSWsxUk1VNXhmYzRxTHEycmZYNVJlSnE4MEw4WHZ3VWZzRENFTnpRT1ZCWWY0R21yYXVrWG1PZjdTTXJqWkhhTG4yVUdwLW9wRFdlVDl4cHNkMlFhbjcwbzY0RjF5a3BwalZyUjROelBuSm5LSDloeVpCcFhJM2x3Z284dFl6eWtlLXZ3c1hwWHFVeFd4UQ?oc=5",
       "source": "Exchange News",
@@ -645,22 +2267,8 @@
       "type": "dividend"
     },
     {
-      "title": "Angel One Stock Split, Dividend: Board meeting on Jan 15 for major corporate actions – Expert Gaurang Shah gives trading strategy - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPc0FUSkxWclNiNlNEelpWNnVEX1pBajJoaFBCYkt6VGNoZjRDOUp0alVZa05tRFJ5eG5keU9KamgwRlRmYXNvZXgwYmFvZFFhZ1labl9KQlBIekUwZ2xmUzhDZGJEMHByWVhRXzFlc1BNWkFJOFB3TmtLeXM0MHE2RmMzVGREVzhCQ08yb19JUGJsS19nZlBsTzJKNXVMS0pZcXFfUnlKenExNm5TYmtMd3hHLXlHMDRocVhFdXhzTnRHQTc3MmdEODlwOHctbkNSaGtJaE4yX3FTTWx2aGprcDlZSER0NWxCcU5XUldwa1pFaWxOUF9YYnpUSUE4VXpPZFRxMnZ3NEXSAY4CQVVfeXFMTWVtbEgzeWxmY2FXME5fbUhVV3kxbm5JbFVWODg0RTc5V1o4dTE3TW9TYUloWUgyRUNhZjR5NlNQMWxjZmU3c0ZpTVRVUUswX19Xb1JtSDRPT2JfWEthQktIM01wRDUxQ04yeTNHRHhabGg3bGotSHFaa3dfQnhzRHBvNDYyYjBkNG94RGU2ZGprbnd1bkQ0LXpXTWdNUkR6NU9xU0ZNajJRaWJGUmZ5RVJzOXRqcThVYjJvTDM2THRiaERnRG5oaVhjXzRtQkZCdDVfN0VTd2N1czBFaXJLTFNlTVdfcWQ0OWlUTFdoa3dVenQ2Q0lrQk80emwyajFrRXh0SHJ4Zm9Ra0FGYXRR?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Hindustan Aeronautics Limited Schedules Board Meeting for February 12, 2026 to Review Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNMU5HU240bWdtRTJpanJLUkRNeG5KUHYxejdSbUpETlJ1MU5pS1YwVVRPeENmY0VBejJIT3lNMXNMYVFrU2lFZ3Z4T09RQkpTTWNZZmZXdkUxb3FEYnl4U0pvd3Q3RUlVc1c0VGRxeUhPM1hUWlJIbEh0V1F1M2JxSzMxWHlKZnlqMWR0UTRVbXZPTjFIQlJXaWxDSG80US1mOVp0RGMxTmx0VEt5QlVhQzMtMUdTSjRkb1pyeDg0T2x4anZXMlFENWwxSC1QRmJTNWJpOHFSaHRzTWJhWmhtd0xvOVpHWlJCMmhpT3owXzFIcURmai00dUVXNnVYMHptRFRQVmFfYw?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Central Bank of India Dividend 2026: Bank to announce 3rd interim dividend in Q3 results; board meeting on Jan 16 - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRnN0WnBLUXd6TGNYeGhreUN4OUpxdkt4emFsNzUtdGd0ZHNoemZ5YmJQQTBVWjV1RmJVaVAwRUVPcVh4MjA0TGxjRkc4MWVWU1BhSG1MOEs1b2pQOXRxLVZsSEFmWTgyTUp1dmE2TVUtYk9kN2JwbkExZFYwblpPSmN1ZGktdkUzNXNoMlc1dnA1RXdtbmloZEMzdDN6Y2R1Z0haWXpXU2Vid2RPai1LcmM1Uk4zdHVmLU9EU01OcTJPMHF3QThTM3dGSEx0RVlVUFkycGNLS0lkd28zWGtYcHVrQmIzOG1Iank3UTNwSVU4c3VPNEHSAfsBQVVfeXFMTnR4clRZUXlPYnc5UlE0ekd3b3RTNTFzQVNRZG8xcVRGV3QwWGtfVFM4YVlHZXE3VzUxeG5FQnBtVHZVekFERWxsbE5ocEhwcXJlcFExRTU3Vkg4VW5BR2RhTzZYREhjUkhnb0gyM1d5Nm5JWG5YYVM1bENhMmZoSDNJcGdtSExwSGY3bWF6bmN5aG5kand5WTFWSndvSUNBQkozV3NGUC1TeXFzdmwtQndIN2RSX0FtU01NQjVQM25NQWRLOEIyOEhqNkxSclhYc3I2Snk5V000T09LWmMtVkpLbVNoM2lXa3JRS2hTM3FMQUFEX3lsWWRiaVk?oc=5",
+      "title": "BPCL Dividend 2026 date out: 2nd interim dividend in Q3 results, board meeting next week - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPXzBMR1dLRXEwZnRTd1F5MUotc0pDcXV6LXhfdWxCeWdFTkg2Vy1iODZYbW9zR0EwMkdlbnRnN2FHYnF5U0dlcFZmZjNwVVpEOWJ5Z3BrZXBfM04xWWR4dGRCcVpaSUlNb2tSNTNmV2hJTGVZVW1Jbjd6aGkyMVZqZ2liM2x1dVYzV2hrbm05OHFJNGFlb1Z3NEhNbGd6b2lROEVDTmVyeVlSRWd5dTlLdXgxb2VDbFFqV3JvRzcxOGNZYWI0UEVYdDVuZlI4NEVCQTBXYtIB2gFBVV95cUxPbDJ5U25ZRFh0Y1lhZ2hIRjJWQjRyWTJMa3lWUEFsZFk0eWdTb3QzaC1ndWtDeEQzdWJIUmk4dUUxd3FXS0hhNGRtN1EzUUthVi1rcTloNFp5cUh4UUs1c1I0ZjhvRkJ6R2xXZUVjVVJPVzhXS0k5b21hVzVxQ3ZXSE1SVEVqWnFPZnd5NlJOaGpnR2FiM3RvVG52cFIxWVhpVnBNS3BWeE5zRVlETWZBcEl0VVVUZ3cydktfd29ndjUtZF9xVDZxX0psdHpnYjdHZFdsRzJnYXlzUQ?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -673,22 +2281,8 @@
       "type": "dividend"
     },
     {
-      "title": "GAIL dividend 2026 date: Announcement in quarterly results board meeting on Jan 31; record date fixed - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSm5vX3VsYlJ6YzhfazRJWUNudllldGpfb0d3RERLc1ZBS0h6eEVELVRDVm0zUGhyQUZFWHhKTDQ0alYxVDMwMG0ycjl0ZU9PQmV4TWxsNXpDWnNsMWdnbG4tNWFIWW01RzdDS1U2dWdLT0lOQVFrR1ZwNk5XeFFBcElWNEc4SHdlSWQxV1ZmSGZrUEc5Rm9KOUltTkc2cDQxTjlITVU5bktmWTVaMmtERzA1MHd2M1ZETXRydmR4SzdCZEhHRDZDQlZMOXBITndBMXl2MVZ6NnNTV19zOTgtTzUwcVY3R2tUS19n0gHwAUFVX3lxTE1vakdfUVdoT3EwT3lGXzljcjI5eUViR2ZLd3EtejR4ZS0yV21HWE5Id0M5OXg1RUV0VS1fRmVZbnBuV1hGNjU4dkU4SV9WbzdGRWppblo2dkZUazN1TjRsU0pwWjlqM1lnQVBXUDdyUzdOY0l5VkFJdVVWMGpPaG84VVBueGt2X3JvcEE1S2EzbmxsZ0JkMHYxc2FSM3ZrcEZoNS1GdkZNWi1vZDBGVk1iNm5SdmI1dGtZWUR3TXdodTJPSmRER1lsNmIwSjMtR2FOdWZOVnhzU2llQXlUTnd2RWFOcHJnVl8ybVVZMkRSTg?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Torrent Pharmaceuticals Schedules Earnings Call for February 13, 2026 to Discuss Q3FY26 Results - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOdk5qRS1lNVU3RmcyS2dkM19qLXR3WTVQQlNoVkYyMTNwVnY0ZFpzU3NZTnlONC1lSHE1ZTBKaEJjeHFKN21vSnVGenNhR1JaWVE0Y0RHVUNEWGJuSDIwMU5BS1ZOb2JyaVJwQUZCdXFlOVF2YkdnT2dOMEdPb0Q1MXcyVXlGUU42MkZ2QWx1S2hSNjJJZlFacU5Dcll5M1ZkWjNrTTNMSHJINUJPT0RPRUdtZWMwZl9nZFdKc3Z5bnZiUEVFRHRVa1l6LXhoTFB0eWozYUN4a2syenl5YWhyS21xMExmWFZJMkhPRkpqTS1KMEhMQk9QZk5DdXNJYV9OLU1IVldNZHBWbG54?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "results"
-    },
-    {
-      "title": "ONGC dividend announcement date: Cash reward in Q3 results FY 2026 - Board meeting schedule, dividend history - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQcllmamZLclF0ZEM5dkR6TUlKZDNWYUlkZzMtU1VFcUFHUkpmX29sUjItazgyNktHVV9RRFNncGtxamE2Z3pueVM3MktWRWphb2pGSnoyS1l6UU5hN2NDTEJBZ0VlNFlYUi1CVG1qTEx2NXdwcGp1R2ZlNERVSEJwdkVPVi1jRzRqd3ZLTTF6T1RuWEstclFVankzZEhCOFVuOVoyVnBmaTVUQ1RvNzVkWHNmeldwUWhRM1FJR2Q0X1dWanhQbFJGSGlSMjJESlRWSS1EVnM5V3Zwa2tvVEpDZkk3MkVsNks2YVR2ZnNn0gHzAUFVX3lxTE5sSjhYazR5anhPOWdubE9zQ2hIczB2M2VobG5uOEJSNlZVREpvQngwSGRKNmV1b1o5TEZWb0dOdlE4MzNuOVpZTlN0QjFDYW15NDJ3QnhpUmJ6ZWNBdDlRallyY0d0Uzl2V0ZPOXZrOV9DZGgyb0hXNldOLVNCdnFfS2pLamM3dlE0Sy14Ri1zUC1pVVVrdFdwX1JCMUlYRzhTZXVLOHVVWnYwb1otVXd0NEl5bDhiRXU0UXctYVIyR2g2aFJRa1ZwTnN6bk5RRGxVX2x4bWc1QjhkaUZpOVJpcURPQ1BlUTZhTjdGSW1wcGZOaw?oc=5",
+      "title": "Angel One Stock Split, Dividend: Board meeting on Jan 15 for major corporate actions – Expert Gaurang Shah gives trading strategy - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPc0FUSkxWclNiNlNEelpWNnVEX1pBajJoaFBCYkt6VGNoZjRDOUp0alVZa05tRFJ5eG5keU9KamgwRlRmYXNvZXgwYmFvZFFhZ1labl9KQlBIekUwZ2xmUzhDZGJEMHByWVhRXzFlc1BNWkFJOFB3TmtLeXM0MHE2RmMzVGREVzhCQ08yb19JUGJsS19nZlBsTzJKNXVMS0pZcXFfUnlKenExNm5TYmtMd3hHLXlHMDRocVhFdXhzTnRHQTc3MmdEODlwOHctbkNSaGtJaE4yX3FTTWx2aGprcDlZSER0NWxCcU5XUldwa1pFaWxOUF9YYnpUSUE4VXpPZFRxMnZ3NEXSAY4CQVVfeXFMTWVtbEgzeWxmY2FXME5fbUhVV3kxbm5JbFVWODg0RTc5V1o4dTE3TW9TYUloWUgyRUNhZjR5NlNQMWxjZmU3c0ZpTVRVUUswX19Xb1JtSDRPT2JfWEthQktIM01wRDUxQ04yeTNHRHhabGg3bGotSHFaa3dfQnhzRHBvNDYyYjBkNG94RGU2ZGprbnd1bkQ0LXpXTWdNUkR6NU9xU0ZNajJRaWJGUmZ5RVJzOXRqcThVYjJvTDM2THRiaERnRG5oaVhjXzRtQkZCdDVfN0VTd2N1czBFaXJLTFNlTVdfcWQ0OWlUTFdoa3dVenQ2Q0lrQk80emwyajFrRXh0SHJ4Zm9Ra0FGYXRR?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -701,15 +2295,36 @@
       "type": "dividend"
     },
     {
-      "title": "Cochin Shipyard dividend 2026 date: Cash reward by PSU in Q3 results; board meeting next week - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNNGxQNWUwRFpVT04wZ0ZNYlZEeVVubHJfTmpNQ0FKVU1zVkpfNkVkb3JUZERCbE9QSGdmamdmakVtLVBiNmZvU2JmNG53bW5FeXpXOEQtMVp2N1dBUVhIeGR2MV8wN1h1SThfN0JjVWRfN0RlRjhhOUhrRzNuUEh3MXlkUVptTFpsS3A0YUM1SFlScUlsWWRWZWRzazM3M0p6b2pkWUNCQmNyTkpIdnNVYVdOUkJTNGo5cWg1RUppLTBpWEI1QTNsYjIyZkxqZUVaNkVCdGFKeWM5aknSAeABQVVfeXFMUENuVkNENEg4dHAzdXBGaGRUb3ZrWUE2RF9xeE5GQjdDWVpCQnF6aldVT3RBZFBKZFJTRVBOUmZGeFdRRkRhdlc3bUZUZDVGWUhFRVdUWHF6eGZ0eDZxc2U1TUNFQ0N6VUVoVjRGWFV2dHphSGJNaGVoMDZvOFU2N3lFN0RaRlRzc0NLbi00dnZIMS1TcGlkMVJseFA3cXFfV0VxVk9zN3VSQlI1M0VpaUdaNmh0WE1jTnhNTEp0R0RiaklpSnozX1VtWE9lTVd3YXhEcDZRWVBoaS0xSHVmWUY?oc=5",
+      "title": "Central Bank of India Dividend 2026: Bank to announce 3rd interim dividend in Q3 results; board meeting on Jan 16 - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRnN0WnBLUXd6TGNYeGhreUN4OUpxdkt4emFsNzUtdGd0ZHNoemZ5YmJQQTBVWjV1RmJVaVAwRUVPcVh4MjA0TGxjRkc4MWVWU1BhSG1MOEs1b2pQOXRxLVZsSEFmWTgyTUp1dmE2TVUtYk9kN2JwbkExZFYwblpPSmN1ZGktdkUzNXNoMlc1dnA1RXdtbmloZEMzdDN6Y2R1Z0haWXpXU2Vid2RPai1LcmM1Uk4zdHVmLU9EU01OcTJPMHF3QThTM3dGSEx0RVlVUFkycGNLS0lkd28zWGtYcHVrQmIzOG1Iank3UTNwSVU4c3VPNEHSAfsBQVVfeXFMTnR4clRZUXlPYnc5UlE0ekd3b3RTNTFzQVNRZG8xcVRGV3QwWGtfVFM4YVlHZXE3VzUxeG5FQnBtVHZVekFERWxsbE5ocEhwcXJlcFExRTU3Vkg4VW5BR2RhTzZYREhjUkhnb0gyM1d5Nm5JWG5YYVM1bENhMmZoSDNJcGdtSExwSGY3bWF6bmN5aG5kand5WTFWSndvSUNBQkozV3NGUC1TeXFzdmwtQndIN2RSX0FtU01NQjVQM25NQWRLOEIyOEhqNkxSclhYc3I2Snk5V000T09LWmMtVkpLbVNoM2lXa3JRS2hTM3FMQUFEX3lsWWRiaVk?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "Goldiam International Limited Schedules Board Meeting for February 7, 2026 to Review Q3FY26 Results and Consider Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOc0lxallXT1NSNTZENzdfaHYxQ09lRXlHLXNxY1UyRnhJdDRiSjYwTTB4NkJhSXFLYkFmdGpSOVBVNEZqa3RmM0t1QndDMGpXRHl2eW83NnU4ZUp5VVkwX0h0RldySXhqc0E3ZEREMDFvTGk2VTdKWm4zMjNFRkxTdmZpUjRiaW5wRmJjU3dUUEpXTzIwazBucng3NlFJRVBkQzRkY2NHSFZRNldSeU5kLXJheGZTbFZjazVXSnhCSEI2TkZkZ0NweGk0WDlNUEgtdWhEdHpDSjh6VG4tbWN3UFdrTldkbkZkQjh3ZWpyN19fNlR2RXRzUDJWVzFyMnVFLWhzcWNMdldjcnU3UjFNcTVR?oc=5",
+      "title": "Hindustan Aeronautics Limited Schedules Board Meeting for February 12, 2026 to Review Q3FY26 Results and Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNMU5HU240bWdtRTJpanJLUkRNeG5KUHYxejdSbUpETlJ1MU5pS1YwVVRPeENmY0VBejJIT3lNMXNMYVFrU2lFZ3Z4T09RQkpTTWNZZmZXdkUxb3FEYnl4U0pvd3Q3RUlVc1c0VGRxeUhPM1hUWlJIbEh0V1F1M2JxSzMxWHlKZnlqMWR0UTRVbXZPTjFIQlJXaWxDSG80US1mOVp0RGMxTmx0VEt5QlVhQzMtMUdTSjRkb1pyeDg0T2x4anZXMlFENWwxSC1QRmJTNWJpOHFSaHRzTWJhWmhtd0xvOVpHWlJCMmhpT3owXzFIcURmai00dUVXNnVYMHptRFRQVmFfYw?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "ONGC dividend announcement date: Cash reward in Q3 results FY 2026 - Board meeting schedule, dividend history - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQcllmamZLclF0ZEM5dkR6TUlKZDNWYUlkZzMtU1VFcUFHUkpmX29sUjItazgyNktHVV9RRFNncGtxamE2Z3pueVM3MktWRWphb2pGSnoyS1l6UU5hN2NDTEJBZ0VlNFlYUi1CVG1qTEx2NXdwcGp1R2ZlNERVSEJwdkVPVi1jRzRqd3ZLTTF6T1RuWEstclFVankzZEhCOFVuOVoyVnBmaTVUQ1RvNzVkWHNmeldwUWhRM1FJR2Q0X1dWanhQbFJGSGlSMjJESlRWSS1EVnM5V3Zwa2tvVEpDZkk3MkVsNks2YVR2ZnNn0gHzAUFVX3lxTE5sSjhYazR5anhPOWdubE9zQ2hIczB2M2VobG5uOEJSNlZVREpvQngwSGRKNmV1b1o5TEZWb0dOdlE4MzNuOVpZTlN0QjFDYW15NDJ3QnhpUmJ6ZWNBdDlRallyY0d0Uzl2V0ZPOXZrOV9DZGgyb0hXNldOLVNCdnFfS2pLamM3dlE0Sy14Ri1zUC1pVVVrdFdwX1JCMUlYRzhTZXVLOHVVWnYwb1otVXd0NEl5bDhiRXU0UXctYVIyR2g2aFJRa1ZwTnN6bk5RRGxVX2x4bWc1QjhkaUZpOVJpcURPQ1BlUTZhTjdGSW1wcGZOaw?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "Torrent Pharmaceuticals Schedules Earnings Call for February 13, 2026 to Discuss Q3FY26 Results - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOdk5qRS1lNVU3RmcyS2dkM19qLXR3WTVQQlNoVkYyMTNwVnY0ZFpzU3NZTnlONC1lSHE1ZTBKaEJjeHFKN21vSnVGenNhR1JaWVE0Y0RHVUNEWGJuSDIwMU5BS1ZOb2JyaVJwQUZCdXFlOVF2YkdnT2dOMEdPb0Q1MXcyVXlGUU42MkZ2QWx1S2hSNjJJZlFacU5Dcll5M1ZkWjNrTTNMSHJINUJPT0RPRUdtZWMwZl9nZFdKc3Z5bnZiUEVFRHRVa1l6LXhoTFB0eWozYUN4a2syenl5YWhyS21xMExmWFZJMkhPRkpqTS1KMEhMQk9QZk5DdXNJYV9OLU1IVldNZHBWbG54?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "TCS Q3 Results 2026 date: 3rd dividend announcement in quarterly earnings – Check record date, board meeting schedule - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWllJWTQ5QTFuSWdDTGY1WWF1NGlkUlVhVEozUHU1R2FvZGEzbTluNnd5ZzVoT3JiNDF2NjVxSVR0RFZpVXlLNFVjaU5GRDRfWTlMcGNZWXVzQjVvN0NJb2FITTNldnVobXlGN3R6Z3gtUnJFQTFMc2FvMnhFbnFBeV9OdlgzVElXWGRqb3NHN1JTRHZkTF9Ucm9FcGlQQUt2NDdibDRGX1I5Y0dmYnlTSkdVQi1Fc1NxYk9ub1U0M0poNVEtYUlxMEVSOXhJd1R1VEp1cVBlUUFIWGZtcGhHS05LVTBkYlRNYTBSRTF2eTdIaGhMbDB2LdIB_gFBVV95cUxOT1ZneXhuZ0FsWlNqdmxydUkxNjZCMk9tSDJra0d0RTA5UGZZbHE3bERxTmJ6aVNodDhKbFhmYkdwa3RXcnhzYzVoT1ZicF9MSllHTndVVE1FOEhoZFZUTnFMdHNyT3Ayelo3U2tvZFp4bWp3cE56SG1lcGdpQnBBYkpZbjAxRTA4TnBBQlQ5cUxOTnVoSlRRWEhIb3FGck56c1RadmlQZnNabjNUU1RiY1lQenpkLUxTb3JEeFVpQTRhRkhpRWFTMDlrTHVyVTFwRnpVQXhTSWNvZjU3WkFRbDVFemR3MjlaeVIzVVRPRXdFSUhMc3M3SDU1RVliQQ?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -722,8 +2337,15 @@
       "type": "dividend"
     },
     {
-      "title": "TCS Q3 Results 2026 date: 3rd dividend announcement in quarterly earnings – Check record date, board meeting schedule - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWllJWTQ5QTFuSWdDTGY1WWF1NGlkUlVhVEozUHU1R2FvZGEzbTluNnd5ZzVoT3JiNDF2NjVxSVR0RFZpVXlLNFVjaU5GRDRfWTlMcGNZWXVzQjVvN0NJb2FITTNldnVobXlGN3R6Z3gtUnJFQTFMc2FvMnhFbnFBeV9OdlgzVElXWGRqb3NHN1JTRHZkTF9Ucm9FcGlQQUt2NDdibDRGX1I5Y0dmYnlTSkdVQi1Fc1NxYk9ub1U0M0poNVEtYUlxMEVSOXhJd1R1VEp1cVBlUUFIWGZtcGhHS05LVTBkYlRNYTBSRTF2eTdIaGhMbDB2LdIB_gFBVV95cUxOT1ZneXhuZ0FsWlNqdmxydUkxNjZCMk9tSDJra0d0RTA5UGZZbHE3bERxTmJ6aVNodDhKbFhmYkdwa3RXcnhzYzVoT1ZicF9MSllHTndVVE1FOEhoZFZUTnFMdHNyT3Ayelo3U2tvZFp4bWp3cE56SG1lcGdpQnBBYkpZbjAxRTA4TnBBQlQ5cUxOTnVoSlRRWEhIb3FGck56c1RadmlQZnNabjNUU1RiY1lQenpkLUxTb3JEeFVpQTRhRkhpRWFTMDlrTHVyVTFwRnpVQXhTSWNvZjU3WkFRbDVFemR3MjlaeVIzVVRPRXdFSUhMc3M3SDU1RVliQQ?oc=5",
+      "title": "Indian Oil Q2 Results FY 2026 date, time: IOC to announce quarterly earnings soon – Check board meeting schedule of oil PSU - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPeDdzVjR1TXlqa2pib2wzcllRbnRKTGNfSUhPVHcyY0RBWDNDV0hyQlZkdXRVbTJ2MHhuOXpFSlFLRmhjc2ltSmd5cGpCeHZ3MUlMQ1d4TEU4YmVic3NYQmNibFVKMTRsRC1ZZUh5XzJWNGZibHpHdElxLWZsWHVhRVdJSnAyN2pCaDV5M2JIT01BSzRlVm5fUFIzSHpaSEhyaWlzNlp2Ymc3dDE2OENBRS10YUlXS1I4UmFOck14LXQ3RzhQZ0xvbUZtVGJNOEFqN0JpLS1lbzRsMnVmRndZWkRjTEUwTDNhZkx2NlBHRnFjMzNiZW440gH8AUFVX3lxTE9MWl9xOUJvRUlaVXB2M1QteWFENnJwMUhjZzVGSEZzajQ0aUpPMGd5UnV2V2kzZUhrV2d4LUpxQmhDVjhHM2g5OHhHdW8zNThFSnNzcEZ6bHlpRGtNbG8yTDZpanRsUGlDSkdyTG9HalZxQ3M0ZVM2TGc4N3hGODZNUnR1NDNobGNZU3J1Y01iTFJlSjFTaUx3YWhKNl9sSlAwZEY5ZDlzWG9rMnhRaTFPbk9Qb2IydmgzcWE2eXJ1Y3doUFJmSk1MSk9MSWlGUFdha3lBUlBZMG5WdXB6c2lLREFNNE1seVhibkl6VzJTbzBlMmpfYVJqMWxnLQ?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Goldiam International Limited Schedules Board Meeting for February 7, 2026 to Review Q3FY26 Results and Consider Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOc0lxallXT1NSNTZENzdfaHYxQ09lRXlHLXNxY1UyRnhJdDRiSjYwTTB4NkJhSXFLYkFmdGpSOVBVNEZqa3RmM0t1QndDMGpXRHl2eW83NnU4ZUp5VVkwX0h0RldySXhqc0E3ZEREMDFvTGk2VTdKWm4zMjNFRkxTdmZpUjRiaW5wRmJjU3dUUEpXTzIwazBucng3NlFJRVBkQzRkY2NHSFZRNldSeU5kLXJheGZTbFZjazVXSnhCSEI2TkZkZ0NweGk0WDlNUEgtdWhEdHpDSjh6VG4tbWN3UFdrTldkbkZkQjh3ZWpyN19fNlR2RXRzUDJWVzFyMnVFLWhzcWNMdldjcnU3UjFNcTVR?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -736,22 +2358,8 @@
       "type": "dividend"
     },
     {
-      "title": "Indian Oil Q2 Results FY 2026 date, time: IOC to announce quarterly earnings soon – Check board meeting schedule of oil PSU - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPeDdzVjR1TXlqa2pib2wzcllRbnRKTGNfSUhPVHcyY0RBWDNDV0hyQlZkdXRVbTJ2MHhuOXpFSlFLRmhjc2ltSmd5cGpCeHZ3MUlMQ1d4TEU4YmVic3NYQmNibFVKMTRsRC1ZZUh5XzJWNGZibHpHdElxLWZsWHVhRVdJSnAyN2pCaDV5M2JIT01BSzRlVm5fUFIzSHpaSEhyaWlzNlp2Ymc3dDE2OENBRS10YUlXS1I4UmFOck14LXQ3RzhQZ0xvbUZtVGJNOEFqN0JpLS1lbzRsMnVmRndZWkRjTEUwTDNhZkx2NlBHRnFjMzNiZW440gH8AUFVX3lxTE9MWl9xOUJvRUlaVXB2M1QteWFENnJwMUhjZzVGSEZzajQ0aUpPMGd5UnV2V2kzZUhrV2d4LUpxQmhDVjhHM2g5OHhHdW8zNThFSnNzcEZ6bHlpRGtNbG8yTDZpanRsUGlDSkdyTG9HalZxQ3M0ZVM2TGc4N3hGODZNUnR1NDNobGNZU3J1Y01iTFJlSjFTaUx3YWhKNl9sSlAwZEY5ZDlzWG9rMnhRaTFPbk9Qb2IydmgzcWE2eXJ1Y3doUFJmSk1MSk9MSWlGUFdha3lBUlBZMG5WdXB6c2lLREFNNE1seVhibkl6VzJTbzBlMmpfYVJqMWxnLQ?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "results"
-    },
-    {
       "title": "HCL Tech Q3 Results FY 2026 date and time: 4th interim dividend announcement in quarterly earnings – Board meeting schedule - ET Now",
       "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTVJzZktXeEtXeVM2M052SWtrLXg4TlRJbVg1VXRDbzdOWHl5cUZRaDI2VC1OdXVhcDlNdXh5REtvWU0tZjJDQWxfbml2aDdZMzBCdGU0S3loTFB0S2VxakU5NHlyTkEwUkFzSmZNYldJamJMVDF4TkJpZ1o3UmswQ1Q4bklvLU5PTHV6cXgwMm1VeDlwWU0zaERweGdpV1VSVjZrQi05RjlyVUtHLUhWbHpISnpjU1VGSUNkZmpoWmRqQ0x1bEZIUjlkaVRpRnFUb29GcV9SYldDVkNVLVZ5a29uZjFVN1FuZnZKalB5UVJqNUhjUzlIeUZ0eFFzYWp2ekHSAYcCQVVfeXFMTkZVSldIOC1VUGlPRGU0aEEycW05c0FQNVhfTXpaNzRrLWt2UTMyR29MVmtsUnV4SmlYeDZFNG10RF9Ic0hHWjV1UEI3eURHZ2ItTVBXa21GU1hWUkFuVVI5Q1VLS1dBSGgydXdNRTVmRlZUWDMtNC12MnVUejVNbDdmeWpiQkJEbnVYbHZtRnpmMDJYb0ZHckJWMmYycUtaT0hDRVpOdGtWcVA3Rks0OFpLUGhJSDlHWFhobHJ6bXQ5dDJSTU9BXzNTV3A0MlFzYWY3eGVKZE5vX2dMLVpoOHlPRWlPdHhISjdnWlVBYjNPR18tOGVqUEhSSElYZlNsY1owcDlBazQ?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "BPCL Q2 Results 2026 date, time OUT: Dividend announcement by PSU in quarterly earnings – Check board meeting schedule - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb19ETnBfZWh5VWhqVDZ6eDBjUEhSNjdxRWk3TFh0c2pGTXVmbWFSbkl4M1ZEdWg4OTdUWlc2MkJnOEdBaFBPU0NELU9xY2x1dVo2aElQdFNQTFVwdjN6ZmQyMHFWYTlpcTVoSG5fVU5QeFhfNWFQaFo5eXZNNmxiOVdXc21yelBTLUR5NEJUOHFsaUwtVGVYcEZGWDBLQkthRmtRZElXcW1SdmJKcmtNbHhSY0R4NUs4SGhjRzRtR3Q4T2ZJVnZxdU1XZHRUQmVJNWFld3BybmFkcmZGb3I5clNQaFV0SmdrLXYyQk4taEVfcXpiUm01VThR0gH_AUFVX3lxTE5ubVd6aFZRYXk1eE0yMGF1NldaNEZDSjFrbXNCMEU3ZlZUZ2JhNlJaTmZtZVM4QTFNdTBpRTg4WEllbFd4WmpZSHBBTVFLdDJEcWZCdzljYldsQnlla1hXdnhiQkZlVkhha0QzQTYtaGdVc2lpQWNvOFlKSUJZRFRndi1aYW1UQ1otLUk3TWpJeVFiZjRYN1ZGZG83UHpJWTZRczdoSHY4WmxIbGNHZUJzcmN2VDB5YUlCdmZRWk53QjJxVkFYUnB6c2hHNHpMeWVmN0ZpSGFwRnEtb0xjc2Z5QU5SRnJwYnF5X0FxZGZROVR6ckRNVmpJYlhUbm0tNA?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -771,8 +2379,8 @@
       "type": "dividend"
     },
     {
-      "title": "ONGC dividend announcement in Q2 results FY 2026; Quarterly earnings release date and time - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd0ZzNWVWbkxndnZncjlRNUthY2ZhZ2RVSlJ2YVZiNnpwWFJldUVWeEk1U2FiQXlMTmVXb0xOMnU1di01SzJhcmctTFg4YnlOYzlzYWE4V19FYWN2WUt6b1dyR2Y0ZkphRHduWEFtRW1xdjV2ZFhNdmJzVjIzUXBFdUZJVVZtMUJYaEo0cURpUWcyQ0duakF6ZXgtTzlkVFROdjRMeTczS3FsQkN3QmRHbkFUcy12bEtlaFdMQXY1c2c4eVFyWGlQNmVWSy1CbmZPeEp6blJFTU_SAd4BQVVfeXFMTnJ0S2FvYVZFcUZ6QzZyUTF0VEhwWXh6M3g0Q1J2M0ZTdktDU3dzYjN4MURqZ0ptcko2QUtVYUg3ajJfV2NJMFVnanNNNzZvaGp1UmZITnotSjhyRDNzYkRncVAybzJKREdnYmQ4Y014RldodDJ0cllESUpsOHlOTkhwYU5wcGdyQUotcHU1RmQ5NlBZc2RFcS0xZEItbktNdC01cEtFYTJSTF9mY1FGTi1Nb05KWTlxdHhNUEF2cGFzWTZQNTZ3Ql8xb09QLUY3YldpekJrZVVsVTdhaHJ3?oc=5",
+      "title": "BPCL Q2 Results 2026 date, time OUT: Dividend announcement by PSU in quarterly earnings – Check board meeting schedule - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb19ETnBfZWh5VWhqVDZ6eDBjUEhSNjdxRWk3TFh0c2pGTXVmbWFSbkl4M1ZEdWg4OTdUWlc2MkJnOEdBaFBPU0NELU9xY2x1dVo2aElQdFNQTFVwdjN6ZmQyMHFWYTlpcTVoSG5fVU5QeFhfNWFQaFo5eXZNNmxiOVdXc21yelBTLUR5NEJUOHFsaUwtVGVYcEZGWDBLQkthRmtRZElXcW1SdmJKcmtNbHhSY0R4NUs4SGhjRzRtR3Q4T2ZJVnZxdU1XZHRUQmVJNWFld3BybmFkcmZGb3I5clNQaFV0SmdrLXYyQk4taEVfcXpiUm01VThR0gH_AUFVX3lxTE5ubVd6aFZRYXk1eE0yMGF1NldaNEZDSjFrbXNCMEU3ZlZUZ2JhNlJaTmZtZVM4QTFNdTBpRTg4WEllbFd4WmpZSHBBTVFLdDJEcWZCdzljYldsQnlla1hXdnhiQkZlVkhha0QzQTYtaGdVc2lpQWNvOFlKSUJZRFRndi1aYW1UQ1otLUk3TWpJeVFiZjRYN1ZGZG83UHpJWTZRczdoSHY4WmxIbGNHZUJzcmN2VDB5YUlCdmZRWk53QjJxVkFYUnB6c2hHNHpMeWVmN0ZpSGFwRnEtb0xjc2Z5QU5SRnJwYnF5X0FxZGZROVR6ckRNVmpJYlhUbm0tNA?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -792,6 +2400,13 @@
       "type": "results"
     },
     {
+      "title": "KSB Announces Rs 4.40 Dividend, Shares Jump 8%, Fixes May 8, 2026 Record Date - HDFC Sky",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53UFc2QVc4eUI0R1ZyQzFKTTBTMUo4NjdVbnppbmhMSnJTMkZkVG51UEVtU0IzcDRrUXY5QnI3d0FoNmJ0d2czcEVpemhZV19PNWZjN0x3UjhWaHJVQUlzcWpaWFlzdw?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
       "title": "Indian Oil Board declares second interim dividend, fixes record date; shares fall - Upstox",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQelpHUkFHTzJYbEEwcG04UGJRZ01QNENQRTlDSWo3b0wydGtneG8zQTJHazFZUVJTNzc3MVFUWHZzZU5fbHRHbHh1ZmlNUWx5QUpzNFVNWFBXM2lDOVhmNEtlTkxRVWtqWUtaWVhROElkWFlBUHRHV0RWYTNCZHVJYVhrSjh3ZW55UEk4dVplbGh3S1hITHZNQzNYTlY1WC1HSG9Vay1GbkZFcWxGb09CeW1HYTJ6VnJFc0hNa3VydGpKeFEzVjRld1dLS2hOUHIySmJuVA?oc=5",
       "source": "Exchange News",
@@ -806,20 +2421,6 @@
       "type": "dividend"
     },
     {
-      "title": "KSB Announces Rs 4.40 Dividend, Shares Jump 8%, Fixes May 8, 2026 Record Date - HDFC Sky",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53UFc2QVc4eUI0R1ZyQzFKTTBTMUo4NjdVbnppbmhMSnJTMkZkVG51UEVtU0IzcDRrUXY5QnI3d0FoNmJ0d2czcEVpemhZV19PNWZjN0x3UjhWaHJVQUlzcWpaWFlzdw?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Oil India Board Meeting on February 10, 2026 for Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQamFfX0JONXlTRW9pTk95QmJxV2Z4cDVaVkdYUzlRN0pfQjl6MTI3YXhYNV9qcUhtYUhhM2dFUWVSTC1la1Z6Q25LbDlrQzF2U2YxVDkyY2FTM25Nc1oxb1RmMGk0bTNwYnRWdDhnRVJpckNheWhaQmxrdXRLYlZjYnptdktHd2c1a2h6UVp5LWZ6QmZQRnhqeDM1ajg1OV8tNDJMV0pxNE5zRXZlS1N6SEp1dmo3enVsZWFVUFpFUmRRLW13QVA4RWFLSnNLMFJoQlZjaWJJeE16T1JjZEZsTzhHLWF0MW5MdDhR?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
       "title": "PTC India Limited Board Meeting Scheduled for February 14, 2026 to Consider Q3FY26 Financial Results - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNX1dFV0VFbHVkTDdKR2hWMEFuRTE4OV8tSHBVVmdJQ2JHOGNQTjRCWjN2MVlBbEVnaFFURmo1UV9rYlF5NmhKSHdDOTNXeHh1WFNiaDIzTGdlTTNYSmJFanN1Y3lzZ1RtUlM3VldnaENGbTFITHBKMjk0LWNONjRxVFc3YnFuNXJPWDQwWjk1V0FiZ1pZNG5hMEhHWDl2ak5SSXFvTzhUU21QdFFGNWNfdVNDbVV4VExKMlJSMl8zZWNtYXNFa1dIaFlEZklPT1dKazNpczBWOF9qRUhJT29FODRXWDh5X3NBQmYw?oc=5",
       "source": "Exchange News",
@@ -827,8 +2428,15 @@
       "type": "results"
     },
     {
-      "title": "Zensar Technologies Board Meeting on January 22, 2026 for Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmd5OGNnWnpmanRsbk5NeFlZUjRxcU43RGM5NE5rSFpJd3hCaVllUGtUR1lCTWdNTlZzODdtQjZKMnVJckxoYllZbDJvZkRUNmdLX0paby12MVg0YTg1OTNVNFlUdnFzT0gzZEMyT25SYTFNZnVKWmZPNzNsckQtV1BhYnJaaVMzd0FrdnpxanRYOFF3Z0t4S0VMSDRXRVlqc2pyb05hS0EtWW1hWVdJYVJiYV9aLTgyWkU5ZmpaQzV5QjNudnR2Q19WX2NmOHFBQUV6RFlucFM1UXpSU3gySGQ5U2pxY2Z0Qk9vN3NvRy05YlBDZXRrczNyX0hOQXZCZDFFTVc5bGxjdGotbFY4M2p3?oc=5",
+      "title": "Amara Raja Energy & Mobility Schedules Board Meeting for May 25, 2026 to Review Q4FY26 Results - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVGNOUmVFd2NnUWZ5OEI5MS1xdUJWNG5Tay00RXhWQ3BSZlhkRVZva1B2dmV5VWVBNlczVU02VVEzTGRnRGx0VTAxMjJNN0o1emV4cGY0ZENCbGIxcnc4cXRCNWwxN1hkNkNuT2ZkeHNXbmVTMm1zV0RuaklKZU01b2F0SEFpRElpRlpWWllqV0k4Tm5mRl9aUVh5cEVpSkdSSTJjLTZxdWJSX1htTFFlck1SenRod3lBTkJUZlFIWW5CcUgzVW45ME1PWUVqVUZoajZ2Q2VmRG1xYlVwOXg2eTh3?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Oil India Board Meeting on February 10, 2026 for Q3FY26 Results and Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQamFfX0JONXlTRW9pTk95QmJxV2Z4cDVaVkdYUzlRN0pfQjl6MTI3YXhYNV9qcUhtYUhhM2dFUWVSTC1la1Z6Q25LbDlrQzF2U2YxVDkyY2FTM25Nc1oxb1RmMGk0bTNwYnRWdDhnRVJpckNheWhaQmxrdXRLYlZjYnptdktHd2c1a2h6UVp5LWZ6QmZQRnhqeDM1ajg1OV8tNDJMV0pxNE5zRXZlS1N6SEp1dmo3enVsZWFVUFpFUmRRLW13QVA4RWFLSnNLMFJoQlZjaWJJeE16T1JjZEZsTzhHLWF0MW5MdDhR?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -841,22 +2449,15 @@
       "type": "dividend"
     },
     {
+      "title": "Zensar Technologies Board Meeting on January 22, 2026 for Q3FY26 Results and Interim Dividend - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmd5OGNnWnpmanRsbk5NeFlZUjRxcU43RGM5NE5rSFpJd3hCaVllUGtUR1lCTWdNTlZzODdtQjZKMnVJckxoYllZbDJvZkRUNmdLX0paby12MVg0YTg1OTNVNFlUdnFzT0gzZEMyT25SYTFNZnVKWmZPNzNsckQtV1BhYnJaaVMzd0FrdnpxanRYOFF3Z0t4S0VMSDRXRVlqc2pyb05hS0EtWW1hWVdJYVJiYV9aLTgyWkU5ZmpaQzV5QjNudnR2Q19WX2NmOHFBQUV6RFlucFM1UXpSU3gySGQ5U2pxY2Z0Qk9vN3NvRy05YlBDZXRrczNyX0hOQXZCZDFFTVc5bGxjdGotbFY4M2p3?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
       "title": "RITES Limited Board Meeting Scheduled for February 4, 2026 to Consider Q3FY26 Financial Results and Interim Dividend - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQXc1Ry0zSWNjcHl4VHp6UUdaaXlOcVJCaGJHUHVqWEVCYTB5NFVoS19YS1lfU19tdGZXbGpmckRYcjY5V0Y5T3VMdkZlbTQ2aktKekNfT0NNNHJrTzBUNDFzZUlSU05sc0FZZGRiRVI5dkRtVFRLSGEtSzQwLW9uV1F5ZGlrLVdKRGJxbDZRQldGSXlCb2MzTHR5ZHpOaFlhZ3NLTVBDWGplMlJELXBHb0hyUXA3dll2OGdGZjRqcmFlWW10M0FvTndyQ3R4cWJ5ZHpsQlFVaWJJR2JVZWpNTkNrNTkxOTFzNVRnOGl1YU0yZFFHQnFQaHNJR184WlJr?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Balmer Lawrie & Co. Ltd. Board Meeting scheduled for March 5, 2026 to consider interim dividend for FY2025-26 - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQ05idjRoWk9QZlpNUzZ0ci1xVWtTaTNJd2swSFAtSXVLZnVLMko5QnlrbWVRTTNlRmJfVVlVcUpEMEdHOENvR1IzT05ZOXV6Q2FjTmxubm84WFBRQm9yWF80NTFsWUREbmg5blVsWDZVZHlia2NTRE9FZ0tJYWI1Y3JINzBvdXdmY0VhdzVXZWszTjFrakhqeTRDWlBHUDhEZmpvNktJTU1qbFNoVzl5RFBDS0pmZVdaYVRmQ1J2bnF6b2RxNW9HSktBSEQxZzRuR0pTNnAwZ1NXOW1nUl9BVjNac3VtYnFKOWJxUUxUQ3JhbGlZdEc1dW01ZndaQQ?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "Sun TV Network Board Meeting Scheduled for February 6, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMlcwNGR6SmgzS2ZiX05jdTdrS0Job1pVaXNjNk1CVGdrYm16UVpCSW1xMXo0dW9XeGxGRy1uaTFPblE3c25yYkR5X0ZDZktoWDVib3h3RTB6OUYxcHZzS2hDalJWOEZXU1BKSmtvZHptbDdpS0ZGX19oeXkzMDlGaTFHYTktNnhaQ295MFBnVFdFMHNxbU9ZRm96dlpzakpPdWNMYTBYeWdBY3hZb3Z2VnNZcGdsTW9TVTd2blhtb1dlZTVNZWRhdWlnNkQ5d3p6cXpLTzdvZG9ZRmRaV243b2dOdlBrYlktVllNNklGR2o3VDBP?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -876,22 +2477,15 @@
       "type": "dividend"
     },
     {
-      "title": "ITC Q3 Results FY 2026 Preview: Board meeting for dividend, Q3 results on Thursday – FMCG giant’s quarterly earnings expectations - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRy1mTmpFT0ZLQjYtdTNtZGk2cWVOS0F5MXlzT0lDZTdpdkkzUnByZTB1aEc0ZUJ4XzJEbXY3V2RYekpoem9FZ0RlaVlKWG00S3ZuMmwyVmdudDN6X1J2S19DVHVaYjNaRTRuQjh0QWxVd0ZOeTNmQTVGR0ttR1NfcVRGQi1oeDdhOEZWN2J0cEdOSm96ZWNNVUd3b0Q2S1hId0dRR3IzOW84WklhcnhMUHpnMGtIQkhFSFhVNGJDRHZ6VDFzTVJMM2xSamxsVEthcUYtY1k2SGVBb052TW53c3poZjlxcTB2bmdkWTNpTkI3SDFldWlqMTREZkJpT0lmNnBUcDJCRdIBjAJBVV95cUxPYTA5UU5iazF2dHpvVVlWaU1DODZoaUtKM2pOUGVwY1B1MDg3RE1xandUeVZaUXVnbXhIM0hGYTRzTHBZSWNfWnJlV3dvRHpEVnRxNk41M0dZVDJGOUVlLVFzaVJ0RVpiU05zdjdLdnBuOUpZUE1wbF84WGRyWGVXOVFmYXVpbkNHSm9MSkN0ZmRBYWUxQkZMX3ZTUlRLMHFHOFhWamthR2FoZ2UyM29kcGZBbmNSaTczNVN3MVZXVVduU3gxZV9BVnB2bDFUeFZJUlBSS1VLN2xvWTRsTy02TGdwWFNuZ2hKajlOR0hxZzJjRFNOWGFONVpKX2p4SG9XOW11cHBnVHdkblV4?oc=5",
+      "title": "Cochin Shipyard dividend 2026 date: Cash reward by PSU in Q3 results; board meeting next week - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNNGxQNWUwRFpVT04wZ0ZNYlZEeVVubHJfTmpNQ0FKVU1zVkpfNkVkb3JUZERCbE9QSGdmamdmakVtLVBiNmZvU2JmNG53bW5FeXpXOEQtMVp2N1dBUVhIeGR2MV8wN1h1SThfN0JjVWRfN0RlRjhhOUhrRzNuUEh3MXlkUVptTFpsS3A0YUM1SFlScUlsWWRWZWRzazM3M0p6b2pkWUNCQmNyTkpIdnNVYVdOUkJTNGo5cWg1RUppLTBpWEI1QTNsYjIyZkxqZUVaNkVCdGFKeWM5aknSAeABQVVfeXFMUENuVkNENEg4dHAzdXBGaGRUb3ZrWUE2RF9xeE5GQjdDWVpCQnF6aldVT3RBZFBKZFJTRVBOUmZGeFdRRkRhdlc3bUZUZDVGWUhFRVdUWHF6eGZ0eDZxc2U1TUNFQ0N6VUVoVjRGWFV2dHphSGJNaGVoMDZvOFU2N3lFN0RaRlRzc0NLbi00dnZIMS1TcGlkMVJseFA3cXFfV0VxVk9zN3VSQlI1M0VpaUdaNmh0WE1jTnhNTEp0R0RiaklpSnozX1VtWE9lTVd3YXhEcDZRWVBoaS0xSHVmWUY?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "Sun TV Network Board Meeting Scheduled for March 6, 2026 to Consider Interim Dividend Declaration - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNZGhOTUdZNkF4UmVZZ2E3Ul9JQjZscWpTSHhobnBxWkJfYkhxTXI3Q0RtWmNPQ2w0Z3V5cEVtSVV3NjZnVDdONkJpOGpPakVrMnVwSkdZdlBJVk5VOE1iTkUyNl8walhMTFRVREpWUEZ0Rl9sQzNiTHdIYzFmcTEyYWp6NzVOel93NDlSUUhMVEQ5cmJiUktIemJ0cmQ4bG5DTnRVNmZUbmZjdXVfQkZpSHRwM3c1M09UWHR0LW5VUE1wMk9rOVpLQmgxT2VienhoQ1VyalBQZF9pUDZjNHcyY3VQRDFIVmIxRFV6MFdGRmhCeUE?oc=5",
-      "source": "Exchange News",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
-      "title": "KPI Green Energy Limited Board Meeting Scheduled for January 21, 2026 to Consider Q3FY26 Results and Interim Dividend - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxObjZpU1VpbF9LemJYNG8zWDBNc3E3X3dvbzhFb0RVS2lnSWFVSlhuRkJmN2xyOVB0TnhrbDlPNEtraWszdDFyaG8taHp3aEd6eEROUjdoZnBac1RQUV9ob1lMaGlTSVhyQzFzUFFvZ0xBWG02SXlRcXpnbnpMOGJlalN3QXdCblRBNlFzTnY2WTB0WjBneGlzTzFvQWFBckdIZ1RtaXIzZTZOMkRsVFRNbVozbmxQLURBSW9maGdRWE9lSTVGZHhOSjNHQnZPbXFTY2dtMnpHdG9aSlVxN3JCeHdBLUl0dWVmSENSZENpbGhYZWlxREFScElST05OX0MtRHc?oc=5",
+      "title": "GAIL dividend 2026 date: Announcement in quarterly results board meeting on Jan 31; record date fixed - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSm5vX3VsYlJ6YzhfazRJWUNudllldGpfb0d3RERLc1ZBS0h6eEVELVRDVm0zUGhyQUZFWHhKTDQ0alYxVDMwMG0ycjl0ZU9PQmV4TWxsNXpDWnNsMWdnbG4tNWFIWW01RzdDS1U2dWdLT0lOQVFrR1ZwNk5XeFFBcElWNEc4SHdlSWQxV1ZmSGZrUEc5Rm9KOUltTkc2cDQxTjlITVU5bktmWTVaMmtERzA1MHd2M1ZETXRydmR4SzdCZEhHRDZDQlZMOXBITndBMXl2MVZ6NnNTV19zOTgtTzUwcVY3R2tUS19n0gHwAUFVX3lxTE1vakdfUVdoT3EwT3lGXzljcjI5eUViR2ZLd3EtejR4ZS0yV21HWE5Id0M5OXg1RUV0VS1fRmVZbnBuV1hGNjU4dkU4SV9WbzdGRWppblo2dkZUazN1TjRsU0pwWjlqM1lnQVBXUDdyUzdOY0l5VkFJdVVWMGpPaG84VVBueGt2X3JvcEE1S2EzbmxsZ0JkMHYxc2FSM3ZrcEZoNS1GdkZNWi1vZDBGVk1iNm5SdmI1dGtZWUR3TXdodTJPSmRER1lsNmIwSjMtR2FOdWZOVnhzU2llQXlUTnd2RWFOcHJnVl8ybVVZMkRSTg?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -904,18 +2498,18 @@
       "type": "dividend"
     },
     {
-      "title": "M&M dividend 2026 in Q4 results: Board meeting soon to consider cash reward - Quarterly earnings announcement schedule - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNXdEdU5Hcko5ZFUyTEhqZHI5Yk9ibFRPWHJXZEQ3RWdxOUhrNEFJS0Zfd3lDUmZPQkdiVGRGOU5jaHJkVmdZWTJrUl94MDRoM3hWd29ESDdyZUpQdjhaT1JMeW1IRDRkbjF1SVJPbG0ycVBpeVJ4bGc5RnNYVkh4TmRGdDd2YnRXaHhPOTlWcVJFS3Nfa09XSXBLb1JXRlMtY3Z4bjdQemZuYlROSlozLUhVcUllOFE0WElDZFlYQUlhNWJ4d2xMWkVkN0VyX0RfMnlGTEYwRjVZdDFFUjNIckdhanZNUk45WFA3MFJIUkQ4UW43VWRYZFpR0gH_AUFVX3lxTFBxT1h1cmh6cGNoZUZ3dmRKeGs1b3RGay1fa2FVdHVSMVFmdzRmb3VtRzZZSnlwcjVnYVAtVWd1ZWtkZ3lOcFRfVkIwTy1MVTJ6MGd5QTJYNnRVckMwajc3RkpTQkdDMG1rN09pb0lIRS1pRU1mTVJoUnhBNldjTTl0OUZFR2loTUY2ZjlydWd0YTVfV2JueFBoc192Nnp0MGpXbkxwTGJ3TmFVSUpCRUdlWTRrQW4xZzhTTHhZNFZmVTZPelRVZFZVWHRiU242MkZSR3VaY182N0dCUXVfcGVqNnpkckFpM3ViU2ZSemU4R2x4M3NKZjFyZm5lY296Yw?oc=5",
+      "title": "ITC Q3 Results FY 2026 Preview: Board meeting for dividend, Q3 results on Thursday – FMCG giant’s quarterly earnings expectations - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRy1mTmpFT0ZLQjYtdTNtZGk2cWVOS0F5MXlzT0lDZTdpdkkzUnByZTB1aEc0ZUJ4XzJEbXY3V2RYekpoem9FZ0RlaVlKWG00S3ZuMmwyVmdudDN6X1J2S19DVHVaYjNaRTRuQjh0QWxVd0ZOeTNmQTVGR0ttR1NfcVRGQi1oeDdhOEZWN2J0cEdOSm96ZWNNVUd3b0Q2S1hId0dRR3IzOW84WklhcnhMUHpnMGtIQkhFSFhVNGJDRHZ6VDFzTVJMM2xSamxsVEthcUYtY1k2SGVBb052TW53c3poZjlxcTB2bmdkWTNpTkI3SDFldWlqMTREZkJpT0lmNnBUcDJCRdIBjAJBVV95cUxPYTA5UU5iazF2dHpvVVlWaU1DODZoaUtKM2pOUGVwY1B1MDg3RE1xandUeVZaUXVnbXhIM0hGYTRzTHBZSWNfWnJlV3dvRHpEVnRxNk41M0dZVDJGOUVlLVFzaVJ0RVpiU05zdjdLdnBuOUpZUE1wbF84WGRyWGVXOVFmYXVpbkNHSm9MSkN0ZmRBYWUxQkZMX3ZTUlRLMHFHOFhWamthR2FoZ2UyM29kcGZBbmNSaTczNVN3MVZXVVduU3gxZV9BVnB2bDFUeFZJUlBSS1VLN2xvWTRsTy02TGdwWFNuZ2hKajlOR0hxZzJjRFNOWGFONVpKX2p4SG9XOW11cHBnVHdkblV4?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "eMudhra Limited Schedules Board Meeting on February 2, 2026 for Q3FY26 Financial Results Review - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdHM4aFc5Nms3THFuaUl1Vi1faEM3SUw3SmRTbUF4YUhSNDMxQmY3N012S0M0T2ZGYXZmbEttNDdMQm9nellrdHp4WV9lVjYxQlpRbHlUU0VUbWlIclkzZmxrVmlJZHFiallQcm9oZzg0WDQzQW41ZEFuX1YzVVFhNHNvVmJjTnhoUkVRYWhLcjdGZktpNmJiaUdIZG03MWZWTkNmNGhadG5zWlY2a09ETVpFUkt6Ri1yLXRXdGRGQTRRbGZlZmNPQVBfMDVLT3lYMWJXbWpldFpEZV9xQ2J5OFhob24?oc=5",
+      "title": "M&M dividend 2026 in Q4 results: Board meeting soon to consider cash reward - Quarterly earnings announcement schedule - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNXdEdU5Hcko5ZFUyTEhqZHI5Yk9ibFRPWHJXZEQ3RWdxOUhrNEFJS0Zfd3lDUmZPQkdiVGRGOU5jaHJkVmdZWTJrUl94MDRoM3hWd29ESDdyZUpQdjhaT1JMeW1IRDRkbjF1SVJPbG0ycVBpeVJ4bGc5RnNYVkh4TmRGdDd2YnRXaHhPOTlWcVJFS3Nfa09XSXBLb1JXRlMtY3Z4bjdQemZuYlROSlozLUhVcUllOFE0WElDZFlYQUlhNWJ4d2xMWkVkN0VyX0RfMnlGTEYwRjVZdDFFUjNIckdhanZNUk45WFA3MFJIUkQ4UW43VWRYZFpR0gH_AUFVX3lxTFBxT1h1cmh6cGNoZUZ3dmRKeGs1b3RGay1fa2FVdHVSMVFmdzRmb3VtRzZZSnlwcjVnYVAtVWd1ZWtkZ3lOcFRfVkIwTy1MVTJ6MGd5QTJYNnRVckMwajc3RkpTQkdDMG1rN09pb0lIRS1pRU1mTVJoUnhBNldjTTl0OUZFR2loTUY2ZjlydWd0YTVfV2JueFBoc192Nnp0MGpXbkxwTGJ3TmFVSUpCRUdlWTRrQW4xZzhTTHhZNFZmVTZPelRVZFZVWHRiU242MkZSR3VaY182N0dCUXVfcGVqNnpkckFpM3ViU2ZSemU4R2x4M3NKZjFyZm5lY296Yw?oc=5",
       "source": "Exchange News",
       "ts": 0,
-      "type": "results"
+      "type": "dividend"
     },
     {
       "title": "CRISIL Limited Board Meeting Scheduled for February 13, 2026 to Consider Q4FY25 Audited Financial Results and Final Dividend Proposal - scanx.trade",
@@ -925,8 +2519,50 @@
       "type": "dividend"
     },
     {
+      "title": "Maharatna PSU BPCL sets board meeting date to declare Q3 results 2026, second interim dividend in FY26 - Mint",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQVWFzT1VaMXZ5MlRFNzBTSXJkTi1wUVYyS0JSM2d6SjFRVFhKYTgyY3Awbmhzb0lvWU9YUklScEhDMmtEWFlMWW9WS1YwTVZIR1VfbzBuVnNBVHhUbEdZUnBaVjN2VXAtNHdFTDc5ZG5Kc0xuTUtEWlRBbWE0WEZZTGs3SExXcGEzbVJhaGt0WElFZEV3M01YclRYaXV1d09MYndxLVZMYXk0b002S2RpSDNZUDNIdEFMQldCanY1bFJmNGJuWHdOOUY0Yy1lWjFXM2VJM2JaQzhoMzAtY2xMNkhOTElRaGZ0a1JXem02ZjEtY01MOG5ETUJwR0FYa2_SAYQCQVVfeXFMTzFFNHgzNVp2WUhLR1dIbEo2M0FKUEpRdGQydG9Yd0NqcHhrc0JtYjNLbFFRVWZUamM3WGJPbkhuUW05X0t3cFB3RmtSaXA0cGd5N0dHYTB4RWE2R196ZlRkWllhU2JWS1BmbWRDTjZJdEdTTGl1YzdFRGc5TE5MRW0wTmdQeTBQY05nNGhOblV3WWc3UTEzU1lFSlNYQTdOQjNrNDlLYldqUWRpNlpBcnNISk9KbmxRajB2SVVnTW5JckNSek45OVc4ZlVMVTNsZUtCR1ZlVXZ5WVFmV3lRZmt1Tmx6dEJKc09wVTRqZG1WdHJZMGxmb0w3c0djdW10Ylo1Sjg?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "Transport Corporation of India Releases Q3FY26 Conference Call Transcript - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNU5McDM2WXk3Mzgzc2w4WjhfZVpxMi01UFBMT1FRREdQVUJseHF3ZnFOSkQ5VlFzR0JsMVNDMTRzanI1YVhUcFJXZG9GU24yUnRuZDFyQTlGa0hjMlFic1lqOHFLTldIZ0UwbVUyRzR1ZlVPU3NuRG5fb3RDa29nRHVZMnItRDRCQU5ZbjNUT1NWOG1XdE82aTJVOFNZNEJ6SVRBSFpCNkpRR29xdmIxZGlMRnNRTUNHaWZEdVhkN1owRWd6SHMyal9Daw?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "filing"
+    },
+    {
       "title": "ONGC dividend announcement date: Cash reward in Q3 results FY 2026 - Board meeting schedule, dividend history - MSN",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQWE1SWhPQVNCZ1p1LV8xYy1JdFY0Q18tdkdMWnU2UFZzRTYxU05YdmU2a0tUZUZ2eXVBYXh2STIyQWxHY3hWMFdzRkhsZXFBWUN6TGZkYnhCQWZIaXJvUDBTTDhkX3lQMGkyS1FPUVE3TEcxR1ZaM0NDZ2lqV1FPblVibDBPQ2lESGJ5TzlXYUZMdzhiSk44cWJuOURIQkZJNmxDbUU2aWJpb2d5RnRVNldyY0ZJbHE0OXZSVV9EMmdJVWpJbF9CeVlrM2VIQkQ1SHhzdFQzUkdDcF9EZGlqZnBMVzBiQ3NqMzRKZkdn?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "Dividend stock: Cash reward by PSU stock under Rs 100 in Q3 results; gave Rs 1.91 in 2025 – Check company’s name - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxON3AtVHB0Q1BSYVdoeEp0QWJXeTdhdDVjaWNaUm83VDZvdEtveVhaNG5Tak5yVzdrMHU1cEcyWElJbWZQYXBxdnBSZjdaY3N2OHI5NHVEM0NPX2tuTUhHRnJnbGFXSUt2NFI2MEU1YlktcWQtd3NLbUd0eUZPd0ZFWnM4Z0dsMi0tVkVnU1FzbkZMNFRHdWNkUVY2TkVHUmgtX1Bra1daNHhOZ1E2Y25oX2ItZ2ZBcE9GN2tLOUVUTkNCQVRNVVdKek5ELWNtcm1NTGRQY1o2RU9DQkg3UkcweGpkYUp0V2FLREoybnFPTUvSAfYBQVVfeXFMT2NRNzRIRWduTHYwV09UMXVYMDIwd1JVeHdaSU9QYnNoV0VBTURFUWJ0MkZhNkgzS1BhTmFjQlpiOHBSdEpQVmRTRDczLXN6WE8wZUlxWXNkay0xdTB6ZU1ybFhqaTlWZjN3aWI2ckIxVkZPczZ1eElXcDdDMUNDaEF5Qm91a21hTGN6S3Zqd00xbGh5N0M0WjB2SXVOajNxYW52U3VrVEZfZ3Fpb0NWNkpmUEZVbGY4Z2xvRUNLLVFkdlhSQ0JoTjJVa1pSaDJ5LWQxMmdONlJNOWdhTGhCRW9ZMFFJeDVyWFhETjdyQlNFWEhyT1Nn?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "IOC Q3 results 2026 date and time: Indian Oil’s quarterly earnings announcement schedule fixed – Board meeting details - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYnkwUVZBbFZibTEyZEY5bnJFSWRZcEVVSTFFY3hTbmc1SzNFcHhTT3dMenozTE5nRXB6N2pZd2Y1dFd4aFI4N1FoeFE3MzNCRWVQVmFaSzl3cTlWbzBZOGlhdDVXeE9aYVV0U20xSkdBTTFrYkJvWG5iLVFJYUFtQjBVMG5OeExCbWRWVlFFOTZ0YjJYOTJoN2RSZWpGazAwNHdPWm5RWWF5U1JxVmRyZUpTRDNTcDllR0FITXlIb0V5ZFpjUDRhZGtQLWFOQmpraEtfOEFya1cyUkFRbXI0Wk9GY0JpemdiZHVLcEgxejVuVUp5X1d6a2NR0gH_AUFVX3lxTE9KZnVZR1l6aS1yckZoZDVIVFVUTllleWdMYzdOY0FyaTVQM2NWZ1JhLTlydGVrR3dxM2kxTmFTRXNOWkNUUjhVVF9fTzMtcDNfVmJUbVZlT2xpT3RveU5qOHRuRURweFFlWXM1eVJEMngzTElLQ2NLOWdQa2d4aWpDVVhGVVZpTF9SU1N2MXdKLXZrNG5YNjdyejM1WEFHOTRGbVVmTlkzbHFES0FNdXI0czg2Y0g0aTF0ZHI4WTF5MVh0a0JtejA3UHVaRE1POURjYURDZkVwLVZ5bDN4MlNLN2NURHZPUXNfTVp1WGNXUGlFaVlmQmsyM0NNVUswSQ?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "results"
+    },
+    {
+      "title": "Indian Oil dividend 2025 payment date: Investors to get Rs 5 per share by Jan 11 - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPaWwyaS1TeGpJTzFiY1RPYW1XOFhiRkJhR0dMbGhPRG03WU5ZMWh5a0Y1QTNOSkNUU1lVYXdiX3dua2w2WFV1WkQwTExhZmM4bVdxN2xIZk9WbFlHMFBVTk01amZUbHZkVjNQeFE2SjB4WWdFdE1RUXQwb1d5ZVpYQzAxQ0E2dk1uVU9TS3F3Mm5BeGpac2RLaS1Vd2I4anY0eHZURTF5Mlg0b3c2ME9FTm5CSjBrVkNVZUtobkZJb3FuSHMxcHFsM05PMNIB0AFBVV95cUxPNG05ZjNYSmpobUhvMHhUOWIzaWhtcVlJWWtiTGw0V1lfUVhQTVYwT0lSQzE5dXdxamp4U1FtMl9sSGdaUDF6Yi10UVc0ekV0bGJITTlFTzVkSGcxclVxRXZSODZvV0psSzFvSU1xQWE4TVBxbHV2a196YzdJWER4VjgtSDA2bUI2SVhibXljWjJua282dUp0TmpadjdjN1AtVUVsem53WWNlSlp4Q2t6SWNBMGZVaDlsNEVLRElWbTVZTm0yWnVNa2VGTEU0Ulc1?oc=5",
+      "source": "Exchange News",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "HDFC Bank to Review Bonus Issue and Special Dividend July 19 - HDFC Sky",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMjE5cmprUm9XcEdPYjBISlNKd3FGQXB1VUt2MEg3bkNHejhNMWgyb2RCY0hJRmwyRTd4Z0RZUzZVakNzbzU0bnZrd1Zob251THc5TmtFeVVhVzRyS3N3LUNna3kzQXdVWmUtdkV2UHpxaWtSeUJ6eEtfZWtXT3cweHpOUzlRS1doWTZQSFJLaGdjZ1E0UVJvTThSa2szQ2NkbWZXOEhRdHE?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -1072,13 +2708,6 @@
       "type": "results"
     },
     {
-      "title": "Q3 results 2026 calendar for Monday: HCL Tech, TCS among 17 companies to announce quarterly earnings report on Jan 12 - Full list - MSN",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQU3hJSmdmdDlpSV9OX1Z1aHhEZi1kaHRac2ljYUliU3ZVb20tZHBIeUo3czh0ZGNwQzVyclhzMzZjQ0JVYThhdjExUmRBdTlSaElrVkRQRTR0RFpmbEVsUXE5azkzRzBhZGtNQ3dWTTJORjd1Q2twb0NpRzRRbUpLRF9nLWZ3OEh5T1pISzF2djVMRGZxOHJ2bG9SeXlIWk01bDJRYzZCWlBIa1lmczNqSk04UEVUZ3ZETmYtVGdEbGVQY25RbnlmSkZ1ZjZoUnJUMVJtOVpBSWE3SjJTS3NDbGh3aHpDc0drU3Jjd1I2dHRKdTRuaXg5cXdrMkNOWG90QWNHZmVhWWM?oc=5",
-      "source": "BSE/NSE Results",
-      "ts": 0,
-      "type": "results"
-    },
-    {
       "title": "Happiest Minds Technologies Gears Up for Q1 FY26 Financial Results - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa2xaT1Y5a3d3Ty1oY1ByQzB6Q3FtN2dLaUhzb0FRaWVFLW80YWszNEJPYjQxb1V2bGRId1FzY0NqdkNoLUlfdEFBUXltTVZMYUlCcE5HNUpwLUJ2N09NYVV2QlRCUU1xNFBxOUhhaW92TUZpano1ZEpGa3JEYVhpQUpTbFVKNGpZSTE3RUR4S2xkRXpfTXZNeHZxYlZmUWZaM1ExNWx2N2VrMkZyS1JoYnlUVnY2cnJVeVdnNWg1NA?oc=5",
       "source": "BSE/NSE Results",
@@ -1177,6 +2806,13 @@
       "type": "results"
     },
     {
+      "title": "IOC Q1 Results 2025 date, time: Oil PSU to declare quarterly earnings this week – Check schedule details - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVk05VFRodUF2ejFMcXE1UUdtV0Y1V3pQcHgxNXZCSkFZc2piZ2RSb1hKWG90WHEtNU8xZ09ZM2oyTkFmQXNCcU9jQk5oaThVNmFabTFKeVhlbFdQU21vOU9hblFYSEdvRWFnOXEzbERLUHVaTk9WampPVm85bThnTGNrRVNWRGI4SGZlWFlSb3hWNTVLLW5PZC1ZQ2VEdXZQUUp5Mld0R0swdnFFSzZscG4wTlk3NEN2bEcxdjI1cXB2OEhZU0Y0LUwwSmo4TGNROGdxejBHM1FjLXptazctNGFBN19VdTDSAewBQVVfeXFMUHdwa0NDR2dnU056NU1LdWZIZVBCQ1ZFUmRtZzgxeG5qMDFmcHpUWUgxekpYSG1YRGdDemJjclNXSG9MaWo2WHJaWWVtVnd3N1V4akhYeTVmWWpmcXNyRDZsWWl3T0VhTkVZU3RxXy12cmJxbl9sVGdFZWRUVFV6RklGUHJDZHF4ZElhMmNKa21aYmtWVGNteEVfWHphRUJOMmhvRWxFYWFpTGtOdDBtMWRVOW1EejBPSUM5QUFwNHJVUDFpSjdvZXBXazVuYzBzVVprZFJsaEk4UEFaYVlvWC1GUkcxSzI0ekRQZmM?oc=5",
+      "source": "BSE/NSE Results",
+      "ts": 0,
+      "type": "results"
+    },
+    {
       "title": "Oil India Q1 Results FY 2026: Profit flat, revenue decline – Quarterly earnings details of PSU - ET Now",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdVd5REdmR21na2JnM0F5VUU5WmNOOEtqVVFYaUxyLUtiUmREWHI5Z0p6a1NQMjhQM3FQRGtacHRyTXhISnctQzcwSUctWjVvdzFRNnd1TDVNQXRVY0NSRngzX213VGI5ZDhfNktDVUJNc0xERDU1S1VjM2g4bE1rVl95N2lubVRTdHcwOXNGT1V2NjMyU3V6LTdrN3pIOHU4RGk5T2I5SHZyZ1k0YmVhLUlmSW1mcnMxbjJuN1FjdjhtZkFBaHQwdXZ5ZW8wSVlJN1JIOHpQZ3Bnd9IB3wFBVV95cUxNOGoxTi1qd191UUlZSHhYblhvenpuX1hRRzl4cnh6MzcxeXhZYk1qaHhEQ3lYXzB0eTJoNXZCeVNEZkxXaTVmaENwYUpOWVdwTzh1UzZZbnI0WDlFQkNNcDFVRHAzSDQ4aHJ3ck53U0MzdVc4NnM2OThHM3JOb1lqRDFwZk5kaFZ4TnlEVXVRQktFcmZlSlpVSEJtczR6X0xjc0ZnYkNlZ2F4aHlCOFk4NDBQRXRmUGFLLTJUS0ZWcjBvZzBzZTBXdnVRNWdrWXpLOHFVWnliOEZSZlQ0TndN?oc=5",
       "source": "BSE/NSE Results",
@@ -1240,13 +2876,6 @@
       "type": "dividend"
     },
     {
-      "title": "Upcoming Dividend Stocks 2026: List of Ex Record Date, Record Date, and Dividend Amount - ClearTax",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLTGRqaDNIYmVZS0JYdC04aG1ZM2RIbURYNVh5N2p1R3hBeFVFSzFSYldIZXJwdVNEVno3VHR5UVNEdktOek1GSGR5dEF2YU9MaGNVdlVFMUp0WHl5ckZVRg?oc=5",
-      "source": "Corp Actions",
-      "ts": 0,
-      "type": "dividend"
-    },
-    {
       "title": "Over 100 companies to approach ex-dates for dividends, bonus, stock splits next week. Check the list - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQanhNTlJiM1FvQ05aR3dPZEwxZUx4dWxzNW4tR3VoQTBGa3lfZ19Dc0RETGUtUmJ0bWdWNTI2OHVFSWdiNDl4SFhWN3VuakJuMndPM29lUUU5dUxNUHpoUU9CbUw5NmZMVEFIWEIxSlNzVXdKMVQ5djNpODRQWDJQZDdEMXhXVTRTbkdWNHdIbU1ZU0NUeXZaSmlVdmJLS01ScGViaWNDR0VsNFpPclJoTEFKMGxoNmNQUGd2a2xCTmlsZDhJSGVBTWR6QmJpNVRIUGpwXzcyc2otVjZtY3lVaU1HTWZBRGhtN3Badk5KLWFfSWZsMVFlaXd2OFNseURUY1lReGRsdEtSTEtaVmVNNVR2WQ?oc=5",
       "source": "Corp Actions",
@@ -1296,15 +2925,22 @@
       "type": "dividend"
     },
     {
-      "title": "IRCTC, CONCOR among 27 stocks with dividend, bonus, and split record dates next week. Do you own any? - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPRDhlel9ROWl6cS1HaDdacjRqZTl2NWx1VE5MZkwydG81T3ZBYlR5TFFRRENMWEMySkRvSk9uZDV1Y0ZLem9zcUZWdGZpcHBza096Slpfdmx4XzlZSXAzMXBMRV8tRHJLMzdBSG1ITTA0b2dKb1dOOVU5Mm9nV2RzVi00a25LUzdrYkR4ZUJTQXZPNU9BcUd6cmtNelFadFBmMjlHTzB1aVBjTnVfTWtqckRaNF83RWg4T3NIY0twcmtMVmlnNWFRd0gzMTFYdkd4XzY3NE45SFlqYVhEdk5QS1dGb1Z5X2ZiVmR0TC1xN0RIR0FaSjFLdHRCal9rUGfSAYQCQVVfeXFMTWQ4b2k4N2ZNT0JGWWxENXBCQ3EyMjNQYktrMk50N0docHlUY1JJMldlUHRtZTZ5NEcxTXVDZ2tvZkxBdDlZZjB0NGd5R2Y1NE5NcHlsd1JuV2NJeGl4UG9iRG4tMmpKSjBDYUMyYkkzTWtEcjFlRkJTQlhXRllwRmpYV0syVEdOMFBfQVY2NzkxclJyeEJUMFNHbGtHeTZscElPSnUxTnQtUGgwNHc2ek1GYk9nZlpKdUdvQ0VFdTJDYkFLaW1lS1pXeElHcncxdFE3RWtNVm5iM0QzNWh6TlVJYkROeWEzbHlsWXo2anpqNHotdzZzUmR2SkVRTEpXSGhxQVU?oc=5",
+      "title": "Upcoming dividends, stock splits, bonuses this week: Canara Robeco AMC, Nectar Lifesciences, Nuvama Wealth among others in focus - Upstox",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPQnpzRThCb1VPeTJTajVVeW9WTnROdklybGdBVWk2REh2LXNNd204WWo2dXgwQkdLVDhOMXh4c00xR0J3MzFFY0pMamVkSnVCVHh1S05wbkZ5S0VZVFFSX2cwRk1yZVpMM0tSbE83dmFQV1FUaDdEcTJmMkkxQzVzbF9fVlZmOTJVUkFoWFAybmgwQW1vazZjMjdlUmJHOXRPMHEyRWlVZlVWRDM0SEYzMHNtUVdZVnB2RnVYcGNvYlNjY3NnU1haM0dmb2pNaHZMVXlUODBNcmthYXlUUTBxdE8zMTh3Y0Njd0ZqUi1XcURjMVdMVWZYYkVGamcwbDhyRWNya0tZVDRrSlp6dktN?oc=5",
       "source": "Corp Actions",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "​BSE share price target: 198% jump in 1 year; BUY or book profit in 2025​? - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaVZTck91Z1R5NEJta2dwcmJGSlVEV2h4QUd1ZTdqdVhjSC1mMnBVNndydVg1YmhHcFFtWXVBTGVYamRIanVFVE4xbGJoM3hndV9DSXVfaEgzbnVaWm1CN0VpSVVMQy1MazgyRTE3T1l4bWNOeWtYZkpOOGZDTlR6YVB6TnFKWlhPTXVXRWYxVml4NDItZzd1UHllbHR5RXFOUHdheDM3anJuS2lmdWcxNmkwVzhBNWhZeWpacjlYU0Q1VHZP0gHKAUFVX3lxTE1XQy1WSm1QN2MzYmhXU2RldXlzQmQteGlZd3dGRTRHZHRmSjZ3ZVpjdkRtM3U4U1JFbkNramRBWG9pNnNUV1EyYzUtMzNIS084a3hPbUVnRHM2X0N6Ukw5YUhnaUMwdE1tTll4ZGxVTXVJQVk0eFhCVklZdG9UQUZQYXNYUGgwZVNyZXRMaWdEOHBXcmFqSVoxSVBUUVAzNkFkekYzN28ycnA5WWY1VnJkQ0lPZmFzMklpVG84NkFnRlI1VW1sdEIxVFE?oc=5",
+      "title": "Ex-date alert! IOC, 4 others to remain in focus today; check full list - Business Standard",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMG9LS1BQZmg0aEFCYWZmZFpPUHFoSjlzRUlaSGhrQi1OZ3RfYW1vUnlfTERMUW9SQ3R3YXBkdVM3b0RGUnlzYUpFRl9hclF3X2hfTVg0bTNEVWFabk83NlVwbWVJLWhjbVppMlMwVWhLQU9QVjNYSVJYeUhGNl9Xenc2cFlBTnAwZ2U2cHp4UVpuTG9WNmh3N1lNemVyRlF6UnVucTdUang3VTF0SENxRXVMWUZWeTl6TEY4NEdyUDR1TlNsOWZfcGE0ZE1Wd1HSAdQBQVVfeXFMTzdxMmxHX1pvS2N4NjZxdVU5Q3BiNDdDWlZkeFg1UGo5Q1ZtVlJaQXFya0hjZU5XRDJyZkotRmVZdVVZZjh5N3FJQ0ktRFRGWlJ3cXdQc0VGb2dmREtYYzBkRlFYZFd2bUEzZnZ2SFloOGZqclJha0ROWUhwNllxcUI4WVd0TU8yUm9FdHFlSWM3WTl0NGFWTmd5YjJ4S0VhV05HNEo3NjFrMUlrMWVlaFJJNnpqZVhFN2xnV0tQSlZod1VGVkd5R3JoeGFRTVpzdFVhX1Q?oc=5",
+      "source": "Corp Actions",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "IRCTC, CONCOR among 27 stocks with dividend, bonus, and split record dates next week. Do you own any? - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPRDhlel9ROWl6cS1HaDdacjRqZTl2NWx1VE5MZkwydG81T3ZBYlR5TFFRRENMWEMySkRvSk9uZDV1Y0ZLem9zcUZWdGZpcHBza096Slpfdmx4XzlZSXAzMXBMRV8tRHJLMzdBSG1ITTA0b2dKb1dOOVU5Mm9nV2RzVi00a25LUzdrYkR4ZUJTQXZPNU9BcUd6cmtNelFadFBmMjlHTzB1aVBjTnVfTWtqckRaNF83RWg4T3NIY0twcmtMVmlnNWFRd0gzMTFYdkd4XzY3NE45SFlqYVhEdk5QS1dGb1Z5X2ZiVmR0TC1xN0RIR0FaSjFLdHRCal9rUGfSAYQCQVVfeXFMTWQ4b2k4N2ZNT0JGWWxENXBCQ3EyMjNQYktrMk50N0docHlUY1JJMldlUHRtZTZ5NEcxTXVDZ2tvZkxBdDlZZjB0NGd5R2Y1NE5NcHlsd1JuV2NJeGl4UG9iRG4tMmpKSjBDYUMyYkkzTWtEcjFlRkJTQlhXRllwRmpYV0syVEdOMFBfQVY2NzkxclJyeEJUMFNHbGtHeTZscElPSnUxTnQtUGgwNHc2ek1GYk9nZlpKdUdvQ0VFdTJDYkFLaW1lS1pXeElHcncxdFE3RWtNVm5iM0QzNWh6TlVJYkROeWEzbHlsWXo2anpqNHotdzZzUmR2SkVRTEpXSGhxQVU?oc=5",
       "source": "Corp Actions",
       "ts": 0,
       "type": "dividend"
@@ -1340,6 +2976,13 @@
     {
       "title": "Dividend, Bonus: Vedanta, Mazagon Dock, 4 others to trade ex-date next week - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxON2ZaeDBfcDJ0RzhBcURtbGU5TWU0ZlM0ZXdjSk9CV3BnUzRpQzRDS1BrTDZQYVBPT2RBaHJEMjNacVVrQk1QOFdHZ0t1eTQ1N3hfbF9rQXUtU2cweWdjRVN0Q3pxRi14NkY5c1B4Vmo0S2hEaXQxTk9MMkVIajdFYlNwNjZCRnR1VkpVYzVFQm5Kd21zUVNRakRqVXh6X0QyMHJSc3R0c0VNWERmc0phZF9VUDd4cFp2N1hCU1RPVGJ6T3FqRF9nQkRtR28weUNxWHpZWNIB2gFBVV95cUxNMWlGM19vQV9RNlNwalBBSDUtMTJfZjVLYXNBOFNHMjdYd1dDSlpWcDZsRHJ3Z0g2RzNQUmgyUF9YV1VaQThxVFFvQUpLS19sMkx6VmRDY2Q1SGs1TTNaaEtsdVJhYnZnLTRXTFQ0eU9vajE4aW16YlN0Vmt1NlFNLWY0YnhMWU9KeGVkTUNRT0ZoLVppRjJ5alZGcTZ5RXNnMnV5U0VRUWNaaFNpcGZCWXBIV3N2WlY1MEhIWlEzUEhxdi1TSUtJR190RXV2M3pHZk9uUXp6OGVNZw?oc=5",
+      "source": "Corp Actions",
+      "ts": 0,
+      "type": "dividend"
+    },
+    {
+      "title": "Stock market investors, take note of these 6 key changes that come into effect from April 1 - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNWmg1NXhzRnNpeGpIVGZuRkllVXl5aTJvdXNGS0lxQTJBSkstU25oNS1YMXdnaERTOXhSOGhNRXdwc3BqWDNoYktBOXdWUjJ4RzhQMVJWdzByQ1phTWdYNjczVUNhaU5HLW1PeHNEaEZGS05vSDJtYzhIcFF6Nm9mVVRNNy1TWVhlQkZoRDZGY05yNEtDX2U5Q0VOTXBFOExsNHBmWWZzRkRDaFQ2RFVGTkdWNnVUcUF3VjZ0V3U1NF9Ya2RFWjE2dTlxREs5ODVRVjFja0dmVXhkY19HYlczdnFOeEVGTVFiYVpHM2tjRGZ6Y0RnWEFFWFhLa2_SAfwBQVVfeXFMTVpoNTV4c0ZzaXhqSFRmbkZJZVV5eWkyb3VzRktJcUEyQUpLLVNuaDUtWDF3Z2hEUzl4UjhoTUV3cHNwalgzaGJLQTl3VlIyeEc4UDFSVncwckNaYU1nWDY3M1VDYWlORy1tT3hzRGhGRktOb0gybWM4SHBRejZvZlVUTTctU1lYZUJGaEQ2RmNOcjRLQ19lOUNFTk1wRThMbDRwZllmc0ZEQ2hUNkRVRk5HVjZ1VHFBd1Y2dFd1NTRfWGtkRVoxNnU5cURLOTg1UVYxY2tHZlV4ZGNfR2JXM3ZxTnhFRk1RYmFaRzNrY0RmemNEZ1hBRVhYS2tv?oc=5",
       "source": "Corp Actions",
       "ts": 0,
       "type": "dividend"
@@ -1464,6 +3107,13 @@
       "type": "board"
     },
     {
+      "title": "Sequent Scientific Share Price Today, Sequent Scientific Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ254bUpMRmdOdDZMbko1MUc5ZFMwTjd0eE9xRm9PZTZGemViUG42ZktPMjFDVFZNYndrMWoxMXREWmY4ZFhLX2RmWm1IWEJiM0tnNFFkT014UmtBMFQydzBBSGdBT0tMbzkwY2VzN3R2UjNnUmlhUkdjT2gzVmRCcTBJbC0yZThlM2E5SA?oc=5",
+      "source": "Board Meetings",
+      "ts": 0,
+      "type": "board"
+    },
+    {
       "title": "Ion Exchange Share Price Today, Ion Exchange Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZERWRFZrejhkZnFTWUtDVW5JdEVrYXFYM0F2cjlQdTRvWmxqT2NmNmFJVndVdXRIWWEzTjAxWmNmUFluVXRIRW5VM0MwZ2tKNjJ4QXhtd1dpc1JUdHczY3ZZRjVwNkNDXzQ3bXN5SVd4Qlo0eHczSm81TDFQNUtpWmM5VQ?oc=5",
       "source": "Board Meetings",
@@ -1471,8 +3121,8 @@
       "type": "board"
     },
     {
-      "title": "Sequent Scientific Share Price Today, Sequent Scientific Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ254bUpMRmdOdDZMbko1MUc5ZFMwTjd0eE9xRm9PZTZGemViUG42ZktPMjFDVFZNYndrMWoxMXREWmY4ZFhLX2RmWm1IWEJiM0tnNFFkT014UmtBMFQydzBBSGdBT0tMbzkwY2VzN3R2UjNnUmlhUkdjT2gzVmRCcTBJbC0yZThlM2E5SA?oc=5",
+      "title": "Garuda Construction Share Price Today, Garuda Construction Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSmduOTFBRFJTNkQzMUV6YnF6Zk5yRFp0NjhlUExGM0RpaDNHaEowcGdNUHptYU8tWjFlMVdHMFM4QzhoTm5Db21rdVVUNkNMV1RRTW1GTzE1cFhRQjhDUUFYdzJISld0NVhrUWZYZ1E1ajRqbXM4dUdsOUZPNHR2WGRjQUdxeGlOSUNCelhsY0R4LVZDY04wNVRGWU9UTmNIM3A1UVY5R2M?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1485,15 +3135,15 @@
       "type": "board"
     },
     {
-      "title": "Man Industries Share Price Today, Man Industries Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS3FQcHF2bFM5TDFoUDRSOVRPYXZhRTM5d1IteDRBMDh5SlRIdHFpZERtcmp2UElSQlpPR1FHZER6dlN2YmppWk1zb0FFWjFYYno3eFZjTF9IYkQ4N3dZZVBiTklmWF9FM1FfQXRpSFN1UFpLWFdndkItVjE0SzJieXdIWFNZUQ?oc=5",
+      "title": "IKIO Lighting Share Price Today, IKIO Lighting Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZUpsd0JZT01Ld3MtNk1NY3lwQ3Z1Z1h6T3NrZkZoaS1LcHZVMGZUUDh1OWJxXy1IMXAyUXM2dmV1T2dUVDR0dzZaekIxbnRSRUJTTWQxSWk1LW5FMjBOUHVHX0gxU0pyTjRqeF94d1prWlBBTnBYWmFYS0xsTDkyVHJwZmZnZjlrVWprcjRXYmo?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
     },
     {
-      "title": "IKIO Lighting Share Price Today, IKIO Lighting Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZUpsd0JZT01Ld3MtNk1NY3lwQ3Z1Z1h6T3NrZkZoaS1LcHZVMGZUUDh1OWJxXy1IMXAyUXM2dmV1T2dUVDR0dzZaekIxbnRSRUJTTWQxSWk1LW5FMjBOUHVHX0gxU0pyTjRqeF94d1prWlBBTnBYWmFYS0xsTDkyVHJwZmZnZjlrVWprcjRXYmo?oc=5",
+      "title": "Man Industries Share Price Today, Man Industries Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS3FQcHF2bFM5TDFoUDRSOVRPYXZhRTM5d1IteDRBMDh5SlRIdHFpZERtcmp2UElSQlpPR1FHZER6dlN2YmppWk1zb0FFWjFYYno3eFZjTF9IYkQ4N3dZZVBiTklmWF9FM1FfQXRpSFN1UFpLWFdndkItVjE0SzJieXdIWFNZUQ?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1513,22 +3163,15 @@
       "type": "board"
     },
     {
+      "title": "Sahasra Electron Sol Share Price Today, Sahasra Electron Sol Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX05wSV8yTUwtS1h1SWxJaS1wNzRYYl9fcXZmalphRG1IejBiRV9RNDJjMWxoYlo1M2dtU25oU0JpQ0tBNzhsZDhtUXB2RXdwMURDdDBMOGZPdmRLTDR0VkpkNnBhVXRVWHU5QUl1eGpiOXByOFlrSlNFRmhCZzVkdjV4bFRCdHdxNmRjcmo2N1pHbDBtQjAyY1oxdGFFdzg?oc=5",
+      "source": "Board Meetings",
+      "ts": 0,
+      "type": "board"
+    },
+    {
       "title": "Edelweiss Financial Share Price Today, Edelweiss Financial Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRW1GdkdPNHlhUlFjNU1JcF9VTi1SckRSWXRzVFdLMGRVQ0ctV0hCUzUzZWVQNWtjZ09ELU9fQTRsOXQ4WTF6YjVHNDlybWhPWjhiN3ZaN21xQWxIdDFMcGJOQTY2MTJ1V0FfWlhwLTNtaUFhd0RlY2gzclh5Mk8tSmJKZ0NTXzdOSU5QM1NlV0U?oc=5",
-      "source": "Board Meetings",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Vipul Ltd Share Price Today, Vipul Ltd Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jUmRRWFk1cHlna2FiOVFRSGM5WUJGc3JwTUVYa19Na0p6MWZZeW5TUm4xS1U5VmM4Wi1OS0dHYjAyUFNUdUJablhmR291U3VyRnpMMHZUR0o4V1AxM1JPcktXbXJobFk2ZmdwZEpucDQ?oc=5",
-      "source": "Board Meetings",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Garuda Construction Share Price Today, Garuda Construction Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSmduOTFBRFJTNkQzMUV6YnF6Zk5yRFp0NjhlUExGM0RpaDNHaEowcGdNUHptYU8tWjFlMVdHMFM4QzhoTm5Db21rdVVUNkNMV1RRTW1GTzE1cFhRQjhDUUFYdzJISld0NVhrUWZYZ1E1ajRqbXM4dUdsOUZPNHR2WGRjQUdxeGlOSUNCelhsY0R4LVZDY04wNVRGWU9UTmNIM3A1UVY5R2M?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1541,15 +3184,8 @@
       "type": "board"
     },
     {
-      "title": "Sahasra Electron Sol Share Price Today, Sahasra Electron Sol Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX05wSV8yTUwtS1h1SWxJaS1wNzRYYl9fcXZmalphRG1IejBiRV9RNDJjMWxoYlo1M2dtU25oU0JpQ0tBNzhsZDhtUXB2RXdwMURDdDBMOGZPdmRLTDR0VkpkNnBhVXRVWHU5QUl1eGpiOXByOFlrSlNFRmhCZzVkdjV4bFRCdHdxNmRjcmo2N1pHbDBtQjAyY1oxdGFFdzg?oc=5",
-      "source": "Board Meetings",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Kalyani Steels Share Price Today, Kalyani Steels Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xRms1NFRETmk3bllyMVVjNjNCUXk3UFA0d1pTOEg5TW84dGJJcUJsbkRocFJhQkFIUGw0MC1COF9tUVdWeG90ekUwZ25oSThKcjFHOGw0MndNNjhLMmlNelNmUE5PUkVkbDY5NGZPbjZRWE1LbldvcG1odjNNQQ?oc=5",
+      "title": "Vipul Ltd Share Price Today, Vipul Ltd Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jUmRRWFk1cHlna2FiOVFRSGM5WUJGc3JwTUVYa19Na0p6MWZZeW5TUm4xS1U5VmM4Wi1OS0dHYjAyUFNUdUJablhmR291U3VyRnpMMHZUR0o4V1AxM1JPcktXbXJobFk2ZmdwZEpucDQ?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1562,15 +3198,15 @@
       "type": "board"
     },
     {
-      "title": "Medicamen Bio Share Price Today, Medicamen Bio Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNa2VRdEZGNi14Smwwb2FuSnd5dU9Udno1eWhvcFVPdjZydGh6MWQ4MzhZUXpMTWlYb0x4N0gxTC1xOG5pbEFydWZWMG9HNERTcVZKaEFyeVJpNmVTaTVQRktMRTBWelRwNjg1QzBGN0ozUkthTUV2NUt2YnVEVjNMNg?oc=5",
+      "title": "Macrotech Developers Share Price Today, Macrotech Developers Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZG1Za0cxYkFXd1Foa2xmckxiaDNZcTNNUWdFbnBGN1VlM09rZ25WWFdwcGFZSUQ5aXFaWElQaklXZmFvVjUxa3VFNTBBNGw4QmJDSGp1cm5TNXlMdWx1c0Y2MnBGRGFqdzMzaUs4dy1EaENsRzVQa2o3bllNdnQ3U2Q5akNNc1d0RlRfQQ?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
     },
     {
-      "title": "Macrotech Developers Share Price Today, Macrotech Developers Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZG1Za0cxYkFXd1Foa2xmckxiaDNZcTNNUWdFbnBGN1VlM09rZ25WWFdwcGFZSUQ5aXFaWElQaklXZmFvVjUxa3VFNTBBNGw4QmJDSGp1cm5TNXlMdWx1c0Y2MnBGRGFqdzMzaUs4dy1EaENsRzVQa2o3bllNdnQ3U2Q5akNNc1d0RlRfQQ?oc=5",
+      "title": "Kalyani Steels Share Price Today, Kalyani Steels Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xRms1NFRETmk3bllyMVVjNjNCUXk3UFA0d1pTOEg5TW84dGJJcUJsbkRocFJhQkFIUGw0MC1COF9tUVdWeG90ekUwZ25oSThKcjFHOGw0MndNNjhLMmlNelNmUE5PUkVkbDY5NGZPbjZRWE1LbldvcG1odjNNQQ?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1583,6 +3219,13 @@
       "type": "board"
     },
     {
+      "title": "Medicamen Bio Share Price Today, Medicamen Bio Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNa2VRdEZGNi14Smwwb2FuSnd5dU9Udno1eWhvcFVPdjZydGh6MWQ4MzhZUXpMTWlYb0x4N0gxTC1xOG5pbEFydWZWMG9HNERTcVZKaEFyeVJpNmVTaTVQRktMRTBWelRwNjg1QzBGN0ozUkthTUV2NUt2YnVEVjNMNg?oc=5",
+      "source": "Board Meetings",
+      "ts": 0,
+      "type": "board"
+    },
+    {
       "title": "VIP Ind. Share Price Today, VIP Ind. Stock Price Live NSE/BSE Updates - The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91X0RkZWpxZ2Rid2JfODI1T0M3MTNtb3IwVkJWYlMxNXNTanF4UnJvd3BvNlkwaUJKU1B4NnpJRWY1cUJRWG1ZT0FTSTNERG5VZk5VWnNQaE1HRWpVWjBVdVJSc201bjdUNVdSWVlZOVJ5ejRxdklSYVN2ZlItdw?oc=5",
       "source": "Board Meetings",
@@ -1590,15 +3233,15 @@
       "type": "board"
     },
     {
-      "title": "Navkar Corp Share Price Today, Navkar Corp Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSk9UWGhWcTNZVUJ1eDJWbm4xOG1RY1Qxa0Z6cnVVWFpnMUJUcG5lcHNTdTFMLUZ2RHByZ2QwNFV1TC1XT3c3bVVfWjdycG42dGZKZE1qeXpRN185ZWlYUDRnTG9qMFlHU0RCM1F3dVJxaWZIMEJHZ0ZlWVRaVTZ6eTdQQQ?oc=5",
+      "title": "Good Value Irrigation Share Price Today, Good Value Irrigation Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPc1g1ek1OZHh2N0QwNFk2WlM1YW5wb0x2Rl9MZUdUVWRuZk1xeUw2aFVraFd5UzNoWjc5V0gwenNJa1NpZDVKZFNULTh1SFBZamZvQ2xULUJHRWoydVZhNkJTRGNaTEZSMEpXd1RDbWRENXhKQk5hb3VzZ0dBYzVHc0hkUzZfWTI0LVVuaElR?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
     },
     {
-      "title": "Good Value Irrigation Share Price Today, Good Value Irrigation Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPc1g1ek1OZHh2N0QwNFk2WlM1YW5wb0x2Rl9MZUdUVWRuZk1xeUw2aFVraFd5UzNoWjc5V0gwenNJa1NpZDVKZFNULTh1SFBZamZvQ2xULUJHRWoydVZhNkJTRGNaTEZSMEpXd1RDbWRENXhKQk5hb3VzZ0dBYzVHc0hkUzZfWTI0LVVuaElR?oc=5",
+      "title": "Navkar Corp Share Price Today, Navkar Corp Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSk9UWGhWcTNZVUJ1eDJWbm4xOG1RY1Qxa0Z6cnVVWFpnMUJUcG5lcHNTdTFMLUZ2RHByZ2QwNFV1TC1XT3c3bVVfWjdycG42dGZKZE1qeXpRN185ZWlYUDRnTG9qMFlHU0RCM1F3dVJxaWZIMEJHZ0ZlWVRaVTZ6eTdQQQ?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
@@ -1618,15 +3261,8 @@
       "type": "board"
     },
     {
-      "title": "Ramco Systems Share Price Today, Ramco Systems Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBRcnNpOXBEa29IYTM4NmkydFRIcE9FSDVoN01tV0stQ25yQ1JRS0JtRW02ME1oenFUeXhUUVFxYm9wZzVwUUxLZ2tJVl9zZW1WZHQ0X0pfTktYcm9nMUpKZHQzdkg5MjR5RGF2bDB2ZV9zalBjSnJVblZvOA?oc=5",
-      "source": "Board Meetings",
-      "ts": 0,
-      "type": "board"
-    },
-    {
-      "title": "Goa Carbons Share Price Today, Goa Carbons Stock Price Live NSE/BSE Updates - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbWNtSjZtb2Rpb3JPNWlpQlZCSnA0emJGX1gtTFllT0pTOEhnbWtqeWI1WWpQUTZvb25rM29oR0FKd3cwUTktS1pYMXNFWUlxUmQ2NkpJc18tMF9DNlBVdmROWHE1b3JPdUZtQ2I5RkVrNW5ZRXByS2lYbEUxVFpVVDVfbHU?oc=5",
+      "title": "Reliance Naval & Engg Share Price Today, Reliance Naval & Engg Stock Price Live NSE/BSE Updates - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc2hrekdwLWZieWUzNXZXZlRkbWExc1V4dDdWNTB5cW9PcjRERElzNDVGUXlRNmh2NlZNaU5mNjdSMGJiM2NEN3lZcnk5akctU3ZGaVNqUFREZFNmclBneEhPWEsxX29FakxBYm9uWWxjdnEwbVM4OS1pRVhyVVpBVUp1QjM4d1ZGUXZYYl9qQUUzUzhrZHF3a25aMHhubGlwU3dF?oc=5",
       "source": "Board Meetings",
       "ts": 0,
       "type": "board"
