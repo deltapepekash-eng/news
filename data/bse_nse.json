@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T21:52:25.680793+00:00",
+  "updated": "2026-04-03T23:05:41.478231+00:00",
   "bse_count": 400,
   "news_count": 150,
   "log": [
@@ -23,12 +23,12 @@
     "BSE/NSE Results: 36 in feed, 36 tried, 32 new",
     "Corp Actions: 29 in feed, 29 tried, 28 new",
     "Board Meetings: 33 in feed, 33 tried, 32 new",
-    "Bulk/Block Deals: 30 in feed, 30 tried, 30 new",
+    "Bulk/Block Deals: 29 in feed, 29 tried, 29 new",
     "Trading Window: 69 in feed, 50 tried, 48 new",
-    "Share Allotment: 46 in feed, 46 tried, 45 new",
-    "M&A: 47 in feed, 47 tried, 47 new",
+    "Share Allotment: 47 in feed, 47 tried, 46 new",
+    "M&A: 49 in feed, 49 tried, 49 new",
     "Ratings: 38 in feed, 38 tried, 38 new",
-    "Orders Won: 67 in feed, 50 tried, 50 new"
+    "Orders Won: 65 in feed, 50 tried, 50 new"
   ],
   "bse_items": [
     {
@@ -3114,15 +3114,15 @@
       "type": "dividend"
     },
     {
-      "title": "Balmer Lawrie & Co. Ltd. Board Meeting scheduled for March 5, 2026 to consider interim dividend for FY2025-26 - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQ05idjRoWk9QZlpNUzZ0ci1xVWtTaTNJd2swSFAtSXVLZnVLMko5QnlrbWVRTTNlRmJfVVlVcUpEMEdHOENvR1IzT05ZOXV6Q2FjTmxubm84WFBRQm9yWF80NTFsWUREbmg5blVsWDZVZHlia2NTRE9FZ0tJYWI1Y3JINzBvdXdmY0VhdzVXZWszTjFrakhqeTRDWlBHUDhEZmpvNktJTU1qbFNoVzl5RFBDS0pmZVdaYVRmQ1J2bnF6b2RxNW9HSktBSEQxZzRuR0pTNnAwZ1NXOW1nUl9BVjNac3VtYnFKOWJxUUxUQ3JhbGlZdEc1dW01ZndaQQ?oc=5",
+      "title": "HUL Q4 results 2026 date: Dividend announcement in quarterly earnings report - Board meeting in April - ET Now",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPX0UyLVlUMTNWYXpkRnZSczlVRW9oN3NhR281Y2lKdlBlV0NHd2pLUlNtNXNXd3JiTXNHM3dUZ3M0R1NhSC05SFNTNm9GWEZkWXF2OVNmNVhwQnBrM2JmSTQza293ZUdNZzZNMzNFcHQ4akZnSUI1aXJHN0l6RXVRNFdlRmlTbFNVcG1Zb1lPcU01TlFjVlpkMFZuMmVCS2Ffcl9xZnpxenZPZ05KOThkWjFVZGNxcU8yaVlzd3ZtalhmbENabjZNcnZRcmFPUVZYdkVtV05yMU1HNzJWY2lYTERkdVbSAeoBQVVfeXFMUHIzamQ5UFQ3M0ZCNHc0VnJnSHdvMHdTaTVXZGVUb2p1a2V1N19oazY5blRwdHNwdUlRTUVEMWo0SFhNcUUzeFJqOXF2ZFI0ZUxiOGhQM0o5LWNoZDVEcEUtWTljR2t4TGdJWlNHMnFKSXdDUl9TOVZHMXo2X09wdXc1V1BCZHBfdlF1N1gzU0NDbFQtMzVCZU5xSkpkVXVhN0Y0XzNvM3BEcENXYUJDUU5KMzdTRHJqWUxhSW1TQ2tHV1RkNjgwNFRVaFBUb0NWTm41Z0RKN2trYm1kRmd6TlJQeXpnWXR1a0R3?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "HUL Q4 results 2026 date: Dividend announcement in quarterly earnings report - Board meeting in April - ET Now",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPX0UyLVlUMTNWYXpkRnZSczlVRW9oN3NhR281Y2lKdlBlV0NHd2pLUlNtNXNXd3JiTXNHM3dUZ3M0R1NhSC05SFNTNm9GWEZkWXF2OVNmNVhwQnBrM2JmSTQza293ZUdNZzZNMzNFcHQ4akZnSUI1aXJHN0l6RXVRNFdlRmlTbFNVcG1Zb1lPcU01TlFjVlpkMFZuMmVCS2Ffcl9xZnpxenZPZ05KOThkWjFVZGNxcU8yaVlzd3ZtalhmbENabjZNcnZRcmFPUVZYdkVtV05yMU1HNzJWY2lYTERkdVbSAeoBQVVfeXFMUHIzamQ5UFQ3M0ZCNHc0VnJnSHdvMHdTaTVXZGVUb2p1a2V1N19oazY5blRwdHNwdUlRTUVEMWo0SFhNcUUzeFJqOXF2ZFI0ZUxiOGhQM0o5LWNoZDVEcEUtWTljR2t4TGdJWlNHMnFKSXdDUl9TOVZHMXo2X09wdXc1V1BCZHBfdlF1N1gzU0NDbFQtMzVCZU5xSkpkVXVhN0Y0XzNvM3BEcENXYUJDUU5KMzdTRHJqWUxhSW1TQ2tHV1RkNjgwNFRVaFBUb0NWTm41Z0RKN2trYm1kRmd6TlJQeXpnWXR1a0R3?oc=5",
+      "title": "Balmer Lawrie & Co. Ltd. Board Meeting scheduled for March 5, 2026 to consider interim dividend for FY2025-26 - scanx.trade",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQ05idjRoWk9QZlpNUzZ0ci1xVWtTaTNJd2swSFAtSXVLZnVLMko5QnlrbWVRTTNlRmJfVVlVcUpEMEdHOENvR1IzT05ZOXV6Q2FjTmxubm84WFBRQm9yWF80NTFsWUREbmg5blVsWDZVZHlia2NTRE9FZ0tJYWI1Y3JINzBvdXdmY0VhdzVXZWszTjFrakhqeTRDWlBHUDhEZmpvNktJTU1qbFNoVzl5RFBDS0pmZVdaYVRmQ1J2bnF6b2RxNW9HSktBSEQxZzRuR0pTNnAwZ1NXOW1nUl9BVjNac3VtYnFKOWJxUUxUQ3JhbGlZdEc1dW01ZndaQQ?oc=5",
       "source": "Exchange News",
       "ts": 0,
       "type": "dividend"
@@ -3422,7 +3422,7 @@
       "type": "dividend"
     },
     {
-      "title": "Dividend, bonus, stock-split news put these 7 shares in spotlight next week - business-standard.com",
+      "title": "Dividend, bonus, stock-split news put these 7 shares in spotlight next week - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQODlNRzR6d0Nkc3NyX1BoNzZpai1wcXlhZ0QzODZ4TXVvX011QTZxaWhneHdLVjhMZXR6R0ZuVFZDQW9nNk1EamZYbHhsaVVka28tR3VJNnFGWHNacFNZa1dJT0Z5Z3JNYW1GS2RzOENNR3VBcmpPTmttV2RJYjdBRnIyNU5TS2p5YnMtQmNPazd6dzRVZVJiNHdyRGtnZmJRbEYxTHNPdmRmTlVvMWZoY2d1R3d2NFR2LUpxZlpEcXluaXRMVm9UYVFUUmQ3alRQUnJmVXNPQdIB3AFBVV95cUxOUmRSeHVzVV90a0dYNUk1Tk5LMEZaTXpjR19WdmVqSDQ0bTV4bFl6ZElaYzNzd3ZUMGVPSklrMVBVOE42amV2a0o0ZUVVNWgwTHdUb21ad1RodWtGaS1xMGVaN3dZWkMtU2cwNXJlUXVZZk4xQWlRRTNud3c0am9uY3JkeDRsU0doQXdfTGhkM0dWWktMU09KREZNNG5wTkdQb19EbEd0a1pBUjY1dURrakVIS3JOTWlBdjJYa0Zpem15eFBLeExKTzJYaF9uNGhyejdsTWtzTHFTSUlN?oc=5",
       "source": "Corp Actions",
       "ts": 0,
@@ -3555,14 +3555,14 @@
       "type": "dividend"
     },
     {
-      "title": "Dividend, bonus, stock split: IRFC, PDS, 4 others to remain in focus today - business-standard.com",
+      "title": "Dividend, bonus, stock split: IRFC, PDS, 4 others to remain in focus today - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR0ZhbVMtdFpqNWtVdDRLc0NmRWY5RnNZWE1zQVJTN1FDU0NZdFJKM2ozZnNkY015VXRoMVpHVEdvXzFtb0d2Y2Q3UlJjNHg1LWdTclRoQTRYZDIwZmRrNGdnOUtadmlkOXB6WlJ4Wmt4OXlscFNPOV9wQTdrZ1RxU3ViNk0wNkpTYTBteUdCVUxBVWdaQ3h2N2E0aVlVZElNbXoxMEhyMUVNZTNwSnJFWEFuSExYYWhXeW9ieDlkaFB1cjFCS2VXbE8yWGtJR29iTWfSAdcBQVVfeXFMTWo3a0I5ZC12VzVkVjJETFlEY0x6NGtQWUllRExKR1dXWmV4bW1EUndPbkFRcGxqTkJ1b2dkcVpLcGQyZF80MFRYUC14d3FvNk9wUU4tWUhyX3hCTm9EMTJkMWVBNUdJRG9TbS10LUxrRUR1T0hsMDdPWXpqc1JqU3liRFdkNGl6cmJxbU5SR0d0aHk3ajByeVRyNm1CRF95WEd2OG1Fb190bHc0OG9zNkFjT2VnNVV2Sy1kY2E3eDhiWi02QmZGWGRianNLTlRqd3B6Ym8zbkE?oc=5",
       "source": "Corp Actions",
       "ts": 0,
       "type": "dividend"
     },
     {
-      "title": "Dividend, Bonus: Vedanta, Mazagon Dock, 4 others to trade ex-date next week - business-standard.com",
+      "title": "Dividend, Bonus: Vedanta, Mazagon Dock, 4 others to trade ex-date next week - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxON2ZaeDBfcDJ0RzhBcURtbGU5TWU0ZlM0ZXdjSk9CV3BnUzRpQzRDS1BrTDZQYVBPT2RBaHJEMjNacVVrQk1QOFdHZ0t1eTQ1N3hfbF9rQXUtU2cweWdjRVN0Q3pxRi14NkY5c1B4Vmo0S2hEaXQxTk9MMkVIajdFYlNwNjZCRnR1VkpVYzVFQm5Kd21zUVNRakRqVXh6X0QyMHJSc3R0c0VNWERmc0phZF9VUDd4cFp2N1hCU1RPVGJ6T3FqRF9nQkRtR28weUNxWHpZWNIB2gFBVV95cUxNMWlGM19vQV9RNlNwalBBSDUtMTJfZjVLYXNBOFNHMjdYd1dDSlpWcDZsRHJ3Z0g2RzNQUmgyUF9YV1VaQThxVFFvQUpLS19sMkx6VmRDY2Q1SGs1TTNaaEtsdVJhYnZnLTRXTFQ0eU9vajE4aW16YlN0Vmt1NlFNLWY0YnhMWU9KeGVkTUNRT0ZoLVppRjJ5alZGcTZ5RXNnMnV5U0VRUWNaaFNpcGZCWXBIV3N2WlY1MEhIWlEzUEhxdi1TSUtJR190RXV2M3pHZk9uUXp6OGVNZw?oc=5",
       "source": "Corp Actions",
       "ts": 0,
@@ -3583,7 +3583,7 @@
       "type": "dividend"
     },
     {
-      "title": "Dividend, bonus: Indo US Bio-Tech, Wipro, 3 others to go ex-date tomorrow - business-standard.com",
+      "title": "Dividend, bonus: Indo US Bio-Tech, Wipro, 3 others to go ex-date tomorrow - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVjNRb19rdFdwSHlycmI1VGtIU21yb1ZYUnZPXzcycEQxQUVTTkZza3ZtWll6MnU1RGw3RjlfMGN3Q1RVdXZMNklpWEZJYzhpZ3NjLVgtOTUzaVZERHlJTGNHR0tKZHl5THA2T1ZVd0xIQkhwS3djVzdhRVU2Q2IxeXl6T25nTDY1WFZYbzcycDhCM1lIbWM1YlFyMXlRYnJwejdUMnJRZkQ1MUJOTVpPZ1gxSUNFZGhjbk1DV2xMeVZ3ZjluMFM0c2JfRkVwN0tZTUHSAdcBQVVfeXFMTktjVlloSnRrMkR3Qi1GNlBvb0hram1vejhUOTFxWGRsTFp5bGNSWmJPOGF0N0NBakludkx5Yy10UmFOOTh4d3FjRG5QZ3JyRFljWnlrQ2xSa1dhQWJWZGNPZFUxTkhJTHlGSTZFMlJyRHRZX2lCc1JQVlQ3LVhDZjNCR0xhUDMzVElfVjZRUG1aSW1IdXU3S0FOcHM0RGFYTFV4SEhBdk4yNXVRZGYzUkUwWm5GTXJPQW5Ec0tncFBpaVJiNFBwd0JqMVZPZjJkM2VlT0dwQUk?oc=5",
       "source": "Corp Actions",
       "ts": 0,
@@ -3849,7 +3849,7 @@
       "type": "insider"
     },
     {
-      "title": "Netweb Technologies down 4% in trade; 3.43 mn shares change hands on NSE - business-standard.com",
+      "title": "Netweb Technologies down 4% in trade; 3.43 mn shares change hands on NSE - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZngzdnlIaGhGaW5MMzFydmcxbE1VYUFONFYyZjRSNm5IdVM2V1h1eGpSelJzVlNJMGJtX1ZxY1FIalhiWmVab0hpZ0ZyY2daZWZ0clVzVHZwRjg2NTVJanNwSFA4Y3N0THIxMWV2X2dYZFp1Nk5mT0FlcmhXTmtyTk1hN0FMYUx2UTJGeHAyZUVNcnR0RXpVdkRuSW42RjhSSDZSOGNMdmIzT052ZS1Vc08wYTBZOF9qVUJMVEFjbVIzN0Y5QVJac2x6Wm9Ob2FsR095VG8wWlMybnNQa3ljRlN0QdIB6AFBVV95cUxNempfXy1YZHpDSldKZURPeXlQQ2hWMWk3UVJ0ZWdCenpTcnVaNXdTZllXMzlJR3E1REFzb3RiLVJMSnNMVFB1VFVobEw0MFZwR0FBZnJhQk1xMExuM016OElCSGlzMXUwUjVJSWxuLVNEelU4WllKTEJ5MTlxcHpFUnIyZ1hEYkxnV1RWWm5yRHlGNFJYUW9WbFo3R0xlbVNDY09zRXZGaVZscHFhTUlRLU5ObVRtZnExOHZRc3BTbjlBVlhOVGhEWEE3V3lzRUhSMElqUG50aHdvZXpoY3hBcWs5UV81ZVJQ?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 0,
@@ -3877,7 +3877,7 @@
       "type": "insider"
     },
     {
-      "title": "Polycab promoters, others sell shares worth ₹1,740 cr via block deals - business-standard.com",
+      "title": "Polycab promoters, others sell shares worth ₹1,740 cr via block deals - Business Standard",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeF9CcUloNFZRRjdFRFJkZW9EeXdSV050TW9CbXRTenhEX1h0NlFMakpFdDlicVA3VUJpS1lzUDlXZ1ZqUTR4Q2VnZzJRTDVvMjhGd1BRUkU1TkhkZmZYbGVvR255MUJPUTBzY2pvdzAyb0hRMERYd3hWRWYzMVNwQ2s5bzVTY1VSYXl1T1FaR1k2YVZfRkd6Z29pcXhKbjE0blQ0eEtUemY0V3R4b1R3VFk5RHY4cWE5VldSUnd3eFc3aXFhRXpTdVZQU2cteUFidlHSAdcBQVVfeXFMTVFvMEhRTXRuak9TenQ1ZlViakZQb2dsVFJzZWdZMHk1SlExN1dQRktRWmNoNF94eGpMVlFvUkMwR2NkV2hRNlJZMjgtOE01MmdjeU1TVVJCbUxGWHNWZmFzOU1vMGwwMEZ5RHhsSGwzUTRpZ3ZGVUMyc3VIb3BRWkplMjdiaUt5YTJ2YlVXcUhSaG1VYzJXbFBjYUxqRWc5czkxQmN2OEEyMEZQUmUzYjN4M053QjJVZ1hkR3ZMWjM2bVNUUUV3blM0YVFkbWEzbXNia0RBS1U?oc=5",
       "source": "Bulk/Block Deals",
       "ts": 0,
