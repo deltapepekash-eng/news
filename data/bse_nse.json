@@ -1,18 +1,18 @@
 {
-  "updated": "2026-04-04T11:43:32.036426+00:00",
-  "bse_count": 320,
+  "updated": "2026-04-04T11:44:03.976496+00:00",
+  "bse_count": 324,
   "news_count": 150,
   "log": [
-    "BSE NEWS_DT='2026-04-04T17:12:36.237' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
+    "BSE NEWS_DT='2026-04-04T17:14:02.847' keys=['NEWSID', 'SCRIP_CD', 'XML_NAME', 'NEWSSUB', 'DT_TM', 'NEWS_DT', 'CRITICALNEWS', 'ANNOUNCEMENT_TYPE']",
     "BSE p1: 50 rows, 50 new, 50 with ts",
-    "BSE p2: 50 rows, 46 new, 50 with ts",
+    "BSE p2: 50 rows, 50 new, 50 with ts",
     "BSE p3: 50 rows, 49 new, 50 with ts",
     "BSE p4: 50 rows, 50 new, 50 with ts",
     "BSE p5: 50 rows, 50 new, 50 with ts",
     "BSE p6: 50 rows, 50 new, 50 with ts",
     "BSE p7: 25 rows, 25 new, 25 with ts",
     "BSE p8: empty — stopping pagination",
-    "BSE announcements total added: 320",
+    "BSE announcements total added: 324",
     "BSE actions: 15 fetched, 0 added",
     "BSE calendar: 25 fetched, 0 added",
     "NSE nse_get_corporate_announcements: module 'nsepython' has no attribute 'nse_get_corporate_announcements'",
@@ -26,11 +26,46 @@
     "Bulk/Block Deals: 28 in feed, 28 tried, 28 new",
     "Trading Window: 70 in feed, 50 tried, 46 new",
     "Share Allotment: 46 in feed, 46 tried, 45 new",
-    "M&A: 43 in feed, 43 tried, 43 new",
+    "M&A: 47 in feed, 47 tried, 47 new",
     "Ratings: 37 in feed, 37 tried, 37 new",
     "Orders Won: 66 in feed, 50 tried, 49 new"
   ],
   "bse_items": [
+    {
+      "title": "Please find the attached outcome of Postal Ballot.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b39091e2-fda8-4959-8de6-43cf70e54869.pdf",
+      "source": "BSE",
+      "ts": 1775322842847,
+      "type": "board"
+    },
+    {
+      "title": "Disclosure under Regulation 31(4) of SEBI (Substantial Acquisition of shares and Takeovers) Regulations, 2011 received from the promoter and promoter group of the Company.",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/221fde44-d7e8-460b-8a20-8cb2b0308485.pdf",
+      "source": "BSE",
+      "ts": 1775322788187,
+      "type": "insider"
+    },
+    {
+      "title": "Intimation of Declaration under regulation 31(4) of SAST Regulations 2011",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c7bc2b47-f083-428a-9101-133db3277216.pdf",
+      "source": "BSE",
+      "ts": 1775322783807,
+      "type": "filing"
+    },
+    {
+      "title": "Please find enclosed copies of the newspaper publication",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d4f9b9a2-75c1-47b7-8c37-0829352659a2.pdf",
+      "source": "BSE",
+      "ts": 1775322782140,
+      "type": "filing"
+    },
+    {
+      "title": "Compliance Certificate under Regn 74(5) of SEBI (DP) Regulations, 2018",
+      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/00188666-f618-4961-8622-a14997099fd2.pdf",
+      "source": "BSE",
+      "ts": 1775322775183,
+      "type": "filing"
+    },
     {
       "title": "Details of disclosure",
       "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ab0b3b2e-f816-48ea-abb4-3cab80b834be.pdf",
@@ -345,13 +380,6 @@
       "source": "BSE",
       "ts": 1775320438790,
       "type": "filing"
-    },
-    {
-      "title": "Swadha Nature Ltdhas informed BSE that the meeting of the Board of Directors of the Company is scheduled on 11/04/2026 ,inter alia, to consider and approve Audited financial results for ....",
-      "link": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8e34c6a6-abb1-4c5b-9d3d-6d36a21838c7.pdf",
-      "source": "BSE",
-      "ts": 1775320398987,
-      "type": "board"
     },
     {
       "title": "We wish to inform that Company has received NIL disclosure from the Promoter regarding creation, invocation, or release of encrumbance on shares for March 31, 2026 under Reg 31(4) of SEBI ....",
