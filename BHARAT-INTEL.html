@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BHARAT·INTEL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:  #080b0e;
+  --bg2: #0e1317;
+  --bg3: #161b21;
+  --bg4: #1c2229;
+  --border: rgba(255,255,255,0.06);
+  --border-hi: rgba(255,255,255,0.13);
+  --text:  #dde2e8;
+  --text2: #8f97a4;
+  --text3: #4e5763;
+  --green: #00cc7a;
+  --green-d: rgba(0,204,122,0.12);
+  --green-b: rgba(0,204,122,0.22);
+  --amber: #f0a020;
+  --amber-d: rgba(240,160,32,0.1);
+  --amber-b: rgba(240,160,32,0.22);
+  --red:   #f04050;
+  --red-d: rgba(240,64,80,0.1);
+  --blue:  #4a9eff;
+  --blue-d: rgba(74,158,255,0.1);
+  --blue-b: rgba(74,158,255,0.22);
+  --purple:#a78bfa;
+  --purple-d:rgba(167,139,250,0.1);
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:13px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* ── HEADER ── */
+#hdr{
+  position:sticky;top:0;z-index:100;
+  background:rgba(8,11,14,0.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  height:50px;padding:0 14px;
+  display:flex;align-items:center;gap:10px;
+}
+.wm{font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:.08em;white-space:nowrap;flex-shrink:0}
+.wm em{font-style:normal;color:var(--green)}
+#meta{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;color:var(--text3);flex-shrink:0}
+.sdot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 5px var(--green);animation:pulse 2.5s ease-in-out infinite}
+.sdot.stale{background:var(--amber);box-shadow:0 0 5px var(--amber)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+#mode-badge{font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:2px;border:1px solid var(--border);color:var(--text3);flex-shrink:0}
+#mode-badge.active{border-color:var(--green-b);color:var(--green)}
+
+#srch-wrap{flex:1;max-width:300px;position:relative}
+#srch{width:100%;height:28px;background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:0 8px 0 28px;color:var(--text);font-family:var(--sans);font-size:12px;outline:none;transition:border .15s}
+#srch:focus{border-color:var(--border-hi)}
+#srch::placeholder{color:var(--text3)}
+.si{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:11px;pointer-events:none}
+
+.hbtn{
+  height:26px;padding:0 9px;border-radius:3px;border:1px solid var(--border);
+  background:transparent;color:var(--text2);font-family:var(--mono);font-size:10px;
+  cursor:pointer;display:flex;align-items:center;gap:4px;transition:all .15s;white-space:nowrap;
+}
+.hbtn:hover{background:var(--bg3);color:var(--text);border-color:var(--border-hi)}
+.hbtn.g{border-color:var(--green-b);color:var(--green)}
+.hbtn.g:hover{background:var(--green-d)}
+.hbtn.p{border-color:var(--purple);color:var(--purple)}
+.hbtn.p:hover{background:var(--purple-d)}
+.hbtn:disabled{opacity:.35;cursor:default}
+.spin{display:inline-block}.spinning .spin{animation:rot .7s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+#cdown{font-family:var(--mono);font-size:10px;color:var(--text3);min-width:44px;text-align:right;flex-shrink:0}
+.ha{display:flex;align-items:center;gap:5px;margin-left:auto}
+
+/* ── SEARCH RESULTS ── */
+#sres{
+  display:none;position:absolute;top:50px;left:0;right:0;
+  background:var(--bg2);border-bottom:1px solid var(--border);
+  z-index:99;max-height:360px;overflow-y:auto;
+}
+#sres.open{display:block}
+.sri{padding:8px 14px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s}
+.sri:hover{background:var(--bg3)}
+.sri-t{font-size:12px;color:var(--text);line-height:1.4}
+.sri-m{font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:3px;display:flex;gap:8px}
+.sri-src{color:var(--text3)}.sri-tag{color:var(--green)}.sri-time{color:var(--text3)}
+mark{background:rgba(0,204,122,.18);color:var(--green);border-radius:2px;padding:0 1px}
+#sres-hdr{padding:7px 14px;font-family:var(--mono);font-size:10px;color:var(--text3);border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
+#sres-close{cursor:pointer;color:var(--text3);background:none;border:none;font-size:14px;line-height:1;padding:0}
+#sres-close:hover{color:var(--text)}
+
+/* ── LAYOUT ── */
+#grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 270px;
+  grid-template-rows:auto auto auto;
+  gap:1px;
+  background:var(--border);
+}
+
+/* ── PANEL BASE ── */
+.panel{background:var(--bg);display:flex;flex-direction:column}
+.ph{
+  display:flex;align-items:center;gap:7px;
+  padding:8px 12px;border-bottom:1px solid var(--border);
+  background:var(--bg2);flex-shrink:0;
+}
+.pt{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--text2);text-transform:uppercase;flex:1}
+.pc{font-family:var(--mono);font-size:10px;color:var(--text3)}
+.rbtn{
+  width:20px;height:20px;border-radius:2px;border:1px solid var(--border);
+  background:transparent;color:var(--text3);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;font-size:11px;
+  transition:all .15s;flex-shrink:0;
+}
+.rbtn:hover{background:var(--bg3);color:var(--text);border-color:var(--border-hi)}
+.panel-body{overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent}
+.panel-body::-webkit-scrollbar{width:3px}
+.panel-body::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
+
+/* news panels fixed height */
+#india-panel,#world-panel{height:calc((100vh - 50px) * .52)}
+#intel-panel{grid-column:3;grid-row:1/4;display:flex;flex-direction:column;height:calc(100vh - 50px);position:sticky;top:50px;overflow:hidden}
+#intel-panel .panel-body{flex:1;overflow-y:auto}
+
+/* ── NEWS ITEMS ── */
+.ni{padding:9px 12px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s;position:relative}
+.ni:hover{background:var(--bg2)}
+.ni.hidden{display:none}
+.ni-t{font-size:12px;line-height:1.45;color:var(--text);margin-bottom:5px;font-weight:400}
+.ni-m{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.ni-src{font-family:var(--mono);font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em}
+.ni-sep{color:var(--text3);font-size:9px}
+.ni-ts{font-family:var(--mono);font-size:9px;color:var(--text3)}
+.ni-mt{font-family:var(--mono);font-size:9px;color:var(--green);opacity:.7}
+.ctag{font-family:var(--mono);font-size:8px;padding:1px 4px;border-radius:2px;border:1px solid;text-transform:uppercase;letter-spacing:.04em}
+.cm{color:var(--green);border-color:var(--green-b);background:var(--green-d)}
+.ce{color:var(--amber);border-color:var(--amber-b);background:var(--amber-d)}
+.cg{color:var(--red);border-color:rgba(240,64,80,.22);background:var(--red-d)}
+.cc{color:var(--blue);border-color:var(--blue-b);background:var(--blue-d)}
+.cd{color:var(--text3);border-color:var(--border);background:transparent}
+.load-more-btn{
+  width:100%;padding:10px;background:transparent;border:none;border-top:1px solid var(--border);
+  color:var(--text3);font-family:var(--mono);font-size:10px;cursor:pointer;transition:all .15s;
+  display:flex;align-items:center;justify-content:center;gap:5px;
+}
+.load-more-btn:hover{background:var(--bg2);color:var(--text)}
+
+/* ── BSE / NSE PANEL ── */
+#exch-panel{grid-column:1/3;min-height:220px;display:flex;flex-direction:column}
+.tab-bar{display:flex;border-bottom:1px solid var(--border);background:var(--bg2);flex-shrink:0}
+.tab{
+  padding:7px 14px;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
+  color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;
+  display:flex;align-items:center;gap:5px;
+}
+.tab:hover{color:var(--text2)}
+.tab.active{color:var(--green);border-bottom-color:var(--green)}
+.tab-cnt{font-size:9px;padding:1px 4px;background:var(--bg3);border-radius:2px;color:var(--text3)}
+.tab.active .tab-cnt{background:var(--green-d);color:var(--green)}
+.tab-spacer{flex:1}
+
+#exch-body{overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--bg4) transparent;flex:1;max-height:260px}
+.fi{padding:8px 12px;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:background .1s}
+.fi:hover{background:var(--bg2)}
+.fi-ts{font-family:var(--mono);font-size:9px;color:var(--text3);flex-shrink:0;width:84px;padding-top:1px;line-height:1.4}
+.fi-co{font-size:12px;color:var(--text);font-weight:500;flex:1;min-width:0;line-height:1.35}
+.fi-co small{font-size:10px;color:var(--text2);font-weight:400;display:block;margin-top:2px}
+.fi-badge{font-family:var(--mono);font-size:8px;padding:2px 5px;border-radius:2px;border:1px solid var(--border);color:var(--text3);flex-shrink:0;white-space:nowrap}
+.fi-badge.bg-annt{border-color:var(--blue-b);color:var(--blue);background:var(--blue-d)}
+.fi-badge.bg-fin{border-color:var(--green-b);color:var(--green);background:var(--green-d)}
+.fi-badge.bg-corp{border-color:var(--amber-b);color:var(--amber);background:var(--amber-d)}
+.fi-badge.bg-disc{border-color:rgba(240,64,80,.22);color:var(--red);background:var(--red-d)}
+
+/* ── TRENDING ── */
+#trend-panel{display:flex;flex-direction:column;min-height:120px}
+#trend-inner{padding:10px 12px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start}
+.tpill{
+  font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:3px;
+  border:1px solid var(--border);background:var(--bg2);color:var(--text2);
+  cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:5px;
+}
+.tpill:hover,.tpill.active{background:var(--green-d);border-color:var(--green-b);color:var(--green)}
+.tpill .tcnt{font-size:8px;color:var(--text3);padding:0 3px;background:var(--bg3);border-radius:2px}
+.tpill.active .tcnt{background:rgba(0,204,122,.15);color:var(--green)}
+
+/* ── INTEL PANEL ── */
+#intel-panel .ph{background:var(--bg2)}
+#intel-body{padding:12px;font-size:12px;line-height:1.65;color:var(--text2);overflow-y:auto;flex:1}
+.isec{margin-bottom:14px}
+.ilabel{font-family:var(--mono);font-size:9px;color:var(--green);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.ilabel::after{content:'';flex:1;height:1px;background:var(--border)}
+.itext{color:var(--text2);font-size:12px;line-height:1.6}
+.iflag{display:flex;gap:6px;padding:5px 8px;background:var(--red-d);border:1px solid rgba(240,64,80,.15);border-radius:2px;margin-bottom:4px;font-size:11px;color:var(--red);line-height:1.4}
+.iflag::before{content:'▲';font-size:8px;margin-top:2px;flex-shrink:0}
+.ibullet{padding:2px 0;font-size:12px;color:var(--text2);display:flex;gap:6px;line-height:1.5}
+.ibullet::before{content:'›';color:var(--green);flex-shrink:0}
+.icursor{display:inline-block;width:6px;height:12px;background:var(--green);animation:blink 1s step-end infinite;vertical-align:text-bottom}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.iempty{color:var(--text3);font-size:11px;font-style:italic;padding:4px 0}
+#intel-terms-note{font-family:var(--mono);font-size:9px;color:var(--text3);padding:8px 0;line-height:1.6;border-top:1px solid var(--border);margin-top:10px}
+#intel-terms-note span{color:var(--amber)}
+
+/* ── SEARCH TERMS PANEL ── */
+#terms-modal{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.72);z-index:200;
+  align-items:center;justify-content:center;
+  padding:16px;
+}
+#terms-modal.open{display:flex}
+.mbox{
+  background:var(--bg2);border:1px solid var(--border-hi);border-radius:6px;
+  width:480px;max-width:100%;max-height:85vh;display:flex;flex-direction:column;
+}
+.mhead{
+  padding:14px 16px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:10px;flex-shrink:0;
+}
+.mtitle{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text);flex:1}
+.mclose{background:none;border:none;color:var(--text3);cursor:pointer;font-size:18px;line-height:1;padding:0}
+.mclose:hover{color:var(--text)}
+.mbody{padding:14px 16px;overflow-y:auto;flex:1}
+.mfoot{
+  padding:10px 16px;border-top:1px solid var(--border);flex-shrink:0;
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+}
+.terms-limit{font-family:var(--mono);font-size:10px;color:var(--text3);flex:1}
+.terms-limit span{color:var(--amber)}
+.term-add-row{display:flex;gap:7px;margin-bottom:12px}
+.term-input{
+  flex:1;height:30px;background:var(--bg3);border:1px solid var(--border);
+  border-radius:3px;padding:0 10px;color:var(--text);font-family:var(--sans);
+  font-size:12px;outline:none;transition:border .15s;
+}
+.term-input:focus{border-color:var(--border-hi)}
+.term-input::placeholder{color:var(--text3)}
+.terms-grid{display:flex;flex-wrap:wrap;gap:6px}
+.tterm{
+  font-family:var(--mono);font-size:11px;padding:4px 8px;border-radius:3px;
+  border:1px solid var(--border);background:var(--bg3);color:var(--text2);
+  display:flex;align-items:center;gap:5px;
+}
+.tterm button{
+  background:none;border:none;color:var(--text3);cursor:pointer;
+  font-size:14px;line-height:1;padding:0;transition:color .15s;
+}
+.tterm button:hover{color:var(--red)}
+.mstatus{font-family:var(--mono);font-size:10px;padding:4px 8px;border-radius:3px;flex-shrink:0}
+.mstatus.ok{color:var(--green);background:var(--green-d);border:1px solid var(--green-b)}
+.mstatus.err{color:var(--red);background:var(--red-d);border:1px solid rgba(240,64,80,.2)}
+.mstatus.saving{color:var(--amber);background:var(--amber-d);border:1px solid var(--amber-b)}
+
+/* ── SETTINGS MODAL ── */
+#settings-modal{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.72);z-index:200;
+  align-items:center;justify-content:center;padding:16px;
+}
+#settings-modal.open{display:flex}
+.sfield{margin-bottom:14px}
+.sfield label{font-family:var(--mono);font-size:10px;color:var(--text3);display:block;margin-bottom:5px;letter-spacing:.05em;text-transform:uppercase}
+.sinput{
+  width:100%;height:32px;background:var(--bg3);border:1px solid var(--border);
+  border-radius:3px;padding:0 10px;color:var(--text);font-family:var(--mono);
+  font-size:11px;outline:none;transition:border .15s;
+}
+.sinput:focus{border-color:var(--border-hi)}
+.sinput::placeholder{color:var(--text3)}
+.sfield .sdesc{font-size:11px;color:var(--text3);margin-top:5px;line-height:1.5}
+.sfield .sdesc a{color:var(--purple);text-decoration:none}
+.sfield .sdesc a:hover{text-decoration:underline}
+
+/* ── EMPTY / LOADING ── */
+.empty{padding:18px 14px;text-align:center;color:var(--text3);font-family:var(--mono);font-size:10px;letter-spacing:.05em}
+.skeleton{padding:9px 12px;border-bottom:1px solid var(--border)}
+.sk-line{height:11px;background:var(--bg3);border-radius:2px;margin-bottom:5px}
+.sk-line.short{width:55%}
+.sk-line.tiny{width:35%;height:8px}
+@keyframes shimmer{0%{opacity:.4}50%{opacity:.7}100%{opacity:.4}}
+.sk-line{animation:shimmer 1.4s ease-in-out infinite}
+
+/* ── TOAST ── */
+#toast{
+  position:fixed;bottom:20px;right:20px;z-index:300;
+  font-family:var(--mono);font-size:11px;padding:8px 14px;
+  border-radius:3px;border:1px solid var(--border-hi);
+  background:var(--bg3);color:var(--text);
+  opacity:0;transform:translateY(6px);
+  transition:all .2s;pointer-events:none;
+}
+#toast.show{opacity:1;transform:translateY(0)}
+#toast.t-ok{border-color:var(--green-b);color:var(--green);background:var(--green-d)}
+#toast.t-err{border-color:rgba(240,64,80,.25);color:var(--red);background:var(--red-d)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  #grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto auto}
+  #intel-panel{grid-column:1/3;grid-row:3;position:static;height:auto;max-height:320px}
+  #exch-panel{grid-column:1/3;grid-row:4}
+  #trend-panel{grid-column:1/3;grid-row:5}
+}
+@media(max-width:600px){
+  #grid{grid-template-columns:1fr;grid-template-rows:repeat(7,auto)}
+  #india-panel,#world-panel,#intel-panel{grid-column:1;height:300px}
+  #exch-panel,#trend-panel{grid-column:1}
+  .wm{font-size:12px}
+  #meta{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="wm">BHARAT<em>·</em>INTEL</div>
+  <div id="meta">
+    <div class="sdot" id="sdot"></div>
+    <span id="last-updated">--:--</span>
+    <span>IST</span>
+  </div>
+  <span id="mode-badge">ACTIVE</span>
+  <div id="srch-wrap">
+    <span class="si">⌕</span>
+    <input id="srch" type="text" placeholder="Search all feeds…" autocomplete="off">
+  </div>
+  <div class="ha">
+    <span id="cdown">--:--</span>
+    <button class="hbtn g" id="refresh-btn"><span class="spin">↺</span> REFRESH</button>
+    <button class="hbtn" id="terms-btn">⊞ TERMS <span id="terms-hdr-cnt" style="opacity:.6;font-size:9px">0/30</span></button>
+    <button class="hbtn p" id="settings-btn">⚙</button>
+  </div>
+</header>
+
+<!-- SEARCH RESULTS -->
+<div id="sres">
+  <div id="sres-hdr"><span id="sres-count">0 results</span><button id="sres-close">×</button></div>
+</div>
+
+<!-- MAIN GRID -->
+<div id="grid">
+
+  <!-- INDIA NEWS -->
+  <div class="panel" id="india-panel">
+    <div class="ph">
+      <span class="pt">◈ India News</span>
+      <span class="pc" id="india-cnt">—</span>
+      <button class="rbtn spinning" id="india-rbtn" title="Refresh feed">↺</button>
+    </div>
+    <div class="panel-body" id="india-body"><div class="skeleton" id="india-skel"></div></div>
+  </div>
+
+  <!-- WORLD NEWS -->
+  <div class="panel" id="world-panel">
+    <div class="ph">
+      <span class="pt">◈ World News</span>
+      <span class="pc" id="world-cnt">—</span>
+      <button class="rbtn spinning" id="world-rbtn" title="Refresh feed">↺</button>
+    </div>
+    <div class="panel-body" id="world-body"><div class="skeleton" id="world-skel"></div></div>
+  </div>
+
+  <!-- INTEL FIELD -->
+  <div class="panel" id="intel-panel">
+    <div class="ph">
+      <span class="pt">◈ Intel Field</span>
+      <button class="rbtn" id="intel-rbtn" title="Regenerate brief">↺</button>
+    </div>
+    <div id="intel-body">
+      <p class="iempty" id="intel-placeholder">Configure API key to enable AI market brief.</p>
+    </div>
+  </div>
+
+  <!-- TRENDING -->
+  <div class="panel" id="trend-panel">
+    <div class="ph">
+      <span class="pt">◈ Trending</span>
+      <span class="pc" id="trend-cnt">—</span>
+      <button class="rbtn" id="trend-rbtn" title="Clear filter">✕</button>
+    </div>
+    <div id="trend-inner"></div>
+  </div>
+
+  <!-- BSE / NSE -->
+  <div class="panel" id="exch-panel">
+    <div class="tab-bar">
+      <div class="tab active" data-tab="bse" id="tab-bse">BSE <span class="tab-cnt" id="bse-tab-cnt">0</span></div>
+      <div class="tab" data-tab="nse" id="tab-nse">NSE <span class="tab-cnt" id="nse-tab-cnt">0</span></div>
+      <div class="tab-spacer"></div>
+      <button class="rbtn spinning" id="exch-rbtn" style="margin:auto 10px" title="Refresh filings">↺</button>
+    </div>
+    <div id="exch-body"></div>
+  </div>
+
+</div><!-- /grid -->
+
+<!-- SEARCH TERMS MODAL -->
+<div id="terms-modal">
+  <div class="mbox">
+    <div class="mhead">
+      <span class="mtitle">◈ Search Terms &nbsp;<span style="font-size:10px;color:var(--text3);font-weight:400">— drives India &amp; World news feeds</span></span>
+      <button class="mclose" id="terms-modal-close">×</button>
+    </div>
+    <div class="mbody">
+      <div class="term-add-row">
+        <input class="term-input" id="term-input" placeholder="Add term e.g. Nifty 50, RBI rate, HDFC Bank…" maxlength="60">
+        <button class="hbtn g" id="term-add-btn">+ ADD</button>
+      </div>
+      <div class="terms-grid" id="terms-grid"></div>
+    </div>
+    <div class="mfoot">
+      <span class="terms-limit">Terms: <span id="terms-cnt-display">0</span>/30</span>
+      <span id="terms-save-status"></span>
+      <button class="hbtn" id="terms-cancel-btn">Cancel</button>
+      <button class="hbtn g" id="terms-save-btn">↑ Save to GitHub</button>
+    </div>
+  </div>
+</div>
+
+<!-- SETTINGS MODAL -->
+<div id="settings-modal">
+  <div class="mbox" style="width:420px">
+    <div class="mhead">
+      <span class="mtitle">⚙ Settings</span>
+      <button class="mclose" id="settings-modal-close">×</button>
+    </div>
+    <div class="mbody">
+      <div class="sfield">
+        <label>Anthropic API Key</label>
+        <input class="sinput" id="api-key-input" type="password" placeholder="sk-ant-…">
+        <div class="sdesc">Powers the Intel Field AI brief. Never sent to any server except <a href="https://api.anthropic.com" target="_blank">api.anthropic.com</a>. Stored in sessionStorage.</div>
+      </div>
+      <div class="sfield">
+        <label>GitHub Token (PAT)</label>
+        <input class="sinput" id="gh-token-input" type="password" placeholder="github_pat_…">
+        <div class="sdesc">Required to save Search Terms to your repo. Fine-grained PAT with <strong>contents: write</strong> scope. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank">Create one here ↗</a></div>
+      </div>
+      <div class="sfield">
+        <label>GitHub Repo</label>
+        <input class="sinput" id="gh-repo-input" placeholder="username/repo-name">
+        <div class="sdesc">Your GitHub Pages repo, e.g. <strong>pete/market-intel</strong></div>
+      </div>
+      <div class="sfield">
+        <label>Data Path</label>
+        <input class="sinput" id="gh-path-input" placeholder="data/search_terms.json">
+        <div class="sdesc">Path to search_terms.json in your repo (default: data/search_terms.json)</div>
+      </div>
+    </div>
+    <div class="mfoot">
+      <span id="settings-status" class="mstatus" style="display:none"></span>
+      <button class="hbtn" id="settings-cancel-btn">Cancel</button>
+      <button class="hbtn g" id="settings-save-btn">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script>
+'use strict';
+
+// ─── CONFIG ──────────────────────────────────────────────────────────────────
+const CFG = {
+  dataUrl: 'data/market_intel.json',
+  termsUrl: 'data/search_terms.json',
+  trendUrl: 'data/trending.json',
+  activeInterval: 5 * 60 * 1000,
+  bgInterval:     15 * 60 * 1000,
+  staleThreshold: 35 * 60 * 1000,
+  pageSize:        50,   // items shown initially per panel (load-more adds 50)
+  maxItems:       200,
+  maxTerms:        30,
+  maxTrends:       20,
+};
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+const S = {
+  india:      [],
+  world:      [],
+  bse:        [],
+  nse:        [],
+  trending:   [],
+  terms:      [],
+  termsDraft: [],
+  metaTs:     null,
+  activeTab:  'bse',
+  activeFilter: null,
+  indiaPg:    1,
+  worldPg:    1,
+  exchPg:     1,
+  countdownSec: 0,
+  cdTimer:    null,
+  refreshTimer: null,
+  isVisible:  true,
+  apiKey:     '',
+  ghToken:    '',
+  ghRepo:     '',
+  ghPath:     'data/search_terms.json',
+  intelRunning: false,
+};
+
+// ─── PERSIST ─────────────────────────────────────────────────────────────────
+function loadSettings(){
+  S.apiKey  = sessionStorage.getItem('bi_apikey')  || '';
+  S.ghToken = sessionStorage.getItem('bi_ghtoken') || '';
+  S.ghRepo  = sessionStorage.getItem('bi_ghrepo')  || '';
+  S.ghPath  = sessionStorage.getItem('bi_ghpath')  || 'data/search_terms.json';
+}
+function saveSettings(){
+  sessionStorage.setItem('bi_apikey',  S.apiKey);
+  sessionStorage.setItem('bi_ghtoken', S.ghToken);
+  sessionStorage.setItem('bi_ghrepo',  S.ghRepo);
+  sessionStorage.setItem('bi_ghpath',  S.ghPath);
+}
+
+// ─── UTILS ────────────────────────────────────────────────────────────────────
+function relTime(iso){
+  if(!iso) return '';
+  const d = new Date(iso), now = Date.now(), diff = now - d;
+  if(isNaN(diff)) return '';
+  if(diff < 60000) return 'just now';
+  if(diff < 3600000) return Math.floor(diff/60000)+'m ago';
+  if(diff < 86400000) return Math.floor(diff/3600000)+'h ago';
+  return Math.floor(diff/86400000)+'d ago';
+}
+function fmtTs(iso){
+  if(!iso) return '';
+  try{
+    const d = new Date(iso);
+    // Convert to IST (UTC+5:30)
+    const ist = new Date(d.getTime() + 5.5*3600000);
+    const dd = String(ist.getUTCDate()).padStart(2,'0');
+    const mm = String(ist.getUTCMonth()+1).padStart(2,'0');
+    const hh = String(ist.getUTCHours()).padStart(2,'0');
+    const mn = String(ist.getUTCMinutes()).padStart(2,'0');
+    return `${dd}/${mm} ${hh}:${mn} IST`;
+  }catch(e){ return '' }
+}
+function escHtml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') }
+function highlight(text, query){
+  if(!query) return escHtml(text);
+  const safe = query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return escHtml(text).replace(new RegExp(safe,'gi'), m=>`<mark>${escHtml(m)}</mark>`);
+}
+function catClass(cat){
+  const c = (cat||'').toLowerCase();
+  if(c.includes('market')||c.includes('nifty')||c.includes('sensex')) return 'cm';
+  if(c.includes('econ')||c.includes('rbi')||c.includes('policy')||c.includes('budget')) return 'ce';
+  if(c.includes('geo')||c.includes('global')||c.includes('war')||c.includes('trade')) return 'cg';
+  if(c.includes('corp')||c.includes('result')||c.includes('earn')||c.includes('bse')||c.includes('nse')) return 'cc';
+  return 'cd';
+}
+function filingBadgeClass(type){
+  const t = (type||'').toLowerCase();
+  if(t.includes('result')||t.includes('earn')||t.includes('quarter')) return 'bg-fin';
+  if(t.includes('acqui')||t.includes('merger')||t.includes('dividend')) return 'bg-corp';
+  if(t.includes('discl')||t.includes('insider')||t.includes('pledge')) return 'bg-disc';
+  return 'bg-annt';
+}
+function toast(msg, type='ok'){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `show t-${type}`;
+  setTimeout(()=>{ t.className = '' }, 2800);
+}
+function skeletonHtml(){
+  return Array.from({length:6},(_,i)=>`
+    <div class="skeleton">
+      <div class="sk-line" style="width:${85+Math.random()*15|0}%"></div>
+      <div class="sk-line short" style="width:${40+Math.random()*25|0}%"></div>
+      <div class="sk-line tiny"></div>
+    </div>`).join('');
+}
+
+// ─── DATA FETCH ───────────────────────────────────────────────────────────────
+async function fetchAll(force=false){
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true; btn.classList.add('spinning');
+  setAllRbtnSpinning(true);
+  try{
+    // Parallel fetch: main data + trending
+    const [dataRes, trendRes] = await Promise.allSettled([
+      fetch(CFG.dataUrl + '?t=' + Date.now()),
+      fetch(CFG.trendUrl + '?t=' + Date.now()),
+    ]);
+    if(dataRes.status==='fulfilled' && dataRes.value.ok){
+      const json = await dataRes.value.json();
+      S.india    = json.india_news || [];
+      S.world    = json.world_news || [];
+      S.bse      = json.bse        || [];
+      S.nse      = json.nse        || [];
+      S.metaTs   = json.meta?.fetched_at || null;
+      S.indiaPg  = 1; S.worldPg = 1; S.exchPg = 1;
+      renderAll();
+    } else {
+      // Try loading demo data if file not found (dev mode)
+      injectDemoData();
+      renderAll();
+      toast('Using demo data — deploy data files to see live feed', 'err');
+    }
+    if(trendRes.status==='fulfilled' && trendRes.value.ok){
+      const tj = await trendRes.value.json();
+      S.trending = tj.trends || tj || [];
+      renderTrending();
+    }
+    // Try to load search terms from GitHub
+    await fetchTermsFromGitHub();
+    updateMeta();
+  } catch(e){
+    console.warn('Fetch error:', e);
+    injectDemoData();
+    renderAll();
+    toast('Could not load data — check your data files', 'err');
+  } finally {
+    btn.disabled = false; btn.classList.remove('spinning');
+    setAllRbtnSpinning(false);
+    resetCountdown();
+  }
+}
+
+async function fetchTermsFromGitHub(){
+  if(!S.ghToken || !S.ghRepo) return;
+  try{
+    const r = await fetch(`https://api.github.com/repos/${S.ghRepo}/contents/${S.ghPath}`, {
+      headers: { 'Authorization':'token '+S.ghToken, 'Accept':'application/vnd.github.v3+json' }
+    });
+    if(r.ok){
+      const j = await r.json();
+      const decoded = JSON.parse(atob(j.content.replace(/\s/g,'')));
+      S.terms = decoded.terms || [];
+      renderTermsBadge();
+    }
+  } catch(e){ /* silent — use local state */ }
+}
+
+// ─── DEMO DATA ────────────────────────────────────────────────────────────────
+function injectDemoData(){
+  const now = new Date().toISOString();
+  const samples = {
+    india:[
+      {id:'i1',title:'Nifty 50 hits record high as FII inflows surge; banking and IT sectors lead rally',source:'Economic Times',url:'#',published_at:now,category:'Markets',matched_terms:['Nifty 50','FII flows']},
+      {id:'i2',title:'RBI holds repo rate at 6.5% for fifth consecutive policy meeting; stance remains withdrawal',source:'Mint',url:'#',published_at:new Date(Date.now()-3600000).toISOString(),category:'Economy',matched_terms:['RBI rate']},
+      {id:'i3',title:'Adani Group stocks recover after fresh block deal; promoters increase stake',source:'Business Standard',url:'#',published_at:new Date(Date.now()-7200000).toISOString(),category:'Corporate',matched_terms:['Adani']},
+      {id:'i4',title:'India Q2 GDP growth at 7.4%, beats estimates; manufacturing sector shows strong momentum',source:'Financial Express',url:'#',published_at:new Date(Date.now()-10800000).toISOString(),category:'Economy',matched_terms:['GDP']},
+      {id:'i5',title:'SEBI tightens F&O rules; minimum contract size raised to ₹15 lakh from Nov 1',source:'Economic Times',url:'#',published_at:new Date(Date.now()-14400000).toISOString(),category:'Markets',matched_terms:['SEBI','F&O']},
+      {id:'i6',title:'Infosys revises FY25 revenue guidance upward to 4.5–5% in constant currency',source:'Mint',url:'#',published_at:new Date(Date.now()-18000000).toISOString(),category:'Corporate',matched_terms:['Infosys','IT sector']},
+    ],
+    world:[
+      {id:'w1',title:'Fed holds rates steady, signals one more cut in 2024 amid sticky inflation concerns',source:'Reuters',url:'#',published_at:now,category:'Global Economy',matched_terms:['Fed rate']},
+      {id:'w2',title:'Crude oil jumps 3% on OPEC+ supply cut extension; Brent above $87/barrel',source:'Bloomberg',url:'#',published_at:new Date(Date.now()-3600000).toISOString(),category:'Commodities',matched_terms:['crude oil','OPEC']},
+      {id:'w3',title:'China PMI contracts for third month; stimulus measures expected from PBOC',source:'CNBC',url:'#',published_at:new Date(Date.now()-7200000).toISOString(),category:'Global',matched_terms:['China PMI']},
+      {id:'w4',title:'Dollar index retreats from 8-month high; emerging market currencies rally',source:'Reuters',url:'#',published_at:new Date(Date.now()-10800000).toISOString(),category:'Forex',matched_terms:['Dollar index']},
+      {id:'w5',title:'US 10Y Treasury yield crosses 4.6%; global equity markets under pressure',source:'Financial Times',url:'#',published_at:new Date(Date.now()-14400000).toISOString(),category:'Global Economy',matched_terms:['US 10Y']},
+    ],
+    bse:[
+      {id:'b1',company:'HDFC Bank Ltd',announcement_type:'Board Meeting - Results',url:'#',published_at:now,exchange:'BSE',detail:'Board meeting to consider and approve Q2 FY25 financial results'},
+      {id:'b2',company:'Reliance Industries',announcement_type:'Dividend',url:'#',published_at:new Date(Date.now()-3600000).toISOString(),exchange:'BSE',detail:'Final dividend of ₹10 per share announced for FY25'},
+      {id:'b3',company:'Tata Consultancy Services',announcement_type:'Disclosure - Insider Trading',url:'#',published_at:new Date(Date.now()-7200000).toISOString(),exchange:'BSE',detail:'Pre-clearance for sale of equity shares by designated person'},
+      {id:'b4',company:'Infosys Ltd',announcement_type:'Earnings - Guidance Revision',url:'#',published_at:new Date(Date.now()-9000000).toISOString(),exchange:'BSE',detail:'Revenue guidance revised to 4.5-5% in constant currency terms'},
+      {id:'b5',company:'ICICI Bank Ltd',announcement_type:'Analyst / Investor Meet',url:'#',published_at:new Date(Date.now()-12000000).toISOString(),exchange:'BSE',detail:'Investor day scheduled; management to present FY26 roadmap'},
+    ],
+    nse:[
+      {id:'n1',company:'SBI Life Insurance',announcement_type:'Board Meeting - Results',url:'#',published_at:now,exchange:'NSE',detail:'Quarterly results for Q2 FY25 to be declared'},
+      {id:'n2',company:'Bajaj Finance',announcement_type:'Acquisition',url:'#',published_at:new Date(Date.now()-5400000).toISOString(),exchange:'NSE',detail:'Acquires stake in fintech startup for ₹240 crore'},
+      {id:'n3',company:'Wipro Ltd',announcement_type:'Buyback',url:'#',published_at:new Date(Date.now()-9000000).toISOString(),exchange:'NSE',detail:'Board approves share buyback at ₹560 per share'},
+    ]
+  };
+  S.india = samples.india;
+  S.world = samples.world;
+  S.bse   = samples.bse;
+  S.nse   = samples.nse;
+  S.metaTs = now;
+  if(!S.trending.length){
+    S.trending = [
+      {term:'Nifty 50',count:18},{term:'RBI Policy',count:14},{term:'FII Flows',count:12},
+      {term:'Crude Oil',count:11},{term:'HDFC Bank',count:10},{term:'IT Sector',count:9},
+      {term:'Fed Rate',count:9},{term:'Adani Group',count:8},{term:'SEBI',count:7},
+      {term:'Dollar Index',count:7},{term:'China PMI',count:6},{term:'Infosys',count:6},
+      {term:'Gold Prices',count:5},{term:'Midcap Rally',count:5},{term:'US 10Y',count:4},
+      {term:'OPEC',count:4},{term:'Tata Motors',count:3},{term:'Reliance',count:3},
+      {term:'Budget 2025',count:3},{term:'Rupee',count:2},
+    ];
+  }
+  if(!S.terms.length){
+    S.terms = ['Nifty 50','Sensex','RBI','FII flows','crude oil','IT sector','HDFC Bank','Infosys','Adani','SEBI','Fed rate','China PMI','Dollar index','gold','Reliance','budget','inflation','GDP','midcap','smallcap'];
+  }
+}
+
+// ─── RENDER ───────────────────────────────────────────────────────────────────
+function renderAll(){
+  renderNewsPanel('india', S.india);
+  renderNewsPanel('world', S.world);
+  renderExchange();
+  renderTrending();
+  renderTermsBadge();
+}
+
+function renderNewsPanel(feed, items){
+  const body = document.getElementById(`${feed}-body`);
+  const cnt  = document.getElementById(`${feed}-cnt`);
+  cnt.textContent = items.length ? `${items.length} items` : '';
+  if(!items.length){
+    body.innerHTML = `<div class="empty">No items — check data file or search terms</div>`;
+    return;
+  }
+  const end = S[`${feed}Pg`] * CFG.pageSize;
+  const slice = items.slice(0, end);
+  const frag = document.createDocumentFragment();
+  slice.forEach(item => {
+    const el = newsItemEl(item);
+    if(S.activeFilter && !itemMatchesFilter(item, S.activeFilter)) el.classList.add('hidden');
+    frag.appendChild(el);
+  });
+  body.innerHTML = '';
+  body.appendChild(frag);
+  if(end < items.length){
+    const btn = document.createElement('button');
+    btn.className = 'load-more-btn';
+    btn.textContent = `↓ Load more  (${items.length - end} remaining)`;
+    btn.onclick = ()=>{ S[`${feed}Pg`]++; renderNewsPanel(feed, items); };
+    body.appendChild(btn);
+  }
+}
+
+function newsItemEl(item){
+  const el = document.createElement('div');
+  el.className = 'ni';
+  el.dataset.id = item.id;
+  const cc = catClass(item.category);
+  const rel = relTime(item.published_at);
+  const ts  = fmtTs(item.published_at);
+  const matchedHtml = item.matched_terms?.length
+    ? `<span class="ni-mt" title="Matched terms: ${escHtml(item.matched_terms.join(', '))}">⊕ ${escHtml(item.matched_terms[0])}${item.matched_terms.length>1?` +${item.matched_terms.length-1}`:''}</span>`
+    : '';
+  el.innerHTML = `
+    <div class="ni-t">${escHtml(item.title)}</div>
+    <div class="ni-m">
+      <span class="ni-src">${escHtml(item.source||'')}</span>
+      <span class="ni-sep">·</span>
+      <span class="ni-ts" title="${ts}">${rel}${ts?` · ${ts}`:''}</span>
+      ${item.category ? `<span class="ctag ${cc}">${escHtml(item.category)}</span>` : ''}
+      ${matchedHtml}
+    </div>`;
+  if(item.url && item.url !== '#'){
+    el.onclick = ()=> window.open(item.url,'_blank','noopener');
+  }
+  return el;
+}
+
+function renderExchange(){
+  const items = S.activeTab === 'bse' ? S.bse : S.nse;
+  const body  = document.getElementById('exch-body');
+  document.getElementById('bse-tab-cnt').textContent = S.bse.length;
+  document.getElementById('nse-tab-cnt').textContent = S.nse.length;
+  if(!items.length){
+    body.innerHTML = `<div class="empty">No ${S.activeTab.toUpperCase()} filings available</div>`;
+    return;
+  }
+  const end = S.exchPg * CFG.pageSize;
+  const frag = document.createDocumentFragment();
+  items.slice(0, end).forEach(f => {
+    const el = document.createElement('div');
+    el.className = 'fi';
+    const bc = filingBadgeClass(f.announcement_type||f.type||'');
+    const ts = fmtTs(f.published_at);
+    const rel = relTime(f.published_at);
+    el.innerHTML = `
+      <div class="fi-ts">${ts||rel||'—'}</div>
+      <div class="fi-co">${escHtml(f.company||f.symbol||'Unknown')}
+        ${f.detail?`<small>${escHtml(f.detail.substring(0,90))}${f.detail.length>90?'…':''}</small>`:''}
+      </div>
+      <div class="fi-badge ${bc}">${escHtml((f.announcement_type||f.type||'FILING').substring(0,22))}</div>`;
+    if(f.url && f.url !== '#') el.onclick=()=>window.open(f.url,'_blank','noopener');
+    frag.appendChild(el);
+  });
+  body.innerHTML = '';
+  body.appendChild(frag);
+  if(end < items.length){
+    const btn = document.createElement('button');
+    btn.className = 'load-more-btn';
+    btn.textContent = `↓ Load more  (${items.length - end} remaining)`;
+    btn.onclick=()=>{ S.exchPg++; renderExchange(); };
+    body.appendChild(btn);
+  }
+}
+
+function renderTrending(){
+  const container = document.getElementById('trend-inner');
+  const cnt = document.getElementById('trend-cnt');
+  const trends = S.trending.slice(0, CFG.maxTrends);
+  cnt.textContent = trends.length ? `top ${trends.length}` : '';
+  if(!trends.length){
+    container.innerHTML = '<div class="empty" style="width:100%">Trending data not available</div>';
+    return;
+  }
+  container.innerHTML = '';
+  trends.forEach(t => {
+    const term = t.term || t.name || t;
+    const count = t.count || '';
+    const pill = document.createElement('div');
+    pill.className = 'tpill' + (S.activeFilter===term?' active':'');
+    pill.innerHTML = `${escHtml(term)}${count?`<span class="tcnt">${count}</span>`:''}`;
+    pill.onclick = ()=> toggleFilter(term, pill);
+    container.appendChild(pill);
+  });
+}
+
+function toggleFilter(term, pillEl){
+  if(S.activeFilter === term){
+    S.activeFilter = null;
+    document.querySelectorAll('.tpill').forEach(p=>p.classList.remove('active'));
+    applyFilter(null);
+  } else {
+    S.activeFilter = term;
+    document.querySelectorAll('.tpill').forEach(p=>p.classList.remove('active'));
+    pillEl.classList.add('active');
+    applyFilter(term);
+  }
+}
+
+function applyFilter(term){
+  ['india-body','world-body'].forEach(id=>{
+    document.getElementById(id).querySelectorAll('.ni').forEach(el=>{
+      if(!term){ el.classList.remove('hidden'); return; }
+      const id2 = el.dataset.id;
+      const feed = id.includes('india') ? S.india : S.world;
+      const item = feed.find(x=>x.id===id2);
+      const matches = item && (
+        (item.matched_terms||[]).some(t=>t.toLowerCase().includes(term.toLowerCase())) ||
+        (item.title||'').toLowerCase().includes(term.toLowerCase()) ||
+        (item.category||'').toLowerCase().includes(term.toLowerCase())
+      );
+      el.classList.toggle('hidden', !matches);
+    });
+  });
+}
+
+function itemMatchesFilter(item, term){
+  if(!term) return true;
+  const tl = term.toLowerCase();
+  return (item.matched_terms||[]).some(t=>t.toLowerCase().includes(tl)) ||
+         (item.title||'').toLowerCase().includes(tl) ||
+         (item.category||'').toLowerCase().includes(tl);
+}
+
+// ─── META / COUNTDOWN ────────────────────────────────────────────────────────
+function updateMeta(){
+  const el = document.getElementById('last-updated');
+  const dot = document.getElementById('sdot');
+  if(!S.metaTs){ el.textContent = '--:--'; return; }
+  const d = new Date(S.metaTs);
+  const ist = new Date(d.getTime() + 5.5*3600000);
+  const hh = String(ist.getUTCHours()).padStart(2,'0');
+  const mm = String(ist.getUTCMinutes()).padStart(2,'0');
+  el.textContent = `${hh}:${mm}`;
+  const age = Date.now() - d.getTime();
+  dot.className = 'sdot' + (age > CFG.staleThreshold ? ' stale' : '');
+}
+
+function resetCountdown(){
+  clearInterval(S.cdTimer);
+  const interval = S.isVisible ? CFG.activeInterval : CFG.bgInterval;
+  S.countdownSec = Math.floor(interval / 1000);
+  S.cdTimer = setInterval(()=>{
+    S.countdownSec--;
+    const m = Math.floor(S.countdownSec/60);
+    const s = S.countdownSec % 60;
+    document.getElementById('cdown').textContent = `${m}:${String(s).padStart(2,'0')}`;
+    if(S.countdownSec <= 0){
+      clearInterval(S.cdTimer);
+      fetchAll();
+    }
+  }, 1000);
+  const m = Math.floor(S.countdownSec/60);
+  document.getElementById('cdown').textContent = `${m}:00`;
+}
+
+function setAllRbtnSpinning(on){
+  ['india-rbtn','world-rbtn','exch-rbtn'].forEach(id=>{
+    document.getElementById(id).classList.toggle('spinning', on);
+  });
+}
+
+// ─── VISIBILITY ───────────────────────────────────────────────────────────────
+document.addEventListener('visibilitychange', ()=>{
+  S.isVisible = !document.hidden;
+  const badge = document.getElementById('mode-badge');
+  badge.textContent = S.isVisible ? 'ACTIVE' : 'BG';
+  badge.className = S.isVisible ? 'active' : '';
+  if(S.isVisible){
+    // If we've been hidden, check if we need immediate refresh
+    const elapsed = S.isVisible ? 0 : (CFG.bgInterval - S.countdownSec*1000);
+    if(S.countdownSec <= 0 || elapsed > CFG.activeInterval){
+      fetchAll();
+    } else {
+      resetCountdown();
+    }
+  } else {
+    resetCountdown();
+  }
+});
+
+// ─── SEARCH ───────────────────────────────────────────────────────────────────
+const srch = document.getElementById('srch');
+const sres = document.getElementById('sres');
+
+srch.addEventListener('input', ()=>{
+  const q = srch.value.trim();
+  if(!q){ sres.classList.remove('open'); return; }
+  doSearch(q);
+});
+srch.addEventListener('keydown', e=>{ if(e.key==='Escape'){ srch.value=''; sres.classList.remove('open'); } });
+document.getElementById('sres-close').onclick = ()=>{ srch.value=''; sres.classList.remove('open'); };
+
+function doSearch(q){
+  const all = [...S.india,...S.world].map(x=>({...x,_feed:'news'}))
+    .concat(S.bse.map(x=>({...x,title:x.company+' — '+(x.announcement_type||''),_feed:'BSE'})))
+    .concat(S.nse.map(x=>({...x,title:x.company+' — '+(x.announcement_type||''),_feed:'NSE'})));
+  const ql = q.toLowerCase();
+  const hits = all.filter(x=>
+    (x.title||'').toLowerCase().includes(ql) ||
+    (x.source||'').toLowerCase().includes(ql) ||
+    (x.category||'').toLowerCase().includes(ql) ||
+    (x.matched_terms||[]).some(t=>t.toLowerCase().includes(ql))
+  ).slice(0,40);
+  const hdr = document.getElementById('sres-count');
+  hdr.textContent = `${hits.length} result${hits.length!==1?'s':''} for "${q}"`;
+  sres.innerHTML = '';
+  sres.appendChild(document.getElementById('sres-hdr').cloneNode(true));
+  document.getElementById('sres-hdr').querySelector &&
+    document.querySelector('#sres-hdr #sres-close').onclick &&
+    (document.querySelector('#sres-hdr #sres-close').onclick = ()=>{ srch.value=''; sres.classList.remove('open'); });
+  // Re-attach header
+  const hdrDiv = document.createElement('div');
+  hdrDiv.id='sres-hdr-inner';
+  hdrDiv.style.cssText='padding:7px 14px;font-family:var(--mono);font-size:10px;color:var(--text3);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center';
+  hdrDiv.innerHTML=`<span>${hits.length} result${hits.length!==1?'s':''} for "<em style="color:var(--green)">${escHtml(q)}</em>"</span>`;
+  const closeBtn=document.createElement('button');
+  closeBtn.style.cssText='background:none;border:none;color:var(--text3);cursor:pointer;font-size:18px;line-height:1;padding:0';
+  closeBtn.textContent='×';
+  closeBtn.onclick=()=>{ srch.value=''; sres.classList.remove('open'); };
+  hdrDiv.appendChild(closeBtn);
+  sres.innerHTML='';
+  sres.appendChild(hdrDiv);
+  if(!hits.length){
+    sres.innerHTML += '<div class="empty" style="padding:14px">No results found</div>';
+  } else {
+    hits.forEach(item=>{
+      const el=document.createElement('div');
+      el.className='sri';
+      const ts = fmtTs(item.published_at);
+      const src = item._feed==='BSE'||item._feed==='NSE' ? item._feed : (item.source||'');
+      el.innerHTML=`
+        <div class="sri-t">${highlight(item.title,q)}</div>
+        <div class="sri-m">
+          <span class="sri-src">${escHtml(src)}</span>
+          ${item.category?`<span class="sri-tag">${escHtml(item.category)}</span>`:''}
+          ${ts?`<span class="sri-time">${ts}</span>`:''}
+        </div>`;
+      if(item.url&&item.url!=='#') el.onclick=()=>window.open(item.url,'_blank','noopener');
+      sres.appendChild(el);
+    });
+  }
+  sres.classList.add('open');
+}
+
+// ─── TABS ─────────────────────────────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    S.activeTab = tab.dataset.tab;
+    S.exchPg = 1;
+    renderExchange();
+  };
+});
+
+// ─── TRENDING CLEAR ───────────────────────────────────────────────────────────
+document.getElementById('trend-rbtn').onclick=()=>{
+  S.activeFilter=null;
+  document.querySelectorAll('.tpill').forEach(p=>p.classList.remove('active'));
+  applyFilter(null);
+};
+
+// ─── PANEL REFRESH BUTTONS ────────────────────────────────────────────────────
+document.getElementById('india-rbtn').onclick=()=>{
+  S.indiaPg=1;
+  document.getElementById('india-rbtn').classList.add('spinning');
+  setTimeout(()=>{
+    renderNewsPanel('india',S.india);
+    document.getElementById('india-rbtn').classList.remove('spinning');
+    toast('India feed refreshed');
+  },300);
+};
+document.getElementById('world-rbtn').onclick=()=>{
+  S.worldPg=1;
+  document.getElementById('world-rbtn').classList.add('spinning');
+  setTimeout(()=>{
+    renderNewsPanel('world',S.world);
+    document.getElementById('world-rbtn').classList.remove('spinning');
+    toast('World feed refreshed');
+  },300);
+};
+document.getElementById('exch-rbtn').onclick=()=>{
+  S.exchPg=1;
+  document.getElementById('exch-rbtn').classList.add('spinning');
+  setTimeout(()=>{
+    renderExchange();
+    document.getElementById('exch-rbtn').classList.remove('spinning');
+    toast(`${S.activeTab.toUpperCase()} feed refreshed`);
+  },300);
+};
+document.getElementById('intel-rbtn').onclick=()=>runIntel(true);
+document.getElementById('refresh-btn').onclick=()=>fetchAll(true);
+
+// ─── INTEL FIELD ─────────────────────────────────────────────────────────────
+async function runIntel(force=false){
+  if(!S.apiKey){
+    document.getElementById('intel-body').innerHTML=`
+      <p class="iempty">Add your Anthropic API key in ⚙ Settings to enable the Intel Field AI brief.</p>
+      <div class="intel-api-note">The brief synthesises top headlines into a market-impact summary — key themes, sector signals, and risk flags — using Claude Sonnet.</div>`;
+    return;
+  }
+  if(S.intelRunning && !force) return;
+  S.intelRunning = true;
+  const body = document.getElementById('intel-body');
+  body.innerHTML = '<p class="iempty">Analysing headlines<span class="icursor"></span></p>';
+  const headlines = [...S.india.slice(0,8), ...S.world.slice(0,7)]
+    .map((x,i)=>`${i+1}. [${x.source||''}] ${x.title} (${x.category||'news'})`).join('\n');
+  const termsList = S.terms.slice(0,15).join(', ');
+  const prompt = `You are a market intelligence analyst for Indian equity markets (NSE/BSE). Analyse the following news headlines and produce a structured brief for an Indian retail investor.
+
+Key watch terms: ${termsList}
+
+Headlines:
+${headlines}
+
+Respond ONLY in this exact JSON structure (no markdown, no preamble):
+{
+  "theme": "One sentence: the dominant market narrative today",
+  "nifty_outlook": "2-3 sentences on likely Nifty/Sensex direction and key levels",
+  "sector_signals": ["signal 1", "signal 2", "signal 3"],
+  "risk_flags": ["risk 1", "risk 2"],
+  "watch_list": ["TICKER or theme 1", "TICKER or theme 2", "TICKER or theme 3"],
+  "macro_note": "One sentence on the most relevant global macro factor"
+}`;
+
+  try{
+    const res = await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{ 'Content-Type':'application/json', 'x-api-key':S.apiKey, 'anthropic-version':'2023-06-01', 'anthropic-dangerous-direct-browser-access':'true' },
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:600,
+        messages:[{role:'user',content:prompt}]
+      })
+    });
+    if(!res.ok){ throw new Error('API '+res.status); }
+    const data = await res.json();
+    const raw = data.content?.[0]?.text || '';
+    const clean = raw.replace(/```json|```/g,'').trim();
+    const j = JSON.parse(clean);
+    renderIntelBrief(j);
+  } catch(e){
+    body.innerHTML=`<p class="iempty">Could not generate brief: ${escHtml(e.message)}</p>`;
+  } finally {
+    S.intelRunning=false;
+  }
+}
+
+function renderIntelBrief(j){
+  const body = document.getElementById('intel-body');
+  const ts = new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'});
+  let html = `<div style="font-family:var(--mono);font-size:9px;color:var(--text3);margin-bottom:12px">Generated ${ts} IST · Claude Sonnet</div>`;
+  if(j.theme) html+=`<div class="isec"><div class="ilabel">Theme</div><div class="itext" style="font-size:13px;color:var(--text)">${escHtml(j.theme)}</div></div>`;
+  if(j.nifty_outlook) html+=`<div class="isec"><div class="ilabel">Nifty Outlook</div><div class="itext">${escHtml(j.nifty_outlook)}</div></div>`;
+  if(j.sector_signals?.length) html+=`<div class="isec"><div class="ilabel">Sector Signals</div>${j.sector_signals.map(s=>`<div class="ibullet">${escHtml(s)}</div>`).join('')}</div>`;
+  if(j.risk_flags?.length) html+=`<div class="isec"><div class="ilabel">Risk Flags</div>${j.risk_flags.map(f=>`<div class="iflag">${escHtml(f)}</div>`).join('')}</div>`;
+  if(j.watch_list?.length) html+=`<div class="isec"><div class="ilabel">Watch List</div><div style="display:flex;flex-wrap:wrap;gap:5px">${j.watch_list.map(w=>`<span style="font-family:var(--mono);font-size:10px;padding:2px 6px;border:1px solid var(--border);border-radius:2px;color:var(--amber)">${escHtml(w)}</span>`).join('')}</div></div>`;
+  if(j.macro_note) html+=`<div class="isec"><div class="ilabel">Macro Note</div><div class="itext">${escHtml(j.macro_note)}</div></div>`;
+  if(S.terms.length) html+=`<div id="intel-terms-note">Watching: <span>${escHtml(S.terms.slice(0,8).join(' · '))}${S.terms.length>8?` +${S.terms.length-8} more`:''}</span></div>`;
+  body.innerHTML = html;
+}
+
+// ─── SEARCH TERMS ─────────────────────────────────────────────────────────────
+function renderTermsBadge(){
+  document.getElementById('terms-hdr-cnt').textContent = `${S.terms.length}/30`;
+}
+
+function openTermsModal(){
+  S.termsDraft = [...S.terms];
+  renderTermsGrid();
+  document.getElementById('terms-save-status').textContent = '';
+  document.getElementById('terms-save-status').className = 'mstatus';
+  document.getElementById('terms-save-status').style.display='none';
+  document.getElementById('terms-modal').classList.add('open');
+  document.getElementById('term-input').focus();
+}
+
+function renderTermsGrid(){
+  const grid = document.getElementById('terms-grid');
+  const cntEl = document.getElementById('terms-cnt-display');
+  cntEl.textContent = S.termsDraft.length;
+  cntEl.style.color = S.termsDraft.length >= CFG.maxTerms ? 'var(--red)' : 'inherit';
+  grid.innerHTML='';
+  S.termsDraft.forEach((term,i)=>{
+    const el=document.createElement('div');
+    el.className='tterm';
+    el.innerHTML=`<span>${escHtml(term)}</span><button title="Remove" onclick="removeTerm(${i})">×</button>`;
+    grid.appendChild(el);
+  });
+}
+
+window.removeTerm=function(i){
+  S.termsDraft.splice(i,1);
+  renderTermsGrid();
+};
+
+document.getElementById('term-add-btn').onclick=addTerm;
+document.getElementById('term-input').addEventListener('keydown',e=>{ if(e.key==='Enter') addTerm(); });
+
+function addTerm(){
+  const inp=document.getElementById('term-input');
+  const v=inp.value.trim();
+  if(!v) return;
+  if(S.termsDraft.length >= CFG.maxTerms){ toast('Maximum 30 search terms allowed','err'); return; }
+  if(S.termsDraft.some(t=>t.toLowerCase()===v.toLowerCase())){ toast('Term already exists','err'); return; }
+  S.termsDraft.push(v);
+  inp.value='';
+  renderTermsGrid();
+}
+
+document.getElementById('terms-save-btn').onclick=saveTermsToGitHub;
+document.getElementById('terms-cancel-btn').onclick=()=>document.getElementById('terms-modal').classList.remove('open');
+document.getElementById('terms-modal-close').onclick=()=>document.getElementById('terms-modal').classList.remove('open');
+document.getElementById('terms-btn').onclick=openTermsModal;
+
+async function saveTermsToGitHub(){
+  if(!S.ghToken||!S.ghRepo){
+    toast('Add GitHub token and repo in ⚙ Settings first','err');
+    setTermsStatus('saving','Configure GitHub in Settings first');
+    return;
+  }
+  const saveBtn=document.getElementById('terms-save-btn');
+  saveBtn.disabled=true;
+  setTermsStatus('saving','Saving…');
+  const payload={ version:1, updated_at:new Date().toISOString(), terms:S.termsDraft };
+  const content = btoa(JSON.stringify(payload,null,2));
+  try{
+    // Get current SHA
+    let sha=null;
+    const getRes=await fetch(`https://api.github.com/repos/${S.ghRepo}/contents/${S.ghPath}`,{
+      headers:{'Authorization':'token '+S.ghToken,'Accept':'application/vnd.github.v3+json'}
+    });
+    if(getRes.ok){ const gj=await getRes.json(); sha=gj.sha; }
+    const body={ message:`Update search terms [${new Date().toISOString()}]`, content, ...(sha?{sha}:{}) };
+    const putRes=await fetch(`https://api.github.com/repos/${S.ghRepo}/contents/${S.ghPath}`,{
+      method:'PUT',
+      headers:{'Authorization':'token '+S.ghToken,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+      body:JSON.stringify(body)
+    });
+    if(!putRes.ok) throw new Error(`GitHub API ${putRes.status}`);
+    S.terms=[...S.termsDraft];
+    renderTermsBadge();
+    setTermsStatus('ok','Saved ✓');
+    toast('Search terms saved to GitHub');
+    setTimeout(()=>document.getElementById('terms-modal').classList.remove('open'),1200);
+  } catch(e){
+    setTermsStatus('err','Error: '+e.message);
+    toast('Save failed: '+e.message,'err');
+  } finally {
+    saveBtn.disabled=false;
+  }
+}
+
+function setTermsStatus(type,msg){
+  const el=document.getElementById('terms-save-status');
+  el.textContent=msg;
+  el.className=`mstatus ${type}`;
+  el.style.display=msg?'inline-block':'none';
+}
+
+// ─── SETTINGS MODAL ───────────────────────────────────────────────────────────
+document.getElementById('settings-btn').onclick=openSettings;
+document.getElementById('settings-cancel-btn').onclick=()=>document.getElementById('settings-modal').classList.remove('open');
+document.getElementById('settings-modal-close').onclick=()=>document.getElementById('settings-modal').classList.remove('open');
+document.getElementById('settings-save-btn').onclick=saveSettingsFromModal;
+
+function openSettings(){
+  document.getElementById('api-key-input').value = S.apiKey ? '••••••••' : '';
+  document.getElementById('gh-token-input').value = S.ghToken ? '••••••••' : '';
+  document.getElementById('gh-repo-input').value  = S.ghRepo;
+  document.getElementById('gh-path-input').value  = S.ghPath;
+  document.getElementById('settings-status').style.display='none';
+  document.getElementById('settings-modal').classList.add('open');
+}
+
+function saveSettingsFromModal(){
+  const ak = document.getElementById('api-key-input').value.trim();
+  const gh = document.getElementById('gh-token-input').value.trim();
+  const repo = document.getElementById('gh-repo-input').value.trim();
+  const path = document.getElementById('gh-path-input').value.trim() || 'data/search_terms.json';
+  if(ak && !ak.startsWith('•')) S.apiKey = ak;
+  if(gh && !gh.startsWith('•')) S.ghToken = gh;
+  if(repo) S.ghRepo = repo;
+  S.ghPath = path;
+  saveSettings();
+  document.getElementById('settings-modal').classList.remove('open');
+  toast('Settings saved');
+  if(S.apiKey && !S.intelRunning) runIntel();
+}
+
+// Close modals on backdrop click
+['terms-modal','settings-modal'].forEach(id=>{
+  document.getElementById(id).addEventListener('click',e=>{
+    if(e.target.id===id) document.getElementById(id).classList.remove('open');
+  });
+});
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+(async function init(){
+  loadSettings();
+  // Show skeletons while loading
+  ['india-body','world-body'].forEach(id=>{
+    document.getElementById(id).innerHTML = skeletonHtml();
+  });
+  await fetchAll();
+  // Run intel if API key is set
+  if(S.apiKey) runIntel();
+  // Keyboard shortcuts
+  document.addEventListener('keydown', e=>{
+    if((e.metaKey||e.ctrlKey) && e.key==='k'){ e.preventDefault(); srch.focus(); srch.select(); }
+    if(e.key==='Escape' && sres.classList.contains('open')){ srch.value=''; sres.classList.remove('open'); }
+  });
+})();
+</script>
+</body>
+</html>
