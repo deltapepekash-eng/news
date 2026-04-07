@@ -61,3 +61,10 @@ jobs:
       - name: No changes
         if: steps.changes.outputs.changed == 'false'
         run: echo "No new data — feeds unchanged since last run."
+        - name: Commit and push data
+  run: |
+    git config --global user.name "github-actions"
+    git config --global user.email "github-actions@github.com"
+    git add data/
+    git commit -m "Update data files" || echo "No changes"
+    git push
