@@ -22,7 +22,7 @@ from pathlib import Path
 MAX_ITEMS = 200          # rolling cap per feed
 FETCH_TIMEOUT = 15       # seconds per request
 DATA_DIR = Path("data")
-
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 # IST timezone
 IST = timezone(timedelta(hours=5, minutes=30))
 
