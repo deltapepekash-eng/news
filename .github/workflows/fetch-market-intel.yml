@@ -57,8 +57,7 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: No changes
+        - name: No changes
         if: steps.changes.outputs.changed == 'false'
         run: echo "No new data — feeds unchanged since last run."
         - name: Commit and push data
