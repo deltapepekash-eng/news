@@ -1,0 +1,63 @@
+name: Fetch Market Intel
+
+on:
+  schedule:
+    # Every 15 minutes between 6:00 AM and 11:59 PM IST (00:30 - 18:30 UTC)
+    - cron: '0,15,30,45 0-18 * * 1-5'    # Weekdays
+    - cron: '0,15,30,45 0-12 * * 6,0'    # Weekends (shorter window)
+  workflow_dispatch:                        # Manual trigger from GitHub UI
+  push:
+    paths:
+      - 'data/search_terms.json'           # Re-fetch when search terms change
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          # All stdlib — no external packages needed
+
+      - name: Create data directory
+        run: mkdir -p data
+
+      - name: Fetch market intelligence
+        run: python fetch_market_intel.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/market_intel.json data/trending.json data/search_terms.json
+          git commit -m "chore: update market intel [$(date -u '+%Y-%m-%d %H:%M UTC')]" --no-verify
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: No changes
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "No new data — feeds unchanged since last run."
