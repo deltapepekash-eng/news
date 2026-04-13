@@ -1395,7 +1395,7 @@ async function runIntel(force=false){
       if(!r.ok){const e=await r.json();throw new Error(`Gemini ${r.status}: ${e.error?.message||r.statusText}`);}
       data=(await r.json()).candidates?.[0]?.content?.parts?.[0]?.text||'';
     }else if(S.provider==='groq'){
-      const r=await fetch('https://api.groq.com/openai/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+S.apiKey},body:JSON.stringify({model:'llama-3.3-70b-versatile',messages:[{role:'user',content:prompt}],max_tokens:700,temperature:.3})});
+      const r=await fetch('https://api.groq.com/openai/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+S.apiKey},body:JSON.stringify({model:'llama-3.3-70b-versatile',messages:[{role:'system',content:'You are a JSON-only API. Respond with raw JSON only. No markdown fences, no explanation, no text before or after the JSON object.'},{role:'user',content:prompt}],max_tokens:700,temperature:.3,response_format:{type:'json_object'}})});
       if(!r.ok){const e=await r.json();throw new Error(`Groq ${r.status}: ${e.error?.message||r.statusText}`);}
       data=(await r.json()).choices?.[0]?.message?.content||'';
     }else{
@@ -1403,10 +1403,11 @@ async function runIntel(force=false){
       if(!r.ok){const e=await r.json();throw new Error(`Claude ${r.status}: ${e.error?.message||r.statusText}`);}
       data=(await r.json()).content?.[0]?.text||'';
     }
-    const clean=data.replace(/```json|```/g,'').trim();
-    const s=clean.indexOf('{'),e2=clean.lastIndexOf('}');
-    if(s===-1||e2===-1)throw new Error('No JSON in AI response');
-    const j=JSON.parse(clean.slice(s,e2+1));
+    // Strip any markdown fences and extract the JSON object robustly
+    const stripped=data.replace(/```[\w]*\n?/g,'').replace(/`{1,3}/g,'').trim();
+    const s=stripped.indexOf('{'),e2=stripped.lastIndexOf('}');
+    if(s===-1||e2===-1)throw new Error('No JSON object in AI response');
+    const j=JSON.parse(stripped.slice(s,e2+1));
     const prov=S.provider==='gemini'?'Gemini Flash':S.provider==='groq'?'Groq Llama':'Claude';
     const ts=new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'});
     let h=`<div class="intel-ts">Generated ${ts} IST · ${prov}</div>`;
