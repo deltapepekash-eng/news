@@ -1,0 +1,73 @@
+name: Fetch Market Intel
+
+on:
+  schedule:
+    # Every 15 minutes, round the clock, 7 days a week
+    - cron: '0 * * * *'
+    - cron: '15 * * * *'
+    - cron: '30 * * * *'
+    - cron: '45 * * * *'
+  workflow_dispatch:   # Manual trigger from Actions tab
+  repository_dispatch: # Triggered via GitHub API from the dashboard Refresh button
+    types: [fetch-data]
+  # NOTE: No push trigger — avoids infinite loop when workflow commits data files.
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.11'
+          # Note: no 'cache: pip' — not needed (pure stdlib, nothing to install)
+
+      - name: Create data directory
+        run: mkdir -p data
+
+      - name: Run fetcher
+        run: python fetch_market_intel.py
+
+      - name: Check for new or changed data files
+        id: diff
+        run: |
+          # git diff catches changes to tracked files.
+          # git ls-files --others catches brand-new untracked files (first run).
+          NEW_FILES=$(git ls-files --others --exclude-standard data/ | wc -l)
+          git diff --quiet data/ && MODIFIED=false || MODIFIED=true
+
+          if [ "$NEW_FILES" -gt 0 ] || [ "$MODIFIED" = "true" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "New files: $NEW_FILES  |  Modified: $MODIFIED"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected"
+          fi
+
+      - name: Commit and push data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "chore: update market intel $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Nothing new
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "Feeds unchanged — no commit needed."
